@@ -128,6 +128,11 @@ configuration, and dataset-manifest hash.
   intermediate and late blocks. Under a conservative screen of at most 1.0 point overall loss
   and 2.0 points loss on every capability, only block 28 is a candidate for the next combined
   ablation. This is a screening result, not a pruning result.
+- The progressive combined study confirms that effects are non-additive. Skipping blocks 5 and
+  28 stays within 0.95 points of baseline but has no measured end-to-end speedup; skipping four
+  blocks improves total latency by 1.95% but loses 3.72 points overall and 7.94 points on OCR.
+  These pathways are not deployable universal pruners without a task-specific objective and
+  recovery training.
 
 ## Detailed Documentation
 
@@ -137,3 +142,4 @@ configuration, and dataset-manifest hash.
 - [Dataset card](docs/dataset_card.md)
 - [Verified baseline report](results/baseline-qwen25-vl-3b/README.md)
 - [One-block ablation analysis](results/ablation-qwen25-vl-3b/README.md)
+- [Combined-ablation analysis](results/combined-qwen25-vl-3b/README.md)
