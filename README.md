@@ -18,13 +18,17 @@ baselines before making causal claims.
 
 ## Current Phase
 
-The current milestone establishes the unpruned baseline and the data/evaluation infrastructure:
+The current milestone has established the unpruned baseline and completed the first one-block
+identity-ablation screen:
 
 1. Build a controlled screening suite and a balanced natural validation suite.
 2. Run Qwen2.5-VL-3B-Instruct with fixed deterministic settings.
 3. Record predictions, per-capability accuracy, latency, visual-token counts, and peak VRAM.
 4. Verify scoring, determinism, resume behavior, and image-dependence controls.
-5. Only then begin vision-block interventions.
+5. Run every single-block vision intervention on the same fixed examples.
+6. Use the paired sensitivity map to choose multi-block candidates; do not claim deployable
+   pruning until those candidates pass combined ablations, repeated latency trials, and recovery
+   training.
 
 ## Dataset Design
 
@@ -62,6 +66,8 @@ scripts/prepare_dataset.py       Dataset download, stratification, and manifests
 scripts/validate_dataset.py      Integrity, hash, schema, and split-leakage checks
 scripts/download_models.py       Pinned Hugging Face snapshot download
 scripts/run_baseline.py          Deterministic VLM evaluation and telemetry
+scripts/run_layer_ablation.py    Resumable one-block identity-ablation sweep
+scripts/analyze_layer_ablation.py Paired capability analysis and heatmap generation
 src/vlm_bench/                   Dataset, scoring, and benchmark implementation
 tests/                           Fast unit tests
 projectIdeas/vlm-task-aware-encoder-pruning-project/
@@ -116,7 +122,12 @@ configuration, and dataset-manifest hash.
 - Median vision-encoder latency was 69.48 ms; median end-to-end latency was 197.80 ms at batch
   size one. Peak reserved VRAM was 8,318 MiB after pinning visual resolution.
 - The primary model exposes 32 vision blocks and a 668.7M-parameter vision tower, making an
-  exhaustive block sweep practical. No block-pruning conclusion has been drawn yet.
+  exhaustive block sweep practical. No deployable block-pruning conclusion has been drawn yet.
+- The completed one-block sweep shows broad sensitivity at blocks 0 and 15 (17.36 and 21.08
+  percentage-point overall accuracy drops) and a concentrated OCR dependence across several
+  intermediate and late blocks. Under a conservative screen of at most 1.0 point overall loss
+  and 2.0 points loss on every capability, only block 28 is a candidate for the next combined
+  ablation. This is a screening result, not a pruning result.
 
 ## Detailed Documentation
 
@@ -125,3 +136,4 @@ configuration, and dataset-manifest hash.
 - [Research landscape](projectIdeas/vlm-task-aware-encoder-pruning-project/research_landscape.md)
 - [Dataset card](docs/dataset_card.md)
 - [Verified baseline report](results/baseline-qwen25-vl-3b/README.md)
+- [One-block ablation analysis](results/ablation-qwen25-vl-3b/README.md)

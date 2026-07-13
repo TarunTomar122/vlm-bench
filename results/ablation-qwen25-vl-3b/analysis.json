@@ -1,0 +1,2089 @@
+{
+  "baseline": {
+    "accuracy": 0.8162162162162162,
+    "examples": 1480
+  },
+  "blocks": [
+    {
+      "block": 0,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.7666666666666667,
+          "accuracy_drop": 0.16666666666666663,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 13,
+          "net_correct_change": -10,
+          "recovered_correct": 3
+        },
+        "counting": {
+          "ablated_accuracy": 0.5972222222222222,
+          "accuracy_drop": 0.14722222222222225,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 72,
+          "net_correct_change": -53,
+          "recovered_correct": 19
+        },
+        "object": {
+          "ablated_accuracy": 0.7722222222222223,
+          "accuracy_drop": 0.11944444444444446,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 58,
+          "net_correct_change": -43,
+          "recovered_correct": 15
+        },
+        "ocr": {
+          "ablated_accuracy": 0.5205882352941177,
+          "accuracy_drop": 0.27941176470588236,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 101,
+          "net_correct_change": -95,
+          "recovered_correct": 6
+        },
+        "spatial": {
+          "ablated_accuracy": 0.6527777777777778,
+          "accuracy_drop": 0.15555555555555556,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 80,
+          "net_correct_change": -56,
+          "recovered_correct": 24
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.27941176470588236,
+      "overall": {
+        "ablated_accuracy": 0.6425675675675676,
+        "accuracy_drop": 0.1736486486486486,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 324,
+        "net_correct_change": -257,
+        "recovered_correct": 67
+      },
+      "vision_latency_median_ms": 68.34841537475586,
+      "vision_speedup_vs_baseline": 1.0165259195852103
+    },
+    {
+      "block": 1,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.95,
+          "accuracy_drop": -0.016666666666666607,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 0,
+          "net_correct_change": 1,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "ablated_accuracy": 0.7166666666666667,
+          "accuracy_drop": 0.02777777777777779,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 24,
+          "net_correct_change": -10,
+          "recovered_correct": 14
+        },
+        "object": {
+          "ablated_accuracy": 0.875,
+          "accuracy_drop": 0.01666666666666672,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 16,
+          "net_correct_change": -6,
+          "recovered_correct": 10
+        },
+        "ocr": {
+          "ablated_accuracy": 0.7264705882352941,
+          "accuracy_drop": 0.07352941176470595,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 34,
+          "net_correct_change": -25,
+          "recovered_correct": 9
+        },
+        "spatial": {
+          "ablated_accuracy": 0.7694444444444445,
+          "accuracy_drop": 0.03888888888888886,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 24,
+          "net_correct_change": -14,
+          "recovered_correct": 10
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.07352941176470595,
+      "overall": {
+        "ablated_accuracy": 0.7797297297297298,
+        "accuracy_drop": 0.03648648648648645,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 98,
+        "net_correct_change": -54,
+        "recovered_correct": 44
+      },
+      "vision_latency_median_ms": 71.55587387084961,
+      "vision_speedup_vs_baseline": 0.9709606218549657
+    },
+    {
+      "block": 2,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.9333333333333333,
+          "accuracy_drop": 0.0,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 1,
+          "net_correct_change": 0,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "ablated_accuracy": 0.7361111111111112,
+          "accuracy_drop": 0.008333333333333304,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 17,
+          "net_correct_change": -3,
+          "recovered_correct": 14
+        },
+        "object": {
+          "ablated_accuracy": 0.8972222222222223,
+          "accuracy_drop": -0.005555555555555536,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 4,
+          "net_correct_change": 2,
+          "recovered_correct": 6
+        },
+        "ocr": {
+          "ablated_accuracy": 0.7558823529411764,
+          "accuracy_drop": 0.044117647058823595,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 18,
+          "net_correct_change": -15,
+          "recovered_correct": 3
+        },
+        "spatial": {
+          "ablated_accuracy": 0.7944444444444444,
+          "accuracy_drop": 0.01388888888888895,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 14,
+          "net_correct_change": -5,
+          "recovered_correct": 9
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.044117647058823595,
+      "overall": {
+        "ablated_accuracy": 0.802027027027027,
+        "accuracy_drop": 0.01418918918918921,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 54,
+        "net_correct_change": -21,
+        "recovered_correct": 33
+      },
+      "vision_latency_median_ms": 70.26854705810547,
+      "vision_speedup_vs_baseline": 0.9887487175957106
+    },
+    {
+      "block": 3,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.95,
+          "accuracy_drop": -0.016666666666666607,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 0,
+          "net_correct_change": 1,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "ablated_accuracy": 0.7416666666666667,
+          "accuracy_drop": 0.002777777777777768,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 15,
+          "net_correct_change": -1,
+          "recovered_correct": 14
+        },
+        "object": {
+          "ablated_accuracy": 0.8944444444444445,
+          "accuracy_drop": -0.002777777777777768,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 6,
+          "net_correct_change": 1,
+          "recovered_correct": 7
+        },
+        "ocr": {
+          "ablated_accuracy": 0.7647058823529411,
+          "accuracy_drop": 0.03529411764705892,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 17,
+          "net_correct_change": -12,
+          "recovered_correct": 5
+        },
+        "spatial": {
+          "ablated_accuracy": 0.8027777777777778,
+          "accuracy_drop": 0.005555555555555536,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 9,
+          "net_correct_change": -2,
+          "recovered_correct": 7
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.03529411764705892,
+      "overall": {
+        "ablated_accuracy": 0.8074324324324325,
+        "accuracy_drop": 0.00878378378378375,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 47,
+        "net_correct_change": -13,
+        "recovered_correct": 34
+      },
+      "vision_latency_median_ms": 68.04068756103516,
+      "vision_speedup_vs_baseline": 1.0211233642912736
+    },
+    {
+      "block": 4,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.9166666666666666,
+          "accuracy_drop": 0.01666666666666672,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 1,
+          "net_correct_change": -1,
+          "recovered_correct": 0
+        },
+        "counting": {
+          "ablated_accuracy": 0.7305555555555555,
+          "accuracy_drop": 0.01388888888888895,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 17,
+          "net_correct_change": -5,
+          "recovered_correct": 12
+        },
+        "object": {
+          "ablated_accuracy": 0.8861111111111111,
+          "accuracy_drop": 0.005555555555555647,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 7,
+          "net_correct_change": -2,
+          "recovered_correct": 5
+        },
+        "ocr": {
+          "ablated_accuracy": 0.7735294117647059,
+          "accuracy_drop": 0.026470588235294135,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 15,
+          "net_correct_change": -9,
+          "recovered_correct": 6
+        },
+        "spatial": {
+          "ablated_accuracy": 0.8027777777777778,
+          "accuracy_drop": 0.005555555555555536,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 8,
+          "net_correct_change": -2,
+          "recovered_correct": 6
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.026470588235294135,
+      "overall": {
+        "ablated_accuracy": 0.8033783783783783,
+        "accuracy_drop": 0.012837837837837873,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 48,
+        "net_correct_change": -19,
+        "recovered_correct": 29
+      },
+      "vision_latency_median_ms": 68.10771179199219,
+      "vision_speedup_vs_baseline": 1.0201184853076293
+    },
+    {
+      "block": 5,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.9333333333333333,
+          "accuracy_drop": 0.0,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 0,
+          "net_correct_change": 0,
+          "recovered_correct": 0
+        },
+        "counting": {
+          "ablated_accuracy": 0.725,
+          "accuracy_drop": 0.019444444444444486,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 15,
+          "net_correct_change": -7,
+          "recovered_correct": 8
+        },
+        "object": {
+          "ablated_accuracy": 0.8888888888888888,
+          "accuracy_drop": 0.002777777777777879,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 8,
+          "net_correct_change": -1,
+          "recovered_correct": 7
+        },
+        "ocr": {
+          "ablated_accuracy": 0.7970588235294118,
+          "accuracy_drop": 0.002941176470588225,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 12,
+          "net_correct_change": -1,
+          "recovered_correct": 11
+        },
+        "spatial": {
+          "ablated_accuracy": 0.7888888888888889,
+          "accuracy_drop": 0.019444444444444486,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 10,
+          "net_correct_change": -7,
+          "recovered_correct": 3
+        }
+      },
+      "max_capability": "counting",
+      "max_capability_drop": 0.019444444444444486,
+      "overall": {
+        "ablated_accuracy": 0.8054054054054054,
+        "accuracy_drop": 0.010810810810810811,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 45,
+        "net_correct_change": -16,
+        "recovered_correct": 29
+      },
+      "vision_latency_median_ms": 68.25064086914062,
+      "vision_speedup_vs_baseline": 1.0179821743246065
+    },
+    {
+      "block": 6,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.95,
+          "accuracy_drop": -0.016666666666666607,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 0,
+          "net_correct_change": 1,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "ablated_accuracy": 0.7388888888888889,
+          "accuracy_drop": 0.005555555555555536,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 13,
+          "net_correct_change": -2,
+          "recovered_correct": 11
+        },
+        "object": {
+          "ablated_accuracy": 0.8888888888888888,
+          "accuracy_drop": 0.002777777777777879,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 4,
+          "net_correct_change": -1,
+          "recovered_correct": 3
+        },
+        "ocr": {
+          "ablated_accuracy": 0.7735294117647059,
+          "accuracy_drop": 0.026470588235294135,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 17,
+          "net_correct_change": -9,
+          "recovered_correct": 8
+        },
+        "spatial": {
+          "ablated_accuracy": 0.7972222222222223,
+          "accuracy_drop": 0.011111111111111072,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 10,
+          "net_correct_change": -4,
+          "recovered_correct": 6
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.026470588235294135,
+      "overall": {
+        "ablated_accuracy": 0.8060810810810811,
+        "accuracy_drop": 0.010135135135135087,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 44,
+        "net_correct_change": -15,
+        "recovered_correct": 29
+      },
+      "vision_latency_median_ms": 69.43118286132812,
+      "vision_speedup_vs_baseline": 1.0006733707789608
+    },
+    {
+      "block": 7,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.95,
+          "accuracy_drop": -0.016666666666666607,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 1,
+          "net_correct_change": 1,
+          "recovered_correct": 2
+        },
+        "counting": {
+          "ablated_accuracy": 0.7222222222222222,
+          "accuracy_drop": 0.022222222222222254,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 29,
+          "net_correct_change": -8,
+          "recovered_correct": 21
+        },
+        "object": {
+          "ablated_accuracy": 0.8916666666666667,
+          "accuracy_drop": 0.0,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 9,
+          "net_correct_change": 0,
+          "recovered_correct": 9
+        },
+        "ocr": {
+          "ablated_accuracy": 0.6676470588235294,
+          "accuracy_drop": 0.13235294117647067,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 51,
+          "net_correct_change": -45,
+          "recovered_correct": 6
+        },
+        "spatial": {
+          "ablated_accuracy": 0.7888888888888889,
+          "accuracy_drop": 0.019444444444444486,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 19,
+          "net_correct_change": -7,
+          "recovered_correct": 12
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.13235294117647067,
+      "overall": {
+        "ablated_accuracy": 0.7763513513513514,
+        "accuracy_drop": 0.039864864864864846,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 109,
+        "net_correct_change": -59,
+        "recovered_correct": 50
+      },
+      "vision_latency_median_ms": 69.17375946044922,
+      "vision_speedup_vs_baseline": 1.00439727915526
+    },
+    {
+      "block": 8,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.9666666666666667,
+          "accuracy_drop": -0.033333333333333326,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 0,
+          "net_correct_change": 2,
+          "recovered_correct": 2
+        },
+        "counting": {
+          "ablated_accuracy": 0.7333333333333333,
+          "accuracy_drop": 0.011111111111111183,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 15,
+          "net_correct_change": -4,
+          "recovered_correct": 11
+        },
+        "object": {
+          "ablated_accuracy": 0.875,
+          "accuracy_drop": 0.01666666666666672,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 8,
+          "net_correct_change": -6,
+          "recovered_correct": 2
+        },
+        "ocr": {
+          "ablated_accuracy": 0.7676470588235295,
+          "accuracy_drop": 0.032352941176470584,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 15,
+          "net_correct_change": -11,
+          "recovered_correct": 4
+        },
+        "spatial": {
+          "ablated_accuracy": 0.7944444444444444,
+          "accuracy_drop": 0.01388888888888895,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 10,
+          "net_correct_change": -5,
+          "recovered_correct": 5
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.032352941176470584,
+      "overall": {
+        "ablated_accuracy": 0.8,
+        "accuracy_drop": 0.01621621621621616,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 48,
+        "net_correct_change": -24,
+        "recovered_correct": 24
+      },
+      "vision_latency_median_ms": 68.68787384033203,
+      "vision_speedup_vs_baseline": 1.0115022041957527
+    },
+    {
+      "block": 9,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.9333333333333333,
+          "accuracy_drop": 0.0,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 0,
+          "net_correct_change": 0,
+          "recovered_correct": 0
+        },
+        "counting": {
+          "ablated_accuracy": 0.7472222222222222,
+          "accuracy_drop": -0.002777777777777768,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 9,
+          "net_correct_change": 1,
+          "recovered_correct": 10
+        },
+        "object": {
+          "ablated_accuracy": 0.9027777777777778,
+          "accuracy_drop": -0.011111111111111072,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 2,
+          "net_correct_change": 4,
+          "recovered_correct": 6
+        },
+        "ocr": {
+          "ablated_accuracy": 0.788235294117647,
+          "accuracy_drop": 0.01176470588235301,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 9,
+          "net_correct_change": -4,
+          "recovered_correct": 5
+        },
+        "spatial": {
+          "ablated_accuracy": 0.7833333333333333,
+          "accuracy_drop": 0.025000000000000022,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 13,
+          "net_correct_change": -9,
+          "recovered_correct": 4
+        }
+      },
+      "max_capability": "spatial",
+      "max_capability_drop": 0.025000000000000022,
+      "overall": {
+        "ablated_accuracy": 0.8108108108108109,
+        "accuracy_drop": 0.00540540540540535,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 33,
+        "net_correct_change": -8,
+        "recovered_correct": 25
+      },
+      "vision_latency_median_ms": 68.21126174926758,
+      "vision_speedup_vs_baseline": 1.0185698667531486
+    },
+    {
+      "block": 10,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.9166666666666666,
+          "accuracy_drop": 0.01666666666666672,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 2,
+          "net_correct_change": -1,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "ablated_accuracy": 0.7388888888888889,
+          "accuracy_drop": 0.005555555555555536,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 14,
+          "net_correct_change": -2,
+          "recovered_correct": 12
+        },
+        "object": {
+          "ablated_accuracy": 0.9027777777777778,
+          "accuracy_drop": -0.011111111111111072,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 2,
+          "net_correct_change": 4,
+          "recovered_correct": 6
+        },
+        "ocr": {
+          "ablated_accuracy": 0.7558823529411764,
+          "accuracy_drop": 0.044117647058823595,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 19,
+          "net_correct_change": -15,
+          "recovered_correct": 4
+        },
+        "spatial": {
+          "ablated_accuracy": 0.7972222222222223,
+          "accuracy_drop": 0.011111111111111072,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 12,
+          "net_correct_change": -4,
+          "recovered_correct": 8
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.044117647058823595,
+      "overall": {
+        "ablated_accuracy": 0.8040540540540541,
+        "accuracy_drop": 0.012162162162162149,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 49,
+        "net_correct_change": -18,
+        "recovered_correct": 31
+      },
+      "vision_latency_median_ms": 71.15273666381836,
+      "vision_speedup_vs_baseline": 0.9764618909780545
+    },
+    {
+      "block": 11,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.9333333333333333,
+          "accuracy_drop": 0.0,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 1,
+          "net_correct_change": 0,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "ablated_accuracy": 0.7611111111111111,
+          "accuracy_drop": -0.016666666666666607,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 9,
+          "net_correct_change": 6,
+          "recovered_correct": 15
+        },
+        "object": {
+          "ablated_accuracy": 0.8805555555555555,
+          "accuracy_drop": 0.011111111111111183,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 10,
+          "net_correct_change": -4,
+          "recovered_correct": 6
+        },
+        "ocr": {
+          "ablated_accuracy": 0.7676470588235295,
+          "accuracy_drop": 0.032352941176470584,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 17,
+          "net_correct_change": -11,
+          "recovered_correct": 6
+        },
+        "spatial": {
+          "ablated_accuracy": 0.7777777777777778,
+          "accuracy_drop": 0.030555555555555558,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 15,
+          "net_correct_change": -11,
+          "recovered_correct": 4
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.032352941176470584,
+      "overall": {
+        "ablated_accuracy": 0.8027027027027027,
+        "accuracy_drop": 0.013513513513513487,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 52,
+        "net_correct_change": -20,
+        "recovered_correct": 32
+      },
+      "vision_latency_median_ms": 68.80143737792969,
+      "vision_speedup_vs_baseline": 1.0098326203473031
+    },
+    {
+      "block": 12,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.9166666666666666,
+          "accuracy_drop": 0.01666666666666672,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 2,
+          "net_correct_change": -1,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "ablated_accuracy": 0.7638888888888888,
+          "accuracy_drop": -0.019444444444444375,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 9,
+          "net_correct_change": 7,
+          "recovered_correct": 16
+        },
+        "object": {
+          "ablated_accuracy": 0.8888888888888888,
+          "accuracy_drop": 0.002777777777777879,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 2,
+          "net_correct_change": -1,
+          "recovered_correct": 1
+        },
+        "ocr": {
+          "ablated_accuracy": 0.7441176470588236,
+          "accuracy_drop": 0.055882352941176494,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 21,
+          "net_correct_change": -19,
+          "recovered_correct": 2
+        },
+        "spatial": {
+          "ablated_accuracy": 0.7888888888888889,
+          "accuracy_drop": 0.019444444444444486,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 14,
+          "net_correct_change": -7,
+          "recovered_correct": 7
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.055882352941176494,
+      "overall": {
+        "ablated_accuracy": 0.802027027027027,
+        "accuracy_drop": 0.01418918918918921,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 48,
+        "net_correct_change": -21,
+        "recovered_correct": 27
+      },
+      "vision_latency_median_ms": 68.0136947631836,
+      "vision_speedup_vs_baseline": 1.0215286205657605
+    },
+    {
+      "block": 13,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.95,
+          "accuracy_drop": -0.016666666666666607,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 1,
+          "net_correct_change": 1,
+          "recovered_correct": 2
+        },
+        "counting": {
+          "ablated_accuracy": 0.7361111111111112,
+          "accuracy_drop": 0.008333333333333304,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 12,
+          "net_correct_change": -3,
+          "recovered_correct": 9
+        },
+        "object": {
+          "ablated_accuracy": 0.8694444444444445,
+          "accuracy_drop": 0.022222222222222254,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 11,
+          "net_correct_change": -8,
+          "recovered_correct": 3
+        },
+        "ocr": {
+          "ablated_accuracy": 0.7470588235294118,
+          "accuracy_drop": 0.05294117647058827,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 21,
+          "net_correct_change": -18,
+          "recovered_correct": 3
+        },
+        "spatial": {
+          "ablated_accuracy": 0.7944444444444444,
+          "accuracy_drop": 0.01388888888888895,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 13,
+          "net_correct_change": -5,
+          "recovered_correct": 8
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.05294117647058827,
+      "overall": {
+        "ablated_accuracy": 0.793918918918919,
+        "accuracy_drop": 0.022297297297297236,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 58,
+        "net_correct_change": -33,
+        "recovered_correct": 25
+      },
+      "vision_latency_median_ms": 69.14969635009766,
+      "vision_speedup_vs_baseline": 1.004746795116151
+    },
+    {
+      "block": 14,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.95,
+          "accuracy_drop": -0.016666666666666607,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 2,
+          "net_correct_change": 1,
+          "recovered_correct": 3
+        },
+        "counting": {
+          "ablated_accuracy": 0.7277777777777777,
+          "accuracy_drop": 0.01666666666666672,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 23,
+          "net_correct_change": -6,
+          "recovered_correct": 17
+        },
+        "object": {
+          "ablated_accuracy": 0.8722222222222222,
+          "accuracy_drop": 0.019444444444444486,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 13,
+          "net_correct_change": -7,
+          "recovered_correct": 6
+        },
+        "ocr": {
+          "ablated_accuracy": 0.5441176470588235,
+          "accuracy_drop": 0.25588235294117656,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 88,
+          "net_correct_change": -87,
+          "recovered_correct": 1
+        },
+        "spatial": {
+          "ablated_accuracy": 0.775,
+          "accuracy_drop": 0.033333333333333326,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 23,
+          "net_correct_change": -12,
+          "recovered_correct": 11
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.25588235294117656,
+      "overall": {
+        "ablated_accuracy": 0.7412162162162163,
+        "accuracy_drop": 0.07499999999999996,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 149,
+        "net_correct_change": -111,
+        "recovered_correct": 38
+      },
+      "vision_latency_median_ms": 68.46671676635742,
+      "vision_speedup_vs_baseline": 1.0147694978292736
+    },
+    {
+      "block": 15,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.9,
+          "accuracy_drop": 0.033333333333333326,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 4,
+          "net_correct_change": -2,
+          "recovered_correct": 2
+        },
+        "counting": {
+          "ablated_accuracy": 0.6666666666666666,
+          "accuracy_drop": 0.07777777777777783,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 45,
+          "net_correct_change": -28,
+          "recovered_correct": 17
+        },
+        "object": {
+          "ablated_accuracy": 0.8166666666666667,
+          "accuracy_drop": 0.07500000000000007,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 37,
+          "net_correct_change": -27,
+          "recovered_correct": 10
+        },
+        "ocr": {
+          "ablated_accuracy": 0.16176470588235295,
+          "accuracy_drop": 0.6382352941176471,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 221,
+          "net_correct_change": -217,
+          "recovered_correct": 4
+        },
+        "spatial": {
+          "ablated_accuracy": 0.7027777777777777,
+          "accuracy_drop": 0.10555555555555562,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 52,
+          "net_correct_change": -38,
+          "recovered_correct": 14
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.6382352941176471,
+      "overall": {
+        "ablated_accuracy": 0.6054054054054054,
+        "accuracy_drop": 0.21081081081081077,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 359,
+        "net_correct_change": -312,
+        "recovered_correct": 47
+      },
+      "vision_latency_median_ms": 68.53025817871094,
+      "vision_speedup_vs_baseline": 1.013828601226532
+    },
+    {
+      "block": 16,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.9333333333333333,
+          "accuracy_drop": 0.0,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 1,
+          "net_correct_change": 0,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "ablated_accuracy": 0.7333333333333333,
+          "accuracy_drop": 0.011111111111111183,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 14,
+          "net_correct_change": -4,
+          "recovered_correct": 10
+        },
+        "object": {
+          "ablated_accuracy": 0.8694444444444445,
+          "accuracy_drop": 0.022222222222222254,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 12,
+          "net_correct_change": -8,
+          "recovered_correct": 4
+        },
+        "ocr": {
+          "ablated_accuracy": 0.638235294117647,
+          "accuracy_drop": 0.16176470588235303,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 59,
+          "net_correct_change": -55,
+          "recovered_correct": 4
+        },
+        "spatial": {
+          "ablated_accuracy": 0.8111111111111111,
+          "accuracy_drop": -0.002777777777777768,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 11,
+          "net_correct_change": 1,
+          "recovered_correct": 12
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.16176470588235303,
+      "overall": {
+        "ablated_accuracy": 0.7716216216216216,
+        "accuracy_drop": 0.04459459459459458,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 97,
+        "net_correct_change": -66,
+        "recovered_correct": 31
+      },
+      "vision_latency_median_ms": 68.20316696166992,
+      "vision_speedup_vs_baseline": 1.0186907571324675
+    },
+    {
+      "block": 17,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.9,
+          "accuracy_drop": 0.033333333333333326,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 3,
+          "net_correct_change": -2,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "ablated_accuracy": 0.7611111111111111,
+          "accuracy_drop": -0.016666666666666607,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 9,
+          "net_correct_change": 6,
+          "recovered_correct": 15
+        },
+        "object": {
+          "ablated_accuracy": 0.8916666666666667,
+          "accuracy_drop": 0.0,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 6,
+          "net_correct_change": 0,
+          "recovered_correct": 6
+        },
+        "ocr": {
+          "ablated_accuracy": 0.6705882352941176,
+          "accuracy_drop": 0.12941176470588245,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 49,
+          "net_correct_change": -44,
+          "recovered_correct": 5
+        },
+        "spatial": {
+          "ablated_accuracy": 0.7944444444444444,
+          "accuracy_drop": 0.01388888888888895,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 14,
+          "net_correct_change": -5,
+          "recovered_correct": 9
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.12941176470588245,
+      "overall": {
+        "ablated_accuracy": 0.7858108108108108,
+        "accuracy_drop": 0.030405405405405372,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 81,
+        "net_correct_change": -45,
+        "recovered_correct": 36
+      },
+      "vision_latency_median_ms": 68.46003341674805,
+      "vision_speedup_vs_baseline": 1.0148685637950412
+    },
+    {
+      "block": 18,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.9166666666666666,
+          "accuracy_drop": 0.01666666666666672,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 1,
+          "net_correct_change": -1,
+          "recovered_correct": 0
+        },
+        "counting": {
+          "ablated_accuracy": 0.7527777777777778,
+          "accuracy_drop": -0.008333333333333304,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 12,
+          "net_correct_change": 3,
+          "recovered_correct": 15
+        },
+        "object": {
+          "ablated_accuracy": 0.8833333333333333,
+          "accuracy_drop": 0.008333333333333415,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 8,
+          "net_correct_change": -3,
+          "recovered_correct": 5
+        },
+        "ocr": {
+          "ablated_accuracy": 0.6617647058823529,
+          "accuracy_drop": 0.13823529411764712,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 49,
+          "net_correct_change": -47,
+          "recovered_correct": 2
+        },
+        "spatial": {
+          "ablated_accuracy": 0.7972222222222223,
+          "accuracy_drop": 0.011111111111111072,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 12,
+          "net_correct_change": -4,
+          "recovered_correct": 8
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.13823529411764712,
+      "overall": {
+        "ablated_accuracy": 0.7810810810810811,
+        "accuracy_drop": 0.03513513513513511,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 82,
+        "net_correct_change": -52,
+        "recovered_correct": 30
+      },
+      "vision_latency_median_ms": 68.9875373840332,
+      "vision_speedup_vs_baseline": 1.0071085072112738
+    },
+    {
+      "block": 19,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.9333333333333333,
+          "accuracy_drop": 0.0,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 1,
+          "net_correct_change": 0,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "ablated_accuracy": 0.7444444444444445,
+          "accuracy_drop": 0.0,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 11,
+          "net_correct_change": 0,
+          "recovered_correct": 11
+        },
+        "object": {
+          "ablated_accuracy": 0.8722222222222222,
+          "accuracy_drop": 0.019444444444444486,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 11,
+          "net_correct_change": -7,
+          "recovered_correct": 4
+        },
+        "ocr": {
+          "ablated_accuracy": 0.7058823529411765,
+          "accuracy_drop": 0.09411764705882353,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 36,
+          "net_correct_change": -32,
+          "recovered_correct": 4
+        },
+        "spatial": {
+          "ablated_accuracy": 0.8027777777777778,
+          "accuracy_drop": 0.005555555555555536,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 9,
+          "net_correct_change": -2,
+          "recovered_correct": 7
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.09411764705882353,
+      "overall": {
+        "ablated_accuracy": 0.7885135135135135,
+        "accuracy_drop": 0.027702702702702697,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 68,
+        "net_correct_change": -41,
+        "recovered_correct": 27
+      },
+      "vision_latency_median_ms": 68.18284606933594,
+      "vision_speedup_vs_baseline": 1.018994362898297
+    },
+    {
+      "block": 20,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.9166666666666666,
+          "accuracy_drop": 0.01666666666666672,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 1,
+          "net_correct_change": -1,
+          "recovered_correct": 0
+        },
+        "counting": {
+          "ablated_accuracy": 0.7527777777777778,
+          "accuracy_drop": -0.008333333333333304,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 12,
+          "net_correct_change": 3,
+          "recovered_correct": 15
+        },
+        "object": {
+          "ablated_accuracy": 0.8944444444444445,
+          "accuracy_drop": -0.002777777777777768,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 5,
+          "net_correct_change": 1,
+          "recovered_correct": 6
+        },
+        "ocr": {
+          "ablated_accuracy": 0.7382352941176471,
+          "accuracy_drop": 0.061764705882352944,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 27,
+          "net_correct_change": -21,
+          "recovered_correct": 6
+        },
+        "spatial": {
+          "ablated_accuracy": 0.8027777777777778,
+          "accuracy_drop": 0.005555555555555536,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 10,
+          "net_correct_change": -2,
+          "recovered_correct": 8
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.061764705882352944,
+      "overall": {
+        "ablated_accuracy": 0.8027027027027027,
+        "accuracy_drop": 0.013513513513513487,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 55,
+        "net_correct_change": -20,
+        "recovered_correct": 35
+      },
+      "vision_latency_median_ms": 68.44779205322266,
+      "vision_speedup_vs_baseline": 1.015050065267145
+    },
+    {
+      "block": 21,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.95,
+          "accuracy_drop": -0.016666666666666607,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 1,
+          "net_correct_change": 1,
+          "recovered_correct": 2
+        },
+        "counting": {
+          "ablated_accuracy": 0.7527777777777778,
+          "accuracy_drop": -0.008333333333333304,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 17,
+          "net_correct_change": 3,
+          "recovered_correct": 20
+        },
+        "object": {
+          "ablated_accuracy": 0.8972222222222223,
+          "accuracy_drop": -0.005555555555555536,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 7,
+          "net_correct_change": 2,
+          "recovered_correct": 9
+        },
+        "ocr": {
+          "ablated_accuracy": 0.7147058823529412,
+          "accuracy_drop": 0.08529411764705885,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 33,
+          "net_correct_change": -29,
+          "recovered_correct": 4
+        },
+        "spatial": {
+          "ablated_accuracy": 0.7888888888888889,
+          "accuracy_drop": 0.019444444444444486,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 11,
+          "net_correct_change": -7,
+          "recovered_correct": 4
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.08529411764705885,
+      "overall": {
+        "ablated_accuracy": 0.7959459459459459,
+        "accuracy_drop": 0.020270270270270285,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 69,
+        "net_correct_change": -30,
+        "recovered_correct": 39
+      },
+      "vision_latency_median_ms": 68.55763244628906,
+      "vision_speedup_vs_baseline": 1.013423791223356
+    },
+    {
+      "block": 22,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.9166666666666666,
+          "accuracy_drop": 0.01666666666666672,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 2,
+          "net_correct_change": -1,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "ablated_accuracy": 0.7333333333333333,
+          "accuracy_drop": 0.011111111111111183,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 13,
+          "net_correct_change": -4,
+          "recovered_correct": 9
+        },
+        "object": {
+          "ablated_accuracy": 0.8861111111111111,
+          "accuracy_drop": 0.005555555555555647,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 8,
+          "net_correct_change": -2,
+          "recovered_correct": 6
+        },
+        "ocr": {
+          "ablated_accuracy": 0.7529411764705882,
+          "accuracy_drop": 0.04705882352941182,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 22,
+          "net_correct_change": -16,
+          "recovered_correct": 6
+        },
+        "spatial": {
+          "ablated_accuracy": 0.8055555555555556,
+          "accuracy_drop": 0.002777777777777768,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 7,
+          "net_correct_change": -1,
+          "recovered_correct": 6
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.04705882352941182,
+      "overall": {
+        "ablated_accuracy": 0.8,
+        "accuracy_drop": 0.01621621621621616,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 52,
+        "net_correct_change": -24,
+        "recovered_correct": 28
+      },
+      "vision_latency_median_ms": 68.15425872802734,
+      "vision_speedup_vs_baseline": 1.0194217806442658
+    },
+    {
+      "block": 23,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.9333333333333333,
+          "accuracy_drop": 0.0,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 2,
+          "net_correct_change": 0,
+          "recovered_correct": 2
+        },
+        "counting": {
+          "ablated_accuracy": 0.7361111111111112,
+          "accuracy_drop": 0.008333333333333304,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 20,
+          "net_correct_change": -3,
+          "recovered_correct": 17
+        },
+        "object": {
+          "ablated_accuracy": 0.8944444444444445,
+          "accuracy_drop": -0.002777777777777768,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 12,
+          "net_correct_change": 1,
+          "recovered_correct": 13
+        },
+        "ocr": {
+          "ablated_accuracy": 0.6441176470588236,
+          "accuracy_drop": 0.15588235294117647,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 62,
+          "net_correct_change": -53,
+          "recovered_correct": 9
+        },
+        "spatial": {
+          "ablated_accuracy": 0.7861111111111111,
+          "accuracy_drop": 0.022222222222222254,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 19,
+          "net_correct_change": -8,
+          "recovered_correct": 11
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.15588235294117647,
+      "overall": {
+        "ablated_accuracy": 0.7736486486486487,
+        "accuracy_drop": 0.04256756756756752,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 115,
+        "net_correct_change": -63,
+        "recovered_correct": 52
+      },
+      "vision_latency_median_ms": 68.24702453613281,
+      "vision_speedup_vs_baseline": 1.018036116054131
+    },
+    {
+      "block": 24,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.9166666666666666,
+          "accuracy_drop": 0.01666666666666672,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 2,
+          "net_correct_change": -1,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "ablated_accuracy": 0.7833333333333333,
+          "accuracy_drop": -0.03888888888888886,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 4,
+          "net_correct_change": 14,
+          "recovered_correct": 18
+        },
+        "object": {
+          "ablated_accuracy": 0.8861111111111111,
+          "accuracy_drop": 0.005555555555555647,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 5,
+          "net_correct_change": -2,
+          "recovered_correct": 3
+        },
+        "ocr": {
+          "ablated_accuracy": 0.7588235294117647,
+          "accuracy_drop": 0.04117647058823537,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 20,
+          "net_correct_change": -14,
+          "recovered_correct": 6
+        },
+        "spatial": {
+          "ablated_accuracy": 0.7944444444444444,
+          "accuracy_drop": 0.01388888888888895,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 11,
+          "net_correct_change": -5,
+          "recovered_correct": 6
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.04117647058823537,
+      "overall": {
+        "ablated_accuracy": 0.8108108108108109,
+        "accuracy_drop": 0.00540540540540535,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 42,
+        "net_correct_change": -8,
+        "recovered_correct": 34
+      },
+      "vision_latency_median_ms": 68.22947311401367,
+      "vision_speedup_vs_baseline": 1.0182979967457133
+    },
+    {
+      "block": 25,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.95,
+          "accuracy_drop": -0.016666666666666607,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 1,
+          "net_correct_change": 1,
+          "recovered_correct": 2
+        },
+        "counting": {
+          "ablated_accuracy": 0.7611111111111111,
+          "accuracy_drop": -0.016666666666666607,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 6,
+          "net_correct_change": 6,
+          "recovered_correct": 12
+        },
+        "object": {
+          "ablated_accuracy": 0.8916666666666667,
+          "accuracy_drop": 0.0,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 6,
+          "net_correct_change": 0,
+          "recovered_correct": 6
+        },
+        "ocr": {
+          "ablated_accuracy": 0.7705882352941177,
+          "accuracy_drop": 0.02941176470588236,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 12,
+          "net_correct_change": -10,
+          "recovered_correct": 2
+        },
+        "spatial": {
+          "ablated_accuracy": 0.7972222222222223,
+          "accuracy_drop": 0.011111111111111072,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 11,
+          "net_correct_change": -4,
+          "recovered_correct": 7
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.02941176470588236,
+      "overall": {
+        "ablated_accuracy": 0.8114864864864865,
+        "accuracy_drop": 0.004729729729729737,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 36,
+        "net_correct_change": -7,
+        "recovered_correct": 29
+      },
+      "vision_latency_median_ms": 68.70425415039062,
+      "vision_speedup_vs_baseline": 1.0112610441695713
+    },
+    {
+      "block": 26,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.9166666666666666,
+          "accuracy_drop": 0.01666666666666672,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 2,
+          "net_correct_change": -1,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "ablated_accuracy": 0.725,
+          "accuracy_drop": 0.019444444444444486,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 17,
+          "net_correct_change": -7,
+          "recovered_correct": 10
+        },
+        "object": {
+          "ablated_accuracy": 0.8777777777777778,
+          "accuracy_drop": 0.01388888888888895,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 7,
+          "net_correct_change": -5,
+          "recovered_correct": 2
+        },
+        "ocr": {
+          "ablated_accuracy": 0.7558823529411764,
+          "accuracy_drop": 0.044117647058823595,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 19,
+          "net_correct_change": -15,
+          "recovered_correct": 4
+        },
+        "spatial": {
+          "ablated_accuracy": 0.8027777777777778,
+          "accuracy_drop": 0.005555555555555536,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 8,
+          "net_correct_change": -2,
+          "recovered_correct": 6
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.044117647058823595,
+      "overall": {
+        "ablated_accuracy": 0.7959459459459459,
+        "accuracy_drop": 0.020270270270270285,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 53,
+        "net_correct_change": -30,
+        "recovered_correct": 23
+      },
+      "vision_latency_median_ms": 68.30110549926758,
+      "vision_speedup_vs_baseline": 1.0172300328544561
+    },
+    {
+      "block": 27,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.9166666666666666,
+          "accuracy_drop": 0.01666666666666672,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 2,
+          "net_correct_change": -1,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "ablated_accuracy": 0.7638888888888888,
+          "accuracy_drop": -0.019444444444444375,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 7,
+          "net_correct_change": 7,
+          "recovered_correct": 14
+        },
+        "object": {
+          "ablated_accuracy": 0.8694444444444445,
+          "accuracy_drop": 0.022222222222222254,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 11,
+          "net_correct_change": -8,
+          "recovered_correct": 3
+        },
+        "ocr": {
+          "ablated_accuracy": 0.7617647058823529,
+          "accuracy_drop": 0.038235294117647145,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 19,
+          "net_correct_change": -13,
+          "recovered_correct": 6
+        },
+        "spatial": {
+          "ablated_accuracy": 0.7916666666666666,
+          "accuracy_drop": 0.01666666666666672,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 13,
+          "net_correct_change": -6,
+          "recovered_correct": 7
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.038235294117647145,
+      "overall": {
+        "ablated_accuracy": 0.802027027027027,
+        "accuracy_drop": 0.01418918918918921,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 52,
+        "net_correct_change": -21,
+        "recovered_correct": 31
+      },
+      "vision_latency_median_ms": 68.53329467773438,
+      "vision_speedup_vs_baseline": 1.0137836816064842
+    },
+    {
+      "block": 28,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.9166666666666666,
+          "accuracy_drop": 0.01666666666666672,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 2,
+          "net_correct_change": -1,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "ablated_accuracy": 0.7666666666666667,
+          "accuracy_drop": -0.022222222222222254,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 8,
+          "net_correct_change": 8,
+          "recovered_correct": 16
+        },
+        "object": {
+          "ablated_accuracy": 0.8861111111111111,
+          "accuracy_drop": 0.005555555555555647,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 5,
+          "net_correct_change": -2,
+          "recovered_correct": 3
+        },
+        "ocr": {
+          "ablated_accuracy": 0.788235294117647,
+          "accuracy_drop": 0.01176470588235301,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 12,
+          "net_correct_change": -4,
+          "recovered_correct": 8
+        },
+        "spatial": {
+          "ablated_accuracy": 0.8,
+          "accuracy_drop": 0.008333333333333304,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 8,
+          "net_correct_change": -3,
+          "recovered_correct": 5
+        }
+      },
+      "max_capability": "attribute",
+      "max_capability_drop": 0.01666666666666672,
+      "overall": {
+        "ablated_accuracy": 0.8148648648648649,
+        "accuracy_drop": 0.0013513513513513375,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 35,
+        "net_correct_change": -2,
+        "recovered_correct": 33
+      },
+      "vision_latency_median_ms": 68.21770858764648,
+      "vision_speedup_vs_baseline": 1.0184736079452155
+    },
+    {
+      "block": 29,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.95,
+          "accuracy_drop": -0.016666666666666607,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 1,
+          "net_correct_change": 1,
+          "recovered_correct": 2
+        },
+        "counting": {
+          "ablated_accuracy": 0.75,
+          "accuracy_drop": -0.005555555555555536,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 14,
+          "net_correct_change": 2,
+          "recovered_correct": 16
+        },
+        "object": {
+          "ablated_accuracy": 0.8805555555555555,
+          "accuracy_drop": 0.011111111111111183,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 7,
+          "net_correct_change": -4,
+          "recovered_correct": 3
+        },
+        "ocr": {
+          "ablated_accuracy": 0.75,
+          "accuracy_drop": 0.050000000000000044,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 20,
+          "net_correct_change": -17,
+          "recovered_correct": 3
+        },
+        "spatial": {
+          "ablated_accuracy": 0.8055555555555556,
+          "accuracy_drop": 0.002777777777777768,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 9,
+          "net_correct_change": -1,
+          "recovered_correct": 8
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.050000000000000044,
+      "overall": {
+        "ablated_accuracy": 0.8033783783783783,
+        "accuracy_drop": 0.012837837837837873,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 51,
+        "net_correct_change": -19,
+        "recovered_correct": 32
+      },
+      "vision_latency_median_ms": 69.5439338684082,
+      "vision_speedup_vs_baseline": 0.999050987286433
+    },
+    {
+      "block": 30,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.8833333333333333,
+          "accuracy_drop": 0.050000000000000044,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 5,
+          "net_correct_change": -3,
+          "recovered_correct": 2
+        },
+        "counting": {
+          "ablated_accuracy": 0.7694444444444445,
+          "accuracy_drop": -0.025000000000000022,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 11,
+          "net_correct_change": 9,
+          "recovered_correct": 20
+        },
+        "object": {
+          "ablated_accuracy": 0.9083333333333333,
+          "accuracy_drop": -0.016666666666666607,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 2,
+          "net_correct_change": 6,
+          "recovered_correct": 8
+        },
+        "ocr": {
+          "ablated_accuracy": 0.7323529411764705,
+          "accuracy_drop": 0.0676470588235295,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 30,
+          "net_correct_change": -23,
+          "recovered_correct": 7
+        },
+        "spatial": {
+          "ablated_accuracy": 0.8,
+          "accuracy_drop": 0.008333333333333304,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 9,
+          "net_correct_change": -3,
+          "recovered_correct": 6
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.0676470588235295,
+      "overall": {
+        "ablated_accuracy": 0.8067567567567567,
+        "accuracy_drop": 0.009459459459459474,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 57,
+        "net_correct_change": -14,
+        "recovered_correct": 43
+      },
+      "vision_latency_median_ms": 68.42515182495117,
+      "vision_speedup_vs_baseline": 1.0153859207906142
+    },
+    {
+      "block": 31,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.9166666666666666,
+          "accuracy_drop": 0.01666666666666672,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 2,
+          "net_correct_change": -1,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "ablated_accuracy": 0.675,
+          "accuracy_drop": 0.06944444444444442,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 42,
+          "net_correct_change": -25,
+          "recovered_correct": 17
+        },
+        "object": {
+          "ablated_accuracy": 0.85,
+          "accuracy_drop": 0.04166666666666674,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 21,
+          "net_correct_change": -15,
+          "recovered_correct": 6
+        },
+        "ocr": {
+          "ablated_accuracy": 0.6411764705882353,
+          "accuracy_drop": 0.1588235294117647,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 56,
+          "net_correct_change": -54,
+          "recovered_correct": 2
+        },
+        "spatial": {
+          "ablated_accuracy": 0.7527777777777778,
+          "accuracy_drop": 0.05555555555555558,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 35,
+          "net_correct_change": -20,
+          "recovered_correct": 15
+        }
+      },
+      "max_capability": "ocr",
+      "max_capability_drop": 0.1588235294117647,
+      "overall": {
+        "ablated_accuracy": 0.7385135135135135,
+        "accuracy_drop": 0.07770270270270274,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 156,
+        "net_correct_change": -115,
+        "recovered_correct": 41
+      },
+      "vision_latency_median_ms": 68.30636978149414,
+      "vision_speedup_vs_baseline": 1.0171516362715398
+    }
+  ],
+  "screening_candidates": [
+    {
+      "block": 28,
+      "capabilities": {
+        "attribute": {
+          "ablated_accuracy": 0.9166666666666666,
+          "accuracy_drop": 0.01666666666666672,
+          "baseline_accuracy": 0.9333333333333333,
+          "examples": 60,
+          "lost_correct": 2,
+          "net_correct_change": -1,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "ablated_accuracy": 0.7666666666666667,
+          "accuracy_drop": -0.022222222222222254,
+          "baseline_accuracy": 0.7444444444444445,
+          "examples": 360,
+          "lost_correct": 8,
+          "net_correct_change": 8,
+          "recovered_correct": 16
+        },
+        "object": {
+          "ablated_accuracy": 0.8861111111111111,
+          "accuracy_drop": 0.005555555555555647,
+          "baseline_accuracy": 0.8916666666666667,
+          "examples": 360,
+          "lost_correct": 5,
+          "net_correct_change": -2,
+          "recovered_correct": 3
+        },
+        "ocr": {
+          "ablated_accuracy": 0.788235294117647,
+          "accuracy_drop": 0.01176470588235301,
+          "baseline_accuracy": 0.8,
+          "examples": 340,
+          "lost_correct": 12,
+          "net_correct_change": -4,
+          "recovered_correct": 8
+        },
+        "spatial": {
+          "ablated_accuracy": 0.8,
+          "accuracy_drop": 0.008333333333333304,
+          "baseline_accuracy": 0.8083333333333333,
+          "examples": 360,
+          "lost_correct": 8,
+          "net_correct_change": -3,
+          "recovered_correct": 5
+        }
+      },
+      "max_capability": "attribute",
+      "max_capability_drop": 0.01666666666666672,
+      "overall": {
+        "ablated_accuracy": 0.8148648648648649,
+        "accuracy_drop": 0.0013513513513513375,
+        "baseline_accuracy": 0.8162162162162162,
+        "examples": 1480,
+        "lost_correct": 35,
+        "net_correct_change": -2,
+        "recovered_correct": 33
+      },
+      "vision_latency_median_ms": 68.21770858764648,
+      "vision_speedup_vs_baseline": 1.0184736079452155
+    }
+  ]
+}
