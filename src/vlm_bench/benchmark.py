@@ -1,4 +1,5 @@
 import json
+import gc
 import platform
 import statistics
 import subprocess
@@ -280,6 +281,15 @@ class BaselineRunner:
 
     def close(self) -> None:
         self.vision_timer.close()
+        # Explicitly release each reloaded ablation model before the next block.
+        if torch.cuda.is_available():
+            torch.cuda.synchronize()
+        del self.model
+        del self.processor
+        del self.generation_config
+        gc.collect()
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
 
 
 def summarize(rows: list[dict]) -> dict:

@@ -2,6 +2,7 @@
 """Run one-block identity ablations and build task-by-layer sensitivity maps."""
 import argparse
 import csv
+import gc
 import json
 import statistics
 import subprocess
@@ -77,6 +78,8 @@ def main():
             runner.run(limit=args.limit, suite=args.suite, split=args.split)
         finally:
             runner.close()
+            del runner
+            gc.collect()
         rows = list(read_jsonl(prediction_path))
         groups = _groups(rows)
         record = {
