@@ -130,7 +130,8 @@ configuration, and dataset-manifest hash.
   ablation. This is a screening result, not a pruning result.
 - The progressive combined study confirms that effects are non-additive. Skipping blocks 5 and
   28 stays within 0.95 points of baseline but has no measured end-to-end speedup; skipping four
-  blocks improves total latency by 1.95% but loses 3.72 points overall and 7.94 points on OCR.
+  blocks improves matched end-to-end latency by 1.48% but loses 3.72 points overall and 7.94
+  points on OCR.
   These pathways are not deployable universal pruners without a task-specific objective and
   recovery training.
 

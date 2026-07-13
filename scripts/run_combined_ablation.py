@@ -56,6 +56,25 @@ def _measure_latency(runner: BaselineRunner, rows: list[dict], repeats: int) -> 
     }
 
 
+def _paired_latency_comparison(baseline: dict, candidate: dict) -> dict:
+    """Compare each candidate repeat with its corresponding baseline repeat."""
+    if baseline["repeats"] != candidate["repeats"]:
+        raise ValueError("Latency repeat counts must match")
+    per_repeat = []
+    for base, variant in zip(baseline["per_repeat"], candidate["per_repeat"]):
+        per_repeat.append({
+            "vision_speedup_percent": 100 * (
+                base["vision_encoder_median_ms"] / variant["vision_encoder_median_ms"] - 1
+            ),
+            "total_speedup_percent": 100 * (base["total_median_ms"] / variant["total_median_ms"] - 1),
+        })
+    return {
+        "median_vision_speedup_percent": statistics.median(item["vision_speedup_percent"] for item in per_repeat),
+        "median_total_speedup_percent": statistics.median(item["total_speedup_percent"] for item in per_repeat),
+        "per_repeat": per_repeat,
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", type=Path, default=Path("configs/baseline_qwen25_vl_3b.json"))
@@ -125,6 +144,8 @@ def main() -> None:
         write_json(record_path, result)
         results.append(result)
 
+    for result in results:
+        result["paired_latency"] = _paired_latency_comparison(baseline_latency, result["latency"])
     write_json(args.output_dir / "summary.json", {
         "latency_example_ids": [row["id"] for row in latency_rows],
         "baseline_latency": baseline_latency,

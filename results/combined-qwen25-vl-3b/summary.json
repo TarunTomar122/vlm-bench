@@ -194,6 +194,24 @@
         "lost_correct": 35,
         "recovered_correct": 33
       },
+      "paired_latency": {
+        "median_total_speedup_percent": -0.32248141060217117,
+        "median_vision_speedup_percent": 0.4631186687120925,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 0.2650599148187549,
+            "vision_speedup_percent": 1.504426454304597
+          },
+          {
+            "total_speedup_percent": -0.38373666758992897,
+            "vision_speedup_percent": 0.4631186687120925
+          },
+          {
+            "total_speedup_percent": -0.32248141060217117,
+            "vision_speedup_percent": 0.2662300976379095
+          }
+        ]
+      },
       "skip_vision_blocks": [
         28
       ]
@@ -269,6 +287,24 @@
         "examples": 1480,
         "lost_correct": 54,
         "recovered_correct": 40
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": -0.2893685023902304,
+        "median_vision_speedup_percent": 2.215520212052069,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 0.3119497521952397,
+            "vision_speedup_percent": 2.437098320057518
+          },
+          {
+            "total_speedup_percent": -0.6076451364880997,
+            "vision_speedup_percent": 2.215520212052069
+          },
+          {
+            "total_speedup_percent": -0.2893685023902304,
+            "vision_speedup_percent": 0.9842507130076061
+          }
+        ]
       },
       "skip_vision_blocks": [
         5,
@@ -347,6 +383,24 @@
         "lost_correct": 81,
         "recovered_correct": 37
       },
+      "paired_latency": {
+        "median_total_speedup_percent": -3.977326914334667,
+        "median_vision_speedup_percent": 2.4231144345920885,
+        "per_repeat": [
+          {
+            "total_speedup_percent": -3.977326914334667,
+            "vision_speedup_percent": 2.4231144345920885
+          },
+          {
+            "total_speedup_percent": -12.950556495715427,
+            "vision_speedup_percent": -9.963763283430826
+          },
+          {
+            "total_speedup_percent": 0.5003728749019443,
+            "vision_speedup_percent": 3.2512400066267766
+          }
+        ]
+      },
       "skip_vision_blocks": [
         5,
         9,
@@ -424,6 +478,24 @@
         "examples": 1480,
         "lost_correct": 95,
         "recovered_correct": 40
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 1.4817614870947127,
+        "median_vision_speedup_percent": 4.889995226549337,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 1.2177830937006195,
+            "vision_speedup_percent": 4.694348956809136
+          },
+          {
+            "total_speedup_percent": 1.4817614870947127,
+            "vision_speedup_percent": 4.889995226549337
+          },
+          {
+            "total_speedup_percent": 1.9473355532438674,
+            "vision_speedup_percent": 5.03580340299461
+          }
+        ]
       },
       "skip_vision_blocks": [
         3,
