@@ -122,13 +122,22 @@ class BaselineRunner:
             attn_implementation=config["attention_implementation"],
             low_cpu_mem_usage=True,
         ).to(config["device"])
-        skip_block = config.get("skip_vision_block")
-        if skip_block is not None:
-            skip_block = int(skip_block)
+        legacy_skip_block = config.get("skip_vision_block")
+        skip_blocks = config.get("skip_vision_blocks")
+        if legacy_skip_block is not None and skip_blocks is not None:
+            raise ValueError("Use either skip_vision_block or skip_vision_blocks, not both")
+        if skip_blocks is None and legacy_skip_block is not None:
+            skip_blocks = [legacy_skip_block]
+        if skip_blocks is not None:
             blocks = self.model.visual.blocks
-            if not 0 <= skip_block < len(blocks):
-                raise ValueError(f"skip_vision_block must be in [0, {len(blocks) - 1}]")
-            blocks[skip_block] = VisionBlockIdentity()
+            skip_blocks = [int(block) for block in skip_blocks]
+            if len(set(skip_blocks)) != len(skip_blocks):
+                raise ValueError("skip_vision_blocks must not contain duplicates")
+            invalid = [block for block in skip_blocks if not 0 <= block < len(blocks)]
+            if invalid:
+                raise ValueError(f"Invalid vision block indices: {invalid}")
+            for block in skip_blocks:
+                blocks[block] = VisionBlockIdentity()
         self.model.eval()
         self.generation_config = deepcopy(self.model.generation_config)
         self.generation_config.do_sample = bool(config["do_sample"])
