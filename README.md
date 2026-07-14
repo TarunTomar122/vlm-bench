@@ -18,8 +18,9 @@ baselines before making causal claims.
 
 ## Current Phase
 
-The current milestone has established the unpruned baseline and completed the first one-block
-identity-ablation screen:
+The project has completed the one-block screen and first controlled task-route comparison. Phase 2
+now tests whether route damage reflects lost task computation or a repairable inter-layer feature
+gap:
 
 1. Build a controlled screening suite and a balanced natural validation suite.
 2. Run Qwen2.5-VL-3B-Instruct with fixed deterministic settings.
@@ -29,6 +30,9 @@ identity-ablation screen:
 6. Use the paired sensitivity map to choose multi-block candidates; do not claim deployable
    pruning until those candidates pass combined ablations, repeated latency trials, and recovery
    training.
+7. Measure full-versus-pruned states at every vision depth and fit frozen low-rank feature repairs
+   on image-disjoint calibration examples.
+8. Test whether repaired task routes retain an advantage over equally repaired generic pruning.
 
 ## Dataset Design
 
@@ -149,3 +153,4 @@ configuration, and dataset-manifest hash.
 - [One-block ablation analysis](results/ablation-qwen25-vl-3b/README.md)
 - [Combined-ablation analysis](results/combined-qwen25-vl-3b/README.md)
 - [Activation-rescue analysis](results/activation-rescue-qwen25-vl-3b/README.md)
+- [Phase 2 feature-gap protocol](docs/phase2_feature_gap_protocol.md)

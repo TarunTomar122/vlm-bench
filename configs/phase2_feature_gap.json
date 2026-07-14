@@ -1,0 +1,12 @@
+{
+  "calibration_per_capability": 40,
+  "checkpoint_every": 10,
+  "max_tokens_per_example": 256,
+  "ranks": [
+    8,
+    32,
+    128
+  ],
+  "ridge": 0.001,
+  "seed": 20260714
+}
