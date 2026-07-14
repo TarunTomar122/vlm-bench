@@ -1,0 +1,77 @@
+{
+  "counts_by_capability": {
+    "attribute": 250,
+    "counting": 250,
+    "object": 250,
+    "ocr": 250,
+    "spatial": 250
+  },
+  "counts_by_source": {
+    "amber_attribute": 250,
+    "amber_existence_negative": 125,
+    "amber_existence_positive": 125,
+    "countbenchqa": 250,
+    "cvbench_ade20k": 250,
+    "textvqa": 250
+  },
+  "deduplication": "SHA-256 over RGB dimensions, mode, and decoded pixel bytes",
+  "manifest_sha256": "c01c93a9f8f007bb21a11c1952ca50fa51bfdaa5232ebbd681a979156cca5a77",
+  "per_capability": 250,
+  "raw_sources": [
+    {
+      "dataset_id": "vikhyatk/CountBenchQA",
+      "filename": "data/test-00000-of-00001.parquet",
+      "local_name": "countbenchqa.parquet",
+      "revision": "76d600309e9d6147bd3713b4cd431518ac1206c8",
+      "sha256": "a3345e936f1c78742038c906314fb440a5b8e206d66468a64d3cdb05d81190bd"
+    },
+    {
+      "dataset_id": "nyu-visionx/CV-Bench",
+      "filename": "test_2d.parquet",
+      "local_name": "cvbench-2d.parquet",
+      "revision": "bc284db50d036958861cb60cdd7b77612052ce0d",
+      "sha256": "33196034ef4bf3265cae4a7ff5c4071b2ff1cc21123e8e285c6a91393897ecbc"
+    },
+    {
+      "dataset_id": "MM-Hallu/amber-benchmark",
+      "filename": "discriminative-existence-00000-of-00001.parquet",
+      "local_name": "amber-existence.parquet",
+      "revision": "a9c4e6f0cb388c98806321422d83bec0cddab7b2",
+      "sha256": "919b405cb459863c93dc9ad4997944d4ee9957438601a96fe8c359c8c64dbf6e"
+    },
+    {
+      "dataset_id": "MM-Hallu/amber-benchmark",
+      "filename": "discriminative-attribute-00000-of-00001.parquet",
+      "local_name": "amber-attribute.parquet",
+      "revision": "a9c4e6f0cb388c98806321422d83bec0cddab7b2",
+      "sha256": "06d987c0f1a4641a5debd9f6438a2a550aa3b23010334d078980b40f399b1c98"
+    },
+    {
+      "dataset_id": "lmms-lab/textvqa",
+      "filename": "data/validation-00000-of-00003.parquet",
+      "local_name": "textvqa-validation-0.parquet",
+      "revision": "9c0699cd19768ac5ab97568f6b3cbac4c0062884",
+      "sha256": "491649b5b8add2c5bde13a1e36707002fcd11898699255d65e2e568ac4fbddff"
+    },
+    {
+      "dataset_id": "lmms-lab/textvqa",
+      "filename": "data/validation-00001-of-00003.parquet",
+      "local_name": "textvqa-validation-1.parquet",
+      "revision": "9c0699cd19768ac5ab97568f6b3cbac4c0062884",
+      "sha256": "909ad12a378217431548a7f4b66fda163a6def9d21e70844c96449e64206c2dd"
+    },
+    {
+      "dataset_id": "lmms-lab/textvqa",
+      "filename": "data/validation-00002-of-00003.parquet",
+      "local_name": "textvqa-validation-2.parquet",
+      "revision": "9c0699cd19768ac5ab97568f6b3cbac4c0062884",
+      "sha256": "a770d03ec95fef58def04cda949d97669b7666caaf174af927856d75684e6fe6"
+    }
+  ],
+  "reference_manifest": "data/processed-v2/manifests/all.jsonl",
+  "reference_manifest_sha256": "ec3712d74a43caf8dd3d1818788ee0a92bc82e7aa597d640b00f089c6ed357c8",
+  "seed": 20260714,
+  "status": "sealed external evaluation; do not use for route or rank selection",
+  "total_examples": 1250,
+  "unique_images": 1250
+}
