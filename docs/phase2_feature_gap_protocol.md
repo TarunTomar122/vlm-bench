@@ -84,6 +84,30 @@ For every evaluation answer, preserve the prediction and calculate paired:
 - Task advantage disappears after repair: Phase 1 likely measured differential feature shock more
   than task-specific computation.
 
+## Completed Result
+
+The full run started at 10:53:40 UTC and finished at 11:42:52 UTC on 2026-07-14. It used 200
+image-disjoint calibration examples and 704 evaluation examples.
+
+All six routes showed lower final-boundary relative L2 error after repair. The changes included
+0.8096 to 0.6599 for the OCR route and 0.7283 to 0.5995 for the generic route. Ranks 8, 32, and 128
+were nearly indistinguishable in feature error.
+
+This numerical alignment did not reliably recover answers. Rank 32 recovered 0.79 percentage
+points for object and 0.69 points for OCR, but it lost 0.65 points on attribute, 4.32 points on
+counting, and 2.16 points on spatial relative to identity removal. The result matches the second
+interpretation above: final-state L2 alignment is insufficient, or the missing computation cannot
+be repaired by one final linear bridge.
+
+After matched repair, the task route retained a positive paired advantage over the generic route
+for object at rank 32 (+6.30 points, 95% interval [2.36, 11.02]) and OCR (+7.59 points, interval
+[1.38, 13.79]). This supports continued investigation of task-dependent routes, but does not show
+that the bridge is an effective recovery method.
+
+Compact results are stored in
+`results/phase2-feature-gap-qwen25-vl-3b/analysis/`. Full predictions and fitted bridge tensors
+remain on the GPU host.
+
 ## Automation And Recovery
 
 Run the smoke test:

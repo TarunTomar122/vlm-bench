@@ -1,0 +1,107 @@
+{
+  "calibration": {
+    "capability_counts": {
+      "attribute": 40,
+      "counting": 40,
+      "object": 40,
+      "ocr": 40,
+      "spatial": 40
+    },
+    "examples": 200,
+    "manifest_sha256": "04c4b146fb79053c59ec0afe89c109347c79836ac55bffd9a453cc057fce7763"
+  },
+  "config": {
+    "calibration_per_capability": 40,
+    "checkpoint_every": 10,
+    "max_tokens_per_example": 256,
+    "ranks": [
+      8,
+      32,
+      128
+    ],
+    "ridge": 0.001,
+    "seed": 20260714
+  },
+  "evaluation": {
+    "capability_counts": {
+      "attribute": 154,
+      "counting": 139,
+      "object": 127,
+      "ocr": 145,
+      "spatial": 139
+    },
+    "examples": 704,
+    "manifest_sha256": "9d555fe1c12fcf979f2d5ac5bf87f92b962a06f124ae242e4bf57473bf3b0d3f"
+  },
+  "image_overlap": 0,
+  "routes": [
+    {
+      "blocks": [
+        8,
+        9,
+        20,
+        25
+      ],
+      "phase2_name": "task-attribute",
+      "source_name": "route-000-k04",
+      "target_capability": "attribute"
+    },
+    {
+      "blocks": [
+        12,
+        24,
+        28,
+        30
+      ],
+      "phase2_name": "task-counting",
+      "source_name": "route-004-k04",
+      "target_capability": "counting"
+    },
+    {
+      "blocks": [
+        2,
+        9,
+        10,
+        30
+      ],
+      "phase2_name": "task-object",
+      "source_name": "route-008-k04",
+      "target_capability": "object"
+    },
+    {
+      "blocks": [
+        4,
+        5,
+        9,
+        28
+      ],
+      "phase2_name": "task-ocr",
+      "source_name": "route-012-k04",
+      "target_capability": "ocr"
+    },
+    {
+      "blocks": [
+        3,
+        16,
+        22,
+        29
+      ],
+      "phase2_name": "task-spatial",
+      "source_name": "route-016-k04",
+      "target_capability": "spatial"
+    },
+    {
+      "blocks": [
+        9,
+        24,
+        25,
+        28
+      ],
+      "phase2_name": "generic",
+      "source_name": "route-020-k04",
+      "target_capability": null
+    }
+  ],
+  "source_manifest": "/home/ubuntu/vlm-bench/data/processed-v2/manifests/development.jsonl",
+  "source_manifest_sha256": "b7c097e8cea30d5c070d9ef03bacfb853b5967756d5282ba78c8575354e4ffae"
+}

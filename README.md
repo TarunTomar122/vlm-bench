@@ -18,9 +18,9 @@ baselines before making causal claims.
 
 ## Current Phase
 
-The project has completed the one-block screen and first controlled task-route comparison. Phase 2
-now tests whether route damage reflects lost task computation or a repairable inter-layer feature
-gap:
+The project has completed the one-block screen, controlled task-route comparisons at four pruning
+budgets, a locked-clock latency audit, and Phase 2 feature-gap repair. A sealed external benchmark
+is ready but has not been evaluated. The next experiment is interaction-aware route search:
 
 1. Build a controlled screening suite and a balanced natural validation suite.
 2. Run Qwen2.5-VL-3B-Instruct with fixed deterministic settings.
@@ -30,27 +30,35 @@ gap:
 6. Use the paired sensitivity map to choose multi-block candidates; do not claim deployable
    pruning until those candidates pass combined ablations, repeated latency trials, and recovery
    training.
-7. Measure full-versus-pruned states at every vision depth and fit frozen low-rank feature repairs
-   on image-disjoint calibration examples.
-8. Test whether repaired task routes retain an advantage over equally repaired generic pruning.
+7. Measure full-versus-pruned states and fit frozen low-rank feature repairs on image-disjoint
+   calibration examples. Completed; feature error decreased without reliable answer recovery.
+8. Recompute candidate importance after every selected removal instead of composing independent
+   one-block rankings. This is the next unresolved experiment.
+9. Freeze the complete method before evaluating the sealed 1,250-example external set.
 
 ## Dataset Design
 
-No single public benchmark cleanly balances all target capabilities. We use two complementary
-suites:
+No single public benchmark cleanly balances all target capabilities. We use a discovery suite for
+route construction and a separate sealed suite for final source-transfer evaluation:
 
 | Suite | Source | Capability | Role |
 |---|---|---|---|
 | Controlled | MME | OCR, count, position, existence, color | Uniform yes/no screening |
-| External | OCRBench | OCR | Natural text recognition and text VQA |
-| External | TallyQA | Counting | Simple and compositional counting |
-| External | VSR | Spatial | Fine-grained spatial relations |
-| External | POPE | Object existence | Random, popular, and adversarial objects |
+| Discovery | OCRBench | OCR | Natural text recognition and text VQA |
+| Discovery | TallyQA | Counting | Simple and compositional counting |
+| Discovery | VSR | Spatial | Fine-grained spatial relations |
+| Discovery | POPE | Object existence | Random, popular, and adversarial objects |
+| Discovery | VQAv2 | Color attribute | Open-ended color questions |
+| Sealed external | TextVQA | OCR | Scene-text source transfer |
+| Sealed external | CountBenchQA | Counting | Balanced verified counts 2-10 |
+| Sealed external | CV-Bench/ADE20K | Spatial | Four 2D relation classes |
+| Sealed external | AMBER | Object and color | Balanced hallucination and attribute probes |
 
 MME reduces answer-format confounds because its perception tasks share a binary protocol. The
-external suite prevents conclusions from depending on MME's small size or yes/no format. Dataset
-images are never committed; deterministic manifests contain source identifiers, metadata, and
-content hashes.
+discovery mixture prevents conclusions from depending on MME's small size or yes/no format. The
+sealed suite contains 1,250 examples from different source families and remains unused until method
+selection is complete. Dataset images are never committed; deterministic manifests contain source
+identifiers, metadata, and content hashes.
 
 ## Primary Models
 
@@ -142,6 +150,19 @@ configuration, and dataset-manifest hash.
   refinement interpretation, especially for OCR, rather than a one-block/one-capability map.
   These pathways are not deployable universal pruners without a task-specific objective and
   recovery training.
+- Capability-specific routes have already been tested at 4, 8, 12, and 16 removed blocks. At eight
+  blocks, target-task losses were 10.18-37.30 points; at sixteen blocks they were 25.70-72.97
+  points. Independent one-block rankings therefore do not compose into aggressive routes.
+- Four-block task routes remove 11.79% of vision parameters but only 2.10% of total parameters.
+  Locked-clock measurements show 6.47-7.28% vision speedup and 1.39-4.41% end-to-end speedup.
+  Object and OCR beat generic four-block pruning by 4.79 and 5.95 points respectively, with paired
+  95% intervals above zero; the other three task advantages remain uncertain.
+- Phase 2 fitted rank-8, rank-32, and rank-128 final-boundary residual bridges using 200 calibration
+  and 704 evaluation examples. Every bridge reduced relative feature error, but answer recovery was
+  negligible or negative except for +0.79 points on object and +0.69 points on OCR. Final-state L2
+  similarity is therefore not an adequate behavioral-recovery objective.
+- A sealed external benchmark is ready with 1,250 examples, 250 per capability, and zero decoded-
+  pixel overlap with the V2 dataset. It remains unevaluated until the method is frozen.
 
 ## Detailed Documentation
 
@@ -153,4 +174,8 @@ configuration, and dataset-manifest hash.
 - [One-block ablation analysis](results/ablation-qwen25-vl-3b/README.md)
 - [Combined-ablation analysis](results/combined-qwen25-vl-3b/README.md)
 - [Activation-rescue analysis](results/activation-rescue-qwen25-vl-3b/README.md)
+- [Current research status](docs/current_status.md)
+- [Task-specific route analysis](results/task-route-analysis-qwen25-vl-3b/README.md)
 - [Phase 2 feature-gap protocol](docs/phase2_feature_gap_protocol.md)
+- [Phase 2 feature-gap results](results/phase2-feature-gap-qwen25-vl-3b/analysis/README.md)
+- [External held-out protocol](docs/external_heldout_protocol.md)

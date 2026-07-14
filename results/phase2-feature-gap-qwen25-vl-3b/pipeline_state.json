@@ -1,0 +1,101 @@
+{
+  "completed_at": "2026-07-14T11:42:52.522672+00:00",
+  "mode": "full",
+  "stages": {
+    "analyze": {
+      "command": [
+        "/home/ubuntu/vlm-bench/.venv/bin/python",
+        "scripts/analyze_phase2.py",
+        "--manifest",
+        "results/phase2-feature-gap-qwen25-vl-3b/prepared/evaluation.jsonl",
+        "--routes",
+        "results/phase2-feature-gap-qwen25-vl-3b/prepared/routes.json",
+        "--baseline-predictions",
+        "results/task-route-design-qwen25-vl-3b/development-baseline/predictions.jsonl",
+        "--identity-root",
+        "results/task-route-benchmark-qwen25-vl-3b",
+        "--repair-root",
+        "results/phase2-feature-gap-qwen25-vl-3b/repair-benchmark",
+        "--feature-validation-root",
+        "results/phase2-feature-gap-qwen25-vl-3b/feature-validation",
+        "--output-dir",
+        "results/phase2-feature-gap-qwen25-vl-3b/analysis"
+      ],
+      "completed_at": "2026-07-14T11:42:52.522165+00:00",
+      "started_at": "2026-07-14T11:42:35.845228+00:00",
+      "status": "complete"
+    },
+    "evaluate_answers": {
+      "command": [
+        "/home/ubuntu/vlm-bench/.venv/bin/python",
+        "scripts/run_phase2_repair.py",
+        "--manifest",
+        "results/phase2-feature-gap-qwen25-vl-3b/prepared/evaluation.jsonl",
+        "--routes",
+        "results/phase2-feature-gap-qwen25-vl-3b/prepared/routes.json",
+        "--bridges-dir",
+        "results/phase2-feature-gap-qwen25-vl-3b/bridge-fit",
+        "--data-root",
+        "data/processed-v2",
+        "--output-dir",
+        "results/phase2-feature-gap-qwen25-vl-3b/repair-benchmark"
+      ],
+      "completed_at": "2026-07-14T11:42:35.844649+00:00",
+      "started_at": "2026-07-14T11:00:08.265491+00:00",
+      "status": "complete"
+    },
+    "fit": {
+      "command": [
+        "/home/ubuntu/vlm-bench/.venv/bin/python",
+        "scripts/fit_phase2_bridges.py",
+        "--manifest",
+        "results/phase2-feature-gap-qwen25-vl-3b/prepared/calibration.jsonl",
+        "--routes",
+        "results/phase2-feature-gap-qwen25-vl-3b/prepared/routes.json",
+        "--data-root",
+        "data/processed-v2",
+        "--output-dir",
+        "results/phase2-feature-gap-qwen25-vl-3b/bridge-fit"
+      ],
+      "completed_at": "2026-07-14T10:58:02.390861+00:00",
+      "started_at": "2026-07-14T10:53:41.950481+00:00",
+      "status": "complete"
+    },
+    "prepare": {
+      "command": [
+        "/home/ubuntu/vlm-bench/.venv/bin/python",
+        "scripts/prepare_phase2.py",
+        "--manifest",
+        "data/processed-v2/manifests/development.jsonl",
+        "--routes",
+        "results/task-route-design-qwen25-vl-3b/routes.json",
+        "--output-dir",
+        "results/phase2-feature-gap-qwen25-vl-3b/prepared"
+      ],
+      "completed_at": "2026-07-14T10:53:41.948214+00:00",
+      "started_at": "2026-07-14T10:53:40.283273+00:00",
+      "status": "complete"
+    },
+    "validate_features": {
+      "command": [
+        "/home/ubuntu/vlm-bench/.venv/bin/python",
+        "scripts/validate_phase2_bridges.py",
+        "--manifest",
+        "results/phase2-feature-gap-qwen25-vl-3b/prepared/evaluation.jsonl",
+        "--routes",
+        "results/phase2-feature-gap-qwen25-vl-3b/prepared/routes.json",
+        "--bridges-dir",
+        "results/phase2-feature-gap-qwen25-vl-3b/bridge-fit",
+        "--data-root",
+        "data/processed-v2",
+        "--output-dir",
+        "results/phase2-feature-gap-qwen25-vl-3b/feature-validation"
+      ],
+      "completed_at": "2026-07-14T11:00:08.265018+00:00",
+      "started_at": "2026-07-14T10:58:02.391550+00:00",
+      "status": "complete"
+    }
+  },
+  "started_at": "2026-07-14T10:53:40.282870+00:00",
+  "status": "complete"
+}

@@ -1,0 +1,902 @@
+{
+  "examples": 704,
+  "feature_validation": {
+    "generic": {
+      "examples": 100,
+      "identity_relative_l2_mean": 0.7283359581232071,
+      "ranks": {
+        "128": {
+          "cosine_mean": 0.9706314200162888,
+          "relative_l2_mean": 0.5994608581066132
+        },
+        "32": {
+          "cosine_mean": 0.9705940520763398,
+          "relative_l2_mean": 0.5994810777902603
+        },
+        "8": {
+          "cosine_mean": 0.970514207482338,
+          "relative_l2_mean": 0.5994949722290039
+        }
+      }
+    },
+    "task-attribute": {
+      "examples": 100,
+      "identity_relative_l2_mean": 0.7715924018621445,
+      "ranks": {
+        "128": {
+          "cosine_mean": 0.9703717267513275,
+          "relative_l2_mean": 0.6148920440673828
+        },
+        "32": {
+          "cosine_mean": 0.9704504305124283,
+          "relative_l2_mean": 0.6149050724506379
+        },
+        "8": {
+          "cosine_mean": 0.9704754120111465,
+          "relative_l2_mean": 0.6149127024412155
+        }
+      }
+    },
+    "task-counting": {
+      "examples": 100,
+      "identity_relative_l2_mean": 0.7122114586830139,
+      "ranks": {
+        "128": {
+          "cosine_mean": 0.9547002345323563,
+          "relative_l2_mean": 0.6649780559539795
+        },
+        "32": {
+          "cosine_mean": 0.9541767781972885,
+          "relative_l2_mean": 0.6650013571977615
+        },
+        "8": {
+          "cosine_mean": 0.9538097923994064,
+          "relative_l2_mean": 0.6650158512592316
+        }
+      }
+    },
+    "task-object": {
+      "examples": 100,
+      "identity_relative_l2_mean": 0.7246034771203995,
+      "ranks": {
+        "128": {
+          "cosine_mean": 0.9497292202711105,
+          "relative_l2_mean": 0.6533422499895096
+        },
+        "32": {
+          "cosine_mean": 0.9494700056314468,
+          "relative_l2_mean": 0.6533557552099228
+        },
+        "8": {
+          "cosine_mean": 0.9492561239004135,
+          "relative_l2_mean": 0.6533642596006394
+        }
+      }
+    },
+    "task-ocr": {
+      "examples": 100,
+      "identity_relative_l2_mean": 0.8095525366067886,
+      "ranks": {
+        "128": {
+          "cosine_mean": 0.9698872655630112,
+          "relative_l2_mean": 0.6598426073789596
+        },
+        "32": {
+          "cosine_mean": 0.9699885892868042,
+          "relative_l2_mean": 0.6598613905906677
+        },
+        "8": {
+          "cosine_mean": 0.9700338804721832,
+          "relative_l2_mean": 0.6598727363348007
+        }
+      }
+    },
+    "task-spatial": {
+      "examples": 100,
+      "identity_relative_l2_mean": 0.6874375486373902,
+      "ranks": {
+        "128": {
+          "cosine_mean": 0.9597307527065277,
+          "relative_l2_mean": 0.625970008969307
+        },
+        "32": {
+          "cosine_mean": 0.9596430826187133,
+          "relative_l2_mean": 0.6259845131635666
+        },
+        "8": {
+          "cosine_mean": 0.9595048242807388,
+          "relative_l2_mean": 0.6259940558671951
+        }
+      }
+    }
+  },
+  "method": "SCP-inspired final-boundary low-rank residual calibration; not Short-LVLM SCP",
+  "results": [
+    {
+      "baseline_accuracy": 0.961038961038961,
+      "capability": "attribute",
+      "examples": 154,
+      "generic_identity": {
+        "accuracy_drop_pp": 0.0,
+        "baseline_accuracy": 0.961038961038961,
+        "examples": 154,
+        "lost_correct": 1,
+        "recovered_correct": 1,
+        "variant_accuracy": 0.961038961038961
+      },
+      "generic_route": {
+        "assignments": [
+          {
+            "budget": 4,
+            "capability": null,
+            "route_type": "generic_macro"
+          }
+        ],
+        "name": "route-020-k04",
+        "phase2_name": "generic",
+        "route_type": "generic_macro",
+        "skip_vision_blocks": [
+          9,
+          24,
+          25,
+          28
+        ],
+        "target_capability": null
+      },
+      "ranks": {
+        "128": {
+          "generic_repaired": {
+            "accuracy_drop_pp": 0.649350649350644,
+            "baseline_accuracy": 0.961038961038961,
+            "examples": 154,
+            "lost_correct": 3,
+            "recovered_correct": 2,
+            "variant_accuracy": 0.9545454545454546
+          },
+          "task_repair_vs_identity": {
+            "advantage_pp": 0.0,
+            "ci95_pp": [
+              -1.948051948051948,
+              1.948051948051948
+            ]
+          },
+          "task_repaired": {
+            "accuracy_drop_pp": 0.649350649350644,
+            "baseline_accuracy": 0.961038961038961,
+            "examples": 154,
+            "lost_correct": 3,
+            "recovered_correct": 2,
+            "variant_accuracy": 0.9545454545454546
+          },
+          "task_vs_generic_repaired": {
+            "advantage_pp": 0.0,
+            "ci95_pp": [
+              -3.2467532467532463,
+              3.2467532467532463
+            ]
+          }
+        },
+        "32": {
+          "generic_repaired": {
+            "accuracy_drop_pp": 0.649350649350644,
+            "baseline_accuracy": 0.961038961038961,
+            "examples": 154,
+            "lost_correct": 3,
+            "recovered_correct": 2,
+            "variant_accuracy": 0.9545454545454546
+          },
+          "task_repair_vs_identity": {
+            "advantage_pp": -0.6493506493506493,
+            "ci95_pp": [
+              -3.2467532467532463,
+              1.2987012987012987
+            ]
+          },
+          "task_repaired": {
+            "accuracy_drop_pp": 1.2987012987012991,
+            "baseline_accuracy": 0.961038961038961,
+            "examples": 154,
+            "lost_correct": 4,
+            "recovered_correct": 2,
+            "variant_accuracy": 0.948051948051948
+          },
+          "task_vs_generic_repaired": {
+            "advantage_pp": -0.6493506493506493,
+            "ci95_pp": [
+              -3.896103896103896,
+              2.5974025974025974
+            ]
+          }
+        },
+        "8": {
+          "generic_repaired": {
+            "accuracy_drop_pp": 0.0,
+            "baseline_accuracy": 0.961038961038961,
+            "examples": 154,
+            "lost_correct": 2,
+            "recovered_correct": 2,
+            "variant_accuracy": 0.961038961038961
+          },
+          "task_repair_vs_identity": {
+            "advantage_pp": 0.0,
+            "ci95_pp": [
+              -1.948051948051948,
+              1.948051948051948
+            ]
+          },
+          "task_repaired": {
+            "accuracy_drop_pp": 0.649350649350644,
+            "baseline_accuracy": 0.961038961038961,
+            "examples": 154,
+            "lost_correct": 3,
+            "recovered_correct": 2,
+            "variant_accuracy": 0.9545454545454546
+          },
+          "task_vs_generic_repaired": {
+            "advantage_pp": -0.6493506493506493,
+            "ci95_pp": [
+              -3.2467532467532463,
+              1.948051948051948
+            ]
+          }
+        }
+      },
+      "task_identity": {
+        "accuracy_drop_pp": 0.649350649350644,
+        "baseline_accuracy": 0.961038961038961,
+        "examples": 154,
+        "lost_correct": 3,
+        "recovered_correct": 2,
+        "variant_accuracy": 0.9545454545454546
+      },
+      "task_route": {
+        "assignments": [
+          {
+            "budget": 4,
+            "capability": "attribute",
+            "route_type": "task_specific"
+          }
+        ],
+        "name": "route-000-k04",
+        "phase2_name": "task-attribute",
+        "route_type": "task_specific",
+        "skip_vision_blocks": [
+          8,
+          9,
+          20,
+          25
+        ],
+        "target_capability": "attribute"
+      }
+    },
+    {
+      "baseline_accuracy": 0.7194244604316546,
+      "capability": "counting",
+      "examples": 139,
+      "generic_identity": {
+        "accuracy_drop_pp": -3.597122302158273,
+        "baseline_accuracy": 0.7194244604316546,
+        "examples": 139,
+        "lost_correct": 5,
+        "recovered_correct": 10,
+        "variant_accuracy": 0.7553956834532374
+      },
+      "generic_route": {
+        "assignments": [
+          {
+            "budget": 4,
+            "capability": null,
+            "route_type": "generic_macro"
+          }
+        ],
+        "name": "route-020-k04",
+        "phase2_name": "generic",
+        "route_type": "generic_macro",
+        "skip_vision_blocks": [
+          9,
+          24,
+          25,
+          28
+        ],
+        "target_capability": null
+      },
+      "ranks": {
+        "128": {
+          "generic_repaired": {
+            "accuracy_drop_pp": -1.4388489208633115,
+            "baseline_accuracy": 0.7194244604316546,
+            "examples": 139,
+            "lost_correct": 7,
+            "recovered_correct": 9,
+            "variant_accuracy": 0.7338129496402878
+          },
+          "task_repair_vs_identity": {
+            "advantage_pp": -1.4388489208633095,
+            "ci95_pp": [
+              -5.755395683453238,
+              2.877697841726619
+            ]
+          },
+          "task_repaired": {
+            "accuracy_drop_pp": 1.4388489208633115,
+            "baseline_accuracy": 0.7194244604316546,
+            "examples": 139,
+            "lost_correct": 11,
+            "recovered_correct": 9,
+            "variant_accuracy": 0.7050359712230215
+          },
+          "task_vs_generic_repaired": {
+            "advantage_pp": -2.877697841726619,
+            "ci95_pp": [
+              -9.352517985611511,
+              3.597122302158273
+            ]
+          }
+        },
+        "32": {
+          "generic_repaired": {
+            "accuracy_drop_pp": -0.7194244604316613,
+            "baseline_accuracy": 0.7194244604316546,
+            "examples": 139,
+            "lost_correct": 8,
+            "recovered_correct": 9,
+            "variant_accuracy": 0.7266187050359713
+          },
+          "task_repair_vs_identity": {
+            "advantage_pp": -4.316546762589928,
+            "ci95_pp": [
+              -9.352517985611511,
+              0.7194244604316548
+            ]
+          },
+          "task_repaired": {
+            "accuracy_drop_pp": 4.316546762589923,
+            "baseline_accuracy": 0.7194244604316546,
+            "examples": 139,
+            "lost_correct": 12,
+            "recovered_correct": 6,
+            "variant_accuracy": 0.6762589928057554
+          },
+          "task_vs_generic_repaired": {
+            "advantage_pp": -5.0359712230215825,
+            "ci95_pp": [
+              -11.510791366906476,
+              1.4388489208633095
+            ]
+          }
+        },
+        "8": {
+          "generic_repaired": {
+            "accuracy_drop_pp": -0.7194244604316613,
+            "baseline_accuracy": 0.7194244604316546,
+            "examples": 139,
+            "lost_correct": 8,
+            "recovered_correct": 9,
+            "variant_accuracy": 0.7266187050359713
+          },
+          "task_repair_vs_identity": {
+            "advantage_pp": -3.597122302158273,
+            "ci95_pp": [
+              -7.913669064748201,
+              0.7194244604316548
+            ]
+          },
+          "task_repaired": {
+            "accuracy_drop_pp": 3.597122302158273,
+            "baseline_accuracy": 0.7194244604316546,
+            "examples": 139,
+            "lost_correct": 12,
+            "recovered_correct": 7,
+            "variant_accuracy": 0.6834532374100719
+          },
+          "task_vs_generic_repaired": {
+            "advantage_pp": -4.316546762589928,
+            "ci95_pp": [
+              -10.79136690647482,
+              1.4388489208633095
+            ]
+          }
+        }
+      },
+      "task_identity": {
+        "accuracy_drop_pp": 0.0,
+        "baseline_accuracy": 0.7194244604316546,
+        "examples": 139,
+        "lost_correct": 10,
+        "recovered_correct": 10,
+        "variant_accuracy": 0.7194244604316546
+      },
+      "task_route": {
+        "assignments": [
+          {
+            "budget": 4,
+            "capability": "counting",
+            "route_type": "task_specific"
+          }
+        ],
+        "name": "route-004-k04",
+        "phase2_name": "task-counting",
+        "route_type": "task_specific",
+        "skip_vision_blocks": [
+          12,
+          24,
+          28,
+          30
+        ],
+        "target_capability": "counting"
+      }
+    },
+    {
+      "baseline_accuracy": 0.9212598425196851,
+      "capability": "object",
+      "examples": 127,
+      "generic_identity": {
+        "accuracy_drop_pp": 3.937007874015752,
+        "baseline_accuracy": 0.9212598425196851,
+        "examples": 127,
+        "lost_correct": 5,
+        "recovered_correct": 0,
+        "variant_accuracy": 0.8818897637795275
+      },
+      "generic_route": {
+        "assignments": [
+          {
+            "budget": 4,
+            "capability": null,
+            "route_type": "generic_macro"
+          }
+        ],
+        "name": "route-020-k04",
+        "phase2_name": "generic",
+        "route_type": "generic_macro",
+        "skip_vision_blocks": [
+          9,
+          24,
+          25,
+          28
+        ],
+        "target_capability": null
+      },
+      "ranks": {
+        "128": {
+          "generic_repaired": {
+            "accuracy_drop_pp": 5.511811023622048,
+            "baseline_accuracy": 0.9212598425196851,
+            "examples": 127,
+            "lost_correct": 7,
+            "recovered_correct": 0,
+            "variant_accuracy": 0.8661417322834646
+          },
+          "task_repair_vs_identity": {
+            "advantage_pp": -0.7874015748031495,
+            "ci95_pp": [
+              -3.149606299212598,
+              1.574803149606299
+            ]
+          },
+          "task_repaired": {
+            "accuracy_drop_pp": 0.7874015748031482,
+            "baseline_accuracy": 0.9212598425196851,
+            "examples": 127,
+            "lost_correct": 3,
+            "recovered_correct": 2,
+            "variant_accuracy": 0.9133858267716536
+          },
+          "task_vs_generic_repaired": {
+            "advantage_pp": 4.724409448818897,
+            "ci95_pp": [
+              1.574803149606299,
+              8.661417322834646
+            ]
+          }
+        },
+        "32": {
+          "generic_repaired": {
+            "accuracy_drop_pp": 5.511811023622048,
+            "baseline_accuracy": 0.9212598425196851,
+            "examples": 127,
+            "lost_correct": 7,
+            "recovered_correct": 0,
+            "variant_accuracy": 0.8661417322834646
+          },
+          "task_repair_vs_identity": {
+            "advantage_pp": 0.7874015748031495,
+            "ci95_pp": [
+              0.0,
+              2.3622047244094486
+            ]
+          },
+          "task_repaired": {
+            "accuracy_drop_pp": -0.7874015748031482,
+            "baseline_accuracy": 0.9212598425196851,
+            "examples": 127,
+            "lost_correct": 1,
+            "recovered_correct": 2,
+            "variant_accuracy": 0.9291338582677166
+          },
+          "task_vs_generic_repaired": {
+            "advantage_pp": 6.299212598425196,
+            "ci95_pp": [
+              2.3622047244094486,
+              11.023622047244094
+            ]
+          }
+        },
+        "8": {
+          "generic_repaired": {
+            "accuracy_drop_pp": 5.511811023622048,
+            "baseline_accuracy": 0.9212598425196851,
+            "examples": 127,
+            "lost_correct": 7,
+            "recovered_correct": 0,
+            "variant_accuracy": 0.8661417322834646
+          },
+          "task_repair_vs_identity": {
+            "advantage_pp": -0.7874015748031495,
+            "ci95_pp": [
+              -3.937007874015748,
+              1.574803149606299
+            ]
+          },
+          "task_repaired": {
+            "accuracy_drop_pp": 0.7874015748031482,
+            "baseline_accuracy": 0.9212598425196851,
+            "examples": 127,
+            "lost_correct": 3,
+            "recovered_correct": 2,
+            "variant_accuracy": 0.9133858267716536
+          },
+          "task_vs_generic_repaired": {
+            "advantage_pp": 4.724409448818897,
+            "ci95_pp": [
+              1.574803149606299,
+              8.661417322834646
+            ]
+          }
+        }
+      },
+      "task_identity": {
+        "accuracy_drop_pp": 0.0,
+        "baseline_accuracy": 0.9212598425196851,
+        "examples": 127,
+        "lost_correct": 2,
+        "recovered_correct": 2,
+        "variant_accuracy": 0.9212598425196851
+      },
+      "task_route": {
+        "assignments": [
+          {
+            "budget": 4,
+            "capability": "object",
+            "route_type": "task_specific"
+          }
+        ],
+        "name": "route-008-k04",
+        "phase2_name": "task-object",
+        "route_type": "task_specific",
+        "skip_vision_blocks": [
+          2,
+          9,
+          10,
+          30
+        ],
+        "target_capability": "object"
+      }
+    },
+    {
+      "baseline_accuracy": 0.7793103448275862,
+      "capability": "ocr",
+      "examples": 145,
+      "generic_identity": {
+        "accuracy_drop_pp": 11.724137931034484,
+        "baseline_accuracy": 0.7793103448275862,
+        "examples": 145,
+        "lost_correct": 22,
+        "recovered_correct": 5,
+        "variant_accuracy": 0.6620689655172414
+      },
+      "generic_route": {
+        "assignments": [
+          {
+            "budget": 4,
+            "capability": null,
+            "route_type": "generic_macro"
+          }
+        ],
+        "name": "route-020-k04",
+        "phase2_name": "generic",
+        "route_type": "generic_macro",
+        "skip_vision_blocks": [
+          9,
+          24,
+          25,
+          28
+        ],
+        "target_capability": null
+      },
+      "ranks": {
+        "128": {
+          "generic_repaired": {
+            "accuracy_drop_pp": 10.344827586206895,
+            "baseline_accuracy": 0.7793103448275862,
+            "examples": 145,
+            "lost_correct": 19,
+            "recovered_correct": 4,
+            "variant_accuracy": 0.6758620689655173
+          },
+          "task_repair_vs_identity": {
+            "advantage_pp": -1.3793103448275863,
+            "ci95_pp": [
+              -5.517241379310345,
+              2.7586206896551726
+            ]
+          },
+          "task_repaired": {
+            "accuracy_drop_pp": 6.206896551724139,
+            "baseline_accuracy": 0.7793103448275862,
+            "examples": 145,
+            "lost_correct": 14,
+            "recovered_correct": 5,
+            "variant_accuracy": 0.7172413793103448
+          },
+          "task_vs_generic_repaired": {
+            "advantage_pp": 4.137931034482759,
+            "ci95_pp": [
+              -2.0689655172413794,
+              10.344827586206897
+            ]
+          }
+        },
+        "32": {
+          "generic_repaired": {
+            "accuracy_drop_pp": 11.724137931034484,
+            "baseline_accuracy": 0.7793103448275862,
+            "examples": 145,
+            "lost_correct": 22,
+            "recovered_correct": 5,
+            "variant_accuracy": 0.6620689655172414
+          },
+          "task_repair_vs_identity": {
+            "advantage_pp": 0.6896551724137931,
+            "ci95_pp": [
+              -2.7586206896551726,
+              4.137931034482759
+            ]
+          },
+          "task_repaired": {
+            "accuracy_drop_pp": 4.137931034482756,
+            "baseline_accuracy": 0.7793103448275862,
+            "examples": 145,
+            "lost_correct": 11,
+            "recovered_correct": 5,
+            "variant_accuracy": 0.7379310344827587
+          },
+          "task_vs_generic_repaired": {
+            "advantage_pp": 7.586206896551724,
+            "ci95_pp": [
+              1.3793103448275863,
+              13.793103448275861
+            ]
+          }
+        },
+        "8": {
+          "generic_repaired": {
+            "accuracy_drop_pp": 11.724137931034484,
+            "baseline_accuracy": 0.7793103448275862,
+            "examples": 145,
+            "lost_correct": 22,
+            "recovered_correct": 5,
+            "variant_accuracy": 0.6620689655172414
+          },
+          "task_repair_vs_identity": {
+            "advantage_pp": 0.0,
+            "ci95_pp": [
+              -3.4482758620689653,
+              3.4482758620689653
+            ]
+          },
+          "task_repaired": {
+            "accuracy_drop_pp": 4.82758620689655,
+            "baseline_accuracy": 0.7793103448275862,
+            "examples": 145,
+            "lost_correct": 12,
+            "recovered_correct": 5,
+            "variant_accuracy": 0.7310344827586207
+          },
+          "task_vs_generic_repaired": {
+            "advantage_pp": 6.896551724137931,
+            "ci95_pp": [
+              0.6896551724137931,
+              13.10344827586207
+            ]
+          }
+        }
+      },
+      "task_identity": {
+        "accuracy_drop_pp": 4.82758620689655,
+        "baseline_accuracy": 0.7793103448275862,
+        "examples": 145,
+        "lost_correct": 11,
+        "recovered_correct": 4,
+        "variant_accuracy": 0.7310344827586207
+      },
+      "task_route": {
+        "assignments": [
+          {
+            "budget": 4,
+            "capability": "ocr",
+            "route_type": "task_specific"
+          }
+        ],
+        "name": "route-012-k04",
+        "phase2_name": "task-ocr",
+        "route_type": "task_specific",
+        "skip_vision_blocks": [
+          4,
+          5,
+          9,
+          28
+        ],
+        "target_capability": "ocr"
+      }
+    },
+    {
+      "baseline_accuracy": 0.8057553956834532,
+      "capability": "spatial",
+      "examples": 139,
+      "generic_identity": {
+        "accuracy_drop_pp": 7.194244604316546,
+        "baseline_accuracy": 0.8057553956834532,
+        "examples": 139,
+        "lost_correct": 11,
+        "recovered_correct": 1,
+        "variant_accuracy": 0.7338129496402878
+      },
+      "generic_route": {
+        "assignments": [
+          {
+            "budget": 4,
+            "capability": null,
+            "route_type": "generic_macro"
+          }
+        ],
+        "name": "route-020-k04",
+        "phase2_name": "generic",
+        "route_type": "generic_macro",
+        "skip_vision_blocks": [
+          9,
+          24,
+          25,
+          28
+        ],
+        "target_capability": null
+      },
+      "ranks": {
+        "128": {
+          "generic_repaired": {
+            "accuracy_drop_pp": 2.1582733812949617,
+            "baseline_accuracy": 0.8057553956834532,
+            "examples": 139,
+            "lost_correct": 6,
+            "recovered_correct": 3,
+            "variant_accuracy": 0.7841726618705036
+          },
+          "task_repair_vs_identity": {
+            "advantage_pp": -2.158273381294964,
+            "ci95_pp": [
+              -6.474820143884892,
+              2.158273381294964
+            ]
+          },
+          "task_repaired": {
+            "accuracy_drop_pp": 6.474820143884896,
+            "baseline_accuracy": 0.8057553956834532,
+            "examples": 139,
+            "lost_correct": 13,
+            "recovered_correct": 4,
+            "variant_accuracy": 0.7410071942446043
+          },
+          "task_vs_generic_repaired": {
+            "advantage_pp": -4.316546762589928,
+            "ci95_pp": [
+              -9.352517985611511,
+              0.7194244604316548
+            ]
+          }
+        },
+        "32": {
+          "generic_repaired": {
+            "accuracy_drop_pp": 3.597122302158273,
+            "baseline_accuracy": 0.8057553956834532,
+            "examples": 139,
+            "lost_correct": 9,
+            "recovered_correct": 4,
+            "variant_accuracy": 0.7697841726618705
+          },
+          "task_repair_vs_identity": {
+            "advantage_pp": -2.158273381294964,
+            "ci95_pp": [
+              -5.755395683453238,
+              1.4388489208633095
+            ]
+          },
+          "task_repaired": {
+            "accuracy_drop_pp": 6.474820143884896,
+            "baseline_accuracy": 0.8057553956834532,
+            "examples": 139,
+            "lost_correct": 13,
+            "recovered_correct": 4,
+            "variant_accuracy": 0.7410071942446043
+          },
+          "task_vs_generic_repaired": {
+            "advantage_pp": -2.877697841726619,
+            "ci95_pp": [
+              -8.633093525179856,
+              2.877697841726619
+            ]
+          }
+        },
+        "8": {
+          "generic_repaired": {
+            "accuracy_drop_pp": 4.316546762589923,
+            "baseline_accuracy": 0.8057553956834532,
+            "examples": 139,
+            "lost_correct": 9,
+            "recovered_correct": 3,
+            "variant_accuracy": 0.762589928057554
+          },
+          "task_repair_vs_identity": {
+            "advantage_pp": -2.158273381294964,
+            "ci95_pp": [
+              -5.755395683453238,
+              1.4388489208633095
+            ]
+          },
+          "task_repaired": {
+            "accuracy_drop_pp": 6.474820143884896,
+            "baseline_accuracy": 0.8057553956834532,
+            "examples": 139,
+            "lost_correct": 13,
+            "recovered_correct": 4,
+            "variant_accuracy": 0.7410071942446043
+          },
+          "task_vs_generic_repaired": {
+            "advantage_pp": -2.158273381294964,
+            "ci95_pp": [
+              -7.913669064748201,
+              3.597122302158273
+            ]
+          }
+        }
+      },
+      "task_identity": {
+        "accuracy_drop_pp": 4.316546762589923,
+        "baseline_accuracy": 0.8057553956834532,
+        "examples": 139,
+        "lost_correct": 9,
+        "recovered_correct": 3,
+        "variant_accuracy": 0.762589928057554
+      },
+      "task_route": {
+        "assignments": [
+          {
+            "budget": 4,
+            "capability": "spatial",
+            "route_type": "task_specific"
+          }
+        ],
+        "name": "route-016-k04",
+        "phase2_name": "task-spatial",
+        "route_type": "task_specific",
+        "skip_vision_blocks": [
+          3,
+          16,
+          22,
+          29
+        ],
+        "target_capability": "spatial"
+      }
+    }
+  ],
+  "status": "development-set mechanism experiment; not held-out publication evidence"
+}
