@@ -1,0 +1,655 @@
+{
+  "baseline": {
+    "capability": {
+      "attribute": 0.9666666666666667
+    },
+    "overall": {
+      "overall": 0.9666666666666667
+    },
+    "source": {
+      "vqav2_color": 0.9666666666666667
+    }
+  },
+  "blocks": [
+    {
+      "accuracy": 0.7133333333333334,
+      "accuracy_drop": 0.2533333333333333,
+      "block": 0,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.7133333333333334
+        },
+        "overall": {
+          "overall": 0.7133333333333334
+        },
+        "source": {
+          "vqav2_color": 0.7133333333333334
+        }
+      },
+      "vision_latency_median_ms": 70.22300720214844,
+      "vision_speedup_vs_baseline": 1.0029779656615896
+    },
+    {
+      "accuracy": 0.9333333333333333,
+      "accuracy_drop": 0.033333333333333326,
+      "block": 1,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.9333333333333333
+        },
+        "overall": {
+          "overall": 0.9333333333333333
+        },
+        "source": {
+          "vqav2_color": 0.9333333333333333
+        }
+      },
+      "vision_latency_median_ms": 69.35552215576172,
+      "vision_speedup_vs_baseline": 1.0155230141310216
+    },
+    {
+      "accuracy": 0.95,
+      "accuracy_drop": 0.01666666666666672,
+      "block": 2,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.95
+        },
+        "overall": {
+          "overall": 0.95
+        },
+        "source": {
+          "vqav2_color": 0.95
+        }
+      },
+      "vision_latency_median_ms": 80.1744613647461,
+      "vision_speedup_vs_baseline": 0.8784858383497673
+    },
+    {
+      "accuracy": 0.9566666666666667,
+      "accuracy_drop": 0.010000000000000009,
+      "block": 3,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.9566666666666667
+        },
+        "overall": {
+          "overall": 0.9566666666666667
+        },
+        "source": {
+          "vqav2_color": 0.9566666666666667
+        }
+      },
+      "vision_latency_median_ms": 80.0629768371582,
+      "vision_speedup_vs_baseline": 0.8797090951227483
+    },
+    {
+      "accuracy": 0.96,
+      "accuracy_drop": 0.00666666666666671,
+      "block": 4,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.96
+        },
+        "overall": {
+          "overall": 0.96
+        },
+        "source": {
+          "vqav2_color": 0.96
+        }
+      },
+      "vision_latency_median_ms": 79.7863998413086,
+      "vision_speedup_vs_baseline": 0.8827585784837542
+    },
+    {
+      "accuracy": 0.9633333333333334,
+      "accuracy_drop": 0.0033333333333332993,
+      "block": 5,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.9633333333333334
+        },
+        "overall": {
+          "overall": 0.9633333333333334
+        },
+        "source": {
+          "vqav2_color": 0.9633333333333334
+        }
+      },
+      "vision_latency_median_ms": 79.83216094970703,
+      "vision_speedup_vs_baseline": 0.8822525667396264
+    },
+    {
+      "accuracy": 0.9633333333333334,
+      "accuracy_drop": 0.0033333333333332993,
+      "block": 6,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.9633333333333334
+        },
+        "overall": {
+          "overall": 0.9633333333333334
+        },
+        "source": {
+          "vqav2_color": 0.9633333333333334
+        }
+      },
+      "vision_latency_median_ms": 71.08792114257812,
+      "vision_speedup_vs_baseline": 0.9907749132934577
+    },
+    {
+      "accuracy": 0.9566666666666667,
+      "accuracy_drop": 0.010000000000000009,
+      "block": 7,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.9566666666666667
+        },
+        "overall": {
+          "overall": 0.9566666666666667
+        },
+        "source": {
+          "vqav2_color": 0.9566666666666667
+        }
+      },
+      "vision_latency_median_ms": 80.12841796875,
+      "vision_speedup_vs_baseline": 0.8789906339311286
+    },
+    {
+      "accuracy": 0.97,
+      "accuracy_drop": -0.0033333333333332993,
+      "block": 8,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.97
+        },
+        "overall": {
+          "overall": 0.97
+        },
+        "source": {
+          "vqav2_color": 0.97
+        }
+      },
+      "vision_latency_median_ms": 69.12262344360352,
+      "vision_speedup_vs_baseline": 1.0189446724879432
+    },
+    {
+      "accuracy": 0.97,
+      "accuracy_drop": -0.0033333333333332993,
+      "block": 9,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.97
+        },
+        "overall": {
+          "overall": 0.97
+        },
+        "source": {
+          "vqav2_color": 0.97
+        }
+      },
+      "vision_latency_median_ms": 69.09750366210938,
+      "vision_speedup_vs_baseline": 1.019315100740354
+    },
+    {
+      "accuracy": 0.9633333333333334,
+      "accuracy_drop": 0.0033333333333332993,
+      "block": 10,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.9633333333333334
+        },
+        "overall": {
+          "overall": 0.9633333333333334
+        },
+        "source": {
+          "vqav2_color": 0.9633333333333334
+        }
+      },
+      "vision_latency_median_ms": 73.21395111083984,
+      "vision_speedup_vs_baseline": 0.9620042059964993
+    },
+    {
+      "accuracy": 0.9633333333333334,
+      "accuracy_drop": 0.0033333333333332993,
+      "block": 11,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.9633333333333334
+        },
+        "overall": {
+          "overall": 0.9633333333333334
+        },
+        "source": {
+          "vqav2_color": 0.9633333333333334
+        }
+      },
+      "vision_latency_median_ms": 70.34479904174805,
+      "vision_speedup_vs_baseline": 1.0012414544599115
+    },
+    {
+      "accuracy": 0.9533333333333334,
+      "accuracy_drop": 0.013333333333333308,
+      "block": 12,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.9533333333333334
+        },
+        "overall": {
+          "overall": 0.9533333333333334
+        },
+        "source": {
+          "vqav2_color": 0.9533333333333334
+        }
+      },
+      "vision_latency_median_ms": 69.57782363891602,
+      "vision_speedup_vs_baseline": 1.0122784131876204
+    },
+    {
+      "accuracy": 0.9566666666666667,
+      "accuracy_drop": 0.010000000000000009,
+      "block": 13,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.9566666666666667
+        },
+        "overall": {
+          "overall": 0.9566666666666667
+        },
+        "source": {
+          "vqav2_color": 0.9566666666666667
+        }
+      },
+      "vision_latency_median_ms": 71.49380874633789,
+      "vision_speedup_vs_baseline": 0.9851500450360008
+    },
+    {
+      "accuracy": 0.9533333333333334,
+      "accuracy_drop": 0.013333333333333308,
+      "block": 14,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.9533333333333334
+        },
+        "overall": {
+          "overall": 0.9533333333333334
+        },
+        "source": {
+          "vqav2_color": 0.9533333333333334
+        }
+      },
+      "vision_latency_median_ms": 78.53443145751953,
+      "vision_speedup_vs_baseline": 0.8968312063779033
+    },
+    {
+      "accuracy": 0.9333333333333333,
+      "accuracy_drop": 0.033333333333333326,
+      "block": 15,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.9333333333333333
+        },
+        "overall": {
+          "overall": 0.9333333333333333
+        },
+        "source": {
+          "vqav2_color": 0.9333333333333333
+        }
+      },
+      "vision_latency_median_ms": 75.21790313720703,
+      "vision_speedup_vs_baseline": 0.9363745327727739
+    },
+    {
+      "accuracy": 0.9633333333333334,
+      "accuracy_drop": 0.0033333333333332993,
+      "block": 16,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.9633333333333334
+        },
+        "overall": {
+          "overall": 0.9633333333333334
+        },
+        "source": {
+          "vqav2_color": 0.9633333333333334
+        }
+      },
+      "vision_latency_median_ms": 69.82281494140625,
+      "vision_speedup_vs_baseline": 1.0087265740482545
+    },
+    {
+      "accuracy": 0.9533333333333334,
+      "accuracy_drop": 0.013333333333333308,
+      "block": 17,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.9533333333333334
+        },
+        "overall": {
+          "overall": 0.9533333333333334
+        },
+        "source": {
+          "vqav2_color": 0.9533333333333334
+        }
+      },
+      "vision_latency_median_ms": 79.82854461669922,
+      "vision_speedup_vs_baseline": 0.8822925338853842
+    },
+    {
+      "accuracy": 0.9633333333333334,
+      "accuracy_drop": 0.0033333333333332993,
+      "block": 18,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.9633333333333334
+        },
+        "overall": {
+          "overall": 0.9633333333333334
+        },
+        "source": {
+          "vqav2_color": 0.9633333333333334
+        }
+      },
+      "vision_latency_median_ms": 77.55678176879883,
+      "vision_speedup_vs_baseline": 0.9081363009132093
+    },
+    {
+      "accuracy": 0.9533333333333334,
+      "accuracy_drop": 0.013333333333333308,
+      "block": 19,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.9533333333333334
+        },
+        "overall": {
+          "overall": 0.9533333333333334
+        },
+        "source": {
+          "vqav2_color": 0.9533333333333334
+        }
+      },
+      "vision_latency_median_ms": 71.12704086303711,
+      "vision_speedup_vs_baseline": 0.9902299892086719
+    },
+    {
+      "accuracy": 0.9733333333333334,
+      "accuracy_drop": -0.00666666666666671,
+      "block": 20,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.9733333333333334
+        },
+        "overall": {
+          "overall": 0.9733333333333334
+        },
+        "source": {
+          "vqav2_color": 0.9733333333333334
+        }
+      },
+      "vision_latency_median_ms": 70.00276947021484,
+      "vision_speedup_vs_baseline": 1.0061334635655785
+    },
+    {
+      "accuracy": 0.96,
+      "accuracy_drop": 0.00666666666666671,
+      "block": 21,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.96
+        },
+        "overall": {
+          "overall": 0.96
+        },
+        "source": {
+          "vqav2_color": 0.96
+        }
+      },
+      "vision_latency_median_ms": 69.38922882080078,
+      "vision_speedup_vs_baseline": 1.0150297114288809
+    },
+    {
+      "accuracy": 0.9666666666666667,
+      "accuracy_drop": 0.0,
+      "block": 22,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.9666666666666667
+        },
+        "overall": {
+          "overall": 0.9666666666666667
+        },
+        "source": {
+          "vqav2_color": 0.9666666666666667
+        }
+      },
+      "vision_latency_median_ms": 77.52027130126953,
+      "vision_speedup_vs_baseline": 0.9085640145985473
+    },
+    {
+      "accuracy": 0.9633333333333334,
+      "accuracy_drop": 0.0033333333333332993,
+      "block": 23,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.9633333333333334
+        },
+        "overall": {
+          "overall": 0.9633333333333334
+        },
+        "source": {
+          "vqav2_color": 0.9633333333333334
+        }
+      },
+      "vision_latency_median_ms": 72.15253067016602,
+      "vision_speedup_vs_baseline": 0.9761560440370337
+    },
+    {
+      "accuracy": 0.9633333333333334,
+      "accuracy_drop": 0.0033333333333332993,
+      "block": 24,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.9633333333333334
+        },
+        "overall": {
+          "overall": 0.9633333333333334
+        },
+        "source": {
+          "vqav2_color": 0.9633333333333334
+        }
+      },
+      "vision_latency_median_ms": 69.30310440063477,
+      "vision_speedup_vs_baseline": 1.0162911101224044
+    },
+    {
+      "accuracy": 0.9666666666666667,
+      "accuracy_drop": 0.0,
+      "block": 25,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.9666666666666667
+        },
+        "overall": {
+          "overall": 0.9666666666666667
+        },
+        "source": {
+          "vqav2_color": 0.9666666666666667
+        }
+      },
+      "vision_latency_median_ms": 69.37126159667969,
+      "vision_speedup_vs_baseline": 1.0152926051098528
+    },
+    {
+      "accuracy": 0.96,
+      "accuracy_drop": 0.00666666666666671,
+      "block": 26,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.96
+        },
+        "overall": {
+          "overall": 0.96
+        },
+        "source": {
+          "vqav2_color": 0.96
+        }
+      },
+      "vision_latency_median_ms": 68.9361572265625,
+      "vision_speedup_vs_baseline": 1.0217008278365576
+    },
+    {
+      "accuracy": 0.96,
+      "accuracy_drop": 0.00666666666666671,
+      "block": 27,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.96
+        },
+        "overall": {
+          "overall": 0.96
+        },
+        "source": {
+          "vqav2_color": 0.96
+        }
+      },
+      "vision_latency_median_ms": 69.6780014038086,
+      "vision_speedup_vs_baseline": 1.0108230357824268
+    },
+    {
+      "accuracy": 0.9566666666666667,
+      "accuracy_drop": 0.010000000000000009,
+      "block": 28,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.9566666666666667
+        },
+        "overall": {
+          "overall": 0.9566666666666667
+        },
+        "source": {
+          "vqav2_color": 0.9566666666666667
+        }
+      },
+      "vision_latency_median_ms": 78.76513290405273,
+      "vision_speedup_vs_baseline": 0.8942044063081372
+    },
+    {
+      "accuracy": 0.94,
+      "accuracy_drop": 0.026666666666666727,
+      "block": 29,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.94
+        },
+        "overall": {
+          "overall": 0.94
+        },
+        "source": {
+          "vqav2_color": 0.94
+        }
+      },
+      "vision_latency_median_ms": 73.89447784423828,
+      "vision_speedup_vs_baseline": 0.9531446863284352
+    },
+    {
+      "accuracy": 0.95,
+      "accuracy_drop": 0.01666666666666672,
+      "block": 30,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.95
+        },
+        "overall": {
+          "overall": 0.95
+        },
+        "source": {
+          "vqav2_color": 0.95
+        }
+      },
+      "vision_latency_median_ms": 80.08766174316406,
+      "vision_speedup_vs_baseline": 0.8794379480340089
+    },
+    {
+      "accuracy": 0.9433333333333334,
+      "accuracy_drop": 0.023333333333333317,
+      "block": 31,
+      "examples": 300,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "groups": {
+        "capability": {
+          "attribute": 0.9433333333333334
+        },
+        "overall": {
+          "overall": 0.9433333333333334
+        },
+        "source": {
+          "vqav2_color": 0.9433333333333334
+        }
+      },
+      "vision_latency_median_ms": 75.67776107788086,
+      "vision_speedup_vs_baseline": 0.9306846278627017
+    }
+  ]
+}

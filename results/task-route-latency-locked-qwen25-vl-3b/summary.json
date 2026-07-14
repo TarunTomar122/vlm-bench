@@ -1,0 +1,1217 @@
+{
+  "baseline_total_median_ms": 202.17743000102928,
+  "baseline_trials": [
+    {
+      "assignments": [],
+      "examples_per_repeat": 50,
+      "kind": "baseline",
+      "name": "baseline-start",
+      "parameters": {
+        "active_model": 3754622976,
+        "active_vision": 668684288,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 0,
+        "removed_vision": 0,
+        "skipped_vision_blocks": []
+      },
+      "per_repeat": [
+        {
+          "total_median_ms": 200.93358300073305,
+          "vision_encoder_median_ms": 71.87353515625
+        },
+        {
+          "total_median_ms": 200.86338249529945,
+          "vision_encoder_median_ms": 71.68192291259766
+        },
+        {
+          "total_median_ms": 203.05186399491504,
+          "vision_encoder_median_ms": 72.18215942382812
+        },
+        {
+          "total_median_ms": 209.59454000694677,
+          "vision_encoder_median_ms": 72.56161499023438
+        },
+        {
+          "total_median_ms": 200.65427650115453,
+          "vision_encoder_median_ms": 71.69232177734375
+        }
+      ],
+      "repeats": 5,
+      "skip_vision_blocks": []
+    },
+    {
+      "assignments": [],
+      "examples_per_repeat": 50,
+      "kind": "baseline",
+      "name": "baseline-middle",
+      "parameters": {
+        "active_model": 3754622976,
+        "active_vision": 668684288,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 0,
+        "removed_vision": 0,
+        "skipped_vision_blocks": []
+      },
+      "per_repeat": [
+        {
+          "total_median_ms": 200.36606500070775,
+          "vision_encoder_median_ms": 71.77718353271484
+        },
+        {
+          "total_median_ms": 202.17743000102928,
+          "vision_encoder_median_ms": 72.15436935424805
+        },
+        {
+          "total_median_ms": 200.4464374986128,
+          "vision_encoder_median_ms": 71.6299819946289
+        },
+        {
+          "total_median_ms": 197.80785499460762,
+          "vision_encoder_median_ms": 71.31697463989258
+        },
+        {
+          "total_median_ms": 199.66589549585478,
+          "vision_encoder_median_ms": 71.6533088684082
+        }
+      ],
+      "repeats": 5,
+      "skip_vision_blocks": []
+    },
+    {
+      "assignments": [],
+      "examples_per_repeat": 50,
+      "kind": "baseline",
+      "name": "baseline-end",
+      "parameters": {
+        "active_model": 3754622976,
+        "active_vision": 668684288,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 0,
+        "removed_vision": 0,
+        "skipped_vision_blocks": []
+      },
+      "per_repeat": [
+        {
+          "total_median_ms": 224.57395149103831,
+          "vision_encoder_median_ms": 79.19715118408203
+        },
+        {
+          "total_median_ms": 212.29013700212818,
+          "vision_encoder_median_ms": 73.97222518920898
+        },
+        {
+          "total_median_ms": 213.5152190021472,
+          "vision_encoder_median_ms": 74.40383911132812
+        },
+        {
+          "total_median_ms": 231.3134030046058,
+          "vision_encoder_median_ms": 80.73612594604492
+        },
+        {
+          "total_median_ms": 225.85647500091,
+          "vision_encoder_median_ms": 80.42742538452148
+        }
+      ],
+      "repeats": 5,
+      "skip_vision_blocks": []
+    }
+  ],
+  "baseline_vision_encoder_median_ms": 72.15436935424805,
+  "example_ids": [
+    "mme/color/000000008277.jpg-934",
+    "mme/color/000000008277.jpg-935",
+    "mme/color/000000012120.jpg-968",
+    "mme/color/000000012120.jpg-969",
+    "mme/color/000000014831.jpg-928",
+    "mme/color/000000014831.jpg-929",
+    "mme/color/000000029393.jpg-976",
+    "mme/color/000000029393.jpg-977",
+    "mme/color/000000038118.jpg-926",
+    "mme/color/000000038118.jpg-927",
+    "mme/count/000000006040.jpg-900",
+    "mme/count/000000006040.jpg-901",
+    "mme/count/000000071226.jpg-904",
+    "mme/count/000000071226.jpg-905",
+    "mme/count/000000097994.jpg-876",
+    "mme/count/000000097994.jpg-877",
+    "mme/count/000000274066.jpg-908",
+    "mme/count/000000274066.jpg-909",
+    "mme/count/000000335954.jpg-884",
+    "mme/count/000000335954.jpg-885",
+    "mme/existence/000000006040.jpg-2052",
+    "mme/existence/000000006040.jpg-2053",
+    "mme/existence/000000007816.jpg-2064",
+    "mme/existence/000000007816.jpg-2065",
+    "mme/existence/000000007977.jpg-2032",
+    "mme/existence/000000007977.jpg-2033",
+    "mme/existence/000000010363.jpg-2038",
+    "mme/existence/000000010363.jpg-2039",
+    "mme/existence/000000015517.jpg-2022",
+    "mme/existence/000000015517.jpg-2023",
+    "mme/OCR/0004.jpg-1212",
+    "mme/OCR/0004.jpg-1213",
+    "mme/OCR/0007.jpg-1190",
+    "mme/OCR/0007.jpg-1191",
+    "mme/OCR/0008.jpg-1214",
+    "mme/OCR/0008.jpg-1215",
+    "mme/OCR/0009.jpg-1186",
+    "mme/OCR/0009.jpg-1187",
+    "mme/OCR/0011.jpg-1210",
+    "mme/OCR/0011.jpg-1211",
+    "mme/position/000000014038.jpg-1132",
+    "mme/position/000000014038.jpg-1133",
+    "mme/position/000000031248.jpg-1148",
+    "mme/position/000000031248.jpg-1149",
+    "mme/position/000000056127.jpg-1176",
+    "mme/position/000000056127.jpg-1177",
+    "mme/position/000000062025.jpg-1162",
+    "mme/position/000000062025.jpg-1163",
+    "mme/position/000000062808.jpg-1156",
+    "mme/position/000000062808.jpg-1157"
+  ],
+  "method": "Three baseline measurements bracket randomized routes; 20 warmups per model.",
+  "routes": [
+    {
+      "assignments": [
+        {
+          "budget": 4,
+          "capability": null,
+          "repeat": 0,
+          "route_type": "random",
+          "seed": 20261114
+        }
+      ],
+      "examples_per_repeat": 50,
+      "kind": "route",
+      "name": "route-022-k04",
+      "parameters": {
+        "active_model": 3675814176,
+        "active_vision": 589875488,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 78808800,
+        "removed_vision": 78808800,
+        "skipped_vision_blocks": [
+          4,
+          8,
+          15,
+          30
+        ]
+      },
+      "per_repeat": [
+        {
+          "total_median_ms": 197.07801150070736,
+          "vision_encoder_median_ms": 67.6490707397461
+        },
+        {
+          "total_median_ms": 196.79303500015521,
+          "vision_encoder_median_ms": 67.57524871826172
+        },
+        {
+          "total_median_ms": 201.28813399060164,
+          "vision_encoder_median_ms": 69.20959854125977
+        },
+        {
+          "total_median_ms": 196.410497497709,
+          "vision_encoder_median_ms": 67.39502334594727
+        },
+        {
+          "total_median_ms": 195.74877648847178,
+          "vision_encoder_median_ms": 67.46060562133789
+        }
+      ],
+      "repeats": 5,
+      "skip_vision_blocks": [
+        4,
+        8,
+        15,
+        30
+      ],
+      "total_median_ms": 196.79303500015521,
+      "total_speedup_percent": 2.736069902509408,
+      "vision_encoder_median_ms": 67.57524871826172,
+      "vision_speedup_percent": 6.776328201288373
+    },
+    {
+      "assignments": [
+        {
+          "budget": 4,
+          "capability": null,
+          "route_type": "contiguous_macro",
+          "start_block": 25
+        }
+      ],
+      "examples_per_repeat": 50,
+      "kind": "route",
+      "name": "route-021-k04",
+      "parameters": {
+        "active_model": 3675814176,
+        "active_vision": 589875488,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 78808800,
+        "removed_vision": 78808800,
+        "skipped_vision_blocks": [
+          25,
+          26,
+          27,
+          28
+        ]
+      },
+      "per_repeat": [
+        {
+          "total_median_ms": 194.78060949768405,
+          "vision_encoder_median_ms": 66.95684814453125
+        },
+        {
+          "total_median_ms": 195.70166549965506,
+          "vision_encoder_median_ms": 67.16966247558594
+        },
+        {
+          "total_median_ms": 195.49372099572793,
+          "vision_encoder_median_ms": 67.08731460571289
+        },
+        {
+          "total_median_ms": 194.22557100187987,
+          "vision_encoder_median_ms": 67.04690933227539
+        },
+        {
+          "total_median_ms": 195.79543499276042,
+          "vision_encoder_median_ms": 67.52716827392578
+        }
+      ],
+      "repeats": 5,
+      "skip_vision_blocks": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "total_median_ms": 195.49372099572793,
+      "total_speedup_percent": 3.418886791482878,
+      "vision_encoder_median_ms": 67.08731460571289,
+      "vision_speedup_percent": 7.552925285973022
+    },
+    {
+      "assignments": [
+        {
+          "budget": 4,
+          "capability": "ocr",
+          "route_type": "task_specific"
+        }
+      ],
+      "examples_per_repeat": 50,
+      "kind": "route",
+      "name": "route-012-k04",
+      "parameters": {
+        "active_model": 3675814176,
+        "active_vision": 589875488,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 78808800,
+        "removed_vision": 78808800,
+        "skipped_vision_blocks": [
+          4,
+          5,
+          9,
+          28
+        ]
+      },
+      "per_repeat": [
+        {
+          "total_median_ms": 193.63711700134445,
+          "vision_encoder_median_ms": 67.25683212280273
+        },
+        {
+          "total_median_ms": 193.09698500001105,
+          "vision_encoder_median_ms": 66.87384033203125
+        },
+        {
+          "total_median_ms": 194.23936249950202,
+          "vision_encoder_median_ms": 67.56978988647461
+        },
+        {
+          "total_median_ms": 193.3169434996671,
+          "vision_encoder_median_ms": 67.21521377563477
+        },
+        {
+          "total_median_ms": 194.40325050527463,
+          "vision_encoder_median_ms": 67.29627227783203
+        }
+      ],
+      "repeats": 5,
+      "skip_vision_blocks": [
+        4,
+        5,
+        9,
+        28
+      ],
+      "total_median_ms": 193.63711700134445,
+      "total_speedup_percent": 4.410473122064462,
+      "vision_encoder_median_ms": 67.25683212280273,
+      "vision_speedup_percent": 7.28184346016032
+    },
+    {
+      "assignments": [
+        {
+          "budget": 4,
+          "capability": null,
+          "repeat": 1,
+          "route_type": "random",
+          "seed": 20261115
+        }
+      ],
+      "examples_per_repeat": 50,
+      "kind": "route",
+      "name": "route-023-k04",
+      "parameters": {
+        "active_model": 3675814176,
+        "active_vision": 589875488,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 78808800,
+        "removed_vision": 78808800,
+        "skipped_vision_blocks": [
+          1,
+          10,
+          19,
+          30
+        ]
+      },
+      "per_repeat": [
+        {
+          "total_median_ms": 196.7094339997857,
+          "vision_encoder_median_ms": 67.44168090820312
+        },
+        {
+          "total_median_ms": 197.17789800779428,
+          "vision_encoder_median_ms": 67.36852645874023
+        },
+        {
+          "total_median_ms": 196.8139219970908,
+          "vision_encoder_median_ms": 67.42612838745117
+        },
+        {
+          "total_median_ms": 197.0705990024726,
+          "vision_encoder_median_ms": 67.56763076782227
+        },
+        {
+          "total_median_ms": 196.66953850537539,
+          "vision_encoder_median_ms": 67.3775520324707
+        }
+      ],
+      "repeats": 5,
+      "skip_vision_blocks": [
+        1,
+        10,
+        19,
+        30
+      ],
+      "total_median_ms": 196.8139219970908,
+      "total_speedup_percent": 2.7251669747314633,
+      "vision_encoder_median_ms": 67.42612838745117,
+      "vision_speedup_percent": 7.012475845605359
+    },
+    {
+      "assignments": [
+        {
+          "budget": 4,
+          "capability": "object",
+          "route_type": "task_specific"
+        }
+      ],
+      "examples_per_repeat": 50,
+      "kind": "route",
+      "name": "route-008-k04",
+      "parameters": {
+        "active_model": 3675814176,
+        "active_vision": 589875488,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 78808800,
+        "removed_vision": 78808800,
+        "skipped_vision_blocks": [
+          2,
+          9,
+          10,
+          30
+        ]
+      },
+      "per_repeat": [
+        {
+          "total_median_ms": 224.37558700039517,
+          "vision_encoder_median_ms": 76.63209915161133
+        },
+        {
+          "total_median_ms": 196.97127799736336,
+          "vision_encoder_median_ms": 67.56097412109375
+        },
+        {
+          "total_median_ms": 197.91712900041603,
+          "vision_encoder_median_ms": 67.77134704589844
+        },
+        {
+          "total_median_ms": 199.0624910031329,
+          "vision_encoder_median_ms": 67.8901138305664
+        },
+        {
+          "total_median_ms": 196.1313864958356,
+          "vision_encoder_median_ms": 67.72521591186523
+        }
+      ],
+      "repeats": 5,
+      "skip_vision_blocks": [
+        2,
+        9,
+        10,
+        30
+      ],
+      "total_median_ms": 197.91712900041603,
+      "total_speedup_percent": 2.1525681087483317,
+      "vision_encoder_median_ms": 67.77134704589844,
+      "vision_speedup_percent": 6.467367847035987
+    },
+    {
+      "assignments": [
+        {
+          "budget": 4,
+          "capability": "attribute",
+          "route_type": "task_specific"
+        }
+      ],
+      "examples_per_repeat": 50,
+      "kind": "route",
+      "name": "route-000-k04",
+      "parameters": {
+        "active_model": 3675814176,
+        "active_vision": 589875488,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 78808800,
+        "removed_vision": 78808800,
+        "skipped_vision_blocks": [
+          8,
+          9,
+          20,
+          25
+        ]
+      },
+      "per_repeat": [
+        {
+          "total_median_ms": 198.19304900011048,
+          "vision_encoder_median_ms": 67.54869079589844
+        },
+        {
+          "total_median_ms": 198.57850200060057,
+          "vision_encoder_median_ms": 67.52153396606445
+        },
+        {
+          "total_median_ms": 195.70249350363156,
+          "vision_encoder_median_ms": 67.01932907104492
+        },
+        {
+          "total_median_ms": 196.53945249592653,
+          "vision_encoder_median_ms": 67.72480010986328
+        },
+        {
+          "total_median_ms": 194.94418000249425,
+          "vision_encoder_median_ms": 67.08992004394531
+        }
+      ],
+      "repeats": 5,
+      "skip_vision_blocks": [
+        8,
+        9,
+        20,
+        25
+      ],
+      "total_median_ms": 196.53945249592653,
+      "total_speedup_percent": 2.8686237971582873,
+      "vision_encoder_median_ms": 67.52153396606445,
+      "vision_speedup_percent": 6.861270939893038
+    },
+    {
+      "assignments": [
+        {
+          "budget": 4,
+          "capability": null,
+          "route_type": "generic_macro"
+        }
+      ],
+      "examples_per_repeat": 50,
+      "kind": "route",
+      "name": "route-020-k04",
+      "parameters": {
+        "active_model": 3675814176,
+        "active_vision": 589875488,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 78808800,
+        "removed_vision": 78808800,
+        "skipped_vision_blocks": [
+          9,
+          24,
+          25,
+          28
+        ]
+      },
+      "per_repeat": [
+        {
+          "total_median_ms": 198.98804250260582,
+          "vision_encoder_median_ms": 67.72083282470703
+        },
+        {
+          "total_median_ms": 194.62439099879703,
+          "vision_encoder_median_ms": 67.26856231689453
+        },
+        {
+          "total_median_ms": 195.94034850160824,
+          "vision_encoder_median_ms": 67.52139282226562
+        },
+        {
+          "total_median_ms": 220.07317000679905,
+          "vision_encoder_median_ms": 75.65785598754883
+        },
+        {
+          "total_median_ms": 196.90452500071842,
+          "vision_encoder_median_ms": 67.7232666015625
+        }
+      ],
+      "repeats": 5,
+      "skip_vision_blocks": [
+        9,
+        24,
+        25,
+        28
+      ],
+      "total_median_ms": 196.90452500071842,
+      "total_speedup_percent": 2.6778993526388684,
+      "vision_encoder_median_ms": 67.72083282470703,
+      "vision_speedup_percent": 6.546783825026292
+    },
+    {
+      "assignments": [
+        {
+          "budget": 4,
+          "capability": "spatial",
+          "route_type": "task_specific"
+        }
+      ],
+      "examples_per_repeat": 50,
+      "kind": "route",
+      "name": "route-016-k04",
+      "parameters": {
+        "active_model": 3675814176,
+        "active_vision": 589875488,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 78808800,
+        "removed_vision": 78808800,
+        "skipped_vision_blocks": [
+          3,
+          16,
+          22,
+          29
+        ]
+      },
+      "per_repeat": [
+        {
+          "total_median_ms": 198.65715499327052,
+          "vision_encoder_median_ms": 67.80415725708008
+        },
+        {
+          "total_median_ms": 203.4077155039995,
+          "vision_encoder_median_ms": 68.08036804199219
+        },
+        {
+          "total_median_ms": 197.80620700475993,
+          "vision_encoder_median_ms": 67.74014282226562
+        },
+        {
+          "total_median_ms": 196.84247750410577,
+          "vision_encoder_median_ms": 67.46684646606445
+        },
+        {
+          "total_median_ms": 213.65689549566014,
+          "vision_encoder_median_ms": 67.72463989257812
+        }
+      ],
+      "repeats": 5,
+      "skip_vision_blocks": [
+        3,
+        16,
+        22,
+        29
+      ],
+      "total_median_ms": 198.65715499327052,
+      "total_speedup_percent": 1.7720353479732553,
+      "vision_encoder_median_ms": 67.74014282226562,
+      "vision_speedup_percent": 6.516411610711126
+    },
+    {
+      "assignments": [
+        {
+          "budget": 4,
+          "capability": null,
+          "repeat": 2,
+          "route_type": "random",
+          "seed": 20261116
+        }
+      ],
+      "examples_per_repeat": 50,
+      "kind": "route",
+      "name": "route-024-k04",
+      "parameters": {
+        "active_model": 3675814176,
+        "active_vision": 589875488,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 78808800,
+        "removed_vision": 78808800,
+        "skipped_vision_blocks": [
+          13,
+          20,
+          21,
+          25
+        ]
+      },
+      "per_repeat": [
+        {
+          "total_median_ms": 224.38990799855674,
+          "vision_encoder_median_ms": 71.49147033691406
+        },
+        {
+          "total_median_ms": 236.58657749911072,
+          "vision_encoder_median_ms": 78.13779067993164
+        },
+        {
+          "total_median_ms": 204.88461799686775,
+          "vision_encoder_median_ms": 68.31672286987305
+        },
+        {
+          "total_median_ms": 195.6419994967291,
+          "vision_encoder_median_ms": 67.25234985351562
+        },
+        {
+          "total_median_ms": 195.54790449910797,
+          "vision_encoder_median_ms": 67.39108657836914
+        }
+      ],
+      "repeats": 5,
+      "skip_vision_blocks": [
+        13,
+        20,
+        21,
+        25
+      ],
+      "total_median_ms": 204.88461799686775,
+      "total_speedup_percent": -1.3213232024474664,
+      "vision_encoder_median_ms": 68.31672286987305,
+      "vision_speedup_percent": 5.617433511388992
+    },
+    {
+      "assignments": [
+        {
+          "budget": 4,
+          "capability": "counting",
+          "route_type": "task_specific"
+        }
+      ],
+      "examples_per_repeat": 50,
+      "kind": "route",
+      "name": "route-004-k04",
+      "parameters": {
+        "active_model": 3675814176,
+        "active_vision": 589875488,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 78808800,
+        "removed_vision": 78808800,
+        "skipped_vision_blocks": [
+          12,
+          24,
+          28,
+          30
+        ]
+      },
+      "per_repeat": [
+        {
+          "total_median_ms": 196.67881200439297,
+          "vision_encoder_median_ms": 67.57120132446289
+        },
+        {
+          "total_median_ms": 195.4563355029677,
+          "vision_encoder_median_ms": 67.03915023803711
+        },
+        {
+          "total_median_ms": 199.40993150521535,
+          "vision_encoder_median_ms": 67.35638427734375
+        },
+        {
+          "total_median_ms": 220.93622050306294,
+          "vision_encoder_median_ms": 75.23941040039062
+        },
+        {
+          "total_median_ms": 223.9248170008068,
+          "vision_encoder_median_ms": 76.3382568359375
+        }
+      ],
+      "repeats": 5,
+      "skip_vision_blocks": [
+        12,
+        24,
+        28,
+        30
+      ],
+      "total_median_ms": 199.40993150521535,
+      "total_speedup_percent": 1.3878438626019785,
+      "vision_encoder_median_ms": 67.57120132446289,
+      "vision_speedup_percent": 6.782723911889232
+    }
+  ]
+}

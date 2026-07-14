@@ -1,0 +1,6837 @@
+{
+  "baseline_latency": {
+    "examples_per_repeat": 100,
+    "parameters": {
+      "active_model": 3754622976,
+      "active_vision": 668684288,
+      "full_model": 3754622976,
+      "full_vision": 668684288,
+      "per_vision_block": {
+        "0": 19702200,
+        "1": 19702200,
+        "10": 19702200,
+        "11": 19702200,
+        "12": 19702200,
+        "13": 19702200,
+        "14": 19702200,
+        "15": 19702200,
+        "16": 19702200,
+        "17": 19702200,
+        "18": 19702200,
+        "19": 19702200,
+        "2": 19702200,
+        "20": 19702200,
+        "21": 19702200,
+        "22": 19702200,
+        "23": 19702200,
+        "24": 19702200,
+        "25": 19702200,
+        "26": 19702200,
+        "27": 19702200,
+        "28": 19702200,
+        "29": 19702200,
+        "3": 19702200,
+        "30": 19702200,
+        "31": 19702200,
+        "4": 19702200,
+        "5": 19702200,
+        "6": 19702200,
+        "7": 19702200,
+        "8": 19702200,
+        "9": 19702200
+      },
+      "removed_model": 0,
+      "removed_vision": 0,
+      "skipped_vision_blocks": []
+    },
+    "per_repeat": [
+      {
+        "total_median_ms": 223.81845050040283,
+        "vision_encoder_median_ms": 76.06286239624023
+      },
+      {
+        "total_median_ms": 233.1695925022359,
+        "vision_encoder_median_ms": 78.12115097045898
+      },
+      {
+        "total_median_ms": 223.30808299739147,
+        "vision_encoder_median_ms": 75.26092910766602
+      }
+    ],
+    "repeats": 3,
+    "total_median_ms": 223.81845050040283,
+    "vision_encoder_median_ms": 76.06286239624023
+  },
+  "latency_example_ids": [
+    "mme/color/000000008277.jpg-934",
+    "mme/color/000000008277.jpg-935",
+    "mme/color/000000012120.jpg-968",
+    "mme/color/000000012120.jpg-969",
+    "mme/color/000000014831.jpg-928",
+    "mme/color/000000014831.jpg-929",
+    "mme/color/000000029393.jpg-976",
+    "mme/color/000000029393.jpg-977",
+    "mme/color/000000038118.jpg-926",
+    "mme/color/000000038118.jpg-927",
+    "mme/color/000000053529.jpg-930",
+    "mme/color/000000053529.jpg-931",
+    "mme/color/000000061658.jpg-978",
+    "mme/color/000000061658.jpg-979",
+    "mme/color/000000405205.jpg-966",
+    "mme/color/000000405205.jpg-967",
+    "mme/color/000000410612.jpg-942",
+    "mme/color/000000410612.jpg-943",
+    "mme/color/000000427034.jpg-944",
+    "mme/color/000000427034.jpg-945",
+    "mme/count/000000006040.jpg-900",
+    "mme/count/000000006040.jpg-901",
+    "mme/count/000000071226.jpg-904",
+    "mme/count/000000071226.jpg-905",
+    "mme/count/000000097994.jpg-876",
+    "mme/count/000000097994.jpg-877",
+    "mme/count/000000274066.jpg-908",
+    "mme/count/000000274066.jpg-909",
+    "mme/count/000000335954.jpg-884",
+    "mme/count/000000335954.jpg-885",
+    "mme/count/000000410612.jpg-878",
+    "mme/count/000000410612.jpg-879",
+    "mme/count/000000423944.jpg-880",
+    "mme/count/000000423944.jpg-881",
+    "mme/count/000000427034.jpg-888",
+    "mme/count/000000427034.jpg-889",
+    "mme/count/000000470121.jpg-860",
+    "mme/count/000000470121.jpg-861",
+    "mme/count/000000482100.jpg-916",
+    "mme/count/000000482100.jpg-917",
+    "mme/existence/000000006040.jpg-2052",
+    "mme/existence/000000006040.jpg-2053",
+    "mme/existence/000000007816.jpg-2064",
+    "mme/existence/000000007816.jpg-2065",
+    "mme/existence/000000007977.jpg-2032",
+    "mme/existence/000000007977.jpg-2033",
+    "mme/existence/000000010363.jpg-2038",
+    "mme/existence/000000010363.jpg-2039",
+    "mme/existence/000000015517.jpg-2022",
+    "mme/existence/000000015517.jpg-2023",
+    "mme/existence/000000037751.jpg-2060",
+    "mme/existence/000000037751.jpg-2061",
+    "mme/existence/000000061418.jpg-2028",
+    "mme/existence/000000061418.jpg-2029",
+    "mme/existence/000000494427.jpg-2020",
+    "mme/existence/000000494427.jpg-2021",
+    "mme/existence/000000495448.jpg-2050",
+    "mme/existence/000000495448.jpg-2051",
+    "mme/existence/000000523241.jpg-2070",
+    "mme/existence/000000523241.jpg-2071",
+    "mme/OCR/0004.jpg-1212",
+    "mme/OCR/0004.jpg-1213",
+    "mme/OCR/0007.jpg-1190",
+    "mme/OCR/0007.jpg-1191",
+    "mme/OCR/0008.jpg-1214",
+    "mme/OCR/0008.jpg-1215",
+    "mme/OCR/0009.jpg-1186",
+    "mme/OCR/0009.jpg-1187",
+    "mme/OCR/0011.jpg-1210",
+    "mme/OCR/0011.jpg-1211",
+    "mme/OCR/0012.jpg-1198",
+    "mme/OCR/0012.jpg-1199",
+    "mme/OCR/0013.jpg-1184",
+    "mme/OCR/0013.jpg-1185",
+    "mme/OCR/0014.jpg-1182",
+    "mme/OCR/0014.jpg-1183",
+    "mme/OCR/0015.jpg-1192",
+    "mme/OCR/0015.jpg-1193",
+    "mme/OCR/0016.jpg-1208",
+    "mme/OCR/0016.jpg-1209",
+    "mme/position/000000014038.jpg-1132",
+    "mme/position/000000014038.jpg-1133",
+    "mme/position/000000031248.jpg-1148",
+    "mme/position/000000031248.jpg-1149",
+    "mme/position/000000056127.jpg-1176",
+    "mme/position/000000056127.jpg-1177",
+    "mme/position/000000062025.jpg-1162",
+    "mme/position/000000062025.jpg-1163",
+    "mme/position/000000062808.jpg-1156",
+    "mme/position/000000062808.jpg-1157",
+    "mme/position/000000097994.jpg-1134",
+    "mme/position/000000097994.jpg-1135",
+    "mme/position/000000204871.jpg-1174",
+    "mme/position/000000204871.jpg-1175",
+    "mme/position/000000211825.jpg-1150",
+    "mme/position/000000211825.jpg-1151",
+    "mme/position/000000395701.jpg-1140",
+    "mme/position/000000395701.jpg-1141",
+    "mme/position/000000426241.jpg-1130",
+    "mme/position/000000426241.jpg-1131"
+  ],
+  "results": [
+    {
+      "assignments": [
+        {
+          "budget": 4,
+          "capability": "attribute",
+          "route_type": "task_specific"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.020618556701030966,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.9484536082474226,
+          "examples": 194,
+          "lost_correct": 6,
+          "recovered_correct": 2
+        },
+        "counting": {
+          "accuracy_drop": 0.005586592178770999,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.7318435754189944,
+          "examples": 179,
+          "lost_correct": 10,
+          "recovered_correct": 9
+        },
+        "object": {
+          "accuracy_drop": 0.05389221556886237,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.8682634730538922,
+          "examples": 167,
+          "lost_correct": 10,
+          "recovered_correct": 1
+        },
+        "ocr": {
+          "accuracy_drop": 0.11351351351351346,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.6810810810810811,
+          "examples": 185,
+          "lost_correct": 27,
+          "recovered_correct": 6
+        },
+        "spatial": {
+          "accuracy_drop": 0.027932960893854775,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.776536312849162,
+          "examples": 179,
+          "lost_correct": 10,
+          "recovered_correct": 5
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 218.0621935040108,
+            "vision_encoder_median_ms": 74.66852569580078
+          },
+          {
+            "total_median_ms": 222.15227950073313,
+            "vision_encoder_median_ms": 76.1447868347168
+          },
+          {
+            "total_median_ms": 212.29784000024665,
+            "vision_encoder_median_ms": 73.87654113769531
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 218.0621935040108,
+        "vision_encoder_median_ms": 74.66852569580078
+      },
+      "name": "route-000-k04",
+      "overall": {
+        "accuracy_drop": 0.04424778761061943,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.8019911504424779,
+        "examples": 904,
+        "lost_correct": 63,
+        "recovered_correct": 23
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 4.959351768193954,
+        "median_vision_speedup_percent": 1.8739209343740182,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 2.639731768215081,
+            "vision_speedup_percent": 1.8673687305946984
+          },
+          {
+            "total_speedup_percent": 4.959351768193954,
+            "vision_speedup_percent": 2.595534399527799
+          },
+          {
+            "total_speedup_percent": 5.186224691279007,
+            "vision_speedup_percent": 1.8739209343740182
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3675814176,
+        "active_vision": 589875488,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 78808800,
+        "removed_vision": 78808800,
+        "skipped_vision_blocks": [
+          8,
+          9,
+          20,
+          25
+        ]
+      },
+      "peak_allocated_mib": 7575.427734375,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        8,
+        9,
+        20,
+        25
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 8,
+          "capability": "attribute",
+          "route_type": "task_specific"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.11855670103092786,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.8505154639175257,
+          "examples": 194,
+          "lost_correct": 25,
+          "recovered_correct": 2
+        },
+        "counting": {
+          "accuracy_drop": 0.0949720670391061,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.6424581005586593,
+          "examples": 179,
+          "lost_correct": 27,
+          "recovered_correct": 10
+        },
+        "object": {
+          "accuracy_drop": 0.13772455089820368,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.7844311377245509,
+          "examples": 167,
+          "lost_correct": 25,
+          "recovered_correct": 2
+        },
+        "ocr": {
+          "accuracy_drop": 0.5243243243243243,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.2702702702702703,
+          "examples": 185,
+          "lost_correct": 97,
+          "recovered_correct": 0
+        },
+        "spatial": {
+          "accuracy_drop": 0.17877094972067042,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.6256983240223464,
+          "examples": 179,
+          "lost_correct": 39,
+          "recovered_correct": 7
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 191.28400949921343,
+            "vision_encoder_median_ms": 62.48310470581055
+          },
+          {
+            "total_median_ms": 191.39015000109794,
+            "vision_encoder_median_ms": 62.439327239990234
+          },
+          {
+            "total_median_ms": 194.17999399956898,
+            "vision_encoder_median_ms": 63.02505683898926
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 191.39015000109794,
+        "vision_encoder_median_ms": 62.48310470581055
+      },
+      "name": "route-001-k08",
+      "overall": {
+        "accuracy_drop": 0.21238938053097345,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.6338495575221239,
+        "examples": 904,
+        "lost_correct": 213,
+        "recovered_correct": 21
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 17.00844785006621,
+        "median_vision_speedup_percent": 21.733487403302565,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 17.00844785006621,
+            "vision_speedup_percent": 21.733487403302565
+          },
+          {
+            "total_speedup_percent": 21.829463272220796,
+            "vision_speedup_percent": 25.115299000891667
+          },
+          {
+            "total_speedup_percent": 15.000561282274605,
+            "vision_speedup_percent": 19.41429787193347
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3597005376,
+        "active_vision": 511066688,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 157617600,
+        "removed_vision": 157617600,
+        "skipped_vision_blocks": [
+          5,
+          6,
+          8,
+          9,
+          11,
+          16,
+          20,
+          25
+        ]
+      },
+      "peak_allocated_mib": 7424.40625,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        5,
+        6,
+        8,
+        9,
+        11,
+        16,
+        20,
+        25
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 12,
+          "capability": "attribute",
+          "route_type": "task_specific"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.17525773195876293,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.7938144329896907,
+          "examples": 194,
+          "lost_correct": 38,
+          "recovered_correct": 4
+        },
+        "counting": {
+          "accuracy_drop": 0.2849162011173184,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.45251396648044695,
+          "examples": 179,
+          "lost_correct": 59,
+          "recovered_correct": 8
+        },
+        "object": {
+          "accuracy_drop": 0.2095808383233534,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.7125748502994012,
+          "examples": 167,
+          "lost_correct": 39,
+          "recovered_correct": 4
+        },
+        "ocr": {
+          "accuracy_drop": 0.7297297297297297,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.06486486486486487,
+          "examples": 185,
+          "lost_correct": 138,
+          "recovered_correct": 3
+        },
+        "spatial": {
+          "accuracy_drop": 0.22346368715083798,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.5810055865921788,
+          "examples": 179,
+          "lost_correct": 54,
+          "recovered_correct": 14
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 188.26754499968956,
+            "vision_encoder_median_ms": 58.22404861450195
+          },
+          {
+            "total_median_ms": 187.83832749977591,
+            "vision_encoder_median_ms": 58.497039794921875
+          },
+          {
+            "total_median_ms": 190.44032049714588,
+            "vision_encoder_median_ms": 58.722816467285156
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 188.26754499968956,
+        "vision_encoder_median_ms": 58.497039794921875
+      },
+      "name": "route-002-k12",
+      "overall": {
+        "accuracy_drop": 0.3263274336283186,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.5199115044247787,
+        "examples": 904,
+        "lost_correct": 328,
+        "recovered_correct": 33
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 18.883183238391887,
+        "median_vision_speedup_percent": 30.638222875650634,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 18.883183238391887,
+            "vision_speedup_percent": 30.638222875650634
+          },
+          {
+            "total_speedup_percent": 24.13312852911451,
+            "vision_speedup_percent": 33.547186736858905
+          },
+          {
+            "total_speedup_percent": 17.258825449591786,
+            "vision_speedup_percent": 28.163009942812177
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3518196576,
+        "active_vision": 432257888,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 236426400,
+        "removed_vision": 236426400,
+        "skipped_vision_blocks": [
+          3,
+          5,
+          6,
+          8,
+          9,
+          11,
+          16,
+          20,
+          21,
+          22,
+          23,
+          25
+        ]
+      },
+      "peak_allocated_mib": 7273.384765625,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        3,
+        5,
+        6,
+        8,
+        9,
+        11,
+        16,
+        20,
+        21,
+        22,
+        23,
+        25
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 16,
+          "capability": "attribute",
+          "route_type": "task_specific"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.6752577319587629,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.29381443298969073,
+          "examples": 194,
+          "lost_correct": 133,
+          "recovered_correct": 2
+        },
+        "counting": {
+          "accuracy_drop": 0.39664804469273746,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.3407821229050279,
+          "examples": 179,
+          "lost_correct": 80,
+          "recovered_correct": 9
+        },
+        "object": {
+          "accuracy_drop": 0.38323353293413176,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.5389221556886228,
+          "examples": 167,
+          "lost_correct": 65,
+          "recovered_correct": 1
+        },
+        "ocr": {
+          "accuracy_drop": 0.7297297297297297,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.06486486486486487,
+          "examples": 185,
+          "lost_correct": 142,
+          "recovered_correct": 7
+        },
+        "spatial": {
+          "accuracy_drop": 0.2960893854748604,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.5083798882681564,
+          "examples": 179,
+          "lost_correct": 72,
+          "recovered_correct": 19
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 204.30211150232935,
+            "vision_encoder_median_ms": 57.63928031921387
+          },
+          {
+            "total_median_ms": 203.9959155008546,
+            "vision_encoder_median_ms": 58.53985595703125
+          },
+          {
+            "total_median_ms": 184.9748139975418,
+            "vision_encoder_median_ms": 54.36783981323242
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 203.9959155008546,
+        "vision_encoder_median_ms": 57.63928031921387
+      },
+      "name": "route-003-k16",
+      "overall": {
+        "accuracy_drop": 0.502212389380531,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.3440265486725664,
+        "examples": 904,
+        "lost_correct": 492,
+        "recovered_correct": 38
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 14.30110839707428,
+        "median_vision_speedup_percent": 33.449510070199985,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 9.552685899602631,
+            "vision_speedup_percent": 31.963587982004917
+          },
+          {
+            "total_speedup_percent": 14.30110839707428,
+            "vision_speedup_percent": 33.449510070199985
+          },
+          {
+            "total_speedup_percent": 20.723507255619733,
+            "vision_speedup_percent": 38.429132675138014
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3439387776,
+        "active_vision": 353449088,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 315235200,
+        "removed_vision": 315235200,
+        "skipped_vision_blocks": [
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          16,
+          18,
+          20,
+          21,
+          22,
+          23,
+          25
+        ]
+      },
+      "peak_allocated_mib": 7122.36328125,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        16,
+        18,
+        20,
+        21,
+        22,
+        23,
+        25
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 4,
+          "capability": "counting",
+          "route_type": "task_specific"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.04123711340206182,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.9278350515463918,
+          "examples": 194,
+          "lost_correct": 9,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "accuracy_drop": 0.0,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.7374301675977654,
+          "examples": 179,
+          "lost_correct": 13,
+          "recovered_correct": 13
+        },
+        "object": {
+          "accuracy_drop": 0.005988023952095856,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.9161676646706587,
+          "examples": 167,
+          "lost_correct": 3,
+          "recovered_correct": 2
+        },
+        "ocr": {
+          "accuracy_drop": 0.2702702702702703,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.5243243243243243,
+          "examples": 185,
+          "lost_correct": 52,
+          "recovered_correct": 2
+        },
+        "spatial": {
+          "accuracy_drop": 0.022346368715083886,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.7821229050279329,
+          "examples": 179,
+          "lost_correct": 9,
+          "recovered_correct": 5
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 196.7761839987361,
+            "vision_encoder_median_ms": 66.26507186889648
+          },
+          {
+            "total_median_ms": 196.5279175019532,
+            "vision_encoder_median_ms": 66.85390090942383
+          },
+          {
+            "total_median_ms": 197.45609250094276,
+            "vision_encoder_median_ms": 66.86260604858398
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 196.7761839987361,
+        "vision_encoder_median_ms": 66.85390090942383
+      },
+      "name": "route-004-k04",
+      "overall": {
+        "accuracy_drop": 0.06969026548672563,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.7765486725663717,
+        "examples": 904,
+        "lost_correct": 86,
+        "recovered_correct": 23
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 13.742652160507607,
+        "median_vision_speedup_percent": 14.785754019445418,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 13.742652160507607,
+            "vision_speedup_percent": 14.785754019445418
+          },
+          {
+            "total_speedup_percent": 18.64451395304616,
+            "vision_speedup_percent": 16.853541689811703
+          },
+          {
+            "total_speedup_percent": 13.092526125181614,
+            "vision_speedup_percent": 12.560567939843104
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3675814176,
+        "active_vision": 589875488,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 78808800,
+        "removed_vision": 78808800,
+        "skipped_vision_blocks": [
+          12,
+          24,
+          28,
+          30
+        ]
+      },
+      "peak_allocated_mib": 7575.427734375,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        12,
+        24,
+        28,
+        30
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 8,
+          "capability": "counting",
+          "route_type": "task_specific"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.11855670103092786,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.8505154639175257,
+          "examples": 194,
+          "lost_correct": 26,
+          "recovered_correct": 3
+        },
+        "counting": {
+          "accuracy_drop": 0.12290502793296088,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.6145251396648045,
+          "examples": 179,
+          "lost_correct": 36,
+          "recovered_correct": 14
+        },
+        "object": {
+          "accuracy_drop": 0.11377245508982037,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.8083832335329342,
+          "examples": 167,
+          "lost_correct": 22,
+          "recovered_correct": 3
+        },
+        "ocr": {
+          "accuracy_drop": 0.6648648648648648,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.12972972972972974,
+          "examples": 185,
+          "lost_correct": 125,
+          "recovered_correct": 2
+        },
+        "spatial": {
+          "accuracy_drop": 0.16201117318435754,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.6424581005586593,
+          "examples": 179,
+          "lost_correct": 38,
+          "recovered_correct": 9
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 193.30815099965548,
+            "vision_encoder_median_ms": 63.13073539733887
+          },
+          {
+            "total_median_ms": 193.02617999710492,
+            "vision_encoder_median_ms": 63.10211181640625
+          },
+          {
+            "total_median_ms": 193.86856450000778,
+            "vision_encoder_median_ms": 63.44175910949707
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 193.30815099965548,
+        "vision_encoder_median_ms": 63.13073539733887
+      },
+      "name": "route-005-k08",
+      "overall": {
+        "accuracy_drop": 0.23893805309734517,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.6073008849557522,
+        "examples": 904,
+        "lost_correct": 247,
+        "recovered_correct": 31
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 15.783245219081188,
+        "median_vision_speedup_percent": 20.48467662780702,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 15.783245219081188,
+            "vision_speedup_percent": 20.48467662780702
+          },
+          {
+            "total_speedup_percent": 20.796874551282674,
+            "vision_speedup_percent": 23.801167222026077
+          },
+          {
+            "total_speedup_percent": 15.185297613003424,
+            "vision_speedup_percent": 18.629953147688873
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3597005376,
+        "active_vision": 511066688,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 157617600,
+        "removed_vision": 157617600,
+        "skipped_vision_blocks": [
+          11,
+          12,
+          17,
+          24,
+          25,
+          27,
+          28,
+          30
+        ]
+      },
+      "peak_allocated_mib": 7424.40625,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        11,
+        12,
+        17,
+        24,
+        25,
+        27,
+        28,
+        30
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 12,
+          "capability": "counting",
+          "route_type": "task_specific"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.3041237113402062,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.6649484536082474,
+          "examples": 194,
+          "lost_correct": 63,
+          "recovered_correct": 4
+        },
+        "counting": {
+          "accuracy_drop": 0.25139664804469275,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.4860335195530726,
+          "examples": 179,
+          "lost_correct": 52,
+          "recovered_correct": 7
+        },
+        "object": {
+          "accuracy_drop": 0.18562874251497008,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.7365269461077845,
+          "examples": 167,
+          "lost_correct": 37,
+          "recovered_correct": 6
+        },
+        "ocr": {
+          "accuracy_drop": 0.7135135135135136,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.08108108108108109,
+          "examples": 185,
+          "lost_correct": 139,
+          "recovered_correct": 7
+        },
+        "spatial": {
+          "accuracy_drop": 0.2849162011173185,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.5195530726256983,
+          "examples": 179,
+          "lost_correct": 66,
+          "recovered_correct": 15
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 190.29678700098884,
+            "vision_encoder_median_ms": 58.572256088256836
+          },
+          {
+            "total_median_ms": 188.61921200004872,
+            "vision_encoder_median_ms": 58.34200096130371
+          },
+          {
+            "total_median_ms": 190.14276399684604,
+            "vision_encoder_median_ms": 58.76652908325195
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 190.14276399684604,
+        "vision_encoder_median_ms": 58.572256088256836
+      },
+      "name": "route-006-k12",
+      "overall": {
+        "accuracy_drop": 0.35176991150442477,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.4944690265486726,
+        "examples": 904,
+        "lost_correct": 357,
+        "recovered_correct": 39
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 17.61546478409002,
+        "median_vision_speedup_percent": 29.861588875163882,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 17.61546478409002,
+            "vision_speedup_percent": 29.861588875163882
+          },
+          {
+            "total_speedup_percent": 23.619216743507376,
+            "vision_speedup_percent": 33.90207686272899
+          },
+          {
+            "total_speedup_percent": 17.442325073751185,
+            "vision_speedup_percent": 28.067677778020837
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3518196576,
+        "active_vision": 432257888,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 236426400,
+        "removed_vision": 236426400,
+        "skipped_vision_blocks": [
+          11,
+          12,
+          17,
+          18,
+          20,
+          21,
+          24,
+          25,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "peak_allocated_mib": 7273.384765625,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        11,
+        12,
+        17,
+        18,
+        20,
+        21,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 16,
+          "capability": "counting",
+          "route_type": "task_specific"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.4845360824742268,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.4845360824742268,
+          "examples": 194,
+          "lost_correct": 96,
+          "recovered_correct": 2
+        },
+        "counting": {
+          "accuracy_drop": 0.3128491620111732,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.4245810055865922,
+          "examples": 179,
+          "lost_correct": 67,
+          "recovered_correct": 11
+        },
+        "object": {
+          "accuracy_drop": 0.2934131736526947,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.6287425149700598,
+          "examples": 167,
+          "lost_correct": 50,
+          "recovered_correct": 1
+        },
+        "ocr": {
+          "accuracy_drop": 0.7297297297297297,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.06486486486486487,
+          "examples": 185,
+          "lost_correct": 142,
+          "recovered_correct": 7
+        },
+        "spatial": {
+          "accuracy_drop": 0.26256983240223464,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.5418994413407822,
+          "examples": 179,
+          "lost_correct": 66,
+          "recovered_correct": 19
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 186.3377489935374,
+            "vision_encoder_median_ms": 54.53788757324219
+          },
+          {
+            "total_median_ms": 186.2408195011085,
+            "vision_encoder_median_ms": 54.58135986328125
+          },
+          {
+            "total_median_ms": 200.85725599346915,
+            "vision_encoder_median_ms": 61.36115264892578
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 186.3377489935374,
+        "vision_encoder_median_ms": 54.58135986328125
+      },
+      "name": "route-007-k16",
+      "overall": {
+        "accuracy_drop": 0.42146017699115046,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.4247787610619469,
+        "examples": 904,
+        "lost_correct": 421,
+        "recovered_correct": 40
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 20.114389976968837,
+        "median_vision_speedup_percent": 39.46792914208655,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 20.114389976968837,
+            "vision_speedup_percent": 39.46792914208655
+          },
+          {
+            "total_speedup_percent": 25.197898681308196,
+            "vision_speedup_percent": 43.12789414947091
+          },
+          {
+            "total_speedup_percent": 11.177503592228843,
+            "vision_speedup_percent": 22.65240442640801
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3439387776,
+        "active_vision": 353449088,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 315235200,
+        "removed_vision": 315235200,
+        "skipped_vision_blocks": [
+          3,
+          6,
+          9,
+          11,
+          12,
+          17,
+          18,
+          19,
+          20,
+          21,
+          24,
+          25,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "peak_allocated_mib": 7122.36328125,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        3,
+        6,
+        9,
+        11,
+        12,
+        17,
+        18,
+        19,
+        20,
+        21,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 4,
+          "capability": "object",
+          "route_type": "task_specific"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.02577319587628868,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.9432989690721649,
+          "examples": 194,
+          "lost_correct": 5,
+          "recovered_correct": 0
+        },
+        "counting": {
+          "accuracy_drop": 0.016759776536312887,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.7206703910614525,
+          "examples": 179,
+          "lost_correct": 10,
+          "recovered_correct": 7
+        },
+        "object": {
+          "accuracy_drop": -0.017964071856287345,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.9401197604790419,
+          "examples": 167,
+          "lost_correct": 2,
+          "recovered_correct": 5
+        },
+        "ocr": {
+          "accuracy_drop": 0.1945945945945946,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.6,
+          "examples": 185,
+          "lost_correct": 39,
+          "recovered_correct": 3
+        },
+        "spatial": {
+          "accuracy_drop": 0.016759776536312887,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.7877094972067039,
+          "examples": 179,
+          "lost_correct": 8,
+          "recovered_correct": 5
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 198.19921549787978,
+            "vision_encoder_median_ms": 67.02643203735352
+          },
+          {
+            "total_median_ms": 197.38481999957003,
+            "vision_encoder_median_ms": 66.34086227416992
+          },
+          {
+            "total_median_ms": 198.23881949560018,
+            "vision_encoder_median_ms": 67.89632034301758
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 198.19921549787978,
+        "vision_encoder_median_ms": 67.02643203735352
+      },
+      "name": "route-008-k04",
+      "overall": {
+        "accuracy_drop": 0.04867256637168138,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.797566371681416,
+        "examples": 904,
+        "lost_correct": 64,
+        "recovered_correct": 20
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 12.926002223655185,
+        "median_vision_speedup_percent": 13.481890776836746,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 12.926002223655185,
+            "vision_speedup_percent": 13.481890776836746
+          },
+          {
+            "total_speedup_percent": 18.129445062058892,
+            "vision_speedup_percent": 17.757213717850284
+          },
+          {
+            "total_speedup_percent": 12.645991115956834,
+            "vision_speedup_percent": 10.846845200803013
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3675814176,
+        "active_vision": 589875488,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 78808800,
+        "removed_vision": 78808800,
+        "skipped_vision_blocks": [
+          2,
+          9,
+          10,
+          30
+        ]
+      },
+      "peak_allocated_mib": 7575.427734375,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        2,
+        9,
+        10,
+        30
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 8,
+          "capability": "object",
+          "route_type": "task_specific"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.08762886597938147,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.8814432989690721,
+          "examples": 194,
+          "lost_correct": 18,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "accuracy_drop": 0.15642458100558654,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.5810055865921788,
+          "examples": 179,
+          "lost_correct": 36,
+          "recovered_correct": 8
+        },
+        "object": {
+          "accuracy_drop": 0.10179640718562877,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.8203592814371258,
+          "examples": 167,
+          "lost_correct": 28,
+          "recovered_correct": 11
+        },
+        "ocr": {
+          "accuracy_drop": 0.7135135135135136,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.08108108108108109,
+          "examples": 185,
+          "lost_correct": 132,
+          "recovered_correct": 0
+        },
+        "spatial": {
+          "accuracy_drop": 0.13966480446927376,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.664804469273743,
+          "examples": 179,
+          "lost_correct": 32,
+          "recovered_correct": 7
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 194.55941349588102,
+            "vision_encoder_median_ms": 63.06924819946289
+          },
+          {
+            "total_median_ms": 197.57768350973492,
+            "vision_encoder_median_ms": 63.475711822509766
+          },
+          {
+            "total_median_ms": 193.58474500040757,
+            "vision_encoder_median_ms": 63.140830993652344
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 194.55941349588102,
+        "vision_encoder_median_ms": 63.140830993652344
+      },
+      "name": "route-009-k08",
+      "overall": {
+        "accuracy_drop": 0.2422566371681416,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.6039823008849557,
+        "examples": 904,
+        "lost_correct": 246,
+        "recovered_correct": 27
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 15.354173696342311,
+        "median_vision_speedup_percent": 20.602139026112564,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 15.038612873461021,
+            "vision_speedup_percent": 20.602139026112564
+          },
+          {
+            "total_speedup_percent": 18.01413416750952,
+            "vision_speedup_percent": 23.072508724125342
+          },
+          {
+            "total_speedup_percent": 15.354173696342311,
+            "vision_speedup_percent": 19.195341466494355
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3597005376,
+        "active_vision": 511066688,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 157617600,
+        "removed_vision": 157617600,
+        "skipped_vision_blocks": [
+          2,
+          3,
+          9,
+          10,
+          20,
+          21,
+          23,
+          30
+        ]
+      },
+      "peak_allocated_mib": 7424.40625,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        2,
+        3,
+        9,
+        10,
+        20,
+        21,
+        23,
+        30
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 12,
+          "capability": "object",
+          "route_type": "task_specific"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.2628865979381443,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.7061855670103093,
+          "examples": 194,
+          "lost_correct": 53,
+          "recovered_correct": 2
+        },
+        "counting": {
+          "accuracy_drop": 0.29608938547486036,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.441340782122905,
+          "examples": 179,
+          "lost_correct": 67,
+          "recovered_correct": 14
+        },
+        "object": {
+          "accuracy_drop": 0.27544910179640725,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.6467065868263473,
+          "examples": 167,
+          "lost_correct": 51,
+          "recovered_correct": 5
+        },
+        "ocr": {
+          "accuracy_drop": 0.7135135135135136,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.08108108108108109,
+          "examples": 185,
+          "lost_correct": 138,
+          "recovered_correct": 6
+        },
+        "spatial": {
+          "accuracy_drop": 0.23463687150837997,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.5698324022346368,
+          "examples": 179,
+          "lost_correct": 62,
+          "recovered_correct": 20
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 208.5506949952105,
+            "vision_encoder_median_ms": 65.04846572875977
+          },
+          {
+            "total_median_ms": 201.53129599930253,
+            "vision_encoder_median_ms": 60.432865142822266
+          },
+          {
+            "total_median_ms": 194.14326699188678,
+            "vision_encoder_median_ms": 59.15086364746094
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 201.53129599930253,
+        "vision_encoder_median_ms": 60.432865142822266
+      },
+      "name": "route-010-k12",
+      "overall": {
+        "accuracy_drop": 0.3584070796460177,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.48783185840707965,
+        "examples": 904,
+        "lost_correct": 371,
+        "recovered_correct": 47
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 15.022316486887743,
+        "median_vision_speedup_percent": 27.23555408458791,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 7.32088450030961,
+            "vision_speedup_percent": 16.932600245190255
+          },
+          {
+            "total_speedup_percent": 15.698949558208009,
+            "vision_speedup_percent": 29.26931527378955
+          },
+          {
+            "total_speedup_percent": 15.022316486887743,
+            "vision_speedup_percent": 27.23555408458791
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3518196576,
+        "active_vision": 432257888,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 236426400,
+        "removed_vision": 236426400,
+        "skipped_vision_blocks": [
+          2,
+          3,
+          5,
+          7,
+          9,
+          10,
+          17,
+          20,
+          21,
+          23,
+          25,
+          30
+        ]
+      },
+      "peak_allocated_mib": 7273.384765625,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        2,
+        3,
+        5,
+        7,
+        9,
+        10,
+        17,
+        20,
+        21,
+        23,
+        25,
+        30
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 16,
+          "capability": "object",
+          "route_type": "task_specific"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.6597938144329897,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.30927835051546393,
+          "examples": 194,
+          "lost_correct": 130,
+          "recovered_correct": 2
+        },
+        "counting": {
+          "accuracy_drop": 0.3575418994413408,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.37988826815642457,
+          "examples": 179,
+          "lost_correct": 71,
+          "recovered_correct": 7
+        },
+        "object": {
+          "accuracy_drop": 0.39520958083832336,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.5269461077844312,
+          "examples": 167,
+          "lost_correct": 67,
+          "recovered_correct": 1
+        },
+        "ocr": {
+          "accuracy_drop": 0.7297297297297297,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.06486486486486487,
+          "examples": 185,
+          "lost_correct": 142,
+          "recovered_correct": 7
+        },
+        "spatial": {
+          "accuracy_drop": 0.2849162011173185,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.5195530726256983,
+          "examples": 179,
+          "lost_correct": 71,
+          "recovered_correct": 20
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 185.37383749935543,
+            "vision_encoder_median_ms": 54.18191909790039
+          },
+          {
+            "total_median_ms": 185.89362550119404,
+            "vision_encoder_median_ms": 54.57254409790039
+          },
+          {
+            "total_median_ms": 199.88388750061858,
+            "vision_encoder_median_ms": 60.44633674621582
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 185.89362550119404,
+        "vision_encoder_median_ms": 54.57254409790039
+      },
+      "name": "route-011-k16",
+      "overall": {
+        "accuracy_drop": 0.4911504424778761,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.35508849557522126,
+        "examples": 904,
+        "lost_correct": 481,
+        "recovered_correct": 37
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 20.738963771616948,
+        "median_vision_speedup_percent": 40.38421610501381,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 20.738963771616948,
+            "vision_speedup_percent": 40.38421610501381
+          },
+          {
+            "total_speedup_percent": 25.431731116965175,
+            "vision_speedup_percent": 43.151015335318775
+          },
+          {
+            "total_speedup_percent": 11.718901302987916,
+            "vision_speedup_percent": 24.50866861237484
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3439387776,
+        "active_vision": 353449088,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 315235200,
+        "removed_vision": 315235200,
+        "skipped_vision_blocks": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9,
+          10,
+          12,
+          17,
+          20,
+          21,
+          22,
+          23,
+          25,
+          30
+        ]
+      },
+      "peak_allocated_mib": 7122.36328125,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        12,
+        17,
+        20,
+        21,
+        22,
+        23,
+        25,
+        30
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 4,
+          "capability": "ocr",
+          "route_type": "task_specific"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.010309278350515427,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.9587628865979382,
+          "examples": 194,
+          "lost_correct": 3,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "accuracy_drop": 0.005586592178770999,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.7318435754189944,
+          "examples": 179,
+          "lost_correct": 9,
+          "recovered_correct": 8
+        },
+        "object": {
+          "accuracy_drop": 0.03592814371257491,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.8862275449101796,
+          "examples": 167,
+          "lost_correct": 6,
+          "recovered_correct": 0
+        },
+        "ocr": {
+          "accuracy_drop": 0.05945945945945941,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.7351351351351352,
+          "examples": 185,
+          "lost_correct": 16,
+          "recovered_correct": 5
+        },
+        "spatial": {
+          "accuracy_drop": 0.027932960893854775,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.776536312849162,
+          "examples": 179,
+          "lost_correct": 10,
+          "recovered_correct": 5
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 195.48748349916423,
+            "vision_encoder_median_ms": 66.9945297241211
+          },
+          {
+            "total_median_ms": 196.47422950220061,
+            "vision_encoder_median_ms": 66.67078399658203
+          },
+          {
+            "total_median_ms": 196.24121899687452,
+            "vision_encoder_median_ms": 67.76831817626953
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 196.24121899687452,
+        "vision_encoder_median_ms": 66.9945297241211
+      },
+      "name": "route-012-k04",
+      "overall": {
+        "accuracy_drop": 0.027654867256637128,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.8185840707964602,
+        "examples": 904,
+        "lost_correct": 44,
+        "recovered_correct": 19
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 14.492471074936986,
+        "median_vision_speedup_percent": 13.535930037067079,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 14.492471074936986,
+            "vision_speedup_percent": 13.535930037067079
+          },
+          {
+            "total_speedup_percent": 18.67693442188778,
+            "vision_speedup_percent": 17.174489765208058
+          },
+          {
+            "total_speedup_percent": 13.792649749565623,
+            "vision_speedup_percent": 11.056214958600187
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3675814176,
+        "active_vision": 589875488,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 78808800,
+        "removed_vision": 78808800,
+        "skipped_vision_blocks": [
+          4,
+          5,
+          9,
+          28
+        ]
+      },
+      "peak_allocated_mib": 7575.427734375,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        4,
+        5,
+        9,
+        28
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 8,
+          "capability": "ocr",
+          "route_type": "task_specific"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.14432989690721654,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.8247422680412371,
+          "examples": 194,
+          "lost_correct": 29,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "accuracy_drop": 0.12849162011173187,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.6089385474860335,
+          "examples": 179,
+          "lost_correct": 33,
+          "recovered_correct": 10
+        },
+        "object": {
+          "accuracy_drop": 0.19161676646706594,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.7305389221556886,
+          "examples": 167,
+          "lost_correct": 33,
+          "recovered_correct": 1
+        },
+        "ocr": {
+          "accuracy_drop": 0.37297297297297294,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.42162162162162165,
+          "examples": 185,
+          "lost_correct": 71,
+          "recovered_correct": 2
+        },
+        "spatial": {
+          "accuracy_drop": 0.2178770949720671,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.5865921787709497,
+          "examples": 179,
+          "lost_correct": 50,
+          "recovered_correct": 11
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 196.48545899690362,
+            "vision_encoder_median_ms": 64.53863906860352
+          },
+          {
+            "total_median_ms": 192.77642900124192,
+            "vision_encoder_median_ms": 63.17572784423828
+          },
+          {
+            "total_median_ms": 193.776838008489,
+            "vision_encoder_median_ms": 63.48236846923828
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 193.776838008489,
+        "vision_encoder_median_ms": 63.48236846923828
+      },
+      "name": "route-013-k08",
+      "overall": {
+        "accuracy_drop": 0.21128318584070793,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.6349557522123894,
+        "examples": 904,
+        "lost_correct": 216,
+        "recovered_correct": 25
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 15.239821896365523,
+        "median_vision_speedup_percent": 18.554066148516934,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 13.910948750629903,
+            "vision_speedup_percent": 17.856315989847047
+          },
+          {
+            "total_speedup_percent": 20.95337262458252,
+            "vision_speedup_percent": 23.656906910624144
+          },
+          {
+            "total_speedup_percent": 15.239821896365523,
+            "vision_speedup_percent": 18.554066148516934
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3597005376,
+        "active_vision": 511066688,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 157617600,
+        "removed_vision": 157617600,
+        "skipped_vision_blocks": [
+          4,
+          5,
+          6,
+          8,
+          9,
+          11,
+          25,
+          28
+        ]
+      },
+      "peak_allocated_mib": 7424.40625,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        11,
+        25,
+        28
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 12,
+          "capability": "ocr",
+          "route_type": "task_specific"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.4020618556701031,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.5670103092783505,
+          "examples": 194,
+          "lost_correct": 78,
+          "recovered_correct": 0
+        },
+        "counting": {
+          "accuracy_drop": 0.29608938547486036,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.441340782122905,
+          "examples": 179,
+          "lost_correct": 64,
+          "recovered_correct": 11
+        },
+        "object": {
+          "accuracy_drop": 0.31137724550898205,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.6107784431137725,
+          "examples": 167,
+          "lost_correct": 53,
+          "recovered_correct": 1
+        },
+        "ocr": {
+          "accuracy_drop": 0.7135135135135136,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.08108108108108109,
+          "examples": 185,
+          "lost_correct": 137,
+          "recovered_correct": 5
+        },
+        "spatial": {
+          "accuracy_drop": 0.2905027932960894,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.5139664804469274,
+          "examples": 179,
+          "lost_correct": 70,
+          "recovered_correct": 18
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 188.1847065014881,
+            "vision_encoder_median_ms": 58.31782341003418
+          },
+          {
+            "total_median_ms": 202.30532200366724,
+            "vision_encoder_median_ms": 62.0883674621582
+          },
+          {
+            "total_median_ms": 191.56099999963772,
+            "vision_encoder_median_ms": 58.67526435852051
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 191.56099999963772,
+        "vision_encoder_median_ms": 58.67526435852051
+      },
+      "name": "route-014-k12",
+      "overall": {
+        "accuracy_drop": 0.4059734513274336,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.44026548672566373,
+        "examples": 904,
+        "lost_correct": 402,
+        "recovered_correct": 35
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 16.57283215154117,
+        "median_vision_speedup_percent": 28.26687690370333,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 18.935515356893752,
+            "vision_speedup_percent": 30.428157205800034
+          },
+          {
+            "total_speedup_percent": 15.25628203592646,
+            "vision_speedup_percent": 25.82252386982551
+          },
+          {
+            "total_speedup_percent": 16.57283215154117,
+            "vision_speedup_percent": 28.26687690370333
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3518196576,
+        "active_vision": 432257888,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 236426400,
+        "removed_vision": 236426400,
+        "skipped_vision_blocks": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          11,
+          24,
+          25,
+          27,
+          28
+        ]
+      },
+      "peak_allocated_mib": 7273.384765625,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        11,
+        24,
+        25,
+        27,
+        28
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 16,
+          "capability": "ocr",
+          "route_type": "task_specific"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.5773195876288659,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.3917525773195876,
+          "examples": 194,
+          "lost_correct": 114,
+          "recovered_correct": 2
+        },
+        "counting": {
+          "accuracy_drop": 0.35195530726256985,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.3854748603351955,
+          "examples": 179,
+          "lost_correct": 70,
+          "recovered_correct": 7
+        },
+        "object": {
+          "accuracy_drop": 0.3892215568862276,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.5329341317365269,
+          "examples": 167,
+          "lost_correct": 66,
+          "recovered_correct": 1
+        },
+        "ocr": {
+          "accuracy_drop": 0.7297297297297297,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.06486486486486487,
+          "examples": 185,
+          "lost_correct": 142,
+          "recovered_correct": 7
+        },
+        "spatial": {
+          "accuracy_drop": 0.2960893854748604,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.5083798882681564,
+          "examples": 179,
+          "lost_correct": 72,
+          "recovered_correct": 19
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 184.4424465089105,
+            "vision_encoder_median_ms": 54.080190658569336
+          },
+          {
+            "total_median_ms": 184.6888649961329,
+            "vision_encoder_median_ms": 54.29764938354492
+          },
+          {
+            "total_median_ms": 185.45093350257957,
+            "vision_encoder_median_ms": 54.3667049407959
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 184.6888649961329,
+        "vision_encoder_median_ms": 54.29764938354492
+      },
+      "name": "route-015-k16",
+      "overall": {
+        "accuracy_drop": 0.47345132743362833,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.372787610619469,
+        "examples": 904,
+        "lost_correct": 464,
+        "recovered_correct": 36
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 21.348667151620138,
+        "median_vision_speedup_percent": 40.64828816240058,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 21.348667151620138,
+            "vision_speedup_percent": 40.64828816240058
+          },
+          {
+            "total_speedup_percent": 26.249946095623102,
+            "vision_speedup_percent": 43.87575126619359
+          },
+          {
+            "total_speedup_percent": 20.41356642418051,
+            "vision_speedup_percent": 38.432022300456595
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3439387776,
+        "active_vision": 353449088,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 315235200,
+        "removed_vision": 315235200,
+        "skipped_vision_blocks": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          11,
+          22,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "peak_allocated_mib": 7122.36328125,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 4,
+          "capability": "spatial",
+          "route_type": "task_specific"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.05154639175257736,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.9175257731958762,
+          "examples": 194,
+          "lost_correct": 11,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "accuracy_drop": 0.022346368715083775,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.7150837988826816,
+          "examples": 179,
+          "lost_correct": 12,
+          "recovered_correct": 8
+        },
+        "object": {
+          "accuracy_drop": 0.02395209580838331,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.8982035928143712,
+          "examples": 167,
+          "lost_correct": 7,
+          "recovered_correct": 3
+        },
+        "ocr": {
+          "accuracy_drop": 0.2702702702702703,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.5243243243243243,
+          "examples": 185,
+          "lost_correct": 56,
+          "recovered_correct": 6
+        },
+        "spatial": {
+          "accuracy_drop": 0.027932960893854775,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.776536312849162,
+          "examples": 179,
+          "lost_correct": 9,
+          "recovered_correct": 4
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 200.4174964968115,
+            "vision_encoder_median_ms": 67.66670227050781
+          },
+          {
+            "total_median_ms": 202.7901150067919,
+            "vision_encoder_median_ms": 67.36646270751953
+          },
+          {
+            "total_median_ms": 209.80149150273064,
+            "vision_encoder_median_ms": 67.83897399902344
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 202.7901150067919,
+        "vision_encoder_median_ms": 67.66670227050781
+      },
+      "name": "route-016-k04",
+      "overall": {
+        "accuracy_drop": 0.08075221238938057,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.7654867256637168,
+        "examples": 904,
+        "lost_correct": 95,
+        "recovered_correct": 22
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 11.676103340590128,
+        "median_vision_speedup_percent": 12.408111883696527,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 11.676103340590128,
+            "vision_speedup_percent": 12.408111883696527
+          },
+          {
+            "total_speedup_percent": 14.980748689070245,
+            "vision_speedup_percent": 15.964454463985088
+          },
+          {
+            "total_speedup_percent": 6.437795745834829,
+            "vision_speedup_percent": 10.940547403841073
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3675814176,
+        "active_vision": 589875488,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 78808800,
+        "removed_vision": 78808800,
+        "skipped_vision_blocks": [
+          3,
+          16,
+          22,
+          29
+        ]
+      },
+      "peak_allocated_mib": 7575.427734375,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        3,
+        16,
+        22,
+        29
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 8,
+          "capability": "spatial",
+          "route_type": "task_specific"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.10824742268041232,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.8608247422680413,
+          "examples": 194,
+          "lost_correct": 22,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "accuracy_drop": 0.11731843575418999,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.6201117318435754,
+          "examples": 179,
+          "lost_correct": 29,
+          "recovered_correct": 8
+        },
+        "object": {
+          "accuracy_drop": 0.14970059880239528,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.7724550898203593,
+          "examples": 167,
+          "lost_correct": 27,
+          "recovered_correct": 2
+        },
+        "ocr": {
+          "accuracy_drop": 0.6270270270270271,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.16756756756756758,
+          "examples": 185,
+          "lost_correct": 118,
+          "recovered_correct": 2
+        },
+        "spatial": {
+          "accuracy_drop": 0.12849162011173187,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.6759776536312849,
+          "examples": 179,
+          "lost_correct": 31,
+          "recovered_correct": 8
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 193.98606350296177,
+            "vision_encoder_median_ms": 62.993919372558594
+          },
+          {
+            "total_median_ms": 193.21018151094904,
+            "vision_encoder_median_ms": 62.88132858276367
+          },
+          {
+            "total_median_ms": 192.27494899678277,
+            "vision_encoder_median_ms": 63.12356948852539
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 193.21018151094904,
+        "vision_encoder_median_ms": 62.993919372558594
+      },
+      "name": "route-017-k08",
+      "overall": {
+        "accuracy_drop": 0.22787610619469023,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.6183628318584071,
+        "examples": 904,
+        "lost_correct": 227,
+        "recovered_correct": 21
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 16.139977757127344,
+        "median_vision_speedup_percent": 20.746356400511146,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 15.378623834482607,
+            "vision_speedup_percent": 20.746356400511146
+          },
+          {
+            "total_speedup_percent": 20.681835024839202,
+            "vision_speedup_percent": 24.235846683227823
+          },
+          {
+            "total_speedup_percent": 16.139977757127344,
+            "vision_speedup_percent": 19.227936121937717
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3597005376,
+        "active_vision": 511066688,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 157617600,
+        "removed_vision": 157617600,
+        "skipped_vision_blocks": [
+          3,
+          4,
+          16,
+          19,
+          20,
+          22,
+          26,
+          29
+        ]
+      },
+      "peak_allocated_mib": 7424.40625,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        3,
+        4,
+        16,
+        19,
+        20,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 12,
+          "capability": "spatial",
+          "route_type": "task_specific"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.2319587628865979,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.7371134020618557,
+          "examples": 194,
+          "lost_correct": 46,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "accuracy_drop": 0.23463687150837986,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.5027932960893855,
+          "examples": 179,
+          "lost_correct": 54,
+          "recovered_correct": 12
+        },
+        "object": {
+          "accuracy_drop": 0.20359281437125754,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.718562874251497,
+          "examples": 167,
+          "lost_correct": 37,
+          "recovered_correct": 3
+        },
+        "ocr": {
+          "accuracy_drop": 0.6918918918918919,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.10270270270270271,
+          "examples": 185,
+          "lost_correct": 132,
+          "recovered_correct": 4
+        },
+        "spatial": {
+          "accuracy_drop": 0.22346368715083798,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.5810055865921788,
+          "examples": 179,
+          "lost_correct": 53,
+          "recovered_correct": 13
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 189.46448100177804,
+            "vision_encoder_median_ms": 58.7989444732666
+          },
+          {
+            "total_median_ms": 189.33887150342343,
+            "vision_encoder_median_ms": 58.6095027923584
+          },
+          {
+            "total_median_ms": 190.74554050166626,
+            "vision_encoder_median_ms": 58.6265926361084
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 189.46448100177804,
+        "vision_encoder_median_ms": 58.6265926361084
+      },
+      "name": "route-018-k12",
+      "overall": {
+        "accuracy_drop": 0.31969026548672563,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.5265486725663717,
+        "examples": 904,
+        "lost_correct": 322,
+        "recovered_correct": 33
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 18.132142403146467,
+        "median_vision_speedup_percent": 29.360931692953795,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 18.132142403146467,
+            "vision_speedup_percent": 29.360931692953795
+          },
+          {
+            "total_speedup_percent": 23.149351557226304,
+            "vision_speedup_percent": 33.290929368956434
+          },
+          {
+            "total_speedup_percent": 17.07119464501492,
+            "vision_speedup_percent": 28.37336390126901
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3518196576,
+        "active_vision": 432257888,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 236426400,
+        "removed_vision": 236426400,
+        "skipped_vision_blocks": [
+          3,
+          4,
+          6,
+          10,
+          16,
+          19,
+          20,
+          22,
+          26,
+          28,
+          29,
+          30
+        ]
+      },
+      "peak_allocated_mib": 7273.384765625,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        3,
+        4,
+        6,
+        10,
+        16,
+        19,
+        20,
+        22,
+        26,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 16,
+          "capability": "spatial",
+          "route_type": "task_specific"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.4639175257731959,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.5051546391752577,
+          "examples": 194,
+          "lost_correct": 94,
+          "recovered_correct": 4
+        },
+        "counting": {
+          "accuracy_drop": 0.329608938547486,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.40782122905027934,
+          "examples": 179,
+          "lost_correct": 70,
+          "recovered_correct": 11
+        },
+        "object": {
+          "accuracy_drop": 0.2694610778443114,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.6526946107784432,
+          "examples": 167,
+          "lost_correct": 51,
+          "recovered_correct": 6
+        },
+        "ocr": {
+          "accuracy_drop": 0.7297297297297297,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.06486486486486487,
+          "examples": 185,
+          "lost_correct": 142,
+          "recovered_correct": 7
+        },
+        "spatial": {
+          "accuracy_drop": 0.25698324022346375,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.547486033519553,
+          "examples": 179,
+          "lost_correct": 66,
+          "recovered_correct": 20
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 210.71040199603885,
+            "vision_encoder_median_ms": 61.8511848449707
+          },
+          {
+            "total_median_ms": 184.79906750144437,
+            "vision_encoder_median_ms": 54.28398513793945
+          },
+          {
+            "total_median_ms": 197.10076299816137,
+            "vision_encoder_median_ms": 57.01684761047363
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 197.10076299816137,
+        "vision_encoder_median_ms": 57.01684761047363
+      },
+      "name": "route-019-k16",
+      "overall": {
+        "accuracy_drop": 0.41482300884955753,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.4314159292035398,
+        "examples": 904,
+        "lost_correct": 423,
+        "recovered_correct": 48
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 13.296407178025271,
+        "median_vision_speedup_percent": 31.997702892716685,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 6.220883440111513,
+            "vision_speedup_percent": 22.97721149059786
+          },
+          {
+            "total_speedup_percent": 26.174658592589207,
+            "vision_speedup_percent": 43.91196735454776
+          },
+          {
+            "total_speedup_percent": 13.296407178025271,
+            "vision_speedup_percent": 31.997702892716685
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3439387776,
+        "active_vision": 353449088,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 315235200,
+        "removed_vision": 315235200,
+        "skipped_vision_blocks": [
+          2,
+          3,
+          4,
+          6,
+          8,
+          10,
+          16,
+          18,
+          19,
+          20,
+          22,
+          25,
+          26,
+          28,
+          29,
+          30
+        ]
+      },
+      "peak_allocated_mib": 7122.36328125,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        2,
+        3,
+        4,
+        6,
+        8,
+        10,
+        16,
+        18,
+        19,
+        20,
+        22,
+        25,
+        26,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 4,
+          "capability": null,
+          "route_type": "generic_macro"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.010309278350515427,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.9587628865979382,
+          "examples": 194,
+          "lost_correct": 3,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "accuracy_drop": -0.005586592178770999,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.7430167597765364,
+          "examples": 179,
+          "lost_correct": 10,
+          "recovered_correct": 11
+        },
+        "object": {
+          "accuracy_drop": 0.029940119760479056,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.8922155688622755,
+          "examples": 167,
+          "lost_correct": 7,
+          "recovered_correct": 2
+        },
+        "ocr": {
+          "accuracy_drop": 0.11891891891891893,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.6756756756756757,
+          "examples": 185,
+          "lost_correct": 28,
+          "recovered_correct": 6
+        },
+        "spatial": {
+          "accuracy_drop": 0.05586592178770955,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.7486033519553073,
+          "examples": 179,
+          "lost_correct": 12,
+          "recovered_correct": 2
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 222.94071399664972,
+            "vision_encoder_median_ms": 76.18412780761719
+          },
+          {
+            "total_median_ms": 220.11166350421263,
+            "vision_encoder_median_ms": 71.79062271118164
+          },
+          {
+            "total_median_ms": 221.45611750602257,
+            "vision_encoder_median_ms": 72.03788757324219
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 221.45611750602257,
+        "vision_encoder_median_ms": 72.03788757324219
+      },
+      "name": "route-020-k04",
+      "overall": {
+        "accuracy_drop": 0.042035398230088505,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.8042035398230089,
+        "examples": 904,
+        "lost_correct": 60,
+        "recovered_correct": 22
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 0.8362674791851488,
+        "median_vision_speedup_percent": 4.4740922353489365,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 0.39370848330839703,
+            "vision_speedup_percent": -0.15917411522144986
+          },
+          {
+            "total_speedup_percent": 5.932411208992283,
+            "vision_speedup_percent": 8.818043388125307
+          },
+          {
+            "total_speedup_percent": 0.8362674791851488,
+            "vision_speedup_percent": 4.4740922353489365
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3675814176,
+        "active_vision": 589875488,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 78808800,
+        "removed_vision": 78808800,
+        "skipped_vision_blocks": [
+          9,
+          24,
+          25,
+          28
+        ]
+      },
+      "peak_allocated_mib": 7575.427734375,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        9,
+        24,
+        25,
+        28
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 4,
+          "capability": null,
+          "route_type": "contiguous_macro",
+          "start_block": 25
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.03608247422680411,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.9329896907216495,
+          "examples": 194,
+          "lost_correct": 7,
+          "recovered_correct": 0
+        },
+        "counting": {
+          "accuracy_drop": 0.027932960893854775,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.7094972067039106,
+          "examples": 179,
+          "lost_correct": 16,
+          "recovered_correct": 11
+        },
+        "object": {
+          "accuracy_drop": 0.10778443113772462,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.8143712574850299,
+          "examples": 167,
+          "lost_correct": 18,
+          "recovered_correct": 0
+        },
+        "ocr": {
+          "accuracy_drop": 0.15135135135135136,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.6432432432432432,
+          "examples": 185,
+          "lost_correct": 31,
+          "recovered_correct": 3
+        },
+        "spatial": {
+          "accuracy_drop": 0.03910614525139666,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.7653631284916201,
+          "examples": 179,
+          "lost_correct": 13,
+          "recovered_correct": 6
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 198.18372550071217,
+            "vision_encoder_median_ms": 67.31254577636719
+          },
+          {
+            "total_median_ms": 202.67428149963962,
+            "vision_encoder_median_ms": 68.74367904663086
+          },
+          {
+            "total_median_ms": 197.4416265002219,
+            "vision_encoder_median_ms": 66.59456253051758
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 198.18372550071217,
+        "vision_encoder_median_ms": 67.31254577636719
+      },
+      "name": "route-021-k04",
+      "overall": {
+        "accuracy_drop": 0.07190265486725667,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.7743362831858407,
+        "examples": 904,
+        "lost_correct": 85,
+        "recovered_correct": 20
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 13.100812101110048,
+        "median_vision_speedup_percent": 13.013624908455546,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 12.934828495591354,
+            "vision_speedup_percent": 12.999533027534383
+          },
+          {
+            "total_speedup_percent": 15.046463111625986,
+            "vision_speedup_percent": 13.641213350637106
+          },
+          {
+            "total_speedup_percent": 13.100812101110048,
+            "vision_speedup_percent": 13.013624908455546
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3675814176,
+        "active_vision": 589875488,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 78808800,
+        "removed_vision": 78808800,
+        "skipped_vision_blocks": [
+          25,
+          26,
+          27,
+          28
+        ]
+      },
+      "peak_allocated_mib": 7575.857421875,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 4,
+          "capability": null,
+          "repeat": 0,
+          "route_type": "random",
+          "seed": 20261114
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.061855670103092786,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.9072164948453608,
+          "examples": 194,
+          "lost_correct": 14,
+          "recovered_correct": 2
+        },
+        "counting": {
+          "accuracy_drop": 0.08938547486033521,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.6480446927374302,
+          "examples": 179,
+          "lost_correct": 29,
+          "recovered_correct": 13
+        },
+        "object": {
+          "accuracy_drop": 0.05988023952095811,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.8622754491017964,
+          "examples": 167,
+          "lost_correct": 16,
+          "recovered_correct": 6
+        },
+        "ocr": {
+          "accuracy_drop": 0.6594594594594594,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.13513513513513514,
+          "examples": 185,
+          "lost_correct": 123,
+          "recovered_correct": 1
+        },
+        "spatial": {
+          "accuracy_drop": 0.11173184357541899,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.6927374301675978,
+          "examples": 179,
+          "lost_correct": 27,
+          "recovered_correct": 7
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 196.67537100758636,
+            "vision_encoder_median_ms": 67.21276473999023
+          },
+          {
+            "total_median_ms": 196.95784699433716,
+            "vision_encoder_median_ms": 66.68334197998047
+          },
+          {
+            "total_median_ms": 198.27490099851275,
+            "vision_encoder_median_ms": 67.38534545898438
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 196.95784699433716,
+        "vision_encoder_median_ms": 67.21276473999023
+      },
+      "name": "route-022-k04",
+      "overall": {
+        "accuracy_drop": 0.1991150442477876,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.6471238938053098,
+        "examples": 904,
+        "lost_correct": 209,
+        "recovered_correct": 29
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 13.800955022359895,
+        "median_vision_speedup_percent": 13.167287033179242,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 13.800955022359895,
+            "vision_speedup_percent": 13.167287033179242
+          },
+          {
+            "total_speedup_percent": 18.385530741986567,
+            "vision_speedup_percent": 17.152423155264707
+          },
+          {
+            "total_speedup_percent": 12.62549211867543,
+            "vision_speedup_percent": 11.687383354701787
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3675814176,
+        "active_vision": 589875488,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 78808800,
+        "removed_vision": 78808800,
+        "skipped_vision_blocks": [
+          4,
+          8,
+          15,
+          30
+        ]
+      },
+      "peak_allocated_mib": 7575.427734375,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        4,
+        8,
+        15,
+        30
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 4,
+          "capability": null,
+          "repeat": 1,
+          "route_type": "random",
+          "seed": 20261115
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.046391752577319534,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.9226804123711341,
+          "examples": 194,
+          "lost_correct": 10,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "accuracy_drop": 0.027932960893854775,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.7094972067039106,
+          "examples": 179,
+          "lost_correct": 16,
+          "recovered_correct": 11
+        },
+        "object": {
+          "accuracy_drop": 0.041916167664670656,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.8802395209580839,
+          "examples": 167,
+          "lost_correct": 11,
+          "recovered_correct": 4
+        },
+        "ocr": {
+          "accuracy_drop": 0.2918918918918919,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.5027027027027027,
+          "examples": 185,
+          "lost_correct": 57,
+          "recovered_correct": 3
+        },
+        "spatial": {
+          "accuracy_drop": 0.03910614525139666,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.7653631284916201,
+          "examples": 179,
+          "lost_correct": 13,
+          "recovered_correct": 6
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 198.86344599945005,
+            "vision_encoder_median_ms": 66.88401412963867
+          },
+          {
+            "total_median_ms": 197.77598350628978,
+            "vision_encoder_median_ms": 66.88916778564453
+          },
+          {
+            "total_median_ms": 202.1880835018237,
+            "vision_encoder_median_ms": 68.21172714233398
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 198.86344599945005,
+        "vision_encoder_median_ms": 66.88916778564453
+      },
+      "name": "route-023-k04",
+      "overall": {
+        "accuracy_drop": 0.09070796460176989,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.7555309734513275,
+        "examples": 904,
+        "lost_correct": 107,
+        "recovered_correct": 25
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 12.548814275813069,
+        "median_vision_speedup_percent": 13.723530780928538,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 12.548814275813069,
+            "vision_speedup_percent": 13.723530780928538
+          },
+          {
+            "total_speedup_percent": 17.895807351563754,
+            "vision_speedup_percent": 16.791931424246265
+          },
+          {
+            "total_speedup_percent": 10.445719218352089,
+            "vision_speedup_percent": 10.334296257625631
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3675814176,
+        "active_vision": 589875488,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 78808800,
+        "removed_vision": 78808800,
+        "skipped_vision_blocks": [
+          1,
+          10,
+          19,
+          30
+        ]
+      },
+      "peak_allocated_mib": 7575.427734375,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        1,
+        10,
+        19,
+        30
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 4,
+          "capability": null,
+          "repeat": 2,
+          "route_type": "random",
+          "seed": 20261116
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.030927835051546393,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.9381443298969072,
+          "examples": 194,
+          "lost_correct": 7,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "accuracy_drop": 0.03351955307262566,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.7039106145251397,
+          "examples": 179,
+          "lost_correct": 13,
+          "recovered_correct": 7
+        },
+        "object": {
+          "accuracy_drop": -0.0059880239520957446,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.9281437125748503,
+          "examples": 167,
+          "lost_correct": 3,
+          "recovered_correct": 4
+        },
+        "ocr": {
+          "accuracy_drop": 0.1945945945945946,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.6,
+          "examples": 185,
+          "lost_correct": 41,
+          "recovered_correct": 5
+        },
+        "spatial": {
+          "accuracy_drop": 0.011173184357541888,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.7932960893854749,
+          "examples": 179,
+          "lost_correct": 8,
+          "recovered_correct": 6
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 204.59191050031222,
+            "vision_encoder_median_ms": 68.54926300048828
+          },
+          {
+            "total_median_ms": 199.21338399581145,
+            "vision_encoder_median_ms": 67.24229049682617
+          },
+          {
+            "total_median_ms": 198.38166349654784,
+            "vision_encoder_median_ms": 67.16791915893555
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 199.21338399581145,
+        "vision_encoder_median_ms": 67.24229049682617
+      },
+      "name": "route-024-k04",
+      "overall": {
+        "accuracy_drop": 0.05420353982300885,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.7920353982300885,
+        "examples": 904,
+        "lost_correct": 72,
+        "recovered_correct": 23
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 12.56488077653275,
+        "median_vision_speedup_percent": 12.048921643054689,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 9.39750743471417,
+            "vision_speedup_percent": 10.960875532240856
+          },
+          {
+            "total_speedup_percent": 17.045144169198178,
+            "vision_speedup_percent": 16.1785989044295
+          },
+          {
+            "total_speedup_percent": 12.56488077653275,
+            "vision_speedup_percent": 12.048921643054689
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3675814176,
+        "active_vision": 589875488,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 78808800,
+        "removed_vision": 78808800,
+        "skipped_vision_blocks": [
+          13,
+          20,
+          21,
+          25
+        ]
+      },
+      "peak_allocated_mib": 7575.427734375,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        13,
+        20,
+        21,
+        25
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 8,
+          "capability": null,
+          "route_type": "generic_macro"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.07216494845360821,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.8969072164948454,
+          "examples": 194,
+          "lost_correct": 14,
+          "recovered_correct": 0
+        },
+        "counting": {
+          "accuracy_drop": 0.027932960893854775,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.7094972067039106,
+          "examples": 179,
+          "lost_correct": 16,
+          "recovered_correct": 11
+        },
+        "object": {
+          "accuracy_drop": 0.10179640718562877,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.8203592814371258,
+          "examples": 167,
+          "lost_correct": 17,
+          "recovered_correct": 0
+        },
+        "ocr": {
+          "accuracy_drop": 0.3243243243243243,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.4702702702702703,
+          "examples": 185,
+          "lost_correct": 60,
+          "recovered_correct": 0
+        },
+        "spatial": {
+          "accuracy_drop": 0.1061452513966481,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.6983240223463687,
+          "examples": 179,
+          "lost_correct": 27,
+          "recovered_correct": 8
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 189.36016399675282,
+            "vision_encoder_median_ms": 62.87142372131348
+          },
+          {
+            "total_median_ms": 188.54571899282746,
+            "vision_encoder_median_ms": 62.88742446899414
+          },
+          {
+            "total_median_ms": 189.50965549447574,
+            "vision_encoder_median_ms": 62.28766441345215
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 189.36016399675282,
+        "vision_encoder_median_ms": 62.87142372131348
+      },
+      "name": "route-025-k08",
+      "overall": {
+        "accuracy_drop": 0.12721238938053103,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.7190265486725663,
+        "examples": 904,
+        "lost_correct": 134,
+        "recovered_correct": 19
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 18.19722045880827,
+        "median_vision_speedup_percent": 20.98161278071209,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 18.19722045880827,
+            "vision_speedup_percent": 20.98161278071209
+          },
+          {
+            "total_speedup_percent": 23.667402128131055,
+            "vision_speedup_percent": 24.22380409135001
+          },
+          {
+            "total_speedup_percent": 17.83467307495632,
+            "vision_speedup_percent": 20.827983865473133
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3597005376,
+        "active_vision": 511066688,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 157617600,
+        "removed_vision": 157617600,
+        "skipped_vision_blocks": [
+          3,
+          5,
+          6,
+          9,
+          20,
+          24,
+          25,
+          28
+        ]
+      },
+      "peak_allocated_mib": 7424.40625,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        3,
+        5,
+        6,
+        9,
+        20,
+        24,
+        25,
+        28
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 8,
+          "capability": null,
+          "route_type": "contiguous_macro",
+          "start_block": 3
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.4329896907216495,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.5360824742268041,
+          "examples": 194,
+          "lost_correct": 86,
+          "recovered_correct": 2
+        },
+        "counting": {
+          "accuracy_drop": 0.3016759776536313,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.43575418994413406,
+          "examples": 179,
+          "lost_correct": 67,
+          "recovered_correct": 13
+        },
+        "object": {
+          "accuracy_drop": 0.38323353293413176,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.5389221556886228,
+          "examples": 167,
+          "lost_correct": 67,
+          "recovered_correct": 3
+        },
+        "ocr": {
+          "accuracy_drop": 0.7189189189189189,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.07567567567567568,
+          "examples": 185,
+          "lost_correct": 138,
+          "recovered_correct": 5
+        },
+        "spatial": {
+          "accuracy_drop": 0.2960893854748604,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.5083798882681564,
+          "examples": 179,
+          "lost_correct": 71,
+          "recovered_correct": 18
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 192.26163599523716,
+            "vision_encoder_median_ms": 62.462961196899414
+          },
+          {
+            "total_median_ms": 192.6810824952554,
+            "vision_encoder_median_ms": 62.34452819824219
+          },
+          {
+            "total_median_ms": 199.62059699901147,
+            "vision_encoder_median_ms": 64.36659240722656
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 192.6810824952554,
+        "vision_encoder_median_ms": 62.462961196899414
+      },
+      "name": "route-026-k08",
+      "overall": {
+        "accuracy_drop": 0.42920353982300885,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.4170353982300885,
+        "examples": 904,
+        "lost_correct": 429,
+        "recovered_correct": 41
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 16.413474452046906,
+        "median_vision_speedup_percent": 21.772744901527187,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 16.413474452046906,
+            "vision_speedup_percent": 21.772744901527187
+          },
+          {
+            "total_speedup_percent": 21.013225316490256,
+            "vision_speedup_percent": 25.305545214891232
+          },
+          {
+            "total_speedup_percent": 11.866253460056186,
+            "vision_speedup_percent": 16.925451997698616
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3597005376,
+        "active_vision": 511066688,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 157617600,
+        "removed_vision": 157617600,
+        "skipped_vision_blocks": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "peak_allocated_mib": 7424.8359375,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 8,
+          "capability": null,
+          "repeat": 0,
+          "route_type": "random",
+          "seed": 20261514
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.5876288659793815,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.38144329896907214,
+          "examples": 194,
+          "lost_correct": 115,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "accuracy_drop": 0.3854748603351955,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.35195530726256985,
+          "examples": 179,
+          "lost_correct": 78,
+          "recovered_correct": 9
+        },
+        "object": {
+          "accuracy_drop": 0.35928143712574856,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.562874251497006,
+          "examples": 167,
+          "lost_correct": 63,
+          "recovered_correct": 3
+        },
+        "ocr": {
+          "accuracy_drop": 0.7297297297297297,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.06486486486486487,
+          "examples": 185,
+          "lost_correct": 138,
+          "recovered_correct": 3
+        },
+        "spatial": {
+          "accuracy_drop": 0.25139664804469275,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.553072625698324,
+          "examples": 179,
+          "lost_correct": 65,
+          "recovered_correct": 20
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 194.46331250219373,
+            "vision_encoder_median_ms": 63.07523155212402
+          },
+          {
+            "total_median_ms": 192.35396350268275,
+            "vision_encoder_median_ms": 62.604766845703125
+          },
+          {
+            "total_median_ms": 195.7287919940427,
+            "vision_encoder_median_ms": 63.053199768066406
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 194.46331250219373,
+        "vision_encoder_median_ms": 63.053199768066406
+      },
+      "name": "route-027-k08",
+      "overall": {
+        "accuracy_drop": 0.4679203539823009,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.37831858407079644,
+        "examples": 904,
+        "lost_correct": 459,
+        "recovered_correct": 36
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 15.095463314129208,
+        "median_vision_speedup_percent": 20.590698637996297,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 15.095463314129208,
+            "vision_speedup_percent": 20.590698637996297
+          },
+          {
+            "total_speedup_percent": 21.219021566448724,
+            "vision_speedup_percent": 24.78466881443362
+          },
+          {
+            "total_speedup_percent": 14.09056415378489,
+            "vision_speedup_percent": 19.360998941376906
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3597005376,
+        "active_vision": 511066688,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 157617600,
+        "removed_vision": 157617600,
+        "skipped_vision_blocks": [
+          0,
+          2,
+          4,
+          5,
+          10,
+          11,
+          14,
+          31
+        ]
+      },
+      "peak_allocated_mib": 7424.58203125,
+      "peak_reserved_mib": 8248.0,
+      "skip_vision_blocks": [
+        0,
+        2,
+        4,
+        5,
+        10,
+        11,
+        14,
+        31
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 8,
+          "capability": null,
+          "repeat": 1,
+          "route_type": "random",
+          "seed": 20261515
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.44329896907216493,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.5257731958762887,
+          "examples": 194,
+          "lost_correct": 89,
+          "recovered_correct": 3
+        },
+        "counting": {
+          "accuracy_drop": 0.4245810055865922,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.3128491620111732,
+          "examples": 179,
+          "lost_correct": 91,
+          "recovered_correct": 15
+        },
+        "object": {
+          "accuracy_drop": 0.31137724550898205,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.6107784431137725,
+          "examples": 167,
+          "lost_correct": 55,
+          "recovered_correct": 3
+        },
+        "ocr": {
+          "accuracy_drop": 0.7189189189189189,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.07567567567567568,
+          "examples": 185,
+          "lost_correct": 139,
+          "recovered_correct": 6
+        },
+        "spatial": {
+          "accuracy_drop": 0.2737430167597765,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.5307262569832403,
+          "examples": 179,
+          "lost_correct": 70,
+          "recovered_correct": 21
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 193.3887940031127,
+            "vision_encoder_median_ms": 62.98059272766113
+          },
+          {
+            "total_median_ms": 193.6112929979572,
+            "vision_encoder_median_ms": 63.04401779174805
+          },
+          {
+            "total_median_ms": 194.04146799934097,
+            "vision_encoder_median_ms": 62.9399528503418
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 193.6112929979572,
+        "vision_encoder_median_ms": 62.98059272766113
+      },
+      "name": "route-028-k08",
+      "overall": {
+        "accuracy_drop": 0.43805309734513276,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.4081858407079646,
+        "examples": 904,
+        "lost_correct": 444,
+        "recovered_correct": 48
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 15.73496367985021,
+        "median_vision_speedup_percent": 20.77190623649585,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 15.73496367985021,
+            "vision_speedup_percent": 20.77190623649585
+          },
+          {
+            "total_speedup_percent": 20.43181412186328,
+            "vision_speedup_percent": 23.91524795979043
+          },
+          {
+            "total_speedup_percent": 15.082660062203757,
+            "vision_speedup_percent": 19.575763405195048
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3597005376,
+        "active_vision": 511066688,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 157617600,
+        "removed_vision": 157617600,
+        "skipped_vision_blocks": [
+          1,
+          3,
+          5,
+          11,
+          13,
+          14,
+          15,
+          17
+        ]
+      },
+      "peak_allocated_mib": 7424.40625,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        1,
+        3,
+        5,
+        11,
+        13,
+        14,
+        15,
+        17
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 8,
+          "capability": null,
+          "repeat": 2,
+          "route_type": "random",
+          "seed": 20261516
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.12886597938144329,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.8402061855670103,
+          "examples": 194,
+          "lost_correct": 27,
+          "recovered_correct": 2
+        },
+        "counting": {
+          "accuracy_drop": 0.06145251396648044,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.6759776536312849,
+          "examples": 179,
+          "lost_correct": 23,
+          "recovered_correct": 12
+        },
+        "object": {
+          "accuracy_drop": 0.14970059880239528,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.7724550898203593,
+          "examples": 167,
+          "lost_correct": 30,
+          "recovered_correct": 5
+        },
+        "ocr": {
+          "accuracy_drop": 0.6,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.1945945945945946,
+          "examples": 185,
+          "lost_correct": 114,
+          "recovered_correct": 3
+        },
+        "spatial": {
+          "accuracy_drop": 0.17318435754189954,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.6312849162011173,
+          "examples": 179,
+          "lost_correct": 39,
+          "recovered_correct": 8
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 192.9876569993212,
+            "vision_encoder_median_ms": 63.21113586425781
+          },
+          {
+            "total_median_ms": 219.61309300240828,
+            "vision_encoder_median_ms": 70.94732666015625
+          },
+          {
+            "total_median_ms": 217.90182650147472,
+            "vision_encoder_median_ms": 72.3255386352539
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 217.90182650147472,
+        "vision_encoder_median_ms": 70.94732666015625
+      },
+      "name": "route-029-k08",
+      "overall": {
+        "accuracy_drop": 0.2245575221238938,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.6216814159292036,
+        "examples": 904,
+        "lost_correct": 233,
+        "recovered_correct": 30
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 6.172901312254164,
+        "median_vision_speedup_percent": 10.111479386201495,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 15.975526093458958,
+            "vision_speedup_percent": 20.331427930010214
+          },
+          {
+            "total_speedup_percent": 6.172901312254164,
+            "vision_speedup_percent": 10.111479386201495
+          },
+          {
+            "total_speedup_percent": 2.481051482090346,
+            "vision_speedup_percent": 4.058580866180095
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3597005376,
+        "active_vision": 511066688,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 157617600,
+        "removed_vision": 157617600,
+        "skipped_vision_blocks": [
+          1,
+          7,
+          8,
+          9,
+          18,
+          19,
+          25,
+          30
+        ]
+      },
+      "peak_allocated_mib": 7424.40625,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        1,
+        7,
+        8,
+        9,
+        18,
+        19,
+        25,
+        30
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 12,
+          "capability": null,
+          "route_type": "generic_macro"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.22164948453608246,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.7474226804123711,
+          "examples": 194,
+          "lost_correct": 45,
+          "recovered_correct": 2
+        },
+        "counting": {
+          "accuracy_drop": 0.24022346368715086,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.4972067039106145,
+          "examples": 179,
+          "lost_correct": 55,
+          "recovered_correct": 12
+        },
+        "object": {
+          "accuracy_drop": 0.221556886227545,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.7005988023952096,
+          "examples": 167,
+          "lost_correct": 38,
+          "recovered_correct": 1
+        },
+        "ocr": {
+          "accuracy_drop": 0.6864864864864865,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.10810810810810811,
+          "examples": 185,
+          "lost_correct": 132,
+          "recovered_correct": 5
+        },
+        "spatial": {
+          "accuracy_drop": 0.26256983240223464,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.5418994413407822,
+          "examples": 179,
+          "lost_correct": 58,
+          "recovered_correct": 11
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 187.8373584986548,
+            "vision_encoder_median_ms": 58.454912185668945
+          },
+          {
+            "total_median_ms": 188.87967000046046,
+            "vision_encoder_median_ms": 58.694143295288086
+          },
+          {
+            "total_median_ms": 196.01691749994643,
+            "vision_encoder_median_ms": 61.0087833404541
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 188.87967000046046,
+        "vision_encoder_median_ms": 58.694143295288086
+      },
+      "name": "route-030-k12",
+      "overall": {
+        "accuracy_drop": 0.32853982300884954,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.5176991150442478,
+        "examples": 904,
+        "lost_correct": 328,
+        "recovered_correct": 31
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 19.15545037969948,
+        "median_vision_speedup_percent": 30.12227638738654,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 19.15545037969948,
+            "vision_speedup_percent": 30.12227638738654
+          },
+          {
+            "total_speedup_percent": 23.448750467251166,
+            "vision_speedup_percent": 33.098715790831704
+          },
+          {
+            "total_speedup_percent": 13.922862294501947,
+            "vision_speedup_percent": 23.360809684859763
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3518196576,
+        "active_vision": 432257888,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 236426400,
+        "removed_vision": 236426400,
+        "skipped_vision_blocks": [
+          3,
+          4,
+          5,
+          6,
+          9,
+          10,
+          11,
+          20,
+          24,
+          25,
+          28,
+          30
+        ]
+      },
+      "peak_allocated_mib": 7273.384765625,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        11,
+        20,
+        24,
+        25,
+        28,
+        30
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 12,
+          "capability": null,
+          "route_type": "contiguous_macro",
+          "start_block": 2
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.6804123711340206,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.28865979381443296,
+          "examples": 194,
+          "lost_correct": 133,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "accuracy_drop": 0.4245810055865922,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.3128491620111732,
+          "examples": 179,
+          "lost_correct": 88,
+          "recovered_correct": 12
+        },
+        "object": {
+          "accuracy_drop": 0.39520958083832336,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.5269461077844312,
+          "examples": 167,
+          "lost_correct": 67,
+          "recovered_correct": 1
+        },
+        "ocr": {
+          "accuracy_drop": 0.7297297297297297,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.06486486486486487,
+          "examples": 185,
+          "lost_correct": 142,
+          "recovered_correct": 7
+        },
+        "spatial": {
+          "accuracy_drop": 0.2960893854748604,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.5083798882681564,
+          "examples": 179,
+          "lost_correct": 71,
+          "recovered_correct": 18
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 190.6018889931147,
+            "vision_encoder_median_ms": 58.60710525512695
+          },
+          {
+            "total_median_ms": 200.8105919958325,
+            "vision_encoder_median_ms": 64.17871856689453
+          },
+          {
+            "total_median_ms": 191.73763550497824,
+            "vision_encoder_median_ms": 59.03264045715332
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 191.73763550497824,
+        "vision_encoder_median_ms": 59.03264045715332
+      },
+      "name": "route-031-k12",
+      "overall": {
+        "accuracy_drop": 0.5110619469026549,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.33517699115044247,
+        "examples": 904,
+        "lost_correct": 501,
+        "recovered_correct": 39
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 16.46544112702044,
+        "median_vision_speedup_percent": 27.49036554157087,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 17.42719428582791,
+            "vision_speedup_percent": 29.78437011199466
+          },
+          {
+            "total_speedup_percent": 16.114190085687774,
+            "vision_speedup_percent": 21.724385769765764
+          },
+          {
+            "total_speedup_percent": 16.46544112702044,
+            "vision_speedup_percent": 27.49036554157087
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3518196576,
+        "active_vision": 432257888,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 236426400,
+        "removed_vision": 236426400,
+        "skipped_vision_blocks": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "peak_allocated_mib": 7273.814453125,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 12,
+          "capability": null,
+          "repeat": 0,
+          "route_type": "random",
+          "seed": 20261914
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.6391752577319587,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.32989690721649484,
+          "examples": 194,
+          "lost_correct": 125,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "accuracy_drop": 0.4022346368715084,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.33519553072625696,
+          "examples": 179,
+          "lost_correct": 78,
+          "recovered_correct": 6
+        },
+        "object": {
+          "accuracy_drop": 0.3892215568862276,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.5329341317365269,
+          "examples": 167,
+          "lost_correct": 66,
+          "recovered_correct": 1
+        },
+        "ocr": {
+          "accuracy_drop": 0.7297297297297297,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.06486486486486487,
+          "examples": 185,
+          "lost_correct": 142,
+          "recovered_correct": 7
+        },
+        "spatial": {
+          "accuracy_drop": 0.2905027932960894,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.5139664804469274,
+          "examples": 179,
+          "lost_correct": 72,
+          "recovered_correct": 20
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 194.04192149522714,
+            "vision_encoder_median_ms": 60.13796806335449
+          },
+          {
+            "total_median_ms": 188.73350649664644,
+            "vision_encoder_median_ms": 58.468271255493164
+          },
+          {
+            "total_median_ms": 194.98046499938937,
+            "vision_encoder_median_ms": 59.05251121520996
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 194.04192149522714,
+        "vision_encoder_median_ms": 59.05251121520996
+      },
+      "name": "route-032-k12",
+      "overall": {
+        "accuracy_drop": 0.49557522123893805,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.3506637168141593,
+        "examples": 904,
+        "lost_correct": 483,
+        "recovered_correct": 35
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 15.345410298829743,
+        "median_vision_speedup_percent": 27.447465922975532,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 15.345410298829743,
+            "vision_speedup_percent": 26.480599271510297
+          },
+          {
+            "total_speedup_percent": 23.544354593114612,
+            "vision_speedup_percent": 33.61289686347517
+          },
+          {
+            "total_speedup_percent": 14.528439040337094,
+            "vision_speedup_percent": 27.447465922975532
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3518196576,
+        "active_vision": 432257888,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 236426400,
+        "removed_vision": 236426400,
+        "skipped_vision_blocks": [
+          0,
+          2,
+          5,
+          15,
+          16,
+          17,
+          18,
+          20,
+          21,
+          23,
+          24,
+          28
+        ]
+      },
+      "peak_allocated_mib": 7273.560546875,
+      "peak_reserved_mib": 8248.0,
+      "skip_vision_blocks": [
+        0,
+        2,
+        5,
+        15,
+        16,
+        17,
+        18,
+        20,
+        21,
+        23,
+        24,
+        28
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 12,
+          "capability": null,
+          "repeat": 1,
+          "route_type": "random",
+          "seed": 20261915
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.3711340206185567,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.5979381443298969,
+          "examples": 194,
+          "lost_correct": 75,
+          "recovered_correct": 3
+        },
+        "counting": {
+          "accuracy_drop": 0.329608938547486,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.40782122905027934,
+          "examples": 179,
+          "lost_correct": 67,
+          "recovered_correct": 8
+        },
+        "object": {
+          "accuracy_drop": 0.281437125748503,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.6407185628742516,
+          "examples": 167,
+          "lost_correct": 48,
+          "recovered_correct": 1
+        },
+        "ocr": {
+          "accuracy_drop": 0.7297297297297297,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.06486486486486487,
+          "examples": 185,
+          "lost_correct": 140,
+          "recovered_correct": 5
+        },
+        "spatial": {
+          "accuracy_drop": 0.2960893854748604,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.5083798882681564,
+          "examples": 179,
+          "lost_correct": 70,
+          "recovered_correct": 17
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 193.14174450119026,
+            "vision_encoder_median_ms": 59.300031661987305
+          },
+          {
+            "total_median_ms": 190.7407214966952,
+            "vision_encoder_median_ms": 59.24032020568848
+          },
+          {
+            "total_median_ms": 189.02709650137695,
+            "vision_encoder_median_ms": 58.82588768005371
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 190.7407214966952,
+        "vision_encoder_median_ms": 59.24032020568848
+      },
+      "name": "route-033-k12",
+      "overall": {
+        "accuracy_drop": 0.40486725663716816,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.4413716814159292,
+        "examples": 904,
+        "lost_correct": 400,
+        "recovered_correct": 34
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 18.135488049336246,
+        "median_vision_speedup_percent": 28.26782762916853,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 15.883001408337961,
+            "vision_speedup_percent": 28.26782762916853
+          },
+          {
+            "total_speedup_percent": 22.244264713172868,
+            "vision_speedup_percent": 31.87158796443761
+          },
+          {
+            "total_speedup_percent": 18.135488049336246,
+            "vision_speedup_percent": 27.938450358794988
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3518196576,
+        "active_vision": 432257888,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 236426400,
+        "removed_vision": 236426400,
+        "skipped_vision_blocks": [
+          2,
+          5,
+          6,
+          8,
+          9,
+          10,
+          14,
+          19,
+          21,
+          24,
+          26,
+          27
+        ]
+      },
+      "peak_allocated_mib": 7273.384765625,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        2,
+        5,
+        6,
+        8,
+        9,
+        10,
+        14,
+        19,
+        21,
+        24,
+        26,
+        27
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 12,
+          "capability": null,
+          "repeat": 2,
+          "route_type": "random",
+          "seed": 20261916
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.25773195876288657,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.711340206185567,
+          "examples": 194,
+          "lost_correct": 53,
+          "recovered_correct": 3
+        },
+        "counting": {
+          "accuracy_drop": 0.329608938547486,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.40782122905027934,
+          "examples": 179,
+          "lost_correct": 69,
+          "recovered_correct": 10
+        },
+        "object": {
+          "accuracy_drop": 0.221556886227545,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.7005988023952096,
+          "examples": 167,
+          "lost_correct": 41,
+          "recovered_correct": 4
+        },
+        "ocr": {
+          "accuracy_drop": 0.7189189189189189,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.07567567567567568,
+          "examples": 185,
+          "lost_correct": 140,
+          "recovered_correct": 7
+        },
+        "spatial": {
+          "accuracy_drop": 0.2905027932960894,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.5139664804469274,
+          "examples": 179,
+          "lost_correct": 69,
+          "recovered_correct": 17
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 189.58802450652001,
+            "vision_encoder_median_ms": 58.616432189941406
+          },
+          {
+            "total_median_ms": 190.1860919970204,
+            "vision_encoder_median_ms": 58.91217613220215
+          },
+          {
+            "total_median_ms": 188.64928199764108,
+            "vision_encoder_median_ms": 58.60044860839844
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 189.58802450652001,
+        "vision_encoder_median_ms": 58.616432189941406
+      },
+      "name": "route-034-k12",
+      "overall": {
+        "accuracy_drop": 0.3661504424778761,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.48008849557522126,
+        "examples": 904,
+        "lost_correct": 372,
+        "recovered_correct": 41
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 18.372082115946654,
+        "median_vision_speedup_percent": 29.763719070729522,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 18.055162546780814,
+            "vision_speedup_percent": 29.763719070729522
+          },
+          {
+            "total_speedup_percent": 22.600759105922897,
+            "vision_speedup_percent": 32.6061199897808
+          },
+          {
+            "total_speedup_percent": 18.372082115946654,
+            "vision_speedup_percent": 28.43063644546886
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3518196576,
+        "active_vision": 432257888,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 236426400,
+        "removed_vision": 236426400,
+        "skipped_vision_blocks": [
+          1,
+          6,
+          7,
+          8,
+          10,
+          13,
+          16,
+          20,
+          21,
+          23,
+          27,
+          28
+        ]
+      },
+      "peak_allocated_mib": 7273.384765625,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        1,
+        6,
+        7,
+        8,
+        10,
+        13,
+        16,
+        20,
+        21,
+        23,
+        27,
+        28
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 16,
+          "capability": null,
+          "route_type": "generic_macro"
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.5257731958762887,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.44329896907216493,
+          "examples": 194,
+          "lost_correct": 103,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "accuracy_drop": 0.3407821229050279,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.39664804469273746,
+          "examples": 179,
+          "lost_correct": 71,
+          "recovered_correct": 10
+        },
+        "object": {
+          "accuracy_drop": 0.38323353293413176,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.5389221556886228,
+          "examples": 167,
+          "lost_correct": 65,
+          "recovered_correct": 1
+        },
+        "ocr": {
+          "accuracy_drop": 0.7297297297297297,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.06486486486486487,
+          "examples": 185,
+          "lost_correct": 142,
+          "recovered_correct": 7
+        },
+        "spatial": {
+          "accuracy_drop": 0.2905027932960894,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.5139664804469274,
+          "examples": 179,
+          "lost_correct": 71,
+          "recovered_correct": 19
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 185.91542500507785,
+            "vision_encoder_median_ms": 54.66276741027832
+          },
+          {
+            "total_median_ms": 186.66928599850507,
+            "vision_encoder_median_ms": 54.376895904541016
+          },
+          {
+            "total_median_ms": 183.76102000183892,
+            "vision_encoder_median_ms": 54.12414360046387
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 185.91542500507785,
+        "vision_encoder_median_ms": 54.376895904541016
+      },
+      "name": "route-035-k16",
+      "overall": {
+        "accuracy_drop": 0.4579646017699115,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.38827433628318586,
+        "examples": 904,
+        "lost_correct": 452,
+        "recovered_correct": 38
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 21.520920484201067,
+        "median_vision_speedup_percent": 39.14930765458835,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 20.387240861961686,
+            "vision_speedup_percent": 39.14930765458835
+          },
+          {
+            "total_speedup_percent": 24.91052893624033,
+            "vision_speedup_percent": 43.666073009392
+          },
+          {
+            "total_speedup_percent": 21.520920484201067,
+            "vision_speedup_percent": 39.05241561553501
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3439387776,
+        "active_vision": 353449088,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 315235200,
+        "removed_vision": 315235200,
+        "skipped_vision_blocks": [
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          11,
+          12,
+          20,
+          22,
+          24,
+          25,
+          27,
+          28,
+          30
+        ]
+      },
+      "peak_allocated_mib": 7122.36328125,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        20,
+        22,
+        24,
+        25,
+        27,
+        28,
+        30
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 16,
+          "capability": null,
+          "route_type": "contiguous_macro",
+          "start_block": 16
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.4639175257731959,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.5051546391752577,
+          "examples": 194,
+          "lost_correct": 93,
+          "recovered_correct": 3
+        },
+        "counting": {
+          "accuracy_drop": 0.4301675977653631,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.30726256983240224,
+          "examples": 179,
+          "lost_correct": 86,
+          "recovered_correct": 9
+        },
+        "object": {
+          "accuracy_drop": 0.3652694610778444,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.5568862275449101,
+          "examples": 167,
+          "lost_correct": 64,
+          "recovered_correct": 3
+        },
+        "ocr": {
+          "accuracy_drop": 0.7297297297297297,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.06486486486486487,
+          "examples": 185,
+          "lost_correct": 142,
+          "recovered_correct": 7
+        },
+        "spatial": {
+          "accuracy_drop": 0.2793296089385475,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.5251396648044693,
+          "examples": 179,
+          "lost_correct": 69,
+          "recovered_correct": 19
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 185.0094010005705,
+            "vision_encoder_median_ms": 54.06551933288574
+          },
+          {
+            "total_median_ms": 183.96250249497825,
+            "vision_encoder_median_ms": 53.92153549194336
+          },
+          {
+            "total_median_ms": 186.25356400298188,
+            "vision_encoder_median_ms": 54.44454383850098
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 185.0094010005705,
+        "vision_encoder_median_ms": 54.06551933288574
+      },
+      "name": "route-036-k16",
+      "overall": {
+        "accuracy_drop": 0.45685840707964603,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.3893805309734513,
+        "examples": 904,
+        "lost_correct": 454,
+        "recovered_correct": 41
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 20.976798632904426,
+        "median_vision_speedup_percent": 40.686454758558945,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 20.976798632904426,
+            "vision_speedup_percent": 40.686454758558945
+          },
+          {
+            "total_speedup_percent": 26.7484347842033,
+            "vision_speedup_percent": 44.87931446635341
+          },
+          {
+            "total_speedup_percent": 19.894663059342243,
+            "vision_speedup_percent": 38.23410722461511
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3439387776,
+        "active_vision": 353449088,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 315235200,
+        "removed_vision": 315235200,
+        "skipped_vision_blocks": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ]
+      },
+      "peak_allocated_mib": 7123.2421875,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 16,
+          "capability": null,
+          "repeat": 0,
+          "route_type": "random",
+          "seed": 20262314
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.6443298969072164,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.3247422680412371,
+          "examples": 194,
+          "lost_correct": 126,
+          "recovered_correct": 1
+        },
+        "counting": {
+          "accuracy_drop": 0.39664804469273746,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.3407821229050279,
+          "examples": 179,
+          "lost_correct": 78,
+          "recovered_correct": 7
+        },
+        "object": {
+          "accuracy_drop": 0.38323353293413176,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.5389221556886228,
+          "examples": 167,
+          "lost_correct": 65,
+          "recovered_correct": 1
+        },
+        "ocr": {
+          "accuracy_drop": 0.7297297297297297,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.06486486486486487,
+          "examples": 185,
+          "lost_correct": 142,
+          "recovered_correct": 7
+        },
+        "spatial": {
+          "accuracy_drop": 0.2960893854748604,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.5083798882681564,
+          "examples": 179,
+          "lost_correct": 72,
+          "recovered_correct": 19
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 183.7191874947166,
+            "vision_encoder_median_ms": 54.193647384643555
+          },
+          {
+            "total_median_ms": 210.75743150140624,
+            "vision_encoder_median_ms": 61.50257682800293
+          },
+          {
+            "total_median_ms": 212.41393949458143,
+            "vision_encoder_median_ms": 63.02508735656738
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 210.75743150140624,
+        "vision_encoder_median_ms": 61.50257682800293
+      },
+      "name": "route-037-k16",
+      "overall": {
+        "accuracy_drop": 0.49557522123893805,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.3506637168141593,
+        "examples": 904,
+        "lost_correct": 483,
+        "recovered_correct": 35
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 10.634102361738119,
+        "median_vision_speedup_percent": 27.020939608646444,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 21.826388170173793,
+            "vision_speedup_percent": 40.35383493636857
+          },
+          {
+            "total_speedup_percent": 10.634102361738119,
+            "vision_speedup_percent": 27.020939608646444
+          },
+          {
+            "total_speedup_percent": 5.128732854694751,
+            "vision_speedup_percent": 19.414240049956266
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3439387776,
+        "active_vision": 353449088,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 315235200,
+        "removed_vision": 315235200,
+        "skipped_vision_blocks": [
+          0,
+          1,
+          3,
+          6,
+          8,
+          9,
+          10,
+          13,
+          15,
+          16,
+          17,
+          21,
+          24,
+          26,
+          28,
+          31
+        ]
+      },
+      "peak_allocated_mib": 7122.5390625,
+      "peak_reserved_mib": 8280.0,
+      "skip_vision_blocks": [
+        0,
+        1,
+        3,
+        6,
+        8,
+        9,
+        10,
+        13,
+        15,
+        16,
+        17,
+        21,
+        24,
+        26,
+        28,
+        31
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 16,
+          "capability": null,
+          "repeat": 1,
+          "route_type": "random",
+          "seed": 20262315
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.5670103092783505,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.4020618556701031,
+          "examples": 194,
+          "lost_correct": 112,
+          "recovered_correct": 2
+        },
+        "counting": {
+          "accuracy_drop": 0.3016759776536313,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.43575418994413406,
+          "examples": 179,
+          "lost_correct": 66,
+          "recovered_correct": 12
+        },
+        "object": {
+          "accuracy_drop": 0.31137724550898205,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.6107784431137725,
+          "examples": 167,
+          "lost_correct": 55,
+          "recovered_correct": 3
+        },
+        "ocr": {
+          "accuracy_drop": 0.7297297297297297,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.06486486486486487,
+          "examples": 185,
+          "lost_correct": 142,
+          "recovered_correct": 7
+        },
+        "spatial": {
+          "accuracy_drop": 0.2905027932960894,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.5139664804469274,
+          "examples": 179,
+          "lost_correct": 71,
+          "recovered_correct": 19
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 184.79243000911083,
+            "vision_encoder_median_ms": 54.11840057373047
+          },
+          {
+            "total_median_ms": 184.86583399499068,
+            "vision_encoder_median_ms": 54.113441467285156
+          },
+          {
+            "total_median_ms": 183.5737319997861,
+            "vision_encoder_median_ms": 53.84190559387207
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 184.79243000911083,
+        "vision_encoder_median_ms": 54.113441467285156
+      },
+      "name": "route-038-k16",
+      "overall": {
+        "accuracy_drop": 0.44579646017699115,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.4004424778761062,
+        "examples": 904,
+        "lost_correct": 446,
+        "recovered_correct": 43
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 21.644900152518364,
+        "median_vision_speedup_percent": 40.54898443018988,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 21.118841550689016,
+            "vision_speedup_percent": 40.54898443018988
+          },
+          {
+            "total_speedup_percent": 26.129089114732864,
+            "vision_speedup_percent": 44.36551964207993
+          },
+          {
+            "total_speedup_percent": 21.644900152518364,
+            "vision_speedup_percent": 39.781325117571086
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3439387776,
+        "active_vision": 353449088,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 315235200,
+        "removed_vision": 315235200,
+        "skipped_vision_blocks": [
+          1,
+          5,
+          6,
+          8,
+          12,
+          13,
+          17,
+          18,
+          19,
+          20,
+          22,
+          23,
+          26,
+          27,
+          28,
+          30
+        ]
+      },
+      "peak_allocated_mib": 7122.36328125,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        1,
+        5,
+        6,
+        8,
+        12,
+        13,
+        17,
+        18,
+        19,
+        20,
+        22,
+        23,
+        26,
+        27,
+        28,
+        30
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "budget": 16,
+          "capability": null,
+          "repeat": 2,
+          "route_type": "random",
+          "seed": 20262316
+        }
+      ],
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop": 0.5721649484536082,
+          "baseline_accuracy": 0.9690721649484536,
+          "candidate_accuracy": 0.39690721649484534,
+          "examples": 194,
+          "lost_correct": 113,
+          "recovered_correct": 2
+        },
+        "counting": {
+          "accuracy_drop": 0.41899441340782123,
+          "baseline_accuracy": 0.7374301675977654,
+          "candidate_accuracy": 0.31843575418994413,
+          "examples": 179,
+          "lost_correct": 86,
+          "recovered_correct": 11
+        },
+        "object": {
+          "accuracy_drop": 0.38323353293413176,
+          "baseline_accuracy": 0.9221556886227545,
+          "candidate_accuracy": 0.5389221556886228,
+          "examples": 167,
+          "lost_correct": 65,
+          "recovered_correct": 1
+        },
+        "ocr": {
+          "accuracy_drop": 0.7297297297297297,
+          "baseline_accuracy": 0.7945945945945946,
+          "candidate_accuracy": 0.06486486486486487,
+          "examples": 185,
+          "lost_correct": 142,
+          "recovered_correct": 7
+        },
+        "spatial": {
+          "accuracy_drop": 0.2849162011173185,
+          "baseline_accuracy": 0.8044692737430168,
+          "candidate_accuracy": 0.5195530726256983,
+          "examples": 179,
+          "lost_correct": 70,
+          "recovered_correct": 19
+        }
+      },
+      "latency": {
+        "examples_per_repeat": 100,
+        "per_repeat": [
+          {
+            "total_median_ms": 187.10001450381242,
+            "vision_encoder_median_ms": 54.77467155456543
+          },
+          {
+            "total_median_ms": 187.80915300158085,
+            "vision_encoder_median_ms": 54.66428756713867
+          },
+          {
+            "total_median_ms": 185.34808850381523,
+            "vision_encoder_median_ms": 54.519134521484375
+          }
+        ],
+        "repeats": 3,
+        "total_median_ms": 187.10001450381242,
+        "vision_encoder_median_ms": 54.66428756713867
+      },
+      "name": "route-039-k16",
+      "overall": {
+        "accuracy_drop": 0.48230088495575224,
+        "baseline_accuracy": 0.8462389380530974,
+        "candidate_accuracy": 0.3639380530973451,
+        "examples": 904,
+        "lost_correct": 476,
+        "recovered_correct": 40
+      },
+      "paired_latency": {
+        "median_total_speedup_percent": 20.48038088765878,
+        "median_vision_speedup_percent": 38.86502691388654,
+        "per_repeat": [
+          {
+            "total_speedup_percent": 19.625031079750244,
+            "vision_speedup_percent": 38.86502691388654
+          },
+          {
+            "total_speedup_percent": 24.152411517596928,
+            "vision_speedup_percent": 42.91076395079803
+          },
+          {
+            "total_speedup_percent": 20.48038088765878,
+            "vision_speedup_percent": 38.04498139640848
+          }
+        ]
+      },
+      "parameters": {
+        "active_model": 3439387776,
+        "active_vision": 353449088,
+        "full_model": 3754622976,
+        "full_vision": 668684288,
+        "per_vision_block": {
+          "0": 19702200,
+          "1": 19702200,
+          "10": 19702200,
+          "11": 19702200,
+          "12": 19702200,
+          "13": 19702200,
+          "14": 19702200,
+          "15": 19702200,
+          "16": 19702200,
+          "17": 19702200,
+          "18": 19702200,
+          "19": 19702200,
+          "2": 19702200,
+          "20": 19702200,
+          "21": 19702200,
+          "22": 19702200,
+          "23": 19702200,
+          "24": 19702200,
+          "25": 19702200,
+          "26": 19702200,
+          "27": 19702200,
+          "28": 19702200,
+          "29": 19702200,
+          "3": 19702200,
+          "30": 19702200,
+          "31": 19702200,
+          "4": 19702200,
+          "5": 19702200,
+          "6": 19702200,
+          "7": 19702200,
+          "8": 19702200,
+          "9": 19702200
+        },
+        "removed_model": 315235200,
+        "removed_vision": 315235200,
+        "skipped_vision_blocks": [
+          1,
+          3,
+          4,
+          5,
+          7,
+          9,
+          12,
+          13,
+          18,
+          20,
+          21,
+          24,
+          27,
+          29,
+          30,
+          31
+        ]
+      },
+      "peak_allocated_mib": 7122.36328125,
+      "peak_reserved_mib": 8270.0,
+      "skip_vision_blocks": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        9,
+        12,
+        13,
+        18,
+        20,
+        21,
+        24,
+        27,
+        29,
+        30,
+        31
+      ]
+    }
+  ]
+}

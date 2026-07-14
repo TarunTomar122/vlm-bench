@@ -122,15 +122,21 @@ class BaselineRunner:
             attn_implementation=config["attention_implementation"],
             low_cpu_mem_usage=True,
         ).to(config["device"])
+        full_model_parameters = sum(parameter.numel() for parameter in self.model.parameters())
+        full_vision_parameters = sum(parameter.numel() for parameter in self.model.visual.parameters())
+        block_parameters = {
+            str(index): sum(parameter.numel() for parameter in block.parameters())
+            for index, block in enumerate(self.model.visual.blocks)
+        }
         legacy_skip_block = config.get("skip_vision_block")
         skip_blocks = config.get("skip_vision_blocks")
         if legacy_skip_block is not None and skip_blocks is not None:
             raise ValueError("Use either skip_vision_block or skip_vision_blocks, not both")
         if skip_blocks is None and legacy_skip_block is not None:
             skip_blocks = [legacy_skip_block]
+        skip_blocks = [] if skip_blocks is None else [int(block) for block in skip_blocks]
         if skip_blocks is not None:
             blocks = self.model.visual.blocks
-            skip_blocks = [int(block) for block in skip_blocks]
             if len(set(skip_blocks)) != len(skip_blocks):
                 raise ValueError("skip_vision_blocks must not contain duplicates")
             invalid = [block for block in skip_blocks if not 0 <= block < len(blocks)]
@@ -138,6 +144,18 @@ class BaselineRunner:
                 raise ValueError(f"Invalid vision block indices: {invalid}")
             for block in skip_blocks:
                 blocks[block] = VisionBlockIdentity()
+        active_model_parameters = sum(parameter.numel() for parameter in self.model.parameters())
+        active_vision_parameters = sum(parameter.numel() for parameter in self.model.visual.parameters())
+        self.parameter_counts = {
+            "skipped_vision_blocks": skip_blocks,
+            "full_model": full_model_parameters,
+            "active_model": active_model_parameters,
+            "removed_model": full_model_parameters - active_model_parameters,
+            "full_vision": full_vision_parameters,
+            "active_vision": active_vision_parameters,
+            "removed_vision": full_vision_parameters - active_vision_parameters,
+            "per_vision_block": block_parameters,
+        }
         self.model.eval()
         self.generation_config = deepcopy(self.model.generation_config)
         self.generation_config.do_sample = bool(config["do_sample"])
@@ -284,6 +302,7 @@ class BaselineRunner:
             },
             "examples_requested": len(rows),
             "examples_completed": len(all_results),
+            "parameters": self.parameter_counts,
         }
         write_json(self.output_dir / "run_metadata.json", metadata)
         return summary

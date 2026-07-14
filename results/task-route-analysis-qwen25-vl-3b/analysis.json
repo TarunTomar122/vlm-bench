@@ -1,0 +1,1545 @@
+{
+  "comparisons": [
+    {
+      "budget": 4,
+      "capability": "attribute",
+      "controls": {
+        "contiguous_macro": {
+          "mean_capability_drop_pp": 3.6082474226804107,
+          "mean_total_speedup_percent": 3.418886791482878,
+          "mean_vision_speedup_percent": 7.552925285973022,
+          "runs": 1
+        },
+        "generic_macro": {
+          "mean_capability_drop_pp": 1.0309278350515427,
+          "mean_total_speedup_percent": 2.6778993526388684,
+          "mean_vision_speedup_percent": 6.546783825026292,
+          "runs": 1
+        },
+        "random": {
+          "mean_capability_drop_pp": 4.639175257731957,
+          "mean_total_speedup_percent": 1.379971224931135,
+          "mean_vision_speedup_percent": 6.468745852760908,
+          "runs": 3
+        }
+      },
+      "paired_accuracy_advantage": {
+        "vs_baseline": {
+          "ci95_high_pp": 0.5154639175257731,
+          "ci95_low_pp": -5.154639175257731,
+          "examples": 194,
+          "mean_pp": -2.0618556701030926
+        },
+        "vs_contiguous_macro": {
+          "ci95_high_pp": 5.154639175257731,
+          "ci95_low_pp": -2.0618556701030926,
+          "examples": 194,
+          "mean_pp": 1.5463917525773196
+        },
+        "vs_generic_macro": {
+          "ci95_high_pp": 1.5463917525773196,
+          "ci95_low_pp": -4.123711340206185,
+          "examples": 194,
+          "mean_pp": -1.0309278350515463
+        },
+        "vs_random_mean": {
+          "ci95_high_pp": 5.498281786941582,
+          "ci95_low_pp": -0.34364261168384835,
+          "examples": 194,
+          "mean_pp": 2.5773195876288666
+        }
+      },
+      "task_route": {
+        "blocks": [
+          8,
+          9,
+          20,
+          25
+        ],
+        "budget": 4,
+        "capability": "attribute",
+        "capability_drop_pp": 2.0618556701030966,
+        "latency_source": "fixed_clock_audit",
+        "overall_drop_pp": 4.424778761061942,
+        "peak_allocated_mib": 7575.427734375,
+        "removed_parameters": 78808800,
+        "removed_vision_percent": 11.785651527077604,
+        "repeat": null,
+        "route": "route-000-k04",
+        "route_type": "task_specific",
+        "total_speedup_percent": 2.8686237971582873,
+        "vision_speedup_percent": 6.861270939893038
+      }
+    },
+    {
+      "budget": 8,
+      "capability": "attribute",
+      "controls": {
+        "contiguous_macro": {
+          "mean_capability_drop_pp": 43.29896907216495,
+          "mean_total_speedup_percent": 16.413474452046906,
+          "mean_vision_speedup_percent": 21.772744901527187,
+          "runs": 1
+        },
+        "generic_macro": {
+          "mean_capability_drop_pp": 7.216494845360821,
+          "mean_total_speedup_percent": 18.19722045880827,
+          "mean_vision_speedup_percent": 20.98161278071209,
+          "runs": 1
+        },
+        "random": {
+          "mean_capability_drop_pp": 38.659793814432994,
+          "mean_total_speedup_percent": 12.334442768744529,
+          "mean_vision_speedup_percent": 17.158028086897883,
+          "runs": 3
+        }
+      },
+      "paired_accuracy_advantage": {
+        "vs_baseline": {
+          "ci95_high_pp": -7.216494845360824,
+          "ci95_low_pp": -17.010309278350515,
+          "examples": 194,
+          "mean_pp": -11.855670103092782
+        },
+        "vs_contiguous_macro": {
+          "ci95_high_pp": 39.175257731958766,
+          "ci95_low_pp": 23.711340206185564,
+          "examples": 194,
+          "mean_pp": 31.443298969072163
+        },
+        "vs_generic_macro": {
+          "ci95_high_pp": 0.0,
+          "ci95_low_pp": -9.278350515463918,
+          "examples": 194,
+          "mean_pp": -4.639175257731959
+        },
+        "vs_random_mean": {
+          "ci95_high_pp": 32.47422680412371,
+          "ci95_low_pp": 20.96219931271478,
+          "examples": 194,
+          "mean_pp": 26.80412371134021
+        }
+      },
+      "task_route": {
+        "blocks": [
+          5,
+          6,
+          8,
+          9,
+          11,
+          16,
+          20,
+          25
+        ],
+        "budget": 8,
+        "capability": "attribute",
+        "capability_drop_pp": 11.855670103092786,
+        "latency_source": "original_dynamic_clock",
+        "overall_drop_pp": 21.238938053097346,
+        "peak_allocated_mib": 7424.40625,
+        "removed_parameters": 157617600,
+        "removed_vision_percent": 23.57130305415521,
+        "repeat": null,
+        "route": "route-001-k08",
+        "route_type": "task_specific",
+        "total_speedup_percent": 17.00844785006621,
+        "vision_speedup_percent": 21.733487403302565
+      }
+    },
+    {
+      "budget": 12,
+      "capability": "attribute",
+      "controls": {
+        "contiguous_macro": {
+          "mean_capability_drop_pp": 68.04123711340206,
+          "mean_total_speedup_percent": 16.46544112702044,
+          "mean_vision_speedup_percent": 27.49036554157087,
+          "runs": 1
+        },
+        "generic_macro": {
+          "mean_capability_drop_pp": 22.164948453608247,
+          "mean_total_speedup_percent": 19.15545037969948,
+          "mean_vision_speedup_percent": 30.12227638738654,
+          "runs": 1
+        },
+        "random": {
+          "mean_capability_drop_pp": 42.2680412371134,
+          "mean_total_speedup_percent": 17.28432682137088,
+          "mean_vision_speedup_percent": 28.493004207624526,
+          "runs": 3
+        }
+      },
+      "paired_accuracy_advantage": {
+        "vs_baseline": {
+          "ci95_high_pp": -11.34020618556701,
+          "ci95_low_pp": -23.711340206185564,
+          "examples": 194,
+          "mean_pp": -17.525773195876287
+        },
+        "vs_contiguous_macro": {
+          "ci95_high_pp": 57.73195876288659,
+          "ci95_low_pp": 42.78350515463917,
+          "examples": 194,
+          "mean_pp": 50.51546391752577
+        },
+        "vs_generic_macro": {
+          "ci95_high_pp": 10.309278350515463,
+          "ci95_low_pp": -1.0309278350515463,
+          "examples": 194,
+          "mean_pp": 4.639175257731959
+        },
+        "vs_random_mean": {
+          "ci95_high_pp": 29.89690721649485,
+          "ci95_low_pp": 19.41580756013746,
+          "examples": 194,
+          "mean_pp": 24.742268041237118
+        }
+      },
+      "task_route": {
+        "blocks": [
+          3,
+          5,
+          6,
+          8,
+          9,
+          11,
+          16,
+          20,
+          21,
+          22,
+          23,
+          25
+        ],
+        "budget": 12,
+        "capability": "attribute",
+        "capability_drop_pp": 17.525773195876294,
+        "latency_source": "original_dynamic_clock",
+        "overall_drop_pp": 32.63274336283186,
+        "peak_allocated_mib": 7273.384765625,
+        "removed_parameters": 236426400,
+        "removed_vision_percent": 35.35695458123281,
+        "repeat": null,
+        "route": "route-002-k12",
+        "route_type": "task_specific",
+        "total_speedup_percent": 18.883183238391887,
+        "vision_speedup_percent": 30.638222875650634
+      }
+    },
+    {
+      "budget": 16,
+      "capability": "attribute",
+      "controls": {
+        "contiguous_macro": {
+          "mean_capability_drop_pp": 46.391752577319586,
+          "mean_total_speedup_percent": 20.976798632904426,
+          "mean_vision_speedup_percent": 40.686454758558945,
+          "runs": 1
+        },
+        "generic_macro": {
+          "mean_capability_drop_pp": 52.57731958762887,
+          "mean_total_speedup_percent": 21.520920484201067,
+          "mean_vision_speedup_percent": 39.14930765458835,
+          "runs": 1
+        },
+        "random": {
+          "mean_capability_drop_pp": 59.45017182130584,
+          "mean_total_speedup_percent": 17.586461133971753,
+          "mean_vision_speedup_percent": 35.478316984240955,
+          "runs": 3
+        }
+      },
+      "paired_accuracy_advantage": {
+        "vs_baseline": {
+          "ci95_high_pp": -60.30927835051546,
+          "ci95_low_pp": -74.22680412371135,
+          "examples": 194,
+          "mean_pp": -67.5257731958763
+        },
+        "vs_contiguous_macro": {
+          "ci95_high_pp": -13.917525773195877,
+          "ci95_low_pp": -28.350515463917525,
+          "examples": 194,
+          "mean_pp": -21.1340206185567
+        },
+        "vs_generic_macro": {
+          "ci95_high_pp": -7.731958762886598,
+          "ci95_low_pp": -22.164948453608247,
+          "examples": 194,
+          "mean_pp": -14.948453608247423
+        },
+        "vs_random_mean": {
+          "ci95_high_pp": -2.5773195876288644,
+          "ci95_low_pp": -13.4020618556701,
+          "examples": 194,
+          "mean_pp": -8.075601374570446
+        }
+      },
+      "task_route": {
+        "blocks": [
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          16,
+          18,
+          20,
+          21,
+          22,
+          23,
+          25
+        ],
+        "budget": 16,
+        "capability": "attribute",
+        "capability_drop_pp": 67.5257731958763,
+        "latency_source": "original_dynamic_clock",
+        "overall_drop_pp": 50.221238938053105,
+        "peak_allocated_mib": 7122.36328125,
+        "removed_parameters": 315235200,
+        "removed_vision_percent": 47.14260610831042,
+        "repeat": null,
+        "route": "route-003-k16",
+        "route_type": "task_specific",
+        "total_speedup_percent": 14.30110839707428,
+        "vision_speedup_percent": 33.449510070199985
+      }
+    },
+    {
+      "budget": 4,
+      "capability": "counting",
+      "controls": {
+        "contiguous_macro": {
+          "mean_capability_drop_pp": 2.7932960893854775,
+          "mean_total_speedup_percent": 3.418886791482878,
+          "mean_vision_speedup_percent": 7.552925285973022,
+          "runs": 1
+        },
+        "generic_macro": {
+          "mean_capability_drop_pp": -0.5586592178770999,
+          "mean_total_speedup_percent": 2.6778993526388684,
+          "mean_vision_speedup_percent": 6.546783825026292,
+          "runs": 1
+        },
+        "random": {
+          "mean_capability_drop_pp": 5.027932960893855,
+          "mean_total_speedup_percent": 1.379971224931135,
+          "mean_vision_speedup_percent": 6.468745852760908,
+          "runs": 3
+        }
+      },
+      "paired_accuracy_advantage": {
+        "vs_baseline": {
+          "ci95_high_pp": 5.58659217877095,
+          "ci95_low_pp": -5.58659217877095,
+          "examples": 179,
+          "mean_pp": 0.0
+        },
+        "vs_contiguous_macro": {
+          "ci95_high_pp": 8.379888268156424,
+          "ci95_low_pp": -2.793296089385475,
+          "examples": 179,
+          "mean_pp": 2.793296089385475
+        },
+        "vs_generic_macro": {
+          "ci95_high_pp": 4.4692737430167595,
+          "ci95_low_pp": -5.58659217877095,
+          "examples": 179,
+          "mean_pp": -0.5586592178770949
+        },
+        "vs_random_mean": {
+          "ci95_high_pp": 10.055865921787712,
+          "ci95_low_pp": 1.3645199185337118e-15,
+          "examples": 179,
+          "mean_pp": 5.027932960893856
+        }
+      },
+      "task_route": {
+        "blocks": [
+          12,
+          24,
+          28,
+          30
+        ],
+        "budget": 4,
+        "capability": "counting",
+        "capability_drop_pp": 0.0,
+        "latency_source": "fixed_clock_audit",
+        "overall_drop_pp": 6.969026548672563,
+        "peak_allocated_mib": 7575.427734375,
+        "removed_parameters": 78808800,
+        "removed_vision_percent": 11.785651527077604,
+        "repeat": null,
+        "route": "route-004-k04",
+        "route_type": "task_specific",
+        "total_speedup_percent": 1.3878438626019785,
+        "vision_speedup_percent": 6.782723911889232
+      }
+    },
+    {
+      "budget": 8,
+      "capability": "counting",
+      "controls": {
+        "contiguous_macro": {
+          "mean_capability_drop_pp": 30.16759776536313,
+          "mean_total_speedup_percent": 16.413474452046906,
+          "mean_vision_speedup_percent": 21.772744901527187,
+          "runs": 1
+        },
+        "generic_macro": {
+          "mean_capability_drop_pp": 2.7932960893854775,
+          "mean_total_speedup_percent": 18.19722045880827,
+          "mean_vision_speedup_percent": 20.98161278071209,
+          "runs": 1
+        },
+        "random": {
+          "mean_capability_drop_pp": 29.05027932960894,
+          "mean_total_speedup_percent": 12.334442768744529,
+          "mean_vision_speedup_percent": 17.158028086897883,
+          "runs": 3
+        }
+      },
+      "paired_accuracy_advantage": {
+        "vs_baseline": {
+          "ci95_high_pp": -4.4692737430167595,
+          "ci95_low_pp": -19.553072625698324,
+          "examples": 179,
+          "mean_pp": -12.290502793296088
+        },
+        "vs_contiguous_macro": {
+          "ci95_high_pp": 26.256983240223462,
+          "ci95_low_pp": 9.497206703910614,
+          "examples": 179,
+          "mean_pp": 17.877094972067038
+        },
+        "vs_generic_macro": {
+          "ci95_high_pp": -2.793296089385475,
+          "ci95_low_pp": -16.201117318435752,
+          "examples": 179,
+          "mean_pp": -9.497206703910614
+        },
+        "vs_random_mean": {
+          "ci95_high_pp": 24.022346368715088,
+          "ci95_low_pp": 9.310986964618252,
+          "examples": 179,
+          "mean_pp": 16.759776536312852
+        }
+      },
+      "task_route": {
+        "blocks": [
+          11,
+          12,
+          17,
+          24,
+          25,
+          27,
+          28,
+          30
+        ],
+        "budget": 8,
+        "capability": "counting",
+        "capability_drop_pp": 12.290502793296088,
+        "latency_source": "original_dynamic_clock",
+        "overall_drop_pp": 23.893805309734518,
+        "peak_allocated_mib": 7424.40625,
+        "removed_parameters": 157617600,
+        "removed_vision_percent": 23.57130305415521,
+        "repeat": null,
+        "route": "route-005-k08",
+        "route_type": "task_specific",
+        "total_speedup_percent": 15.783245219081188,
+        "vision_speedup_percent": 20.48467662780702
+      }
+    },
+    {
+      "budget": 12,
+      "capability": "counting",
+      "controls": {
+        "contiguous_macro": {
+          "mean_capability_drop_pp": 42.45810055865922,
+          "mean_total_speedup_percent": 16.46544112702044,
+          "mean_vision_speedup_percent": 27.49036554157087,
+          "runs": 1
+        },
+        "generic_macro": {
+          "mean_capability_drop_pp": 24.022346368715088,
+          "mean_total_speedup_percent": 19.15545037969948,
+          "mean_vision_speedup_percent": 30.12227638738654,
+          "runs": 1
+        },
+        "random": {
+          "mean_capability_drop_pp": 35.38175046554935,
+          "mean_total_speedup_percent": 17.28432682137088,
+          "mean_vision_speedup_percent": 28.493004207624526,
+          "runs": 3
+        }
+      },
+      "paired_accuracy_advantage": {
+        "vs_baseline": {
+          "ci95_high_pp": -17.877094972067038,
+          "ci95_low_pp": -32.402234636871505,
+          "examples": 179,
+          "mean_pp": -25.139664804469277
+        },
+        "vs_contiguous_macro": {
+          "ci95_high_pp": 26.81564245810056,
+          "ci95_low_pp": 7.82122905027933,
+          "examples": 179,
+          "mean_pp": 17.318435754189945
+        },
+        "vs_generic_macro": {
+          "ci95_high_pp": 7.262569832402235,
+          "ci95_low_pp": -9.497206703910614,
+          "examples": 179,
+          "mean_pp": -1.1173184357541899
+        },
+        "vs_random_mean": {
+          "ci95_high_pp": 17.50465549348231,
+          "ci95_low_pp": 3.165735567970206,
+          "examples": 179,
+          "mean_pp": 10.242085661080075
+        }
+      },
+      "task_route": {
+        "blocks": [
+          11,
+          12,
+          17,
+          18,
+          20,
+          21,
+          24,
+          25,
+          27,
+          28,
+          29,
+          30
+        ],
+        "budget": 12,
+        "capability": "counting",
+        "capability_drop_pp": 25.139664804469277,
+        "latency_source": "original_dynamic_clock",
+        "overall_drop_pp": 35.176991150442475,
+        "peak_allocated_mib": 7273.384765625,
+        "removed_parameters": 236426400,
+        "removed_vision_percent": 35.35695458123281,
+        "repeat": null,
+        "route": "route-006-k12",
+        "route_type": "task_specific",
+        "total_speedup_percent": 17.61546478409002,
+        "vision_speedup_percent": 29.861588875163882
+      }
+    },
+    {
+      "budget": 16,
+      "capability": "counting",
+      "controls": {
+        "contiguous_macro": {
+          "mean_capability_drop_pp": 43.01675977653631,
+          "mean_total_speedup_percent": 20.976798632904426,
+          "mean_vision_speedup_percent": 40.686454758558945,
+          "runs": 1
+        },
+        "generic_macro": {
+          "mean_capability_drop_pp": 34.07821229050279,
+          "mean_total_speedup_percent": 21.520920484201067,
+          "mean_vision_speedup_percent": 39.14930765458835,
+          "runs": 1
+        },
+        "random": {
+          "mean_capability_drop_pp": 37.243947858473,
+          "mean_total_speedup_percent": 17.586461133971753,
+          "mean_vision_speedup_percent": 35.478316984240955,
+          "runs": 3
+        }
+      },
+      "paired_accuracy_advantage": {
+        "vs_baseline": {
+          "ci95_high_pp": -22.905027932960895,
+          "ci95_low_pp": -39.66480446927375,
+          "examples": 179,
+          "mean_pp": -31.28491620111732
+        },
+        "vs_contiguous_macro": {
+          "ci95_high_pp": 20.11173184357542,
+          "ci95_low_pp": 3.35195530726257,
+          "examples": 179,
+          "mean_pp": 11.731843575418994
+        },
+        "vs_generic_macro": {
+          "ci95_high_pp": 10.614525139664805,
+          "ci95_low_pp": -5.58659217877095,
+          "examples": 179,
+          "mean_pp": 2.793296089385475
+        },
+        "vs_random_mean": {
+          "ci95_high_pp": 12.476722532588456,
+          "ci95_low_pp": -0.558659217877093,
+          "examples": 179,
+          "mean_pp": 5.959031657355681
+        }
+      },
+      "task_route": {
+        "blocks": [
+          3,
+          6,
+          9,
+          11,
+          12,
+          17,
+          18,
+          19,
+          20,
+          21,
+          24,
+          25,
+          27,
+          28,
+          29,
+          30
+        ],
+        "budget": 16,
+        "capability": "counting",
+        "capability_drop_pp": 31.28491620111732,
+        "latency_source": "original_dynamic_clock",
+        "overall_drop_pp": 42.14601769911505,
+        "peak_allocated_mib": 7122.36328125,
+        "removed_parameters": 315235200,
+        "removed_vision_percent": 47.14260610831042,
+        "repeat": null,
+        "route": "route-007-k16",
+        "route_type": "task_specific",
+        "total_speedup_percent": 20.114389976968837,
+        "vision_speedup_percent": 39.46792914208655
+      }
+    },
+    {
+      "budget": 4,
+      "capability": "object",
+      "controls": {
+        "contiguous_macro": {
+          "mean_capability_drop_pp": 10.778443113772463,
+          "mean_total_speedup_percent": 3.418886791482878,
+          "mean_vision_speedup_percent": 7.552925285973022,
+          "runs": 1
+        },
+        "generic_macro": {
+          "mean_capability_drop_pp": 2.9940119760479056,
+          "mean_total_speedup_percent": 2.6778993526388684,
+          "mean_vision_speedup_percent": 6.546783825026292,
+          "runs": 1
+        },
+        "random": {
+          "mean_capability_drop_pp": 3.1936127744511005,
+          "mean_total_speedup_percent": 1.379971224931135,
+          "mean_vision_speedup_percent": 6.468745852760908,
+          "runs": 3
+        }
+      },
+      "paired_accuracy_advantage": {
+        "vs_baseline": {
+          "ci95_high_pp": 4.790419161676647,
+          "ci95_low_pp": -1.1976047904191618,
+          "examples": 167,
+          "mean_pp": 1.7964071856287425
+        },
+        "vs_contiguous_macro": {
+          "ci95_high_pp": 17.964071856287426,
+          "ci95_low_pp": 7.18562874251497,
+          "examples": 167,
+          "mean_pp": 12.574850299401197
+        },
+        "vs_generic_macro": {
+          "ci95_high_pp": 8.383233532934131,
+          "ci95_low_pp": 1.1976047904191618,
+          "examples": 167,
+          "mean_pp": 4.790419161676647
+        },
+        "vs_random_mean": {
+          "ci95_high_pp": 7.584830339321358,
+          "ci95_low_pp": 2.395209580838324,
+          "examples": 167,
+          "mean_pp": 4.990019960079841
+        }
+      },
+      "task_route": {
+        "blocks": [
+          2,
+          9,
+          10,
+          30
+        ],
+        "budget": 4,
+        "capability": "object",
+        "capability_drop_pp": -1.7964071856287345,
+        "latency_source": "fixed_clock_audit",
+        "overall_drop_pp": 4.867256637168138,
+        "peak_allocated_mib": 7575.427734375,
+        "removed_parameters": 78808800,
+        "removed_vision_percent": 11.785651527077604,
+        "repeat": null,
+        "route": "route-008-k04",
+        "route_type": "task_specific",
+        "total_speedup_percent": 2.1525681087483317,
+        "vision_speedup_percent": 6.467367847035987
+      }
+    },
+    {
+      "budget": 8,
+      "capability": "object",
+      "controls": {
+        "contiguous_macro": {
+          "mean_capability_drop_pp": 38.32335329341318,
+          "mean_total_speedup_percent": 16.413474452046906,
+          "mean_vision_speedup_percent": 21.772744901527187,
+          "runs": 1
+        },
+        "generic_macro": {
+          "mean_capability_drop_pp": 10.179640718562876,
+          "mean_total_speedup_percent": 18.19722045880827,
+          "mean_vision_speedup_percent": 20.98161278071209,
+          "runs": 1
+        },
+        "random": {
+          "mean_capability_drop_pp": 27.34530938123753,
+          "mean_total_speedup_percent": 12.334442768744529,
+          "mean_vision_speedup_percent": 17.158028086897883,
+          "runs": 3
+        }
+      },
+      "paired_accuracy_advantage": {
+        "vs_baseline": {
+          "ci95_high_pp": -2.9940119760479043,
+          "ci95_low_pp": -17.365269461077844,
+          "examples": 167,
+          "mean_pp": -10.179640718562874
+        },
+        "vs_contiguous_macro": {
+          "ci95_high_pp": 35.92814371257485,
+          "ci95_low_pp": 20.35928143712575,
+          "examples": 167,
+          "mean_pp": 28.143712574850298
+        },
+        "vs_generic_macro": {
+          "ci95_high_pp": 6.58682634730539,
+          "ci95_low_pp": -6.58682634730539,
+          "examples": 167,
+          "mean_pp": 0.0
+        },
+        "vs_random_mean": {
+          "ci95_high_pp": 22.554890219560882,
+          "ci95_low_pp": 11.976047904191619,
+          "examples": 167,
+          "mean_pp": 17.165668662674655
+        }
+      },
+      "task_route": {
+        "blocks": [
+          2,
+          3,
+          9,
+          10,
+          20,
+          21,
+          23,
+          30
+        ],
+        "budget": 8,
+        "capability": "object",
+        "capability_drop_pp": 10.179640718562876,
+        "latency_source": "original_dynamic_clock",
+        "overall_drop_pp": 24.22566371681416,
+        "peak_allocated_mib": 7424.40625,
+        "removed_parameters": 157617600,
+        "removed_vision_percent": 23.57130305415521,
+        "repeat": null,
+        "route": "route-009-k08",
+        "route_type": "task_specific",
+        "total_speedup_percent": 15.354173696342311,
+        "vision_speedup_percent": 20.602139026112564
+      }
+    },
+    {
+      "budget": 12,
+      "capability": "object",
+      "controls": {
+        "contiguous_macro": {
+          "mean_capability_drop_pp": 39.52095808383233,
+          "mean_total_speedup_percent": 16.46544112702044,
+          "mean_vision_speedup_percent": 27.49036554157087,
+          "runs": 1
+        },
+        "generic_macro": {
+          "mean_capability_drop_pp": 22.1556886227545,
+          "mean_total_speedup_percent": 19.15545037969948,
+          "mean_vision_speedup_percent": 30.12227638738654,
+          "runs": 1
+        },
+        "random": {
+          "mean_capability_drop_pp": 29.740518962075853,
+          "mean_total_speedup_percent": 17.28432682137088,
+          "mean_vision_speedup_percent": 28.493004207624526,
+          "runs": 3
+        }
+      },
+      "paired_accuracy_advantage": {
+        "vs_baseline": {
+          "ci95_high_pp": -19.760479041916167,
+          "ci95_low_pp": -35.32934131736527,
+          "examples": 167,
+          "mean_pp": -27.54491017964072
+        },
+        "vs_contiguous_macro": {
+          "ci95_high_pp": 19.16167664670659,
+          "ci95_low_pp": 5.389221556886228,
+          "examples": 167,
+          "mean_pp": 11.976047904191617
+        },
+        "vs_generic_macro": {
+          "ci95_high_pp": 0.5988023952095809,
+          "ci95_low_pp": -11.377245508982035,
+          "examples": 167,
+          "mean_pp": -5.389221556886228
+        },
+        "vs_random_mean": {
+          "ci95_high_pp": 7.784431137724552,
+          "ci95_low_pp": -3.393213572854291,
+          "examples": 167,
+          "mean_pp": 2.195608782435131
+        }
+      },
+      "task_route": {
+        "blocks": [
+          2,
+          3,
+          5,
+          7,
+          9,
+          10,
+          17,
+          20,
+          21,
+          23,
+          25,
+          30
+        ],
+        "budget": 12,
+        "capability": "object",
+        "capability_drop_pp": 27.544910179640723,
+        "latency_source": "original_dynamic_clock",
+        "overall_drop_pp": 35.84070796460177,
+        "peak_allocated_mib": 7273.384765625,
+        "removed_parameters": 236426400,
+        "removed_vision_percent": 35.35695458123281,
+        "repeat": null,
+        "route": "route-010-k12",
+        "route_type": "task_specific",
+        "total_speedup_percent": 15.022316486887743,
+        "vision_speedup_percent": 27.23555408458791
+      }
+    },
+    {
+      "budget": 16,
+      "capability": "object",
+      "controls": {
+        "contiguous_macro": {
+          "mean_capability_drop_pp": 36.52694610778444,
+          "mean_total_speedup_percent": 20.976798632904426,
+          "mean_vision_speedup_percent": 40.686454758558945,
+          "runs": 1
+        },
+        "generic_macro": {
+          "mean_capability_drop_pp": 38.32335329341318,
+          "mean_total_speedup_percent": 21.520920484201067,
+          "mean_vision_speedup_percent": 39.14930765458835,
+          "runs": 1
+        },
+        "random": {
+          "mean_capability_drop_pp": 35.92814371257486,
+          "mean_total_speedup_percent": 17.586461133971753,
+          "mean_vision_speedup_percent": 35.478316984240955,
+          "runs": 3
+        }
+      },
+      "paired_accuracy_advantage": {
+        "vs_baseline": {
+          "ci95_high_pp": -31.736526946107784,
+          "ci95_low_pp": -47.30538922155689,
+          "examples": 167,
+          "mean_pp": -39.52095808383233
+        },
+        "vs_contiguous_macro": {
+          "ci95_high_pp": 0.0,
+          "ci95_low_pp": -5.9880239520958085,
+          "examples": 167,
+          "mean_pp": -2.9940119760479043
+        },
+        "vs_generic_macro": {
+          "ci95_high_pp": 1.1976047904191618,
+          "ci95_low_pp": -3.592814371257485,
+          "examples": 167,
+          "mean_pp": -1.1976047904191618
+        },
+        "vs_random_mean": {
+          "ci95_high_pp": -1.5968063872255487,
+          "ci95_low_pp": -5.788423153692614,
+          "examples": 167,
+          "mean_pp": -3.592814371257485
+        }
+      },
+      "task_route": {
+        "blocks": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9,
+          10,
+          12,
+          17,
+          20,
+          21,
+          22,
+          23,
+          25,
+          30
+        ],
+        "budget": 16,
+        "capability": "object",
+        "capability_drop_pp": 39.52095808383233,
+        "latency_source": "original_dynamic_clock",
+        "overall_drop_pp": 49.11504424778761,
+        "peak_allocated_mib": 7122.36328125,
+        "removed_parameters": 315235200,
+        "removed_vision_percent": 47.14260610831042,
+        "repeat": null,
+        "route": "route-011-k16",
+        "route_type": "task_specific",
+        "total_speedup_percent": 20.738963771616948,
+        "vision_speedup_percent": 40.38421610501381
+      }
+    },
+    {
+      "budget": 4,
+      "capability": "ocr",
+      "controls": {
+        "contiguous_macro": {
+          "mean_capability_drop_pp": 15.135135135135137,
+          "mean_total_speedup_percent": 3.418886791482878,
+          "mean_vision_speedup_percent": 7.552925285973022,
+          "runs": 1
+        },
+        "generic_macro": {
+          "mean_capability_drop_pp": 11.891891891891893,
+          "mean_total_speedup_percent": 2.6778993526388684,
+          "mean_vision_speedup_percent": 6.546783825026292,
+          "runs": 1
+        },
+        "random": {
+          "mean_capability_drop_pp": 38.19819819819819,
+          "mean_total_speedup_percent": 1.379971224931135,
+          "mean_vision_speedup_percent": 6.468745852760908,
+          "runs": 3
+        }
+      },
+      "paired_accuracy_advantage": {
+        "vs_baseline": {
+          "ci95_high_pp": -1.0810810810810811,
+          "ci95_low_pp": -10.81081081081081,
+          "examples": 185,
+          "mean_pp": -5.9459459459459465
+        },
+        "vs_contiguous_macro": {
+          "ci95_high_pp": 15.675675675675677,
+          "ci95_low_pp": 2.7027027027027026,
+          "examples": 185,
+          "mean_pp": 9.18918918918919
+        },
+        "vs_generic_macro": {
+          "ci95_high_pp": 11.891891891891893,
+          "ci95_low_pp": 0.5405405405405406,
+          "examples": 185,
+          "mean_pp": 5.9459459459459465
+        },
+        "vs_random_mean": {
+          "ci95_high_pp": 37.83783783783784,
+          "ci95_low_pp": 26.84684684684685,
+          "examples": 185,
+          "mean_pp": 32.252252252252255
+        }
+      },
+      "task_route": {
+        "blocks": [
+          4,
+          5,
+          9,
+          28
+        ],
+        "budget": 4,
+        "capability": "ocr",
+        "capability_drop_pp": 5.94594594594594,
+        "latency_source": "fixed_clock_audit",
+        "overall_drop_pp": 2.765486725663713,
+        "peak_allocated_mib": 7575.427734375,
+        "removed_parameters": 78808800,
+        "removed_vision_percent": 11.785651527077604,
+        "repeat": null,
+        "route": "route-012-k04",
+        "route_type": "task_specific",
+        "total_speedup_percent": 4.410473122064462,
+        "vision_speedup_percent": 7.28184346016032
+      }
+    },
+    {
+      "budget": 8,
+      "capability": "ocr",
+      "controls": {
+        "contiguous_macro": {
+          "mean_capability_drop_pp": 71.89189189189189,
+          "mean_total_speedup_percent": 16.413474452046906,
+          "mean_vision_speedup_percent": 21.772744901527187,
+          "runs": 1
+        },
+        "generic_macro": {
+          "mean_capability_drop_pp": 32.43243243243243,
+          "mean_total_speedup_percent": 18.19722045880827,
+          "mean_vision_speedup_percent": 20.98161278071209,
+          "runs": 1
+        },
+        "random": {
+          "mean_capability_drop_pp": 68.28828828828829,
+          "mean_total_speedup_percent": 12.334442768744529,
+          "mean_vision_speedup_percent": 17.158028086897883,
+          "runs": 3
+        }
+      },
+      "paired_accuracy_advantage": {
+        "vs_baseline": {
+          "ci95_high_pp": -30.270270270270274,
+          "ci95_low_pp": -44.86486486486487,
+          "examples": 185,
+          "mean_pp": -37.2972972972973
+        },
+        "vs_contiguous_macro": {
+          "ci95_high_pp": 42.7027027027027,
+          "ci95_low_pp": 27.027027027027028,
+          "examples": 185,
+          "mean_pp": 34.5945945945946
+        },
+        "vs_generic_macro": {
+          "ci95_high_pp": 1.6216216216216217,
+          "ci95_low_pp": -11.351351351351353,
+          "examples": 185,
+          "mean_pp": -4.864864864864865
+        },
+        "vs_random_mean": {
+          "ci95_high_pp": 37.83783783783784,
+          "ci95_low_pp": 24.324324324324326,
+          "examples": 185,
+          "mean_pp": 30.99099099099099
+        }
+      },
+      "task_route": {
+        "blocks": [
+          4,
+          5,
+          6,
+          8,
+          9,
+          11,
+          25,
+          28
+        ],
+        "budget": 8,
+        "capability": "ocr",
+        "capability_drop_pp": 37.29729729729729,
+        "latency_source": "original_dynamic_clock",
+        "overall_drop_pp": 21.128318584070794,
+        "peak_allocated_mib": 7424.40625,
+        "removed_parameters": 157617600,
+        "removed_vision_percent": 23.57130305415521,
+        "repeat": null,
+        "route": "route-013-k08",
+        "route_type": "task_specific",
+        "total_speedup_percent": 15.239821896365523,
+        "vision_speedup_percent": 18.554066148516934
+      }
+    },
+    {
+      "budget": 12,
+      "capability": "ocr",
+      "controls": {
+        "contiguous_macro": {
+          "mean_capability_drop_pp": 72.97297297297297,
+          "mean_total_speedup_percent": 16.46544112702044,
+          "mean_vision_speedup_percent": 27.49036554157087,
+          "runs": 1
+        },
+        "generic_macro": {
+          "mean_capability_drop_pp": 68.64864864864865,
+          "mean_total_speedup_percent": 19.15545037969948,
+          "mean_vision_speedup_percent": 30.12227638738654,
+          "runs": 1
+        },
+        "random": {
+          "mean_capability_drop_pp": 72.61261261261261,
+          "mean_total_speedup_percent": 17.28432682137088,
+          "mean_vision_speedup_percent": 28.493004207624526,
+          "runs": 3
+        }
+      },
+      "paired_accuracy_advantage": {
+        "vs_baseline": {
+          "ci95_high_pp": -63.78378378378379,
+          "ci95_low_pp": -78.37837837837837,
+          "examples": 185,
+          "mean_pp": -71.35135135135135
+        },
+        "vs_contiguous_macro": {
+          "ci95_high_pp": 4.864864864864865,
+          "ci95_low_pp": -1.6216216216216217,
+          "examples": 185,
+          "mean_pp": 1.6216216216216217
+        },
+        "vs_generic_macro": {
+          "ci95_high_pp": 1.0810810810810811,
+          "ci95_low_pp": -6.486486486486487,
+          "examples": 185,
+          "mean_pp": -2.7027027027027026
+        },
+        "vs_random_mean": {
+          "ci95_high_pp": 4.324324324324325,
+          "ci95_low_pp": -1.6216216216216217,
+          "examples": 185,
+          "mean_pp": 1.2612612612612615
+        }
+      },
+      "task_route": {
+        "blocks": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          11,
+          24,
+          25,
+          27,
+          28
+        ],
+        "budget": 12,
+        "capability": "ocr",
+        "capability_drop_pp": 71.35135135135135,
+        "latency_source": "original_dynamic_clock",
+        "overall_drop_pp": 40.597345132743364,
+        "peak_allocated_mib": 7273.384765625,
+        "removed_parameters": 236426400,
+        "removed_vision_percent": 35.35695458123281,
+        "repeat": null,
+        "route": "route-014-k12",
+        "route_type": "task_specific",
+        "total_speedup_percent": 16.57283215154117,
+        "vision_speedup_percent": 28.26687690370333
+      }
+    },
+    {
+      "budget": 16,
+      "capability": "ocr",
+      "controls": {
+        "contiguous_macro": {
+          "mean_capability_drop_pp": 72.97297297297297,
+          "mean_total_speedup_percent": 20.976798632904426,
+          "mean_vision_speedup_percent": 40.686454758558945,
+          "runs": 1
+        },
+        "generic_macro": {
+          "mean_capability_drop_pp": 72.97297297297297,
+          "mean_total_speedup_percent": 21.520920484201067,
+          "mean_vision_speedup_percent": 39.14930765458835,
+          "runs": 1
+        },
+        "random": {
+          "mean_capability_drop_pp": 72.97297297297297,
+          "mean_total_speedup_percent": 17.586461133971753,
+          "mean_vision_speedup_percent": 35.478316984240955,
+          "runs": 3
+        }
+      },
+      "paired_accuracy_advantage": {
+        "vs_baseline": {
+          "ci95_high_pp": -65.4054054054054,
+          "ci95_low_pp": -80.54054054054053,
+          "examples": 185,
+          "mean_pp": -72.97297297297297
+        },
+        "vs_contiguous_macro": {
+          "ci95_high_pp": 0.0,
+          "ci95_low_pp": 0.0,
+          "examples": 185,
+          "mean_pp": 0.0
+        },
+        "vs_generic_macro": {
+          "ci95_high_pp": 0.0,
+          "ci95_low_pp": 0.0,
+          "examples": 185,
+          "mean_pp": 0.0
+        },
+        "vs_random_mean": {
+          "ci95_high_pp": 0.0,
+          "ci95_low_pp": 0.0,
+          "examples": 185,
+          "mean_pp": 0.0
+        }
+      },
+      "task_route": {
+        "blocks": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          11,
+          22,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "budget": 16,
+        "capability": "ocr",
+        "capability_drop_pp": 72.97297297297297,
+        "latency_source": "original_dynamic_clock",
+        "overall_drop_pp": 47.34513274336283,
+        "peak_allocated_mib": 7122.36328125,
+        "removed_parameters": 315235200,
+        "removed_vision_percent": 47.14260610831042,
+        "repeat": null,
+        "route": "route-015-k16",
+        "route_type": "task_specific",
+        "total_speedup_percent": 21.348667151620138,
+        "vision_speedup_percent": 40.64828816240058
+      }
+    },
+    {
+      "budget": 4,
+      "capability": "spatial",
+      "controls": {
+        "contiguous_macro": {
+          "mean_capability_drop_pp": 3.9106145251396662,
+          "mean_total_speedup_percent": 3.418886791482878,
+          "mean_vision_speedup_percent": 7.552925285973022,
+          "runs": 1
+        },
+        "generic_macro": {
+          "mean_capability_drop_pp": 5.586592178770955,
+          "mean_total_speedup_percent": 2.6778993526388684,
+          "mean_vision_speedup_percent": 6.546783825026292,
+          "runs": 1
+        },
+        "random": {
+          "mean_capability_drop_pp": 5.400372439478585,
+          "mean_total_speedup_percent": 1.379971224931135,
+          "mean_vision_speedup_percent": 6.468745852760908,
+          "runs": 3
+        }
+      },
+      "paired_accuracy_advantage": {
+        "vs_baseline": {
+          "ci95_high_pp": 1.1173184357541899,
+          "ci95_low_pp": -6.70391061452514,
+          "examples": 179,
+          "mean_pp": -2.793296089385475
+        },
+        "vs_contiguous_macro": {
+          "ci95_high_pp": 6.145251396648044,
+          "ci95_low_pp": -3.910614525139665,
+          "examples": 179,
+          "mean_pp": 1.1173184357541899
+        },
+        "vs_generic_macro": {
+          "ci95_high_pp": 7.262569832402235,
+          "ci95_low_pp": -1.1173184357541899,
+          "examples": 179,
+          "mean_pp": 2.793296089385475
+        },
+        "vs_random_mean": {
+          "ci95_high_pp": 7.076350093109871,
+          "ci95_low_pp": -2.048417132216014,
+          "examples": 179,
+          "mean_pp": 2.607076350093111
+        }
+      },
+      "task_route": {
+        "blocks": [
+          3,
+          16,
+          22,
+          29
+        ],
+        "budget": 4,
+        "capability": "spatial",
+        "capability_drop_pp": 2.7932960893854775,
+        "latency_source": "fixed_clock_audit",
+        "overall_drop_pp": 8.075221238938058,
+        "peak_allocated_mib": 7575.427734375,
+        "removed_parameters": 78808800,
+        "removed_vision_percent": 11.785651527077604,
+        "repeat": null,
+        "route": "route-016-k04",
+        "route_type": "task_specific",
+        "total_speedup_percent": 1.7720353479732553,
+        "vision_speedup_percent": 6.516411610711126
+      }
+    },
+    {
+      "budget": 8,
+      "capability": "spatial",
+      "controls": {
+        "contiguous_macro": {
+          "mean_capability_drop_pp": 29.60893854748604,
+          "mean_total_speedup_percent": 16.413474452046906,
+          "mean_vision_speedup_percent": 21.772744901527187,
+          "runs": 1
+        },
+        "generic_macro": {
+          "mean_capability_drop_pp": 10.61452513966481,
+          "mean_total_speedup_percent": 18.19722045880827,
+          "mean_vision_speedup_percent": 20.98161278071209,
+          "runs": 1
+        },
+        "random": {
+          "mean_capability_drop_pp": 23.277467411545626,
+          "mean_total_speedup_percent": 12.334442768744529,
+          "mean_vision_speedup_percent": 17.158028086897883,
+          "runs": 3
+        }
+      },
+      "paired_accuracy_advantage": {
+        "vs_baseline": {
+          "ci95_high_pp": -6.145251396648044,
+          "ci95_low_pp": -19.553072625698324,
+          "examples": 179,
+          "mean_pp": -12.849162011173185
+        },
+        "vs_contiguous_macro": {
+          "ci95_high_pp": 25.69832402234637,
+          "ci95_low_pp": 7.82122905027933,
+          "examples": 179,
+          "mean_pp": 16.75977653631285
+        },
+        "vs_generic_macro": {
+          "ci95_high_pp": 3.910614525139665,
+          "ci95_low_pp": -8.379888268156424,
+          "examples": 179,
+          "mean_pp": -2.2346368715083798
+        },
+        "vs_random_mean": {
+          "ci95_high_pp": 17.87709497206704,
+          "ci95_low_pp": 2.7932960893854766,
+          "examples": 179,
+          "mean_pp": 10.428305400372443
+        }
+      },
+      "task_route": {
+        "blocks": [
+          3,
+          4,
+          16,
+          19,
+          20,
+          22,
+          26,
+          29
+        ],
+        "budget": 8,
+        "capability": "spatial",
+        "capability_drop_pp": 12.849162011173188,
+        "latency_source": "original_dynamic_clock",
+        "overall_drop_pp": 22.787610619469024,
+        "peak_allocated_mib": 7424.40625,
+        "removed_parameters": 157617600,
+        "removed_vision_percent": 23.57130305415521,
+        "repeat": null,
+        "route": "route-017-k08",
+        "route_type": "task_specific",
+        "total_speedup_percent": 16.139977757127344,
+        "vision_speedup_percent": 20.746356400511146
+      }
+    },
+    {
+      "budget": 12,
+      "capability": "spatial",
+      "controls": {
+        "contiguous_macro": {
+          "mean_capability_drop_pp": 29.60893854748604,
+          "mean_total_speedup_percent": 16.46544112702044,
+          "mean_vision_speedup_percent": 27.49036554157087,
+          "runs": 1
+        },
+        "generic_macro": {
+          "mean_capability_drop_pp": 26.256983240223462,
+          "mean_total_speedup_percent": 19.15545037969948,
+          "mean_vision_speedup_percent": 30.12227638738654,
+          "runs": 1
+        },
+        "random": {
+          "mean_capability_drop_pp": 29.23649906890131,
+          "mean_total_speedup_percent": 17.28432682137088,
+          "mean_vision_speedup_percent": 28.493004207624526,
+          "runs": 3
+        }
+      },
+      "paired_accuracy_advantage": {
+        "vs_baseline": {
+          "ci95_high_pp": -13.966480446927374,
+          "ci95_low_pp": -30.726256983240223,
+          "examples": 179,
+          "mean_pp": -22.3463687150838
+        },
+        "vs_contiguous_macro": {
+          "ci95_high_pp": 15.083798882681565,
+          "ci95_low_pp": -0.5586592178770949,
+          "examples": 179,
+          "mean_pp": 7.262569832402235
+        },
+        "vs_generic_macro": {
+          "ci95_high_pp": 11.1731843575419,
+          "ci95_low_pp": -3.35195530726257,
+          "examples": 179,
+          "mean_pp": 3.910614525139665
+        },
+        "vs_random_mean": {
+          "ci95_high_pp": 14.52513966480447,
+          "ci95_low_pp": -0.7448789571694591,
+          "examples": 179,
+          "mean_pp": 6.890130353817504
+        }
+      },
+      "task_route": {
+        "blocks": [
+          3,
+          4,
+          6,
+          10,
+          16,
+          19,
+          20,
+          22,
+          26,
+          28,
+          29,
+          30
+        ],
+        "budget": 12,
+        "capability": "spatial",
+        "capability_drop_pp": 22.3463687150838,
+        "latency_source": "original_dynamic_clock",
+        "overall_drop_pp": 31.969026548672563,
+        "peak_allocated_mib": 7273.384765625,
+        "removed_parameters": 236426400,
+        "removed_vision_percent": 35.35695458123281,
+        "repeat": null,
+        "route": "route-018-k12",
+        "route_type": "task_specific",
+        "total_speedup_percent": 18.132142403146467,
+        "vision_speedup_percent": 29.360931692953795
+      }
+    },
+    {
+      "budget": 16,
+      "capability": "spatial",
+      "controls": {
+        "contiguous_macro": {
+          "mean_capability_drop_pp": 27.93296089385475,
+          "mean_total_speedup_percent": 20.976798632904426,
+          "mean_vision_speedup_percent": 40.686454758558945,
+          "runs": 1
+        },
+        "generic_macro": {
+          "mean_capability_drop_pp": 29.05027932960894,
+          "mean_total_speedup_percent": 21.520920484201067,
+          "mean_vision_speedup_percent": 39.14930765458835,
+          "runs": 1
+        },
+        "random": {
+          "mean_capability_drop_pp": 29.050279329608944,
+          "mean_total_speedup_percent": 17.586461133971753,
+          "mean_vision_speedup_percent": 35.478316984240955,
+          "runs": 3
+        }
+      },
+      "paired_accuracy_advantage": {
+        "vs_baseline": {
+          "ci95_high_pp": -16.201117318435752,
+          "ci95_low_pp": -34.63687150837989,
+          "examples": 179,
+          "mean_pp": -25.69832402234637
+        },
+        "vs_contiguous_macro": {
+          "ci95_high_pp": 6.145251396648044,
+          "ci95_low_pp": -1.675977653631285,
+          "examples": 179,
+          "mean_pp": 2.2346368715083798
+        },
+        "vs_generic_macro": {
+          "ci95_high_pp": 7.262569832402235,
+          "ci95_low_pp": -0.5586592178770949,
+          "examples": 179,
+          "mean_pp": 3.35195530726257
+        },
+        "vs_random_mean": {
+          "ci95_high_pp": 7.4487895716946,
+          "ci95_low_pp": -0.5586592178770948,
+          "examples": 179,
+          "mean_pp": 3.35195530726257
+        }
+      },
+      "task_route": {
+        "blocks": [
+          2,
+          3,
+          4,
+          6,
+          8,
+          10,
+          16,
+          18,
+          19,
+          20,
+          22,
+          25,
+          26,
+          28,
+          29,
+          30
+        ],
+        "budget": 16,
+        "capability": "spatial",
+        "capability_drop_pp": 25.698324022346377,
+        "latency_source": "original_dynamic_clock",
+        "overall_drop_pp": 41.482300884955755,
+        "peak_allocated_mib": 7122.36328125,
+        "removed_parameters": 315235200,
+        "removed_vision_percent": 47.14260610831042,
+        "repeat": null,
+        "route": "route-019-k16",
+        "route_type": "task_specific",
+        "total_speedup_percent": 13.296407178025271,
+        "vision_speedup_percent": 31.997702892716685
+      }
+    }
+  ],
+  "interpretation": "These are development-set route-search results. They select configurations for later frozen evaluation and are not held-out performance claims."
+}

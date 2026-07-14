@@ -104,6 +104,7 @@ def main() -> None:
         baseline_runner = BaselineRunner(base_config, args.manifest, args.output_dir / "baseline-latency", args.data_root)
         try:
             baseline_latency = _measure_latency(baseline_runner, latency_rows, args.latency_repeats)
+            baseline_latency["parameters"] = baseline_runner.parameter_counts
         finally:
             baseline_runner.close()
         write_json(baseline_latency_path, baseline_latency)
@@ -123,6 +124,7 @@ def main() -> None:
         try:
             runner.run()
             latency = _measure_latency(runner, latency_rows, args.latency_repeats)
+            parameter_counts = runner.parameter_counts
         finally:
             runner.close()
 
@@ -137,9 +139,13 @@ def main() -> None:
         result = {
             "name": name,
             "skip_vision_blocks": skipped,
+            "assignments": candidate.get("assignments", []),
             "overall": overall,
             "capabilities": capabilities,
             "latency": latency,
+            "parameters": parameter_counts,
+            "peak_allocated_mib": max(row["peak_allocated_mib"] for row in prediction_rows),
+            "peak_reserved_mib": max(row["peak_reserved_mib"] for row in prediction_rows),
         }
         write_json(record_path, result)
         results.append(result)
