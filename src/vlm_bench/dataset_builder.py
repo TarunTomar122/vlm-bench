@@ -2,7 +2,9 @@ import hashlib
 import io
 import json
 import random
+import re
 import urllib.request
+import zipfile
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Iterable
@@ -22,6 +24,14 @@ OCR_RECOGNITION_TYPES = {
     "Irregular Text Recognition",
     "Non-Semantic Text Recognition",
     "Regular Text Recognition",
+}
+VQAV2_COLORS = (
+    "black", "blue", "brown", "gray", "green", "orange", "pink", "purple",
+    "red", "white", "yellow",
+)
+VQAV2_ARCHIVE_URLS = {
+    "questions": "https://s3.amazonaws.com/cvmlp/vqa/mscoco/vqa/v2_Questions_Val_mscoco.zip",
+    "annotations": "https://s3.amazonaws.com/cvmlp/vqa/mscoco/vqa/v2_Annotations_Val_mscoco.zip",
 }
 MME_CAPABILITIES = {
     "existence": "object",
@@ -45,11 +55,17 @@ def _answer_format(capability: str) -> str:
 
 
 class DatasetBuilder:
-    def __init__(self, output_root: Path, external_per_capability: int = 300) -> None:
+    def __init__(
+        self,
+        output_root: Path,
+        external_per_capability: int = 300,
+        attribute_per_capability: int = 0,
+    ) -> None:
         self.output_root = output_root.resolve()
         self.image_root = self.output_root / "images"
         self.manifest_root = self.output_root / "manifests"
         self.external_per_capability = external_per_capability
+        self.attribute_per_capability = attribute_per_capability
         self.rows: list[dict] = []
         self.source_revisions: dict[str, str] = {}
         self.api = HfApi()
@@ -60,10 +76,13 @@ class DatasetBuilder:
         return revision
 
     def _save_image(self, image: Image.Image, source: str, source_id: str) -> tuple[str, str]:
-        image = image.convert("RGB")
-        buffer = io.BytesIO()
-        image.save(buffer, format="PNG", optimize=True)
-        payload = buffer.getvalue()
+        converted = image.convert("RGB")
+        try:
+            buffer = io.BytesIO()
+            converted.save(buffer, format="PNG", optimize=True)
+            payload = buffer.getvalue()
+        finally:
+            converted.close()
         digest = hashlib.sha256(payload).hexdigest()
         relative = Path("images") / source / f"{digest}.png"
         destination = self.output_root / relative
@@ -87,7 +106,10 @@ class DatasetBuilder:
         metadata: dict,
         answer_format: str | None = None,
     ) -> None:
-        image_path, image_sha = self._save_image(image, source, source_id)
+        try:
+            image_path, image_sha = self._save_image(image, source, source_id)
+        finally:
+            image.close()
         split = "development" if _stable_int(image_sha) % 2 == 0 else "test"
         self.rows.append(
             {
@@ -128,6 +150,78 @@ class DatasetBuilder:
                 subtype=category,
                 metadata={"dataset_id": dataset_id},
                 answer_format="binary",
+            )
+
+    def add_vqav2_color(self) -> None:
+        """Add unambiguous, high-agreement color questions from VQAv2 validation."""
+        dataset_id = "VQAv2 validation (official release)"
+        archive_root = self.output_root / "raw" / "vqav2"
+        archive_root.mkdir(parents=True, exist_ok=True)
+        archives = {}
+        for name, url in VQAV2_ARCHIVE_URLS.items():
+            path = archive_root / f"{name}.zip"
+            if not path.exists():
+                with urllib.request.urlopen(url) as response:
+                    path.write_bytes(response.read())
+            archives[name] = path
+            self.source_revisions[f"vqav2_{name}_url"] = url
+            self.source_revisions[f"vqav2_{name}_sha256"] = sha256_file(path)
+        with zipfile.ZipFile(archives["questions"]) as archive:
+            questions = json.load(archive.open("v2_OpenEnded_mscoco_val2014_questions.json"))["questions"]
+        with zipfile.ZipFile(archives["annotations"]) as archive:
+            annotations = json.load(archive.open("v2_mscoco_val2014_annotations.json"))["annotations"]
+        annotations_by_id = {int(row["question_id"]): row for row in annotations}
+        targets = {
+            color: self.attribute_per_capability // len(VQAV2_COLORS)
+            for color in VQAV2_COLORS
+        }
+        for color in VQAV2_COLORS[: self.attribute_per_capability % len(VQAV2_COLORS)]:
+            targets[color] += 1
+        selected = Counter()
+        color_question = re.compile(r"^what color (?:is|are) .+\?*$", re.IGNORECASE)
+        candidates = sorted(questions, key=lambda row: _stable_int(str(row["question_id"])))
+        for row in candidates:
+            question = str(row["question"]).strip()
+            if not color_question.match(question):
+                continue
+            annotation = annotations_by_id[int(row["question_id"])]
+            answers = [str(answer["answer"]).strip().lower() for answer in annotation["answers"]]
+            counts = Counter(answers)
+            answer, agreement = counts.most_common(1)[0]
+            answer = "gray" if answer == "grey" else answer
+            if answer not in targets or selected[answer] >= targets[answer] or agreement < 9:
+                continue
+            image_url = (
+                "https://s3.amazonaws.com/images.cocodataset.org/val2014/"
+                f"COCO_val2014_{int(row['image_id']):012d}.jpg"
+            )
+            with urllib.request.urlopen(image_url) as response:
+                image = Image.open(io.BytesIO(response.read()))
+            self._add(
+                source="vqav2_color",
+                source_id=str(row["question_id"]),
+                source_split="validation",
+                suite="external",
+                image=image,
+                question=question,
+                answers=[answer],
+                capability="attribute",
+                subtype="color",
+                metadata={
+                    "dataset_id": dataset_id,
+                    "image_id": row["image_id"],
+                    "image_url": image_url,
+                    "annotator_agreement": agreement,
+                },
+                answer_format="short_text",
+            )
+            selected[answer] += 1
+            if sum(selected.values()) == self.attribute_per_capability:
+                break
+        if sum(selected.values()) != self.attribute_per_capability:
+            raise RuntimeError(
+                f"VQAv2 produced {sum(selected.values())} color examples, expected {self.attribute_per_capability}; "
+                f"per-color counts: {dict(selected)}"
             )
 
     def _stratified_indices(self, rows: list[dict], count: int, key_fn) -> list[int]:
@@ -317,6 +411,7 @@ class DatasetBuilder:
         summary = {
             "seed": SEED,
             "external_per_capability": self.external_per_capability,
+            "attribute_per_capability": self.attribute_per_capability,
             "total_examples": len(rows),
             "unique_images": len({row["image_sha256"] for row in rows}),
             "counts_by_suite": dict(Counter(row["suite"] for row in rows)),
@@ -338,21 +433,35 @@ class DatasetBuilder:
             ("vsr", "cambridgeltl/vsr_random", self.add_vsr),
             ("pope", "lmms-lab/POPE", self.add_pope),
         ]
+        if self.attribute_per_capability:
+            stages.append(("vqav2_color", "VQAv2 validation", self.add_vqav2_color))
         checkpoint_root = self.output_root / "checkpoints"
         checkpoint_root.mkdir(parents=True, exist_ok=True)
         for source, dataset_id, build_stage in stages:
             checkpoint = checkpoint_root / f"{source}.jsonl"
             if checkpoint.exists():
                 stage_rows = list(read_jsonl(checkpoint))
-                if source != "mme" and len(stage_rows) > self.external_per_capability:
+                target_count = (
+                    self.attribute_per_capability if source == "vqav2_color" else self.external_per_capability
+                )
+                if source != "mme" and len(stage_rows) > target_count:
                     indices = self._stratified_indices(
                         stage_rows,
-                        self.external_per_capability,
+                        target_count,
                         lambda row: f"{row['subtype']}::{row['answers'][0] if row['answer_format'] == 'binary' else ''}",
                     )
                     stage_rows = [stage_rows[index] for index in indices]
                 self.rows.extend(stage_rows)
-                self._revision(dataset_id)
+                if dataset_id.startswith("VQAv2"):
+                    archive_root = self.output_root / "raw" / "vqav2"
+                    for name, url in VQAV2_ARCHIVE_URLS.items():
+                        path = archive_root / f"{name}.zip"
+                        if not path.exists():
+                            raise RuntimeError(f"Missing pinned VQAv2 archive required by checkpoint: {path}")
+                        self.source_revisions[f"vqav2_{name}_url"] = url
+                        self.source_revisions[f"vqav2_{name}_sha256"] = sha256_file(path)
+                else:
+                    self._revision(dataset_id)
                 continue
             previous_count = len(self.rows)
             build_stage()
