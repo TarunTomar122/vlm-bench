@@ -36,6 +36,9 @@ and a frozen external evaluation:
    one-block rankings. Completed; target-only K8 search did not transfer reliably.
 9. Freeze the complete method before evaluating the sealed 1,250-example external set. Completed;
    the matched K8 task route did not beat generic K8 overall, while spatial transferred positively.
+10. Search source-balanced generic and capability-specific routes at K4, K6, and K8 without
+    fine-tuning. The protocol, data partitions, objectives, optimizer budget, and cache provenance
+    are frozen before candidate inference.
 
 ## Dataset Design
 
@@ -82,6 +85,8 @@ scripts/download_models.py       Pinned Hugging Face snapshot download
 scripts/run_baseline.py          Deterministic VLM evaluation and telemetry
 scripts/run_layer_ablation.py    Resumable one-block identity-ablation sweep
 scripts/analyze_layer_ablation.py Paired capability analysis and heatmap generation
+scripts/prepare_robust_route_search.py Frozen source-aware search/selection manifests
+scripts/run_robust_route_search.py Resumable K4/K6/K8 robust route search and freeze
 src/vlm_bench/                   Dataset, scoring, and benchmark implementation
 tests/                           Fast unit tests
 projectIdeas/vlm-task-aware-encoder-pruning-project/
@@ -104,6 +109,17 @@ PYTHONPATH=src .venv/bin/python scripts/run_baseline.py \
 
 Use `--limit` for a smoke run. Raw JSONL predictions are resumable and intentionally ignored by
 Git; compact summaries and run metadata are committed.
+
+The no-fine-tuning robust route search runs one family per process. Two family processes can share
+the 24 GB RTX 4090, while each writes an independent append-only prediction cache:
+
+```bash
+python3 scripts/prepare_robust_route_search.py
+PYTHONPATH=src .venv/bin/python scripts/run_robust_route_search.py --family generic
+PYTHONPATH=src .venv/bin/python scripts/run_robust_route_search.py --family attribute
+# Run counting/object and OCR/spatial as the next two pairs, then freeze all families.
+PYTHONPATH=src .venv/bin/python scripts/run_robust_route_search.py --finalize
+```
 
 ## Measurements
 
@@ -129,8 +145,9 @@ configuration, and dataset-manifest hash.
   too few samples or confounds capability with answer format and source distribution.
 - Dynamic prompt-conditioned routing is a stretch goal. It is justified only if static
   capability-specific pathways first beat generic pruning at matched measured cost.
-- The original discovery dataset has 1,480 examples and 1,136 unique images. The sealed external
-  suite has 1,250 examples, exactly 250 for each of five capabilities.
+- The V2 discovery dataset has 1,780 examples and 1,431 unique images. Its image-disjoint
+  development/test partitions are method-search and method-selection evidence, not a new sealed
+  test. The consumed external suite has 1,250 examples, exactly 250 per capability.
 - The verified Qwen2.5-VL-3B baseline scored 81.62% overall: 81.00% OCRBench, 72.00% TallyQA,
   79.33% VSR, 87.67% POPE, and 88.57% on the controlled MME suite.
 - Median vision-encoder latency was 69.48 ms; median end-to-end latency was 197.80 ms at batch
@@ -186,5 +203,6 @@ configuration, and dataset-manifest hash.
 - [Phase 2 feature-gap protocol](docs/phase2_feature_gap_protocol.md)
 - [Phase 2 feature-gap results](results/phase2-feature-gap-qwen25-vl-3b/analysis/README.md)
 - [Phase 3 interaction-search protocol](docs/phase3_interaction_search_protocol.md)
+- [Source-aware robust route-search protocol](docs/robust_route_search_protocol.md)
 - [External held-out protocol](docs/external_heldout_protocol.md)
 - [Frozen external evaluation](results/external-frozen-qwen25-vl-3b/README.md)

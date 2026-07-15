@@ -1,0 +1,3392 @@
+{
+  "beam_routes": {
+    "attribute": [
+      {
+        "blocks": [
+          3,
+          6,
+          8,
+          9,
+          16,
+          20,
+          22,
+          25
+        ],
+        "search_metrics": {
+          "accuracy_drop_pp": 3.0000000000000027,
+          "baseline_accuracy": 0.98,
+          "examples": 100,
+          "lost_correct": 4,
+          "recovered_correct": 1,
+          "variant_accuracy": 0.95
+        },
+        "search_rank": 1,
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 3.191489361702138,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 4,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.925531914893617
+            },
+            "counting": {
+              "accuracy_drop_pp": 1.2658227848101222,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 7,
+              "recovered_correct": 6,
+              "variant_accuracy": 0.759493670886076
+            },
+            "object": {
+              "accuracy_drop_pp": 22.388059701492537,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 15,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.6865671641791045
+            },
+            "ocr": {
+              "accuracy_drop_pp": 44.70588235294118,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 38,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.35294117647058826
+            },
+            "spatial": {
+              "accuracy_drop_pp": 6.329113924050633,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 9,
+              "recovered_correct": 4,
+              "variant_accuracy": 0.759493670886076
+            }
+          },
+          "macro_drop_pp": 15.57607362499932,
+          "overall": {
+            "accuracy_drop_pp": 15.34653465346535,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 73,
+            "recovered_correct": 11,
+            "variant_accuracy": 0.7004950495049505
+          }
+        }
+      },
+      {
+        "blocks": [
+          3,
+          6,
+          8,
+          9,
+          16,
+          20,
+          21,
+          25
+        ],
+        "search_metrics": {
+          "accuracy_drop_pp": 4.0000000000000036,
+          "baseline_accuracy": 0.98,
+          "examples": 100,
+          "lost_correct": 6,
+          "recovered_correct": 2,
+          "variant_accuracy": 0.94
+        },
+        "search_rank": 2,
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 2.127659574468088,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 3,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.9361702127659575
+            },
+            "counting": {
+              "accuracy_drop_pp": 3.797468354430378,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 7,
+              "recovered_correct": 4,
+              "variant_accuracy": 0.7341772151898734
+            },
+            "object": {
+              "accuracy_drop_pp": 10.447761194029848,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 7,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.8059701492537313
+            },
+            "ocr": {
+              "accuracy_drop_pp": 44.70588235294118,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 38,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.35294117647058826
+            },
+            "spatial": {
+              "accuracy_drop_pp": 12.658227848101266,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 13,
+              "recovered_correct": 3,
+              "variant_accuracy": 0.6962025316455697
+            }
+          },
+          "macro_drop_pp": 14.747399864794152,
+          "overall": {
+            "accuracy_drop_pp": 14.851485148514854,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 68,
+            "recovered_correct": 8,
+            "variant_accuracy": 0.7054455445544554
+          }
+        }
+      },
+      {
+        "blocks": [
+          3,
+          6,
+          8,
+          9,
+          16,
+          20,
+          23,
+          25
+        ],
+        "search_metrics": {
+          "accuracy_drop_pp": 4.0000000000000036,
+          "baseline_accuracy": 0.98,
+          "examples": 100,
+          "lost_correct": 6,
+          "recovered_correct": 2,
+          "variant_accuracy": 0.94
+        },
+        "search_rank": 3,
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 4.255319148936176,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 4,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.9148936170212766
+            },
+            "counting": {
+              "accuracy_drop_pp": 11.392405063291145,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 11,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.6582278481012658
+            },
+            "object": {
+              "accuracy_drop_pp": 20.895522388059696,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 16,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.7014925373134329
+            },
+            "ocr": {
+              "accuracy_drop_pp": 52.941176470588246,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 46,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.27058823529411763
+            },
+            "spatial": {
+              "accuracy_drop_pp": 13.924050632911399,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 12,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.6835443037974683
+            }
+          },
+          "macro_drop_pp": 20.681694740757333,
+          "overall": {
+            "accuracy_drop_pp": 20.544554455445542,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 89,
+            "recovered_correct": 6,
+            "variant_accuracy": 0.6485148514851485
+          }
+        }
+      }
+    ],
+    "counting": [
+      {
+        "blocks": [
+          6,
+          9,
+          12,
+          21,
+          24,
+          25,
+          28,
+          30
+        ],
+        "search_metrics": {
+          "accuracy_drop_pp": 1.0000000000000009,
+          "baseline_accuracy": 0.71,
+          "examples": 100,
+          "lost_correct": 7,
+          "recovered_correct": 6,
+          "variant_accuracy": 0.7
+        },
+        "search_rank": 1,
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 10.63829787234043,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 10,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.851063829787234
+            },
+            "counting": {
+              "accuracy_drop_pp": 5.063291139240511,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 9,
+              "recovered_correct": 5,
+              "variant_accuracy": 0.7215189873417721
+            },
+            "object": {
+              "accuracy_drop_pp": 7.462686567164178,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 5,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.835820895522388
+            },
+            "ocr": {
+              "accuracy_drop_pp": 54.117647058823536,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 46,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.25882352941176473
+            },
+            "spatial": {
+              "accuracy_drop_pp": 13.924050632911399,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 12,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.6835443037974683
+            }
+          },
+          "macro_drop_pp": 18.241194654096013,
+          "overall": {
+            "accuracy_drop_pp": 18.811881188118807,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 82,
+            "recovered_correct": 6,
+            "variant_accuracy": 0.6658415841584159
+          }
+        }
+      },
+      {
+        "blocks": [
+          3,
+          6,
+          9,
+          12,
+          21,
+          24,
+          28,
+          30
+        ],
+        "search_metrics": {
+          "accuracy_drop_pp": 2.0000000000000018,
+          "baseline_accuracy": 0.71,
+          "examples": 100,
+          "lost_correct": 8,
+          "recovered_correct": 6,
+          "variant_accuracy": 0.69
+        },
+        "search_rank": 2,
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 5.319148936170215,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 6,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.9042553191489362
+            },
+            "counting": {
+              "accuracy_drop_pp": 5.063291139240511,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 9,
+              "recovered_correct": 5,
+              "variant_accuracy": 0.7215189873417721
+            },
+            "object": {
+              "accuracy_drop_pp": 10.447761194029848,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 7,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.8059701492537313
+            },
+            "ocr": {
+              "accuracy_drop_pp": 47.05882352941177,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 40,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.32941176470588235
+            },
+            "spatial": {
+              "accuracy_drop_pp": 10.126582278481022,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 11,
+              "recovered_correct": 3,
+              "variant_accuracy": 0.7215189873417721
+            }
+          },
+          "macro_drop_pp": 15.603121415466674,
+          "overall": {
+            "accuracy_drop_pp": 15.841584158415845,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 73,
+            "recovered_correct": 9,
+            "variant_accuracy": 0.6955445544554455
+          }
+        }
+      },
+      {
+        "blocks": [
+          6,
+          9,
+          12,
+          18,
+          21,
+          24,
+          28,
+          30
+        ],
+        "search_metrics": {
+          "accuracy_drop_pp": 2.9999999999999916,
+          "baseline_accuracy": 0.71,
+          "examples": 100,
+          "lost_correct": 7,
+          "recovered_correct": 4,
+          "variant_accuracy": 0.68
+        },
+        "search_rank": 3,
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 3.191489361702138,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 4,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.925531914893617
+            },
+            "counting": {
+              "accuracy_drop_pp": 7.594936708860756,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 10,
+              "recovered_correct": 4,
+              "variant_accuracy": 0.6962025316455697
+            },
+            "object": {
+              "accuracy_drop_pp": 13.432835820895516,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 9,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.7761194029850746
+            },
+            "ocr": {
+              "accuracy_drop_pp": 60.00000000000001,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 51,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.2
+            },
+            "spatial": {
+              "accuracy_drop_pp": 16.455696202531655,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 13,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.6582278481012658
+            }
+          },
+          "macro_drop_pp": 20.134991618798015,
+          "overall": {
+            "accuracy_drop_pp": 20.297029702970292,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 87,
+            "recovered_correct": 5,
+            "variant_accuracy": 0.650990099009901
+          }
+        }
+      }
+    ],
+    "object": [
+      {
+        "blocks": [
+          2,
+          5,
+          9,
+          10,
+          17,
+          23,
+          25,
+          30
+        ],
+        "search_metrics": {
+          "accuracy_drop_pp": -3.9999999999999925,
+          "baseline_accuracy": 0.93,
+          "examples": 100,
+          "lost_correct": 2,
+          "recovered_correct": 6,
+          "variant_accuracy": 0.97
+        },
+        "search_rank": 1,
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 9.57446808510639,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 10,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.8617021276595744
+            },
+            "counting": {
+              "accuracy_drop_pp": 16.455696202531644,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 18,
+              "recovered_correct": 5,
+              "variant_accuracy": 0.6075949367088608
+            },
+            "object": {
+              "accuracy_drop_pp": 14.925373134328357,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 12,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.7611940298507462
+            },
+            "ocr": {
+              "accuracy_drop_pp": 71.76470588235294,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 61,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.08235294117647059
+            },
+            "spatial": {
+              "accuracy_drop_pp": 16.455696202531655,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 16,
+              "recovered_correct": 3,
+              "variant_accuracy": 0.6582278481012658
+            }
+          },
+          "macro_drop_pp": 25.835187901370197,
+          "overall": {
+            "accuracy_drop_pp": 26.237623762376238,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 117,
+            "recovered_correct": 11,
+            "variant_accuracy": 0.5915841584158416
+          }
+        }
+      },
+      {
+        "blocks": [
+          2,
+          4,
+          9,
+          10,
+          17,
+          23,
+          25,
+          30
+        ],
+        "search_metrics": {
+          "accuracy_drop_pp": -2.9999999999999916,
+          "baseline_accuracy": 0.93,
+          "examples": 100,
+          "lost_correct": 3,
+          "recovered_correct": 6,
+          "variant_accuracy": 0.96
+        },
+        "search_rank": 2,
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 10.63829787234043,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 10,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.851063829787234
+            },
+            "counting": {
+              "accuracy_drop_pp": 10.126582278481012,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 14,
+              "recovered_correct": 6,
+              "variant_accuracy": 0.6708860759493671
+            },
+            "object": {
+              "accuracy_drop_pp": 10.447761194029848,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 11,
+              "recovered_correct": 4,
+              "variant_accuracy": 0.8059701492537313
+            },
+            "ocr": {
+              "accuracy_drop_pp": 71.76470588235294,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 61,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.08235294117647059
+            },
+            "spatial": {
+              "accuracy_drop_pp": 13.924050632911399,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 14,
+              "recovered_correct": 3,
+              "variant_accuracy": 0.6835443037974683
+            }
+          },
+          "macro_drop_pp": 23.380279572023127,
+          "overall": {
+            "accuracy_drop_pp": 24.00990099009901,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 110,
+            "recovered_correct": 13,
+            "variant_accuracy": 0.6138613861386139
+          }
+        }
+      },
+      {
+        "blocks": [
+          2,
+          5,
+          9,
+          10,
+          17,
+          20,
+          23,
+          30
+        ],
+        "search_metrics": {
+          "accuracy_drop_pp": -2.9999999999999916,
+          "baseline_accuracy": 0.93,
+          "examples": 100,
+          "lost_correct": 3,
+          "recovered_correct": 6,
+          "variant_accuracy": 0.96
+        },
+        "search_rank": 3,
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 10.63829787234043,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 11,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.851063829787234
+            },
+            "counting": {
+              "accuracy_drop_pp": 18.9873417721519,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 19,
+              "recovered_correct": 4,
+              "variant_accuracy": 0.5822784810126582
+            },
+            "object": {
+              "accuracy_drop_pp": 20.895522388059696,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 16,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.7014925373134329
+            },
+            "ocr": {
+              "accuracy_drop_pp": 72.94117647058825,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 62,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.07058823529411765
+            },
+            "spatial": {
+              "accuracy_drop_pp": 12.658227848101266,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 14,
+              "recovered_correct": 4,
+              "variant_accuracy": 0.6962025316455697
+            }
+          },
+          "macro_drop_pp": 27.224113270248306,
+          "overall": {
+            "accuracy_drop_pp": 27.475247524752476,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 122,
+            "recovered_correct": 11,
+            "variant_accuracy": 0.5792079207920792
+          }
+        }
+      }
+    ],
+    "ocr": [
+      {
+        "blocks": [
+          4,
+          5,
+          9,
+          11,
+          25,
+          26,
+          27,
+          28
+        ],
+        "search_metrics": {
+          "accuracy_drop_pp": 18.000000000000004,
+          "baseline_accuracy": 0.79,
+          "examples": 100,
+          "lost_correct": 19,
+          "recovered_correct": 1,
+          "variant_accuracy": 0.61
+        },
+        "search_rank": 1,
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 2.127659574468088,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 2,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.9361702127659575
+            },
+            "counting": {
+              "accuracy_drop_pp": 7.594936708860756,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 10,
+              "recovered_correct": 4,
+              "variant_accuracy": 0.6962025316455697
+            },
+            "object": {
+              "accuracy_drop_pp": 17.910447761194025,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 12,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.7313432835820896
+            },
+            "ocr": {
+              "accuracy_drop_pp": 23.529411764705888,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 21,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.5647058823529412
+            },
+            "spatial": {
+              "accuracy_drop_pp": 8.860759493670889,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 9,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.7341772151898734
+            }
+          },
+          "macro_drop_pp": 12.004643060579928,
+          "overall": {
+            "accuracy_drop_pp": 11.633663366336632,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 54,
+            "recovered_correct": 7,
+            "variant_accuracy": 0.7376237623762376
+          }
+        }
+      },
+      {
+        "blocks": [
+          4,
+          5,
+          8,
+          9,
+          25,
+          26,
+          27,
+          28
+        ],
+        "search_metrics": {
+          "accuracy_drop_pp": 20.000000000000007,
+          "baseline_accuracy": 0.79,
+          "examples": 100,
+          "lost_correct": 21,
+          "recovered_correct": 1,
+          "variant_accuracy": 0.59
+        },
+        "search_rank": 2,
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 2.127659574468088,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 3,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.9361702127659575
+            },
+            "counting": {
+              "accuracy_drop_pp": 1.2658227848101222,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 6,
+              "recovered_correct": 5,
+              "variant_accuracy": 0.759493670886076
+            },
+            "object": {
+              "accuracy_drop_pp": 17.910447761194025,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 12,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.7313432835820896
+            },
+            "ocr": {
+              "accuracy_drop_pp": 20.000000000000007,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 19,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.6
+            },
+            "spatial": {
+              "accuracy_drop_pp": 8.860759493670889,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 9,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.7341772151898734
+            }
+          },
+          "macro_drop_pp": 10.032937922828626,
+          "overall": {
+            "accuracy_drop_pp": 9.65346534653465,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 49,
+            "recovered_correct": 10,
+            "variant_accuracy": 0.7574257425742574
+          }
+        }
+      },
+      {
+        "blocks": [
+          4,
+          5,
+          9,
+          10,
+          25,
+          26,
+          27,
+          28
+        ],
+        "search_metrics": {
+          "accuracy_drop_pp": 21.000000000000007,
+          "baseline_accuracy": 0.79,
+          "examples": 100,
+          "lost_correct": 22,
+          "recovered_correct": 1,
+          "variant_accuracy": 0.58
+        },
+        "search_rank": 3,
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 3.191489361702138,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 4,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.925531914893617
+            },
+            "counting": {
+              "accuracy_drop_pp": 5.063291139240511,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 8,
+              "recovered_correct": 4,
+              "variant_accuracy": 0.7215189873417721
+            },
+            "object": {
+              "accuracy_drop_pp": 13.432835820895516,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 9,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.7761194029850746
+            },
+            "ocr": {
+              "accuracy_drop_pp": 24.705882352941178,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 22,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.5529411764705883
+            },
+            "spatial": {
+              "accuracy_drop_pp": 7.594936708860766,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 9,
+              "recovered_correct": 3,
+              "variant_accuracy": 0.7468354430379747
+            }
+          },
+          "macro_drop_pp": 10.797687076728021,
+          "overall": {
+            "accuracy_drop_pp": 10.643564356435641,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 52,
+            "recovered_correct": 9,
+            "variant_accuracy": 0.7475247524752475
+          }
+        }
+      }
+    ],
+    "spatial": [
+      {
+        "blocks": [
+          3,
+          10,
+          16,
+          19,
+          22,
+          26,
+          28,
+          29
+        ],
+        "search_metrics": {
+          "accuracy_drop_pp": 3.0000000000000027,
+          "baseline_accuracy": 0.79,
+          "examples": 100,
+          "lost_correct": 9,
+          "recovered_correct": 6,
+          "variant_accuracy": 0.76
+        },
+        "search_rank": 1,
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 9.57446808510639,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 10,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.8617021276595744
+            },
+            "counting": {
+              "accuracy_drop_pp": 5.063291139240511,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 9,
+              "recovered_correct": 5,
+              "variant_accuracy": 0.7215189873417721
+            },
+            "object": {
+              "accuracy_drop_pp": 11.940298507462687,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 8,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.7910447761194029
+            },
+            "ocr": {
+              "accuracy_drop_pp": 62.35294117647059,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 53,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.17647058823529413
+            },
+            "spatial": {
+              "accuracy_drop_pp": 15.189873417721522,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 14,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.6708860759493671
+            }
+          },
+          "macro_drop_pp": 20.82417446520034,
+          "overall": {
+            "accuracy_drop_pp": 21.287128712871283,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 94,
+            "recovered_correct": 8,
+            "variant_accuracy": 0.6410891089108911
+          }
+        }
+      },
+      {
+        "blocks": [
+          3,
+          6,
+          16,
+          19,
+          22,
+          26,
+          28,
+          29
+        ],
+        "search_metrics": {
+          "accuracy_drop_pp": 4.0000000000000036,
+          "baseline_accuracy": 0.79,
+          "examples": 100,
+          "lost_correct": 9,
+          "recovered_correct": 5,
+          "variant_accuracy": 0.75
+        },
+        "search_rank": 2,
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 7.446808510638303,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 8,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.8829787234042553
+            },
+            "counting": {
+              "accuracy_drop_pp": 7.594936708860756,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 9,
+              "recovered_correct": 3,
+              "variant_accuracy": 0.6962025316455697
+            },
+            "object": {
+              "accuracy_drop_pp": 16.417910447761187,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 11,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.746268656716418
+            },
+            "ocr": {
+              "accuracy_drop_pp": 55.294117647058826,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 48,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.24705882352941178
+            },
+            "spatial": {
+              "accuracy_drop_pp": 11.392405063291145,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 11,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.7088607594936709
+            }
+          },
+          "macro_drop_pp": 19.629235675522043,
+          "overall": {
+            "accuracy_drop_pp": 19.8019801980198,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 87,
+            "recovered_correct": 7,
+            "variant_accuracy": 0.655940594059406
+          }
+        }
+      },
+      {
+        "blocks": [
+          3,
+          8,
+          16,
+          19,
+          20,
+          22,
+          26,
+          29
+        ],
+        "search_metrics": {
+          "accuracy_drop_pp": 5.000000000000004,
+          "baseline_accuracy": 0.79,
+          "examples": 100,
+          "lost_correct": 9,
+          "recovered_correct": 4,
+          "variant_accuracy": 0.74
+        },
+        "search_rank": 3,
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 5.319148936170215,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 8,
+              "recovered_correct": 3,
+              "variant_accuracy": 0.9042553191489362
+            },
+            "counting": {
+              "accuracy_drop_pp": 5.063291139240511,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 9,
+              "recovered_correct": 5,
+              "variant_accuracy": 0.7215189873417721
+            },
+            "object": {
+              "accuracy_drop_pp": 22.388059701492537,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 15,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.6865671641791045
+            },
+            "ocr": {
+              "accuracy_drop_pp": 55.294117647058826,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 49,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.24705882352941178
+            },
+            "spatial": {
+              "accuracy_drop_pp": 8.860759493670889,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 10,
+              "recovered_correct": 3,
+              "variant_accuracy": 0.7341772151898734
+            }
+          },
+          "macro_drop_pp": 19.385075383526594,
+          "overall": {
+            "accuracy_drop_pp": 19.3069306930693,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 91,
+            "recovered_correct": 13,
+            "variant_accuracy": 0.6608910891089109
+          }
+        }
+      }
+    ]
+  },
+  "existing_controls": {
+    "attribute": [
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": "attribute",
+            "route_type": "task_specific"
+          }
+        ],
+        "blocks": [
+          5,
+          6,
+          8,
+          9,
+          11,
+          16,
+          20,
+          25
+        ],
+        "name": "route-001-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 11.702127659574469,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 12,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.8404255319148937
+            },
+            "counting": {
+              "accuracy_drop_pp": 10.126582278481012,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 11,
+              "recovered_correct": 3,
+              "variant_accuracy": 0.6708860759493671
+            },
+            "object": {
+              "accuracy_drop_pp": 8.955223880597007,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 6,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.8208955223880597
+            },
+            "ocr": {
+              "accuracy_drop_pp": 49.411764705882355,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 42,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.3058823529411765
+            },
+            "spatial": {
+              "accuracy_drop_pp": 16.455696202531655,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 16,
+              "recovered_correct": 3,
+              "variant_accuracy": 0.6582278481012658
+            }
+          },
+          "macro_drop_pp": 19.3302789454133,
+          "overall": {
+            "accuracy_drop_pp": 19.8019801980198,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 87,
+            "recovered_correct": 7,
+            "variant_accuracy": 0.655940594059406
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "route_type": "generic_macro"
+          }
+        ],
+        "blocks": [
+          3,
+          5,
+          6,
+          9,
+          20,
+          24,
+          25,
+          28
+        ],
+        "name": "route-025-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 4.255319148936176,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 4,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.9148936170212766
+            },
+            "counting": {
+              "accuracy_drop_pp": 2.5316455696202556,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 5,
+              "recovered_correct": 3,
+              "variant_accuracy": 0.7468354430379747
+            },
+            "object": {
+              "accuracy_drop_pp": 8.955223880597007,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 6,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.8208955223880597
+            },
+            "ocr": {
+              "accuracy_drop_pp": 32.94117647058824,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 28,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.47058823529411764
+            },
+            "spatial": {
+              "accuracy_drop_pp": 10.126582278481022,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 12,
+              "recovered_correct": 4,
+              "variant_accuracy": 0.7215189873417721
+            }
+          },
+          "macro_drop_pp": 11.76198946964454,
+          "overall": {
+            "accuracy_drop_pp": 11.881188118811881,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 55,
+            "recovered_correct": 7,
+            "variant_accuracy": 0.7351485148514851
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "route_type": "contiguous_macro",
+            "start_block": 3
+          }
+        ],
+        "blocks": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "name": "route-026-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 42.55319148936171,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 42,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.5319148936170213
+            },
+            "counting": {
+              "accuracy_drop_pp": 35.44303797468354,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 32,
+              "recovered_correct": 4,
+              "variant_accuracy": 0.4177215189873418
+            },
+            "object": {
+              "accuracy_drop_pp": 50.74626865671641,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 34,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.40298507462686567
+            },
+            "ocr": {
+              "accuracy_drop_pp": 74.11764705882354,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 63,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.058823529411764705
+            },
+            "spatial": {
+              "accuracy_drop_pp": 29.11392405063292,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 31,
+              "recovered_correct": 8,
+              "variant_accuracy": 0.5316455696202531
+            }
+          },
+          "macro_drop_pp": 46.39481384604362,
+          "overall": {
+            "accuracy_drop_pp": 46.53465346534653,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 202,
+            "recovered_correct": 14,
+            "variant_accuracy": 0.3886138613861386
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "repeat": 0,
+            "route_type": "random",
+            "seed": 20261514
+          }
+        ],
+        "blocks": [
+          0,
+          2,
+          4,
+          5,
+          10,
+          11,
+          14,
+          31
+        ],
+        "name": "route-027-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 56.38297872340425,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 54,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.39361702127659576
+            },
+            "counting": {
+              "accuracy_drop_pp": 39.24050632911392,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 33,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.379746835443038
+            },
+            "object": {
+              "accuracy_drop_pp": 41.7910447761194,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 30,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.4925373134328358
+            },
+            "ocr": {
+              "accuracy_drop_pp": 74.11764705882354,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 63,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.058823529411764705
+            },
+            "spatial": {
+              "accuracy_drop_pp": 25.31645569620253,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 27,
+              "recovered_correct": 7,
+              "variant_accuracy": 0.569620253164557
+            }
+          },
+          "macro_drop_pp": 47.369726516732726,
+          "overall": {
+            "accuracy_drop_pp": 48.26732673267327,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 207,
+            "recovered_correct": 12,
+            "variant_accuracy": 0.3712871287128713
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "repeat": 1,
+            "route_type": "random",
+            "seed": 20261515
+          }
+        ],
+        "blocks": [
+          1,
+          3,
+          5,
+          11,
+          13,
+          14,
+          15,
+          17
+        ],
+        "name": "route-028-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 39.36170212765958,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 39,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.5638297872340425
+            },
+            "counting": {
+              "accuracy_drop_pp": 48.10126582278481,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 43,
+              "recovered_correct": 5,
+              "variant_accuracy": 0.2911392405063291
+            },
+            "object": {
+              "accuracy_drop_pp": 37.31343283582089,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 27,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.5373134328358209
+            },
+            "ocr": {
+              "accuracy_drop_pp": 72.94117647058825,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 63,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.07058823529411765
+            },
+            "spatial": {
+              "accuracy_drop_pp": 26.582278481012665,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 31,
+              "recovered_correct": 10,
+              "variant_accuracy": 0.5569620253164557
+            }
+          },
+          "macro_drop_pp": 44.85997114757324,
+          "overall": {
+            "accuracy_drop_pp": 45.29702970297029,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 203,
+            "recovered_correct": 20,
+            "variant_accuracy": 0.400990099009901
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "repeat": 2,
+            "route_type": "random",
+            "seed": 20261516
+          }
+        ],
+        "blocks": [
+          1,
+          7,
+          8,
+          9,
+          18,
+          19,
+          25,
+          30
+        ],
+        "name": "route-029-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 10.63829787234043,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 12,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.851063829787234
+            },
+            "counting": {
+              "accuracy_drop_pp": 3.797468354430378,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 8,
+              "recovered_correct": 5,
+              "variant_accuracy": 0.7341772151898734
+            },
+            "object": {
+              "accuracy_drop_pp": 22.388059701492537,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 17,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.6865671641791045
+            },
+            "ocr": {
+              "accuracy_drop_pp": 57.64705882352942,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 50,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.2235294117647059
+            },
+            "spatial": {
+              "accuracy_drop_pp": 21.518987341772156,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 18,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.6075949367088608
+            }
+          },
+          "macro_drop_pp": 23.197974418712985,
+          "overall": {
+            "accuracy_drop_pp": 23.267326732673265,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 105,
+            "recovered_correct": 11,
+            "variant_accuracy": 0.6212871287128713
+          }
+        }
+      }
+    ],
+    "counting": [
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": "counting",
+            "route_type": "task_specific"
+          }
+        ],
+        "blocks": [
+          11,
+          12,
+          17,
+          24,
+          25,
+          27,
+          28,
+          30
+        ],
+        "name": "route-005-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 8.510638297872342,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 10,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.8723404255319149
+            },
+            "counting": {
+              "accuracy_drop_pp": 11.392405063291145,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 18,
+              "recovered_correct": 9,
+              "variant_accuracy": 0.6582278481012658
+            },
+            "object": {
+              "accuracy_drop_pp": 20.895522388059696,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 14,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.7014925373134329
+            },
+            "ocr": {
+              "accuracy_drop_pp": 69.41176470588236,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 59,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.10588235294117647
+            },
+            "spatial": {
+              "accuracy_drop_pp": 25.31645569620253,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 21,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.569620253164557
+            }
+          },
+          "macro_drop_pp": 27.105357230261614,
+          "overall": {
+            "accuracy_drop_pp": 27.22772277227723,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 122,
+            "recovered_correct": 12,
+            "variant_accuracy": 0.5816831683168316
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "route_type": "generic_macro"
+          }
+        ],
+        "blocks": [
+          3,
+          5,
+          6,
+          9,
+          20,
+          24,
+          25,
+          28
+        ],
+        "name": "route-025-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 4.255319148936176,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 4,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.9148936170212766
+            },
+            "counting": {
+              "accuracy_drop_pp": 2.5316455696202556,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 5,
+              "recovered_correct": 3,
+              "variant_accuracy": 0.7468354430379747
+            },
+            "object": {
+              "accuracy_drop_pp": 8.955223880597007,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 6,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.8208955223880597
+            },
+            "ocr": {
+              "accuracy_drop_pp": 32.94117647058824,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 28,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.47058823529411764
+            },
+            "spatial": {
+              "accuracy_drop_pp": 10.126582278481022,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 12,
+              "recovered_correct": 4,
+              "variant_accuracy": 0.7215189873417721
+            }
+          },
+          "macro_drop_pp": 11.76198946964454,
+          "overall": {
+            "accuracy_drop_pp": 11.881188118811881,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 55,
+            "recovered_correct": 7,
+            "variant_accuracy": 0.7351485148514851
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "route_type": "contiguous_macro",
+            "start_block": 3
+          }
+        ],
+        "blocks": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "name": "route-026-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 42.55319148936171,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 42,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.5319148936170213
+            },
+            "counting": {
+              "accuracy_drop_pp": 35.44303797468354,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 32,
+              "recovered_correct": 4,
+              "variant_accuracy": 0.4177215189873418
+            },
+            "object": {
+              "accuracy_drop_pp": 50.74626865671641,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 34,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.40298507462686567
+            },
+            "ocr": {
+              "accuracy_drop_pp": 74.11764705882354,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 63,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.058823529411764705
+            },
+            "spatial": {
+              "accuracy_drop_pp": 29.11392405063292,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 31,
+              "recovered_correct": 8,
+              "variant_accuracy": 0.5316455696202531
+            }
+          },
+          "macro_drop_pp": 46.39481384604362,
+          "overall": {
+            "accuracy_drop_pp": 46.53465346534653,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 202,
+            "recovered_correct": 14,
+            "variant_accuracy": 0.3886138613861386
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "repeat": 0,
+            "route_type": "random",
+            "seed": 20261514
+          }
+        ],
+        "blocks": [
+          0,
+          2,
+          4,
+          5,
+          10,
+          11,
+          14,
+          31
+        ],
+        "name": "route-027-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 56.38297872340425,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 54,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.39361702127659576
+            },
+            "counting": {
+              "accuracy_drop_pp": 39.24050632911392,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 33,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.379746835443038
+            },
+            "object": {
+              "accuracy_drop_pp": 41.7910447761194,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 30,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.4925373134328358
+            },
+            "ocr": {
+              "accuracy_drop_pp": 74.11764705882354,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 63,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.058823529411764705
+            },
+            "spatial": {
+              "accuracy_drop_pp": 25.31645569620253,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 27,
+              "recovered_correct": 7,
+              "variant_accuracy": 0.569620253164557
+            }
+          },
+          "macro_drop_pp": 47.369726516732726,
+          "overall": {
+            "accuracy_drop_pp": 48.26732673267327,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 207,
+            "recovered_correct": 12,
+            "variant_accuracy": 0.3712871287128713
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "repeat": 1,
+            "route_type": "random",
+            "seed": 20261515
+          }
+        ],
+        "blocks": [
+          1,
+          3,
+          5,
+          11,
+          13,
+          14,
+          15,
+          17
+        ],
+        "name": "route-028-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 39.36170212765958,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 39,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.5638297872340425
+            },
+            "counting": {
+              "accuracy_drop_pp": 48.10126582278481,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 43,
+              "recovered_correct": 5,
+              "variant_accuracy": 0.2911392405063291
+            },
+            "object": {
+              "accuracy_drop_pp": 37.31343283582089,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 27,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.5373134328358209
+            },
+            "ocr": {
+              "accuracy_drop_pp": 72.94117647058825,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 63,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.07058823529411765
+            },
+            "spatial": {
+              "accuracy_drop_pp": 26.582278481012665,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 31,
+              "recovered_correct": 10,
+              "variant_accuracy": 0.5569620253164557
+            }
+          },
+          "macro_drop_pp": 44.85997114757324,
+          "overall": {
+            "accuracy_drop_pp": 45.29702970297029,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 203,
+            "recovered_correct": 20,
+            "variant_accuracy": 0.400990099009901
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "repeat": 2,
+            "route_type": "random",
+            "seed": 20261516
+          }
+        ],
+        "blocks": [
+          1,
+          7,
+          8,
+          9,
+          18,
+          19,
+          25,
+          30
+        ],
+        "name": "route-029-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 10.63829787234043,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 12,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.851063829787234
+            },
+            "counting": {
+              "accuracy_drop_pp": 3.797468354430378,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 8,
+              "recovered_correct": 5,
+              "variant_accuracy": 0.7341772151898734
+            },
+            "object": {
+              "accuracy_drop_pp": 22.388059701492537,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 17,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.6865671641791045
+            },
+            "ocr": {
+              "accuracy_drop_pp": 57.64705882352942,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 50,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.2235294117647059
+            },
+            "spatial": {
+              "accuracy_drop_pp": 21.518987341772156,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 18,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.6075949367088608
+            }
+          },
+          "macro_drop_pp": 23.197974418712985,
+          "overall": {
+            "accuracy_drop_pp": 23.267326732673265,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 105,
+            "recovered_correct": 11,
+            "variant_accuracy": 0.6212871287128713
+          }
+        }
+      }
+    ],
+    "object": [
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": "object",
+            "route_type": "task_specific"
+          }
+        ],
+        "blocks": [
+          2,
+          3,
+          9,
+          10,
+          20,
+          21,
+          23,
+          30
+        ],
+        "name": "route-009-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 5.319148936170215,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 6,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.9042553191489362
+            },
+            "counting": {
+              "accuracy_drop_pp": 11.392405063291145,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 12,
+              "recovered_correct": 3,
+              "variant_accuracy": 0.6582278481012658
+            },
+            "object": {
+              "accuracy_drop_pp": 17.910447761194025,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 16,
+              "recovered_correct": 4,
+              "variant_accuracy": 0.7313432835820896
+            },
+            "ocr": {
+              "accuracy_drop_pp": 74.11764705882354,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 63,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.058823529411764705
+            },
+            "spatial": {
+              "accuracy_drop_pp": 16.455696202531655,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 16,
+              "recovered_correct": 3,
+              "variant_accuracy": 0.6582278481012658
+            }
+          },
+          "macro_drop_pp": 25.039069004402116,
+          "overall": {
+            "accuracy_drop_pp": 25.247524752475247,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 113,
+            "recovered_correct": 11,
+            "variant_accuracy": 0.6014851485148515
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "route_type": "generic_macro"
+          }
+        ],
+        "blocks": [
+          3,
+          5,
+          6,
+          9,
+          20,
+          24,
+          25,
+          28
+        ],
+        "name": "route-025-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 4.255319148936176,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 4,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.9148936170212766
+            },
+            "counting": {
+              "accuracy_drop_pp": 2.5316455696202556,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 5,
+              "recovered_correct": 3,
+              "variant_accuracy": 0.7468354430379747
+            },
+            "object": {
+              "accuracy_drop_pp": 8.955223880597007,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 6,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.8208955223880597
+            },
+            "ocr": {
+              "accuracy_drop_pp": 32.94117647058824,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 28,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.47058823529411764
+            },
+            "spatial": {
+              "accuracy_drop_pp": 10.126582278481022,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 12,
+              "recovered_correct": 4,
+              "variant_accuracy": 0.7215189873417721
+            }
+          },
+          "macro_drop_pp": 11.76198946964454,
+          "overall": {
+            "accuracy_drop_pp": 11.881188118811881,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 55,
+            "recovered_correct": 7,
+            "variant_accuracy": 0.7351485148514851
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "route_type": "contiguous_macro",
+            "start_block": 3
+          }
+        ],
+        "blocks": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "name": "route-026-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 42.55319148936171,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 42,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.5319148936170213
+            },
+            "counting": {
+              "accuracy_drop_pp": 35.44303797468354,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 32,
+              "recovered_correct": 4,
+              "variant_accuracy": 0.4177215189873418
+            },
+            "object": {
+              "accuracy_drop_pp": 50.74626865671641,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 34,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.40298507462686567
+            },
+            "ocr": {
+              "accuracy_drop_pp": 74.11764705882354,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 63,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.058823529411764705
+            },
+            "spatial": {
+              "accuracy_drop_pp": 29.11392405063292,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 31,
+              "recovered_correct": 8,
+              "variant_accuracy": 0.5316455696202531
+            }
+          },
+          "macro_drop_pp": 46.39481384604362,
+          "overall": {
+            "accuracy_drop_pp": 46.53465346534653,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 202,
+            "recovered_correct": 14,
+            "variant_accuracy": 0.3886138613861386
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "repeat": 0,
+            "route_type": "random",
+            "seed": 20261514
+          }
+        ],
+        "blocks": [
+          0,
+          2,
+          4,
+          5,
+          10,
+          11,
+          14,
+          31
+        ],
+        "name": "route-027-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 56.38297872340425,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 54,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.39361702127659576
+            },
+            "counting": {
+              "accuracy_drop_pp": 39.24050632911392,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 33,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.379746835443038
+            },
+            "object": {
+              "accuracy_drop_pp": 41.7910447761194,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 30,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.4925373134328358
+            },
+            "ocr": {
+              "accuracy_drop_pp": 74.11764705882354,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 63,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.058823529411764705
+            },
+            "spatial": {
+              "accuracy_drop_pp": 25.31645569620253,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 27,
+              "recovered_correct": 7,
+              "variant_accuracy": 0.569620253164557
+            }
+          },
+          "macro_drop_pp": 47.369726516732726,
+          "overall": {
+            "accuracy_drop_pp": 48.26732673267327,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 207,
+            "recovered_correct": 12,
+            "variant_accuracy": 0.3712871287128713
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "repeat": 1,
+            "route_type": "random",
+            "seed": 20261515
+          }
+        ],
+        "blocks": [
+          1,
+          3,
+          5,
+          11,
+          13,
+          14,
+          15,
+          17
+        ],
+        "name": "route-028-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 39.36170212765958,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 39,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.5638297872340425
+            },
+            "counting": {
+              "accuracy_drop_pp": 48.10126582278481,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 43,
+              "recovered_correct": 5,
+              "variant_accuracy": 0.2911392405063291
+            },
+            "object": {
+              "accuracy_drop_pp": 37.31343283582089,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 27,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.5373134328358209
+            },
+            "ocr": {
+              "accuracy_drop_pp": 72.94117647058825,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 63,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.07058823529411765
+            },
+            "spatial": {
+              "accuracy_drop_pp": 26.582278481012665,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 31,
+              "recovered_correct": 10,
+              "variant_accuracy": 0.5569620253164557
+            }
+          },
+          "macro_drop_pp": 44.85997114757324,
+          "overall": {
+            "accuracy_drop_pp": 45.29702970297029,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 203,
+            "recovered_correct": 20,
+            "variant_accuracy": 0.400990099009901
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "repeat": 2,
+            "route_type": "random",
+            "seed": 20261516
+          }
+        ],
+        "blocks": [
+          1,
+          7,
+          8,
+          9,
+          18,
+          19,
+          25,
+          30
+        ],
+        "name": "route-029-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 10.63829787234043,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 12,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.851063829787234
+            },
+            "counting": {
+              "accuracy_drop_pp": 3.797468354430378,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 8,
+              "recovered_correct": 5,
+              "variant_accuracy": 0.7341772151898734
+            },
+            "object": {
+              "accuracy_drop_pp": 22.388059701492537,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 17,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.6865671641791045
+            },
+            "ocr": {
+              "accuracy_drop_pp": 57.64705882352942,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 50,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.2235294117647059
+            },
+            "spatial": {
+              "accuracy_drop_pp": 21.518987341772156,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 18,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.6075949367088608
+            }
+          },
+          "macro_drop_pp": 23.197974418712985,
+          "overall": {
+            "accuracy_drop_pp": 23.267326732673265,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 105,
+            "recovered_correct": 11,
+            "variant_accuracy": 0.6212871287128713
+          }
+        }
+      }
+    ],
+    "ocr": [
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": "ocr",
+            "route_type": "task_specific"
+          }
+        ],
+        "blocks": [
+          4,
+          5,
+          6,
+          8,
+          9,
+          11,
+          25,
+          28
+        ],
+        "name": "route-013-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 13.829787234042556,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 14,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.8191489361702128
+            },
+            "counting": {
+              "accuracy_drop_pp": 12.658227848101266,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 14,
+              "recovered_correct": 4,
+              "variant_accuracy": 0.6455696202531646
+            },
+            "object": {
+              "accuracy_drop_pp": 16.417910447761187,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 11,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.746268656716418
+            },
+            "ocr": {
+              "accuracy_drop_pp": 36.47058823529412,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 32,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.43529411764705883
+            },
+            "spatial": {
+              "accuracy_drop_pp": 21.518987341772156,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 21,
+              "recovered_correct": 4,
+              "variant_accuracy": 0.6075949367088608
+            }
+          },
+          "macro_drop_pp": 20.179100221394258,
+          "overall": {
+            "accuracy_drop_pp": 20.297029702970292,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 92,
+            "recovered_correct": 10,
+            "variant_accuracy": 0.650990099009901
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "route_type": "generic_macro"
+          }
+        ],
+        "blocks": [
+          3,
+          5,
+          6,
+          9,
+          20,
+          24,
+          25,
+          28
+        ],
+        "name": "route-025-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 4.255319148936176,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 4,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.9148936170212766
+            },
+            "counting": {
+              "accuracy_drop_pp": 2.5316455696202556,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 5,
+              "recovered_correct": 3,
+              "variant_accuracy": 0.7468354430379747
+            },
+            "object": {
+              "accuracy_drop_pp": 8.955223880597007,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 6,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.8208955223880597
+            },
+            "ocr": {
+              "accuracy_drop_pp": 32.94117647058824,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 28,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.47058823529411764
+            },
+            "spatial": {
+              "accuracy_drop_pp": 10.126582278481022,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 12,
+              "recovered_correct": 4,
+              "variant_accuracy": 0.7215189873417721
+            }
+          },
+          "macro_drop_pp": 11.76198946964454,
+          "overall": {
+            "accuracy_drop_pp": 11.881188118811881,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 55,
+            "recovered_correct": 7,
+            "variant_accuracy": 0.7351485148514851
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "route_type": "contiguous_macro",
+            "start_block": 3
+          }
+        ],
+        "blocks": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "name": "route-026-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 42.55319148936171,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 42,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.5319148936170213
+            },
+            "counting": {
+              "accuracy_drop_pp": 35.44303797468354,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 32,
+              "recovered_correct": 4,
+              "variant_accuracy": 0.4177215189873418
+            },
+            "object": {
+              "accuracy_drop_pp": 50.74626865671641,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 34,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.40298507462686567
+            },
+            "ocr": {
+              "accuracy_drop_pp": 74.11764705882354,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 63,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.058823529411764705
+            },
+            "spatial": {
+              "accuracy_drop_pp": 29.11392405063292,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 31,
+              "recovered_correct": 8,
+              "variant_accuracy": 0.5316455696202531
+            }
+          },
+          "macro_drop_pp": 46.39481384604362,
+          "overall": {
+            "accuracy_drop_pp": 46.53465346534653,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 202,
+            "recovered_correct": 14,
+            "variant_accuracy": 0.3886138613861386
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "repeat": 0,
+            "route_type": "random",
+            "seed": 20261514
+          }
+        ],
+        "blocks": [
+          0,
+          2,
+          4,
+          5,
+          10,
+          11,
+          14,
+          31
+        ],
+        "name": "route-027-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 56.38297872340425,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 54,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.39361702127659576
+            },
+            "counting": {
+              "accuracy_drop_pp": 39.24050632911392,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 33,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.379746835443038
+            },
+            "object": {
+              "accuracy_drop_pp": 41.7910447761194,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 30,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.4925373134328358
+            },
+            "ocr": {
+              "accuracy_drop_pp": 74.11764705882354,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 63,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.058823529411764705
+            },
+            "spatial": {
+              "accuracy_drop_pp": 25.31645569620253,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 27,
+              "recovered_correct": 7,
+              "variant_accuracy": 0.569620253164557
+            }
+          },
+          "macro_drop_pp": 47.369726516732726,
+          "overall": {
+            "accuracy_drop_pp": 48.26732673267327,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 207,
+            "recovered_correct": 12,
+            "variant_accuracy": 0.3712871287128713
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "repeat": 1,
+            "route_type": "random",
+            "seed": 20261515
+          }
+        ],
+        "blocks": [
+          1,
+          3,
+          5,
+          11,
+          13,
+          14,
+          15,
+          17
+        ],
+        "name": "route-028-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 39.36170212765958,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 39,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.5638297872340425
+            },
+            "counting": {
+              "accuracy_drop_pp": 48.10126582278481,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 43,
+              "recovered_correct": 5,
+              "variant_accuracy": 0.2911392405063291
+            },
+            "object": {
+              "accuracy_drop_pp": 37.31343283582089,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 27,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.5373134328358209
+            },
+            "ocr": {
+              "accuracy_drop_pp": 72.94117647058825,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 63,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.07058823529411765
+            },
+            "spatial": {
+              "accuracy_drop_pp": 26.582278481012665,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 31,
+              "recovered_correct": 10,
+              "variant_accuracy": 0.5569620253164557
+            }
+          },
+          "macro_drop_pp": 44.85997114757324,
+          "overall": {
+            "accuracy_drop_pp": 45.29702970297029,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 203,
+            "recovered_correct": 20,
+            "variant_accuracy": 0.400990099009901
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "repeat": 2,
+            "route_type": "random",
+            "seed": 20261516
+          }
+        ],
+        "blocks": [
+          1,
+          7,
+          8,
+          9,
+          18,
+          19,
+          25,
+          30
+        ],
+        "name": "route-029-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 10.63829787234043,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 12,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.851063829787234
+            },
+            "counting": {
+              "accuracy_drop_pp": 3.797468354430378,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 8,
+              "recovered_correct": 5,
+              "variant_accuracy": 0.7341772151898734
+            },
+            "object": {
+              "accuracy_drop_pp": 22.388059701492537,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 17,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.6865671641791045
+            },
+            "ocr": {
+              "accuracy_drop_pp": 57.64705882352942,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 50,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.2235294117647059
+            },
+            "spatial": {
+              "accuracy_drop_pp": 21.518987341772156,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 18,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.6075949367088608
+            }
+          },
+          "macro_drop_pp": 23.197974418712985,
+          "overall": {
+            "accuracy_drop_pp": 23.267326732673265,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 105,
+            "recovered_correct": 11,
+            "variant_accuracy": 0.6212871287128713
+          }
+        }
+      }
+    ],
+    "spatial": [
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": "spatial",
+            "route_type": "task_specific"
+          }
+        ],
+        "blocks": [
+          3,
+          4,
+          16,
+          19,
+          20,
+          22,
+          26,
+          29
+        ],
+        "name": "route-017-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 7.446808510638303,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 8,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.8829787234042553
+            },
+            "counting": {
+              "accuracy_drop_pp": 10.126582278481012,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 12,
+              "recovered_correct": 4,
+              "variant_accuracy": 0.6708860759493671
+            },
+            "object": {
+              "accuracy_drop_pp": 19.402985074626866,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 13,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.7164179104477612
+            },
+            "ocr": {
+              "accuracy_drop_pp": 61.1764705882353,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 53,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.18823529411764706
+            },
+            "spatial": {
+              "accuracy_drop_pp": 17.721518987341778,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 17,
+              "recovered_correct": 3,
+              "variant_accuracy": 0.6455696202531646
+            }
+          },
+          "macro_drop_pp": 23.17487308786465,
+          "overall": {
+            "accuracy_drop_pp": 23.267326732673265,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 103,
+            "recovered_correct": 9,
+            "variant_accuracy": 0.6212871287128713
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "route_type": "generic_macro"
+          }
+        ],
+        "blocks": [
+          3,
+          5,
+          6,
+          9,
+          20,
+          24,
+          25,
+          28
+        ],
+        "name": "route-025-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 4.255319148936176,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 4,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.9148936170212766
+            },
+            "counting": {
+              "accuracy_drop_pp": 2.5316455696202556,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 5,
+              "recovered_correct": 3,
+              "variant_accuracy": 0.7468354430379747
+            },
+            "object": {
+              "accuracy_drop_pp": 8.955223880597007,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 6,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.8208955223880597
+            },
+            "ocr": {
+              "accuracy_drop_pp": 32.94117647058824,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 28,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.47058823529411764
+            },
+            "spatial": {
+              "accuracy_drop_pp": 10.126582278481022,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 12,
+              "recovered_correct": 4,
+              "variant_accuracy": 0.7215189873417721
+            }
+          },
+          "macro_drop_pp": 11.76198946964454,
+          "overall": {
+            "accuracy_drop_pp": 11.881188118811881,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 55,
+            "recovered_correct": 7,
+            "variant_accuracy": 0.7351485148514851
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "route_type": "contiguous_macro",
+            "start_block": 3
+          }
+        ],
+        "blocks": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "name": "route-026-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 42.55319148936171,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 42,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.5319148936170213
+            },
+            "counting": {
+              "accuracy_drop_pp": 35.44303797468354,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 32,
+              "recovered_correct": 4,
+              "variant_accuracy": 0.4177215189873418
+            },
+            "object": {
+              "accuracy_drop_pp": 50.74626865671641,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 34,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.40298507462686567
+            },
+            "ocr": {
+              "accuracy_drop_pp": 74.11764705882354,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 63,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.058823529411764705
+            },
+            "spatial": {
+              "accuracy_drop_pp": 29.11392405063292,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 31,
+              "recovered_correct": 8,
+              "variant_accuracy": 0.5316455696202531
+            }
+          },
+          "macro_drop_pp": 46.39481384604362,
+          "overall": {
+            "accuracy_drop_pp": 46.53465346534653,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 202,
+            "recovered_correct": 14,
+            "variant_accuracy": 0.3886138613861386
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "repeat": 0,
+            "route_type": "random",
+            "seed": 20261514
+          }
+        ],
+        "blocks": [
+          0,
+          2,
+          4,
+          5,
+          10,
+          11,
+          14,
+          31
+        ],
+        "name": "route-027-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 56.38297872340425,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 54,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.39361702127659576
+            },
+            "counting": {
+              "accuracy_drop_pp": 39.24050632911392,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 33,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.379746835443038
+            },
+            "object": {
+              "accuracy_drop_pp": 41.7910447761194,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 30,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.4925373134328358
+            },
+            "ocr": {
+              "accuracy_drop_pp": 74.11764705882354,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 63,
+              "recovered_correct": 0,
+              "variant_accuracy": 0.058823529411764705
+            },
+            "spatial": {
+              "accuracy_drop_pp": 25.31645569620253,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 27,
+              "recovered_correct": 7,
+              "variant_accuracy": 0.569620253164557
+            }
+          },
+          "macro_drop_pp": 47.369726516732726,
+          "overall": {
+            "accuracy_drop_pp": 48.26732673267327,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 207,
+            "recovered_correct": 12,
+            "variant_accuracy": 0.3712871287128713
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "repeat": 1,
+            "route_type": "random",
+            "seed": 20261515
+          }
+        ],
+        "blocks": [
+          1,
+          3,
+          5,
+          11,
+          13,
+          14,
+          15,
+          17
+        ],
+        "name": "route-028-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 39.36170212765958,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 39,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.5638297872340425
+            },
+            "counting": {
+              "accuracy_drop_pp": 48.10126582278481,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 43,
+              "recovered_correct": 5,
+              "variant_accuracy": 0.2911392405063291
+            },
+            "object": {
+              "accuracy_drop_pp": 37.31343283582089,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 27,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.5373134328358209
+            },
+            "ocr": {
+              "accuracy_drop_pp": 72.94117647058825,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 63,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.07058823529411765
+            },
+            "spatial": {
+              "accuracy_drop_pp": 26.582278481012665,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 31,
+              "recovered_correct": 10,
+              "variant_accuracy": 0.5569620253164557
+            }
+          },
+          "macro_drop_pp": 44.85997114757324,
+          "overall": {
+            "accuracy_drop_pp": 45.29702970297029,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 203,
+            "recovered_correct": 20,
+            "variant_accuracy": 0.400990099009901
+          }
+        }
+      },
+      {
+        "assignments": [
+          {
+            "budget": 8,
+            "capability": null,
+            "repeat": 2,
+            "route_type": "random",
+            "seed": 20261516
+          }
+        ],
+        "blocks": [
+          1,
+          7,
+          8,
+          9,
+          18,
+          19,
+          25,
+          30
+        ],
+        "name": "route-029-k08",
+        "prediction_source": "regenerated on image-disjoint development validation",
+        "validation_metrics": {
+          "capabilities": {
+            "attribute": {
+              "accuracy_drop_pp": 10.63829787234043,
+              "baseline_accuracy": 0.9574468085106383,
+              "examples": 94,
+              "lost_correct": 12,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.851063829787234
+            },
+            "counting": {
+              "accuracy_drop_pp": 3.797468354430378,
+              "baseline_accuracy": 0.7721518987341772,
+              "examples": 79,
+              "lost_correct": 8,
+              "recovered_correct": 5,
+              "variant_accuracy": 0.7341772151898734
+            },
+            "object": {
+              "accuracy_drop_pp": 22.388059701492537,
+              "baseline_accuracy": 0.9104477611940298,
+              "examples": 67,
+              "lost_correct": 17,
+              "recovered_correct": 2,
+              "variant_accuracy": 0.6865671641791045
+            },
+            "ocr": {
+              "accuracy_drop_pp": 57.64705882352942,
+              "baseline_accuracy": 0.8,
+              "examples": 85,
+              "lost_correct": 50,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.2235294117647059
+            },
+            "spatial": {
+              "accuracy_drop_pp": 21.518987341772156,
+              "baseline_accuracy": 0.8227848101265823,
+              "examples": 79,
+              "lost_correct": 18,
+              "recovered_correct": 1,
+              "variant_accuracy": 0.6075949367088608
+            }
+          },
+          "macro_drop_pp": 23.197974418712985,
+          "overall": {
+            "accuracy_drop_pp": 23.267326732673265,
+            "baseline_accuracy": 0.8539603960396039,
+            "examples": 404,
+            "lost_correct": 105,
+            "recovered_correct": 11,
+            "variant_accuracy": 0.6212871287128713
+          }
+        }
+      }
+    ]
+  },
+  "selection_rule": "primary route is rank 1 on search data; validation results do not change selection"
+}

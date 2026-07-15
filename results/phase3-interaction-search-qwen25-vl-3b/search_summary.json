@@ -1,0 +1,2214 @@
+{
+  "capabilities": {
+    "attribute": {
+      "candidate_pool": [
+        8,
+        9,
+        20,
+        25,
+        6,
+        5,
+        11,
+        16,
+        21,
+        22,
+        23,
+        3,
+        7,
+        10,
+        13,
+        18
+      ],
+      "depths": [
+        {
+          "budget": 5,
+          "candidates_evaluated": 12,
+          "retained": [
+            {
+              "added_blocks": [
+                3
+              ],
+              "blocks": [
+                3,
+                8,
+                9,
+                20,
+                25
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 1.0000000000000009,
+                "baseline_accuracy": 0.98,
+                "examples": 100,
+                "lost_correct": 2,
+                "recovered_correct": 1,
+                "variant_accuracy": 0.97
+              },
+              "parents": [
+                [
+                  8,
+                  9,
+                  20,
+                  25
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                13
+              ],
+              "blocks": [
+                8,
+                9,
+                13,
+                20,
+                25
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 1.0000000000000009,
+                "baseline_accuracy": 0.98,
+                "examples": 100,
+                "lost_correct": 3,
+                "recovered_correct": 2,
+                "variant_accuracy": 0.97
+              },
+              "parents": [
+                [
+                  8,
+                  9,
+                  20,
+                  25
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                18
+              ],
+              "blocks": [
+                8,
+                9,
+                18,
+                20,
+                25
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 1.0000000000000009,
+                "baseline_accuracy": 0.98,
+                "examples": 100,
+                "lost_correct": 2,
+                "recovered_correct": 1,
+                "variant_accuracy": 0.97
+              },
+              "parents": [
+                [
+                  8,
+                  9,
+                  20,
+                  25
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "budget": 6,
+          "candidates_evaluated": 30,
+          "retained": [
+            {
+              "added_blocks": [
+                3,
+                13
+              ],
+              "blocks": [
+                3,
+                8,
+                9,
+                13,
+                20,
+                25
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 1.0000000000000009,
+                "baseline_accuracy": 0.98,
+                "examples": 100,
+                "lost_correct": 3,
+                "recovered_correct": 2,
+                "variant_accuracy": 0.97
+              },
+              "parents": [
+                [
+                  3,
+                  8,
+                  9,
+                  20,
+                  25
+                ],
+                [
+                  8,
+                  9,
+                  13,
+                  20,
+                  25
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                16
+              ],
+              "blocks": [
+                3,
+                8,
+                9,
+                16,
+                20,
+                25
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 2.0000000000000018,
+                "baseline_accuracy": 0.98,
+                "examples": 100,
+                "lost_correct": 4,
+                "recovered_correct": 2,
+                "variant_accuracy": 0.96
+              },
+              "parents": [
+                [
+                  3,
+                  8,
+                  9,
+                  20,
+                  25
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                6
+              ],
+              "blocks": [
+                6,
+                8,
+                9,
+                13,
+                20,
+                25
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 2.0000000000000018,
+                "baseline_accuracy": 0.98,
+                "examples": 100,
+                "lost_correct": 4,
+                "recovered_correct": 2,
+                "variant_accuracy": 0.96
+              },
+              "parents": [
+                [
+                  8,
+                  9,
+                  13,
+                  20,
+                  25
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "budget": 7,
+          "candidates_evaluated": 28,
+          "retained": [
+            {
+              "added_blocks": [
+                11
+              ],
+              "blocks": [
+                3,
+                8,
+                9,
+                11,
+                13,
+                20,
+                25
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 2.0000000000000018,
+                "baseline_accuracy": 0.98,
+                "examples": 100,
+                "lost_correct": 3,
+                "recovered_correct": 1,
+                "variant_accuracy": 0.96
+              },
+              "parents": [
+                [
+                  3,
+                  8,
+                  9,
+                  13,
+                  20,
+                  25
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                13,
+                16
+              ],
+              "blocks": [
+                3,
+                8,
+                9,
+                13,
+                16,
+                20,
+                25
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 2.0000000000000018,
+                "baseline_accuracy": 0.98,
+                "examples": 100,
+                "lost_correct": 4,
+                "recovered_correct": 2,
+                "variant_accuracy": 0.96
+              },
+              "parents": [
+                [
+                  3,
+                  8,
+                  9,
+                  13,
+                  20,
+                  25
+                ],
+                [
+                  3,
+                  8,
+                  9,
+                  16,
+                  20,
+                  25
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                6
+              ],
+              "blocks": [
+                3,
+                6,
+                8,
+                9,
+                16,
+                20,
+                25
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 3.0000000000000027,
+                "baseline_accuracy": 0.98,
+                "examples": 100,
+                "lost_correct": 5,
+                "recovered_correct": 2,
+                "variant_accuracy": 0.95
+              },
+              "parents": [
+                [
+                  3,
+                  8,
+                  9,
+                  16,
+                  20,
+                  25
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "budget": 8,
+          "candidates_evaluated": 25,
+          "retained": [
+            {
+              "added_blocks": [
+                22
+              ],
+              "blocks": [
+                3,
+                6,
+                8,
+                9,
+                16,
+                20,
+                22,
+                25
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 3.0000000000000027,
+                "baseline_accuracy": 0.98,
+                "examples": 100,
+                "lost_correct": 4,
+                "recovered_correct": 1,
+                "variant_accuracy": 0.95
+              },
+              "parents": [
+                [
+                  3,
+                  6,
+                  8,
+                  9,
+                  16,
+                  20,
+                  25
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                21
+              ],
+              "blocks": [
+                3,
+                6,
+                8,
+                9,
+                16,
+                20,
+                21,
+                25
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 4.0000000000000036,
+                "baseline_accuracy": 0.98,
+                "examples": 100,
+                "lost_correct": 6,
+                "recovered_correct": 2,
+                "variant_accuracy": 0.94
+              },
+              "parents": [
+                [
+                  3,
+                  6,
+                  8,
+                  9,
+                  16,
+                  20,
+                  25
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                23
+              ],
+              "blocks": [
+                3,
+                6,
+                8,
+                9,
+                16,
+                20,
+                23,
+                25
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 4.0000000000000036,
+                "baseline_accuracy": 0.98,
+                "examples": 100,
+                "lost_correct": 6,
+                "recovered_correct": 2,
+                "variant_accuracy": 0.94
+              },
+              "parents": [
+                [
+                  3,
+                  6,
+                  8,
+                  9,
+                  16,
+                  20,
+                  25
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "seed": [
+        8,
+        9,
+        20,
+        25
+      ]
+    },
+    "counting": {
+      "candidate_pool": [
+        24,
+        30,
+        28,
+        12,
+        27,
+        11,
+        17,
+        25,
+        18,
+        20,
+        21,
+        29,
+        9,
+        19,
+        3,
+        6
+      ],
+      "depths": [
+        {
+          "budget": 5,
+          "candidates_evaluated": 12,
+          "retained": [
+            {
+              "added_blocks": [
+                6
+              ],
+              "blocks": [
+                6,
+                12,
+                24,
+                28,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 1.0000000000000009,
+                "baseline_accuracy": 0.71,
+                "examples": 100,
+                "lost_correct": 5,
+                "recovered_correct": 4,
+                "variant_accuracy": 0.7
+              },
+              "parents": [
+                [
+                  12,
+                  24,
+                  28,
+                  30
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                9
+              ],
+              "blocks": [
+                9,
+                12,
+                24,
+                28,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 1.0000000000000009,
+                "baseline_accuracy": 0.71,
+                "examples": 100,
+                "lost_correct": 7,
+                "recovered_correct": 6,
+                "variant_accuracy": 0.7
+              },
+              "parents": [
+                [
+                  12,
+                  24,
+                  28,
+                  30
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                25
+              ],
+              "blocks": [
+                12,
+                24,
+                25,
+                28,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 1.0000000000000009,
+                "baseline_accuracy": 0.71,
+                "examples": 100,
+                "lost_correct": 7,
+                "recovered_correct": 6,
+                "variant_accuracy": 0.7
+              },
+              "parents": [
+                [
+                  12,
+                  24,
+                  28,
+                  30
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "budget": 6,
+          "candidates_evaluated": 30,
+          "retained": [
+            {
+              "added_blocks": [
+                21
+              ],
+              "blocks": [
+                6,
+                12,
+                21,
+                24,
+                28,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": -1.0000000000000009,
+                "baseline_accuracy": 0.71,
+                "examples": 100,
+                "lost_correct": 6,
+                "recovered_correct": 7,
+                "variant_accuracy": 0.72
+              },
+              "parents": [
+                [
+                  6,
+                  12,
+                  24,
+                  28,
+                  30
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                18
+              ],
+              "blocks": [
+                6,
+                12,
+                18,
+                24,
+                28,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 1.0000000000000009,
+                "baseline_accuracy": 0.71,
+                "examples": 100,
+                "lost_correct": 7,
+                "recovered_correct": 6,
+                "variant_accuracy": 0.7
+              },
+              "parents": [
+                [
+                  6,
+                  12,
+                  24,
+                  28,
+                  30
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                19
+              ],
+              "blocks": [
+                6,
+                12,
+                19,
+                24,
+                28,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 1.0000000000000009,
+                "baseline_accuracy": 0.71,
+                "examples": 100,
+                "lost_correct": 10,
+                "recovered_correct": 9,
+                "variant_accuracy": 0.7
+              },
+              "parents": [
+                [
+                  6,
+                  12,
+                  24,
+                  28,
+                  30
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "budget": 7,
+          "candidates_evaluated": 27,
+          "retained": [
+            {
+              "added_blocks": [
+                9
+              ],
+              "blocks": [
+                6,
+                9,
+                12,
+                21,
+                24,
+                28,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 0.0,
+                "baseline_accuracy": 0.71,
+                "examples": 100,
+                "lost_correct": 6,
+                "recovered_correct": 6,
+                "variant_accuracy": 0.71
+              },
+              "parents": [
+                [
+                  6,
+                  12,
+                  21,
+                  24,
+                  28,
+                  30
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                18,
+                21
+              ],
+              "blocks": [
+                6,
+                12,
+                18,
+                21,
+                24,
+                28,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 0.0,
+                "baseline_accuracy": 0.71,
+                "examples": 100,
+                "lost_correct": 5,
+                "recovered_correct": 5,
+                "variant_accuracy": 0.71
+              },
+              "parents": [
+                [
+                  6,
+                  12,
+                  21,
+                  24,
+                  28,
+                  30
+                ],
+                [
+                  6,
+                  12,
+                  18,
+                  24,
+                  28,
+                  30
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                9
+              ],
+              "blocks": [
+                6,
+                9,
+                12,
+                19,
+                24,
+                28,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 1.0000000000000009,
+                "baseline_accuracy": 0.71,
+                "examples": 100,
+                "lost_correct": 7,
+                "recovered_correct": 6,
+                "variant_accuracy": 0.7
+              },
+              "parents": [
+                [
+                  6,
+                  12,
+                  19,
+                  24,
+                  28,
+                  30
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "budget": 8,
+          "candidates_evaluated": 25,
+          "retained": [
+            {
+              "added_blocks": [
+                25
+              ],
+              "blocks": [
+                6,
+                9,
+                12,
+                21,
+                24,
+                25,
+                28,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 1.0000000000000009,
+                "baseline_accuracy": 0.71,
+                "examples": 100,
+                "lost_correct": 7,
+                "recovered_correct": 6,
+                "variant_accuracy": 0.7
+              },
+              "parents": [
+                [
+                  6,
+                  9,
+                  12,
+                  21,
+                  24,
+                  28,
+                  30
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                3
+              ],
+              "blocks": [
+                3,
+                6,
+                9,
+                12,
+                21,
+                24,
+                28,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 2.0000000000000018,
+                "baseline_accuracy": 0.71,
+                "examples": 100,
+                "lost_correct": 8,
+                "recovered_correct": 6,
+                "variant_accuracy": 0.69
+              },
+              "parents": [
+                [
+                  6,
+                  9,
+                  12,
+                  21,
+                  24,
+                  28,
+                  30
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                9,
+                18
+              ],
+              "blocks": [
+                6,
+                9,
+                12,
+                18,
+                21,
+                24,
+                28,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 2.9999999999999916,
+                "baseline_accuracy": 0.71,
+                "examples": 100,
+                "lost_correct": 7,
+                "recovered_correct": 4,
+                "variant_accuracy": 0.68
+              },
+              "parents": [
+                [
+                  6,
+                  9,
+                  12,
+                  21,
+                  24,
+                  28,
+                  30
+                ],
+                [
+                  6,
+                  12,
+                  18,
+                  21,
+                  24,
+                  28,
+                  30
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "seed": [
+        12,
+        24,
+        28,
+        30
+      ]
+    },
+    "object": {
+      "candidate_pool": [
+        30,
+        9,
+        10,
+        2,
+        21,
+        3,
+        20,
+        23,
+        7,
+        17,
+        25,
+        5,
+        6,
+        12,
+        4,
+        22
+      ],
+      "depths": [
+        {
+          "budget": 5,
+          "candidates_evaluated": 12,
+          "retained": [
+            {
+              "added_blocks": [
+                23
+              ],
+              "blocks": [
+                2,
+                9,
+                10,
+                23,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": -3.9999999999999925,
+                "baseline_accuracy": 0.93,
+                "examples": 100,
+                "lost_correct": 2,
+                "recovered_correct": 6,
+                "variant_accuracy": 0.97
+              },
+              "parents": [
+                [
+                  2,
+                  9,
+                  10,
+                  30
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                4
+              ],
+              "blocks": [
+                2,
+                4,
+                9,
+                10,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": -1.9999999999999907,
+                "baseline_accuracy": 0.93,
+                "examples": 100,
+                "lost_correct": 0,
+                "recovered_correct": 2,
+                "variant_accuracy": 0.95
+              },
+              "parents": [
+                [
+                  2,
+                  9,
+                  10,
+                  30
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                5
+              ],
+              "blocks": [
+                2,
+                5,
+                9,
+                10,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": -1.9999999999999907,
+                "baseline_accuracy": 0.93,
+                "examples": 100,
+                "lost_correct": 1,
+                "recovered_correct": 3,
+                "variant_accuracy": 0.95
+              },
+              "parents": [
+                [
+                  2,
+                  9,
+                  10,
+                  30
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "budget": 6,
+          "candidates_evaluated": 30,
+          "retained": [
+            {
+              "added_blocks": [
+                5,
+                23
+              ],
+              "blocks": [
+                2,
+                5,
+                9,
+                10,
+                23,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": -3.9999999999999925,
+                "baseline_accuracy": 0.93,
+                "examples": 100,
+                "lost_correct": 2,
+                "recovered_correct": 6,
+                "variant_accuracy": 0.97
+              },
+              "parents": [
+                [
+                  2,
+                  9,
+                  10,
+                  23,
+                  30
+                ],
+                [
+                  2,
+                  5,
+                  9,
+                  10,
+                  30
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                25
+              ],
+              "blocks": [
+                2,
+                9,
+                10,
+                23,
+                25,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": -3.9999999999999925,
+                "baseline_accuracy": 0.93,
+                "examples": 100,
+                "lost_correct": 2,
+                "recovered_correct": 6,
+                "variant_accuracy": 0.97
+              },
+              "parents": [
+                [
+                  2,
+                  9,
+                  10,
+                  23,
+                  30
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                4,
+                23
+              ],
+              "blocks": [
+                2,
+                4,
+                9,
+                10,
+                23,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": -2.9999999999999916,
+                "baseline_accuracy": 0.93,
+                "examples": 100,
+                "lost_correct": 2,
+                "recovered_correct": 5,
+                "variant_accuracy": 0.96
+              },
+              "parents": [
+                [
+                  2,
+                  9,
+                  10,
+                  23,
+                  30
+                ],
+                [
+                  2,
+                  4,
+                  9,
+                  10,
+                  30
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "budget": 7,
+          "candidates_evaluated": 27,
+          "retained": [
+            {
+              "added_blocks": [
+                17
+              ],
+              "blocks": [
+                2,
+                5,
+                9,
+                10,
+                17,
+                23,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": -3.9999999999999925,
+                "baseline_accuracy": 0.93,
+                "examples": 100,
+                "lost_correct": 2,
+                "recovered_correct": 6,
+                "variant_accuracy": 0.97
+              },
+              "parents": [
+                [
+                  2,
+                  5,
+                  9,
+                  10,
+                  23,
+                  30
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                5,
+                25
+              ],
+              "blocks": [
+                2,
+                5,
+                9,
+                10,
+                23,
+                25,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": -3.9999999999999925,
+                "baseline_accuracy": 0.93,
+                "examples": 100,
+                "lost_correct": 2,
+                "recovered_correct": 6,
+                "variant_accuracy": 0.97
+              },
+              "parents": [
+                [
+                  2,
+                  5,
+                  9,
+                  10,
+                  23,
+                  30
+                ],
+                [
+                  2,
+                  9,
+                  10,
+                  23,
+                  25,
+                  30
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                17
+              ],
+              "blocks": [
+                2,
+                9,
+                10,
+                17,
+                23,
+                25,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": -3.9999999999999925,
+                "baseline_accuracy": 0.93,
+                "examples": 100,
+                "lost_correct": 2,
+                "recovered_correct": 6,
+                "variant_accuracy": 0.97
+              },
+              "parents": [
+                [
+                  2,
+                  9,
+                  10,
+                  23,
+                  25,
+                  30
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "budget": 8,
+          "candidates_evaluated": 25,
+          "retained": [
+            {
+              "added_blocks": [
+                5,
+                17,
+                25
+              ],
+              "blocks": [
+                2,
+                5,
+                9,
+                10,
+                17,
+                23,
+                25,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": -3.9999999999999925,
+                "baseline_accuracy": 0.93,
+                "examples": 100,
+                "lost_correct": 2,
+                "recovered_correct": 6,
+                "variant_accuracy": 0.97
+              },
+              "parents": [
+                [
+                  2,
+                  5,
+                  9,
+                  10,
+                  17,
+                  23,
+                  30
+                ],
+                [
+                  2,
+                  5,
+                  9,
+                  10,
+                  23,
+                  25,
+                  30
+                ],
+                [
+                  2,
+                  9,
+                  10,
+                  17,
+                  23,
+                  25,
+                  30
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                4
+              ],
+              "blocks": [
+                2,
+                4,
+                9,
+                10,
+                17,
+                23,
+                25,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": -2.9999999999999916,
+                "baseline_accuracy": 0.93,
+                "examples": 100,
+                "lost_correct": 3,
+                "recovered_correct": 6,
+                "variant_accuracy": 0.96
+              },
+              "parents": [
+                [
+                  2,
+                  9,
+                  10,
+                  17,
+                  23,
+                  25,
+                  30
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                20
+              ],
+              "blocks": [
+                2,
+                5,
+                9,
+                10,
+                17,
+                20,
+                23,
+                30
+              ],
+              "metrics": {
+                "accuracy_drop_pp": -2.9999999999999916,
+                "baseline_accuracy": 0.93,
+                "examples": 100,
+                "lost_correct": 3,
+                "recovered_correct": 6,
+                "variant_accuracy": 0.96
+              },
+              "parents": [
+                [
+                  2,
+                  5,
+                  9,
+                  10,
+                  17,
+                  23,
+                  30
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "seed": [
+        2,
+        9,
+        10,
+        30
+      ]
+    },
+    "ocr": {
+      "candidate_pool": [
+        5,
+        9,
+        28,
+        4,
+        6,
+        25,
+        8,
+        11,
+        3,
+        27,
+        24,
+        2,
+        10,
+        26,
+        22,
+        29
+      ],
+      "depths": [
+        {
+          "budget": 5,
+          "candidates_evaluated": 12,
+          "retained": [
+            {
+              "added_blocks": [
+                26
+              ],
+              "blocks": [
+                4,
+                5,
+                9,
+                26,
+                28
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 6.000000000000005,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 9,
+                "recovered_correct": 3,
+                "variant_accuracy": 0.73
+              },
+              "parents": [
+                [
+                  4,
+                  5,
+                  9,
+                  28
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                10
+              ],
+              "blocks": [
+                4,
+                5,
+                9,
+                10,
+                28
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 7.000000000000006,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 10,
+                "recovered_correct": 3,
+                "variant_accuracy": 0.72
+              },
+              "parents": [
+                [
+                  4,
+                  5,
+                  9,
+                  28
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                24
+              ],
+              "blocks": [
+                4,
+                5,
+                9,
+                24,
+                28
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 7.000000000000006,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 10,
+                "recovered_correct": 3,
+                "variant_accuracy": 0.72
+              },
+              "parents": [
+                [
+                  4,
+                  5,
+                  9,
+                  28
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "budget": 6,
+          "candidates_evaluated": 30,
+          "retained": [
+            {
+              "added_blocks": [
+                27
+              ],
+              "blocks": [
+                4,
+                5,
+                9,
+                26,
+                27,
+                28
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 7.000000000000006,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 12,
+                "recovered_correct": 5,
+                "variant_accuracy": 0.72
+              },
+              "parents": [
+                [
+                  4,
+                  5,
+                  9,
+                  26,
+                  28
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                27
+              ],
+              "blocks": [
+                4,
+                5,
+                9,
+                24,
+                27,
+                28
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 9.000000000000007,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 13,
+                "recovered_correct": 4,
+                "variant_accuracy": 0.7
+              },
+              "parents": [
+                [
+                  4,
+                  5,
+                  9,
+                  24,
+                  28
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                25
+              ],
+              "blocks": [
+                4,
+                5,
+                9,
+                24,
+                25,
+                28
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 10.999999999999998,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 14,
+                "recovered_correct": 3,
+                "variant_accuracy": 0.68
+              },
+              "parents": [
+                [
+                  4,
+                  5,
+                  9,
+                  24,
+                  28
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "budget": 7,
+          "candidates_evaluated": 28,
+          "retained": [
+            {
+              "added_blocks": [
+                8
+              ],
+              "blocks": [
+                4,
+                5,
+                8,
+                9,
+                24,
+                25,
+                28
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 15.000000000000002,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 17,
+                "recovered_correct": 2,
+                "variant_accuracy": 0.64
+              },
+              "parents": [
+                [
+                  4,
+                  5,
+                  9,
+                  24,
+                  25,
+                  28
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                22
+              ],
+              "blocks": [
+                4,
+                5,
+                9,
+                22,
+                24,
+                25,
+                28
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 15.000000000000002,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 21,
+                "recovered_correct": 6,
+                "variant_accuracy": 0.64
+              },
+              "parents": [
+                [
+                  4,
+                  5,
+                  9,
+                  24,
+                  25,
+                  28
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                25
+              ],
+              "blocks": [
+                4,
+                5,
+                9,
+                25,
+                26,
+                27,
+                28
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 15.000000000000002,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 16,
+                "recovered_correct": 1,
+                "variant_accuracy": 0.64
+              },
+              "parents": [
+                [
+                  4,
+                  5,
+                  9,
+                  26,
+                  27,
+                  28
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "budget": 8,
+          "candidates_evaluated": 26,
+          "retained": [
+            {
+              "added_blocks": [
+                11
+              ],
+              "blocks": [
+                4,
+                5,
+                9,
+                11,
+                25,
+                26,
+                27,
+                28
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 18.000000000000004,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 19,
+                "recovered_correct": 1,
+                "variant_accuracy": 0.61
+              },
+              "parents": [
+                [
+                  4,
+                  5,
+                  9,
+                  25,
+                  26,
+                  27,
+                  28
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                8
+              ],
+              "blocks": [
+                4,
+                5,
+                8,
+                9,
+                25,
+                26,
+                27,
+                28
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 20.000000000000007,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 21,
+                "recovered_correct": 1,
+                "variant_accuracy": 0.59
+              },
+              "parents": [
+                [
+                  4,
+                  5,
+                  9,
+                  25,
+                  26,
+                  27,
+                  28
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                10
+              ],
+              "blocks": [
+                4,
+                5,
+                9,
+                10,
+                25,
+                26,
+                27,
+                28
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 21.000000000000007,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 22,
+                "recovered_correct": 1,
+                "variant_accuracy": 0.58
+              },
+              "parents": [
+                [
+                  4,
+                  5,
+                  9,
+                  25,
+                  26,
+                  27,
+                  28
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "seed": [
+        4,
+        5,
+        9,
+        28
+      ]
+    },
+    "spatial": {
+      "candidate_pool": [
+        16,
+        22,
+        29,
+        3,
+        4,
+        19,
+        20,
+        26,
+        28,
+        30,
+        6,
+        10,
+        18,
+        25,
+        2,
+        8
+      ],
+      "depths": [
+        {
+          "budget": 5,
+          "candidates_evaluated": 12,
+          "retained": [
+            {
+              "added_blocks": [
+                8
+              ],
+              "blocks": [
+                3,
+                8,
+                16,
+                22,
+                29
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 2.0000000000000018,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 5,
+                "recovered_correct": 3,
+                "variant_accuracy": 0.77
+              },
+              "parents": [
+                [
+                  3,
+                  16,
+                  22,
+                  29
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                26
+              ],
+              "blocks": [
+                3,
+                16,
+                22,
+                26,
+                29
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 3.0000000000000027,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 6,
+                "recovered_correct": 3,
+                "variant_accuracy": 0.76
+              },
+              "parents": [
+                [
+                  3,
+                  16,
+                  22,
+                  29
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                28
+              ],
+              "blocks": [
+                3,
+                16,
+                22,
+                28,
+                29
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 3.0000000000000027,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 6,
+                "recovered_correct": 3,
+                "variant_accuracy": 0.76
+              },
+              "parents": [
+                [
+                  3,
+                  16,
+                  22,
+                  29
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "budget": 6,
+          "candidates_evaluated": 30,
+          "retained": [
+            {
+              "added_blocks": [
+                19
+              ],
+              "blocks": [
+                3,
+                16,
+                19,
+                22,
+                26,
+                29
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 2.0000000000000018,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 6,
+                "recovered_correct": 4,
+                "variant_accuracy": 0.77
+              },
+              "parents": [
+                [
+                  3,
+                  16,
+                  22,
+                  26,
+                  29
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                6
+              ],
+              "blocks": [
+                3,
+                6,
+                16,
+                22,
+                26,
+                29
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 3.0000000000000027,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 7,
+                "recovered_correct": 4,
+                "variant_accuracy": 0.76
+              },
+              "parents": [
+                [
+                  3,
+                  16,
+                  22,
+                  26,
+                  29
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                8,
+                26
+              ],
+              "blocks": [
+                3,
+                8,
+                16,
+                22,
+                26,
+                29
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 3.0000000000000027,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 7,
+                "recovered_correct": 4,
+                "variant_accuracy": 0.76
+              },
+              "parents": [
+                [
+                  3,
+                  8,
+                  16,
+                  22,
+                  29
+                ],
+                [
+                  3,
+                  16,
+                  22,
+                  26,
+                  29
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "budget": 7,
+          "candidates_evaluated": 27,
+          "retained": [
+            {
+              "added_blocks": [
+                20
+              ],
+              "blocks": [
+                3,
+                6,
+                16,
+                20,
+                22,
+                26,
+                29
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 2.0000000000000018,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 8,
+                "recovered_correct": 6,
+                "variant_accuracy": 0.77
+              },
+              "parents": [
+                [
+                  3,
+                  6,
+                  16,
+                  22,
+                  26,
+                  29
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                28
+              ],
+              "blocks": [
+                3,
+                16,
+                19,
+                22,
+                26,
+                28,
+                29
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 3.0000000000000027,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 8,
+                "recovered_correct": 5,
+                "variant_accuracy": 0.76
+              },
+              "parents": [
+                [
+                  3,
+                  16,
+                  19,
+                  22,
+                  26,
+                  29
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                20
+              ],
+              "blocks": [
+                3,
+                8,
+                16,
+                20,
+                22,
+                26,
+                29
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 4.0000000000000036,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 8,
+                "recovered_correct": 4,
+                "variant_accuracy": 0.75
+              },
+              "parents": [
+                [
+                  3,
+                  8,
+                  16,
+                  22,
+                  26,
+                  29
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "budget": 8,
+          "candidates_evaluated": 26,
+          "retained": [
+            {
+              "added_blocks": [
+                10
+              ],
+              "blocks": [
+                3,
+                10,
+                16,
+                19,
+                22,
+                26,
+                28,
+                29
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 3.0000000000000027,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 9,
+                "recovered_correct": 6,
+                "variant_accuracy": 0.76
+              },
+              "parents": [
+                [
+                  3,
+                  16,
+                  19,
+                  22,
+                  26,
+                  28,
+                  29
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                6
+              ],
+              "blocks": [
+                3,
+                6,
+                16,
+                19,
+                22,
+                26,
+                28,
+                29
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 4.0000000000000036,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 9,
+                "recovered_correct": 5,
+                "variant_accuracy": 0.75
+              },
+              "parents": [
+                [
+                  3,
+                  16,
+                  19,
+                  22,
+                  26,
+                  28,
+                  29
+                ]
+              ]
+            },
+            {
+              "added_blocks": [
+                19
+              ],
+              "blocks": [
+                3,
+                8,
+                16,
+                19,
+                20,
+                22,
+                26,
+                29
+              ],
+              "metrics": {
+                "accuracy_drop_pp": 5.000000000000004,
+                "baseline_accuracy": 0.79,
+                "examples": 100,
+                "lost_correct": 9,
+                "recovered_correct": 4,
+                "variant_accuracy": 0.74
+              },
+              "parents": [
+                [
+                  3,
+                  8,
+                  16,
+                  20,
+                  22,
+                  26,
+                  29
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "seed": [
+        3,
+        16,
+        22,
+        29
+      ]
+    }
+  },
+  "objective": "target capability accuracy only"
+}

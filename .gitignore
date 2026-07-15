@@ -8,12 +8,15 @@ __pycache__/
 data/raw/
 data/processed/images/
 data/processed/checkpoints/
+data/processed*/images/
+data/processed*/checkpoints/
 data/heldout-raw-cache/
 data/external-heldout-v1/images/
 models/
 results/raw/
 results/**/*.jsonl
 results/**/*.parquet
+results/**/route.json
 
 # Credentials and local configuration
 .env

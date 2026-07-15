@@ -1,0 +1,35 @@
+{
+  "completed_at": "2026-07-15T11:40:06.304847+00:00",
+  "config": {
+    "beam_width": 3,
+    "candidate_pool_size": 16,
+    "pairwise_pool_size": 10,
+    "search_examples_per_capability": 100,
+    "seed": 20260714,
+    "start_budget": 4,
+    "target_budget": 8
+  },
+  "stages": {
+    "pairwise": {
+      "completed_at": "2026-07-15T09:54:46.141417+00:00",
+      "started_at": "2026-07-15T08:15:50.609439+00:00",
+      "status": "complete"
+    },
+    "search": {
+      "completed_at": "2026-07-15T11:10:24.115090+00:00",
+      "started_at": "2026-07-15T08:15:50.871401+00:00",
+      "status": "complete"
+    },
+    "validate": {
+      "completed_at": "2026-07-15T11:40:05.089562+00:00",
+      "started_at": "2026-07-15T11:10:24.115980+00:00",
+      "status": "complete"
+    }
+  },
+  "stages_requested": [
+    "search",
+    "validate"
+  ],
+  "started_at": "2026-07-15T08:15:41.587454+00:00",
+  "status": "complete"
+}

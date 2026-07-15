@@ -1,0 +1,492 @@
+{
+  "assertions": {
+    "development_evaluation_has_expected_stratum_coverage": true,
+    "development_evaluation_is_search_subset": true,
+    "development_evaluation_preserves_complete_image_groups": true,
+    "generic_scout_balanced_by_capability_source": true,
+    "generic_scout_is_search_subset": true,
+    "generic_scout_preserves_complete_image_groups": true,
+    "search_preserves_development_rows": true,
+    "search_selection_example_overlap_is_zero": true,
+    "search_selection_image_overlap_is_zero": true,
+    "search_selection_partition_all_source_examples": true,
+    "search_selection_preserve_complete_image_groups": true,
+    "selection_preserves_test_rows": true,
+    "task_scouts_are_search_subsets": true,
+    "task_scouts_balance_collateral_strata": true,
+    "task_scouts_balance_target_sources": true,
+    "task_scouts_cover_every_capability_source": true,
+    "task_scouts_preserve_complete_image_groups": true
+  },
+  "config": {
+    "path": "/home/ubuntu/projects/vlm-bench/configs/robust_route_search.json",
+    "seed": 20260715,
+    "sha256": "41ba104f2d9df24b67d38e137377de1734e6ada9c7c5f1148c4d3e4afea0170f"
+  },
+  "outputs": {
+    "development_evaluation": {
+      "capability_example_counts": {
+        "attribute": 56,
+        "counting": 50,
+        "object": 93,
+        "ocr": 48,
+        "spatial": 53
+      },
+      "capability_source_example_counts": {
+        "attribute::mme": 32,
+        "attribute::vqav2_color": 24,
+        "counting::mme": 26,
+        "counting::tallyqa": 24,
+        "object::mme": 32,
+        "object::pope": 61,
+        "ocr::mme": 24,
+        "ocr::ocrbench": 24,
+        "spatial::mme": 28,
+        "spatial::vsr": 25
+      },
+      "capability_source_image_counts": {
+        "attribute::mme": 16,
+        "attribute::vqav2_color": 24,
+        "counting::mme": 13,
+        "counting::tallyqa": 24,
+        "object::mme": 16,
+        "object::pope": 24,
+        "ocr::mme": 12,
+        "ocr::ocrbench": 24,
+        "spatial::mme": 14,
+        "spatial::vsr": 24
+      },
+      "examples": 300,
+      "images": 185,
+      "path": "/home/ubuntu/projects/vlm-bench/data/processed-v2/robust-route-search/prepared/development-evaluation.jsonl",
+      "sha256": "baeb12ea431168c0ac1f6acd9d9612104bec5f269d39e2f54789af65d69faaae",
+      "source_example_counts": {
+        "mme": 142,
+        "ocrbench": 24,
+        "pope": 61,
+        "tallyqa": 24,
+        "vqav2_color": 24,
+        "vsr": 25
+      }
+    },
+    "scout_generic": {
+      "capability_example_counts": {
+        "attribute": 24,
+        "counting": 24,
+        "object": 37,
+        "ocr": 24,
+        "spatial": 24
+      },
+      "capability_source_example_counts": {
+        "attribute::mme": 16,
+        "attribute::vqav2_color": 8,
+        "counting::mme": 16,
+        "counting::tallyqa": 8,
+        "object::mme": 16,
+        "object::pope": 21,
+        "ocr::mme": 16,
+        "ocr::ocrbench": 8,
+        "spatial::mme": 16,
+        "spatial::vsr": 8
+      },
+      "capability_source_image_counts": {
+        "attribute::mme": 8,
+        "attribute::vqav2_color": 8,
+        "counting::mme": 8,
+        "counting::tallyqa": 8,
+        "object::mme": 8,
+        "object::pope": 8,
+        "ocr::mme": 8,
+        "ocr::ocrbench": 8,
+        "spatial::mme": 8,
+        "spatial::vsr": 8
+      },
+      "examples": 133,
+      "images": 80,
+      "path": "/home/ubuntu/projects/vlm-bench/data/processed-v2/robust-route-search/prepared/scout-generic.jsonl",
+      "sha256": "c91f01ef4c9bdce2e36617782142f23d84f800767a862829d8a158c252bd07fc",
+      "source_example_counts": {
+        "mme": 80,
+        "ocrbench": 8,
+        "pope": 21,
+        "tallyqa": 8,
+        "vqav2_color": 8,
+        "vsr": 8
+      }
+    },
+    "scout_task": {
+      "attribute": {
+        "capability_example_counts": {
+          "attribute": 18,
+          "counting": 3,
+          "object": 5,
+          "ocr": 3,
+          "spatial": 4
+        },
+        "capability_source_example_counts": {
+          "attribute::mme": 12,
+          "attribute::vqav2_color": 6,
+          "counting::mme": 2,
+          "counting::tallyqa": 1,
+          "object::mme": 2,
+          "object::pope": 3,
+          "ocr::mme": 2,
+          "ocr::ocrbench": 1,
+          "spatial::mme": 2,
+          "spatial::vsr": 2
+        },
+        "capability_source_image_counts": {
+          "attribute::mme": 6,
+          "attribute::vqav2_color": 6,
+          "counting::mme": 1,
+          "counting::tallyqa": 1,
+          "object::mme": 1,
+          "object::pope": 1,
+          "ocr::mme": 1,
+          "ocr::ocrbench": 1,
+          "spatial::mme": 1,
+          "spatial::vsr": 1
+        },
+        "examples": 33,
+        "images": 20,
+        "path": "/home/ubuntu/projects/vlm-bench/data/processed-v2/robust-route-search/prepared/scout-task-attribute.jsonl",
+        "sha256": "da60d9dfbaeb83917a8fe354e15180a600222f0b407f5875fe6cdfe7dc0ce381",
+        "source_example_counts": {
+          "mme": 20,
+          "ocrbench": 1,
+          "pope": 3,
+          "tallyqa": 1,
+          "vqav2_color": 6,
+          "vsr": 2
+        }
+      },
+      "counting": {
+        "capability_example_counts": {
+          "attribute": 3,
+          "counting": 18,
+          "object": 5,
+          "ocr": 3,
+          "spatial": 3
+        },
+        "capability_source_example_counts": {
+          "attribute::mme": 2,
+          "attribute::vqav2_color": 1,
+          "counting::mme": 12,
+          "counting::tallyqa": 6,
+          "object::mme": 2,
+          "object::pope": 3,
+          "ocr::mme": 2,
+          "ocr::ocrbench": 1,
+          "spatial::mme": 2,
+          "spatial::vsr": 1
+        },
+        "capability_source_image_counts": {
+          "attribute::mme": 1,
+          "attribute::vqav2_color": 1,
+          "counting::mme": 6,
+          "counting::tallyqa": 6,
+          "object::mme": 1,
+          "object::pope": 1,
+          "ocr::mme": 1,
+          "ocr::ocrbench": 1,
+          "spatial::mme": 1,
+          "spatial::vsr": 1
+        },
+        "examples": 32,
+        "images": 20,
+        "path": "/home/ubuntu/projects/vlm-bench/data/processed-v2/robust-route-search/prepared/scout-task-counting.jsonl",
+        "sha256": "0b4d5b9924268234dccbed7170cd90df27dd53e5f81f24baad2fe1a032f83eb3",
+        "source_example_counts": {
+          "mme": 20,
+          "ocrbench": 1,
+          "pope": 3,
+          "tallyqa": 6,
+          "vqav2_color": 1,
+          "vsr": 1
+        }
+      },
+      "object": {
+        "capability_example_counts": {
+          "attribute": 3,
+          "counting": 3,
+          "object": 26,
+          "ocr": 3,
+          "spatial": 3
+        },
+        "capability_source_example_counts": {
+          "attribute::mme": 2,
+          "attribute::vqav2_color": 1,
+          "counting::mme": 2,
+          "counting::tallyqa": 1,
+          "object::mme": 12,
+          "object::pope": 14,
+          "ocr::mme": 2,
+          "ocr::ocrbench": 1,
+          "spatial::mme": 2,
+          "spatial::vsr": 1
+        },
+        "capability_source_image_counts": {
+          "attribute::mme": 1,
+          "attribute::vqav2_color": 1,
+          "counting::mme": 1,
+          "counting::tallyqa": 1,
+          "object::mme": 6,
+          "object::pope": 6,
+          "ocr::mme": 1,
+          "ocr::ocrbench": 1,
+          "spatial::mme": 1,
+          "spatial::vsr": 1
+        },
+        "examples": 38,
+        "images": 20,
+        "path": "/home/ubuntu/projects/vlm-bench/data/processed-v2/robust-route-search/prepared/scout-task-object.jsonl",
+        "sha256": "14f0087b9413a385cffef43b843723efd54b387d561ecdb3f91c280cbccbb7d6",
+        "source_example_counts": {
+          "mme": 20,
+          "ocrbench": 1,
+          "pope": 14,
+          "tallyqa": 1,
+          "vqav2_color": 1,
+          "vsr": 1
+        }
+      },
+      "ocr": {
+        "capability_example_counts": {
+          "attribute": 3,
+          "counting": 3,
+          "object": 5,
+          "ocr": 18,
+          "spatial": 3
+        },
+        "capability_source_example_counts": {
+          "attribute::mme": 2,
+          "attribute::vqav2_color": 1,
+          "counting::mme": 2,
+          "counting::tallyqa": 1,
+          "object::mme": 2,
+          "object::pope": 3,
+          "ocr::mme": 12,
+          "ocr::ocrbench": 6,
+          "spatial::mme": 2,
+          "spatial::vsr": 1
+        },
+        "capability_source_image_counts": {
+          "attribute::mme": 1,
+          "attribute::vqav2_color": 1,
+          "counting::mme": 1,
+          "counting::tallyqa": 1,
+          "object::mme": 1,
+          "object::pope": 1,
+          "ocr::mme": 6,
+          "ocr::ocrbench": 6,
+          "spatial::mme": 1,
+          "spatial::vsr": 1
+        },
+        "examples": 32,
+        "images": 20,
+        "path": "/home/ubuntu/projects/vlm-bench/data/processed-v2/robust-route-search/prepared/scout-task-ocr.jsonl",
+        "sha256": "0a50ac997490d3b80676988188e8ca29a9c2cbeeba8fe41e4ef39da200d65a95",
+        "source_example_counts": {
+          "mme": 20,
+          "ocrbench": 6,
+          "pope": 3,
+          "tallyqa": 1,
+          "vqav2_color": 1,
+          "vsr": 1
+        }
+      },
+      "spatial": {
+        "capability_example_counts": {
+          "attribute": 5,
+          "counting": 3,
+          "object": 3,
+          "ocr": 3,
+          "spatial": 18
+        },
+        "capability_source_example_counts": {
+          "attribute::mme": 2,
+          "attribute::vqav2_color": 3,
+          "counting::mme": 2,
+          "counting::tallyqa": 1,
+          "object::mme": 2,
+          "object::pope": 1,
+          "ocr::mme": 2,
+          "ocr::ocrbench": 1,
+          "spatial::mme": 12,
+          "spatial::vsr": 6
+        },
+        "capability_source_image_counts": {
+          "attribute::mme": 1,
+          "attribute::vqav2_color": 1,
+          "counting::mme": 1,
+          "counting::tallyqa": 1,
+          "object::mme": 1,
+          "object::pope": 1,
+          "ocr::mme": 1,
+          "ocr::ocrbench": 1,
+          "spatial::mme": 6,
+          "spatial::vsr": 6
+        },
+        "examples": 32,
+        "images": 20,
+        "path": "/home/ubuntu/projects/vlm-bench/data/processed-v2/robust-route-search/prepared/scout-task-spatial.jsonl",
+        "sha256": "2bb07863e71f19db3e22e5b7e5518a0c291b664fef5acc3d1c132c5cb83ee1f8",
+        "source_example_counts": {
+          "mme": 20,
+          "ocrbench": 1,
+          "pope": 1,
+          "tallyqa": 1,
+          "vqav2_color": 3,
+          "vsr": 6
+        }
+      }
+    },
+    "search": {
+      "capability_example_counts": {
+        "attribute": 194,
+        "counting": 179,
+        "object": 167,
+        "ocr": 185,
+        "spatial": 179
+      },
+      "capability_source_example_counts": {
+        "attribute::mme": 32,
+        "attribute::vqav2_color": 162,
+        "counting::mme": 26,
+        "counting::tallyqa": 153,
+        "object::mme": 32,
+        "object::pope": 135,
+        "ocr::mme": 24,
+        "ocr::ocrbench": 161,
+        "spatial::mme": 28,
+        "spatial::vsr": 151
+      },
+      "capability_source_image_counts": {
+        "attribute::mme": 16,
+        "attribute::vqav2_color": 160,
+        "counting::mme": 13,
+        "counting::tallyqa": 153,
+        "object::mme": 16,
+        "object::pope": 53,
+        "ocr::mme": 12,
+        "ocr::ocrbench": 161,
+        "spatial::mme": 14,
+        "spatial::vsr": 145
+      },
+      "examples": 904,
+      "images": 736,
+      "path": "/home/ubuntu/projects/vlm-bench/data/processed-v2/robust-route-search/prepared/search.jsonl",
+      "sha256": "b7c097e8cea30d5c070d9ef03bacfb853b5967756d5282ba78c8575354e4ffae",
+      "source_example_counts": {
+        "mme": 142,
+        "ocrbench": 161,
+        "pope": 135,
+        "tallyqa": 153,
+        "vqav2_color": 162,
+        "vsr": 151
+      }
+    },
+    "selection": {
+      "capability_example_counts": {
+        "attribute": 166,
+        "counting": 181,
+        "object": 193,
+        "ocr": 155,
+        "spatial": 181
+      },
+      "capability_source_example_counts": {
+        "attribute::mme": 28,
+        "attribute::vqav2_color": 138,
+        "counting::mme": 34,
+        "counting::tallyqa": 147,
+        "object::mme": 28,
+        "object::pope": 165,
+        "ocr::mme": 16,
+        "ocr::ocrbench": 139,
+        "spatial::mme": 32,
+        "spatial::vsr": 149
+      },
+      "capability_source_image_counts": {
+        "attribute::mme": 14,
+        "attribute::vqav2_color": 137,
+        "counting::mme": 17,
+        "counting::tallyqa": 147,
+        "object::mme": 14,
+        "object::pope": 65,
+        "ocr::mme": 8,
+        "ocr::ocrbench": 139,
+        "spatial::mme": 16,
+        "spatial::vsr": 145
+      },
+      "examples": 876,
+      "images": 695,
+      "path": "/home/ubuntu/projects/vlm-bench/data/processed-v2/robust-route-search/prepared/selection.jsonl",
+      "sha256": "343d7e7e85baf2cc1ed6f6d5b973f8a1d1b1edb1f243e594ffd410b27dba0f82",
+      "source_example_counts": {
+        "mme": 138,
+        "ocrbench": 139,
+        "pope": 165,
+        "tallyqa": 147,
+        "vqav2_color": 138,
+        "vsr": 149
+      }
+    }
+  },
+  "overlap": {
+    "search_selection_examples": 0,
+    "search_selection_images": 0
+  },
+  "partition_policy": {
+    "resampled": false,
+    "search_source_split": "development",
+    "selection_example_fraction": 0.49213483146067416,
+    "selection_image_fraction": 0.4856743535988819,
+    "selection_source_split": "test"
+  },
+  "schema_version": 1,
+  "source_manifest": {
+    "capability_example_counts": {
+      "attribute": 360,
+      "counting": 360,
+      "object": 360,
+      "ocr": 340,
+      "spatial": 360
+    },
+    "capability_source_example_counts": {
+      "attribute::mme": 60,
+      "attribute::vqav2_color": 300,
+      "counting::mme": 60,
+      "counting::tallyqa": 300,
+      "object::mme": 60,
+      "object::pope": 300,
+      "ocr::mme": 40,
+      "ocr::ocrbench": 300,
+      "spatial::mme": 60,
+      "spatial::vsr": 300
+    },
+    "capability_source_image_counts": {
+      "attribute::mme": 30,
+      "attribute::vqav2_color": 297,
+      "counting::mme": 30,
+      "counting::tallyqa": 300,
+      "object::mme": 30,
+      "object::pope": 118,
+      "ocr::mme": 20,
+      "ocr::ocrbench": 300,
+      "spatial::mme": 30,
+      "spatial::vsr": 290
+    },
+    "examples": 1780,
+    "images": 1431,
+    "path": "/home/ubuntu/projects/vlm-bench/data/processed-v2/manifests/all.jsonl",
+    "sha256": "ec3712d74a43caf8dd3d1818788ee0a92bc82e7aa597d640b00f089c6ed357c8",
+    "source_example_counts": {
+      "mme": 280,
+      "ocrbench": 300,
+      "pope": 300,
+      "tallyqa": 300,
+      "vqav2_color": 300,
+      "vsr": 300
+    }
+  }
+}

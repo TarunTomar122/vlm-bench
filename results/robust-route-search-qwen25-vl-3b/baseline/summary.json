@@ -1,0 +1,4152 @@
+{
+  "counts": {
+    "attribute": 360,
+    "counting": 360,
+    "object": 360,
+    "ocr": 340,
+    "spatial": 360
+  },
+  "groups": {
+    "capability:attribute": {
+      "accuracy": 0.9611111111111111,
+      "all_questions_per_image_accuracy": 0.9571865443425076,
+      "examples": 360,
+      "latency_ms": {
+        "generation": {
+          "mean": 147.44433338443437,
+          "median": 145.13098332099617,
+          "p95": 180.180792696774
+        },
+        "total": {
+          "mean": 174.10689023607927,
+          "median": 174.5727367233485,
+          "p95": 211.92811522632837
+        },
+        "vision_encoder": {
+          "mean": 75.69401326709324,
+          "median": 71.64616012573242,
+          "p95": 96.9933090209961
+        }
+      },
+      "peak_allocated_mib": 7480.173828125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 400.56666666666666,
+          "median": 387.5,
+          "p95": 523
+        },
+        "output": {
+          "mean": 2.1805555555555554,
+          "median": 2.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 360.01666666666665,
+          "median": 345.0,
+          "p95": 484
+        }
+      }
+    },
+    "capability:counting": {
+      "accuracy": 0.7444444444444445,
+      "all_questions_per_image_accuracy": 0.7242424242424242,
+      "examples": 360,
+      "latency_ms": {
+        "generation": {
+          "mean": 141.10726819425406,
+          "median": 128.3608500380069,
+          "p95": 200.10677818208933
+        },
+        "total": {
+          "mean": 164.24392538222796,
+          "median": 147.6077768020332,
+          "p95": 248.7367745488882
+        },
+        "vision_encoder": {
+          "mean": 69.57390432357788,
+          "median": 61.08168029785156,
+          "p95": 128.1005096435547
+        }
+      },
+      "peak_allocated_mib": 7641.818359375,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 357.7611111111111,
+          "median": 314.0,
+          "p95": 642
+        },
+        "output": {
+          "mean": 2.186111111111111,
+          "median": 2.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 321.47222222222223,
+          "median": 280.0,
+          "p95": 609
+        }
+      }
+    },
+    "capability:object": {
+      "accuracy": 0.8916666666666667,
+      "all_questions_per_image_accuracy": 0.8648648648648649,
+      "examples": 360,
+      "latency_ms": {
+        "generation": {
+          "mean": 155.1681849355292,
+          "median": 153.13450968824327,
+          "p95": 183.08244226500392
+        },
+        "total": {
+          "mean": 181.22107651498584,
+          "median": 179.37445593997836,
+          "p95": 213.7779570184648
+        },
+        "vision_encoder": {
+          "mean": 74.71994179619684,
+          "median": 71.44964599609375,
+          "p95": 88.80230712890625
+        }
+      },
+      "peak_allocated_mib": 7478.8740234375,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 394.94444444444446,
+          "median": 386.0,
+          "p95": 495
+        },
+        "output": {
+          "mean": 2.511111111111111,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 358.68888888888887,
+          "median": 345.0,
+          "p95": 460
+        }
+      }
+    },
+    "capability:ocr": {
+      "accuracy": 0.8,
+      "all_questions_per_image_accuracy": 0.7875,
+      "examples": 340,
+      "latency_ms": {
+        "generation": {
+          "mean": 171.64519361001166,
+          "median": 160.18185950815678,
+          "p95": 250.7948181591928
+        },
+        "total": {
+          "mean": 188.85033753536203,
+          "median": 175.5641088820994,
+          "p95": 263.6552080512047
+        },
+        "vision_encoder": {
+          "mean": 64.83408706889433,
+          "median": 61.17273712158203,
+          "p95": 68.19644927978516
+        }
+      },
+      "peak_allocated_mib": 7726.44921875,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 335.49411764705883,
+          "median": 316.0,
+          "p95": 336
+        },
+        "output": {
+          "mean": 3.4235294117647057,
+          "median": 3.0,
+          "p95": 6
+        },
+        "visual": {
+          "mean": 294.7176470588235,
+          "median": 275.0,
+          "p95": 296
+        }
+      }
+    },
+    "capability:spatial": {
+      "accuracy": 0.8083333333333333,
+      "all_questions_per_image_accuracy": 0.7875,
+      "examples": 360,
+      "latency_ms": {
+        "generation": {
+          "mean": 171.89835329902255,
+          "median": 170.4007249791175,
+          "p95": 195.74229698628187
+        },
+        "total": {
+          "mean": 198.6912893325401,
+          "median": 198.25020851567388,
+          "p95": 229.19738292694092
+        },
+        "vision_encoder": {
+          "mean": 77.51105909347534,
+          "median": 80.6363525390625,
+          "p95": 97.66425323486328
+        }
+      },
+      "peak_allocated_mib": 7481.79833984375,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 415.59722222222223,
+          "median": 433.0,
+          "p95": 528
+        },
+        "output": {
+          "mean": 2.986111111111111,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 372.2944444444444,
+          "median": 391.0,
+          "p95": 484
+        }
+      }
+    },
+    "source:mme": {
+      "accuracy": 0.8857142857142857,
+      "all_questions_per_image_accuracy": 0.7692307692307693,
+      "examples": 280,
+      "latency_ms": {
+        "generation": {
+          "mean": 173.02628280428638,
+          "median": 168.00443059764802,
+          "p95": 195.26479206979275
+        },
+        "total": {
+          "mean": 202.1411891394694,
+          "median": 193.9687537960708,
+          "p95": 233.65801386535168
+        },
+        "vision_encoder": {
+          "mean": 77.06771992274693,
+          "median": 71.213134765625,
+          "p95": 97.8186264038086
+        }
+      },
+      "peak_allocated_mib": 7726.44921875,
+      "peak_reserved_mib": 8350.0,
+      "tokens": {
+        "input": {
+          "mean": 406.2392857142857,
+          "median": 388.0,
+          "p95": 526
+        },
+        "output": {
+          "mean": 2.982142857142857,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 363.37857142857143,
+          "median": 345.0,
+          "p95": 484
+        }
+      }
+    },
+    "source:ocrbench": {
+      "accuracy": 0.81,
+      "all_questions_per_image_accuracy": 0.81,
+      "examples": 300,
+      "latency_ms": {
+        "generation": {
+          "mean": 169.85930039857826,
+          "median": 160.9331788495183,
+          "p95": 245.39374699816108
+        },
+        "total": {
+          "mean": 183.3839234150946,
+          "median": 175.31103058718145,
+          "p95": 259.1133238747716
+        },
+        "vision_encoder": {
+          "mean": 62.016101379394534,
+          "median": 61.20404815673828,
+          "p95": 67.81439971923828
+        }
+      },
+      "peak_allocated_mib": 7629.90478515625,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 321.74666666666667,
+          "median": 316.0,
+          "p95": 330
+        },
+        "output": {
+          "mean": 3.48,
+          "median": 3.0,
+          "p95": 6
+        },
+        "visual": {
+          "mean": 281.58,
+          "median": 275.0,
+          "p95": 290
+        }
+      }
+    },
+    "source:pope": {
+      "accuracy": 0.8766666666666667,
+      "all_questions_per_image_accuracy": 0.847457627118644,
+      "examples": 300,
+      "latency_ms": {
+        "generation": {
+          "mean": 152.9610063151146,
+          "median": 151.4828579965979,
+          "p95": 183.10996005311608
+        },
+        "total": {
+          "mean": 179.24471161793917,
+          "median": 178.76739450730383,
+          "p95": 215.03649884834886
+        },
+        "vision_encoder": {
+          "mean": 75.2090126546224,
+          "median": 71.71017456054688,
+          "p95": 89.13849639892578
+        }
+      },
+      "peak_allocated_mib": 7478.8740234375,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 397.6433333333333,
+          "median": 381.0,
+          "p95": 497
+        },
+        "output": {
+          "mean": 2.4233333333333333,
+          "median": 2.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 362.38,
+          "median": 345.0,
+          "p95": 460
+        }
+      }
+    },
+    "source:tallyqa": {
+      "accuracy": 0.72,
+      "all_questions_per_image_accuracy": 0.72,
+      "examples": 300,
+      "latency_ms": {
+        "generation": {
+          "mean": 134.96351561509073,
+          "median": 127.78429710306227,
+          "p95": 200.62674675136805
+        },
+        "total": {
+          "mean": 157.35264144993076,
+          "median": 147.01992878690362,
+          "p95": 249.77580597624183
+        },
+        "vision_encoder": {
+          "mean": 68.19254605611165,
+          "median": 60.82504081726074,
+          "p95": 128.3522491455078
+        }
+      },
+      "peak_allocated_mib": 7641.818359375,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 347.5733333333333,
+          "median": 311.5,
+          "p95": 642
+        },
+        "output": {
+          "mean": 2.0233333333333334,
+          "median": 2.0,
+          "p95": 2
+        },
+        "visual": {
+          "mean": 312.48,
+          "median": 276.0,
+          "p95": 609
+        }
+      }
+    },
+    "source:vqav2_color": {
+      "accuracy": 0.9666666666666667,
+      "all_questions_per_image_accuracy": 0.9663299663299664,
+      "examples": 300,
+      "latency_ms": {
+        "generation": {
+          "mean": 142.51552909767875,
+          "median": 139.23002616502345,
+          "p95": 164.92365626618266
+        },
+        "total": {
+          "mean": 169.19843694971254,
+          "median": 165.35798157565296,
+          "p95": 198.92203714698553
+        },
+        "vision_encoder": {
+          "mean": 75.67063046773275,
+          "median": 71.6696662902832,
+          "p95": 95.6014404296875
+        }
+      },
+      "peak_allocated_mib": 7480.173828125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 400.63,
+          "median": 387.0,
+          "p95": 523
+        },
+        "output": {
+          "mean": 2.02,
+          "median": 2.0,
+          "p95": 2
+        },
+        "visual": {
+          "mean": 360.53333333333336,
+          "median": 345.0,
+          "p95": 483
+        }
+      }
+    },
+    "source:vsr": {
+      "accuracy": 0.7933333333333333,
+      "all_questions_per_image_accuracy": 0.7862068965517242,
+      "examples": 300,
+      "latency_ms": {
+        "generation": {
+          "mean": 171.48243849010518,
+          "median": 170.31300347298384,
+          "p95": 195.64850023016334
+        },
+        "total": {
+          "mean": 198.10137700289488,
+          "median": 198.0153212789446,
+          "p95": 228.54781104251742
+        },
+        "vision_encoder": {
+          "mean": 77.45917170206705,
+          "median": 81.08697509765625,
+          "p95": 97.64579010009766
+        }
+      },
+      "peak_allocated_mib": 7481.79833984375,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 416.12,
+          "median": 433.0,
+          "p95": 527
+        },
+        "output": {
+          "mean": 2.986666666666667,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 372.85333333333335,
+          "median": 391.0,
+          "p95": 484
+        }
+      }
+    },
+    "split:development": {
+      "accuracy": 0.8462389380530974,
+      "all_questions_per_image_accuracy": 0.8206521739130435,
+      "examples": 904,
+      "latency_ms": {
+        "generation": {
+          "mean": 159.10850574089363,
+          "median": 155.00807645730674,
+          "p95": 211.10861795023084
+        },
+        "total": {
+          "mean": 183.5581993640903,
+          "median": 179.37445593997836,
+          "p95": 241.2715209648013
+        },
+        "vision_encoder": {
+          "mean": 73.2902021365883,
+          "median": 70.3078384399414,
+          "p95": 98.46063995361328
+        }
+      },
+      "peak_allocated_mib": 7726.44921875,
+      "peak_reserved_mib": 8350.0,
+      "tokens": {
+        "input": {
+          "mean": 384.0564159292035,
+          "median": 380.0,
+          "p95": 529
+        },
+        "output": {
+          "mean": 2.6559734513274336,
+          "median": 3.0,
+          "p95": 4
+        },
+        "visual": {
+          "mean": 344.45685840707966,
+          "median": 345.0,
+          "p95": 484
+        }
+      }
+    },
+    "split:test": {
+      "accuracy": 0.83675799086758,
+      "all_questions_per_image_accuracy": 0.814388489208633,
+      "examples": 876,
+      "latency_ms": {
+        "generation": {
+          "mean": 155.41987097077921,
+          "median": 153.94402691163123,
+          "p95": 199.99263668432832
+        },
+        "total": {
+          "mean": 179.0493697084308,
+          "median": 177.807476837188,
+          "p95": 231.07004119083285
+        },
+        "vision_encoder": {
+          "mean": 71.79093324757058,
+          "median": 69.7369270324707,
+          "p95": 92.76006317138672
+        }
+      },
+      "peak_allocated_mib": 7629.90478515625,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 378.6232876712329,
+          "median": 380.0,
+          "p95": 520
+        },
+        "output": {
+          "mean": 2.641552511415525,
+          "median": 3.0,
+          "p95": 4
+        },
+        "visual": {
+          "mean": 339.3892694063927,
+          "median": 345.0,
+          "p95": 483
+        }
+      }
+    },
+    "subtype:mme:color": {
+      "accuracy": 0.9333333333333333,
+      "all_questions_per_image_accuracy": 0.8666666666666667,
+      "examples": 60,
+      "latency_ms": {
+        "generation": {
+          "mean": 172.08835481821248,
+          "median": 169.6057019289583,
+          "p95": 190.47690276056528
+        },
+        "total": {
+          "mean": 198.649156667913,
+          "median": 195.9234867244959,
+          "p95": 226.9463469274342
+        },
+        "vision_encoder": {
+          "mean": 75.81092726389566,
+          "median": 71.56700897216797,
+          "p95": 97.88492584228516
+        }
+      },
+      "peak_allocated_mib": 7465.39306640625,
+      "peak_reserved_mib": 8350.0,
+      "tokens": {
+        "input": {
+          "mean": 400.25,
+          "median": 388.0,
+          "p95": 526
+        },
+        "output": {
+          "mean": 2.9833333333333334,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 357.43333333333334,
+          "median": 345.0,
+          "p95": 484
+        }
+      }
+    },
+    "subtype:mme:count": {
+      "accuracy": 0.8666666666666667,
+      "all_questions_per_image_accuracy": 0.7666666666666667,
+      "examples": 60,
+      "latency_ms": {
+        "generation": {
+          "mean": 171.8260310900708,
+          "median": 167.7591297775507,
+          "p95": 188.5545877739787
+        },
+        "total": {
+          "mean": 198.70034504371384,
+          "median": 193.9429824706167,
+          "p95": 222.30503614991903
+        },
+        "vision_encoder": {
+          "mean": 76.48069566090902,
+          "median": 72.33950424194336,
+          "p95": 93.08454132080078
+        }
+      },
+      "peak_allocated_mib": 7465.39306640625,
+      "peak_reserved_mib": 8350.0,
+      "tokens": {
+        "input": {
+          "mean": 408.7,
+          "median": 399.5,
+          "p95": 525
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 366.43333333333334,
+          "median": 356.5,
+          "p95": 484
+        }
+      }
+    },
+    "subtype:mme:existence": {
+      "accuracy": 0.9666666666666667,
+      "all_questions_per_image_accuracy": 0.9333333333333333,
+      "examples": 60,
+      "latency_ms": {
+        "generation": {
+          "mean": 166.20407803760222,
+          "median": 167.79811889864504,
+          "p95": 182.7400103211403
+        },
+        "total": {
+          "mean": 191.10290100021908,
+          "median": 193.3470864314586,
+          "p95": 213.0020670592785
+        },
+        "vision_encoder": {
+          "mean": 72.274587504069,
+          "median": 70.95228576660156,
+          "p95": 84.7209243774414
+        }
+      },
+      "peak_allocated_mib": 7441.06396484375,
+      "peak_reserved_mib": 8350.0,
+      "tokens": {
+        "input": {
+          "mean": 381.45,
+          "median": 386.0,
+          "p95": 434
+        },
+        "output": {
+          "mean": 2.95,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 340.23333333333335,
+          "median": 345.0,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:mme:ocr": {
+      "accuracy": 0.725,
+      "all_questions_per_image_accuracy": 0.45,
+      "examples": 40,
+      "latency_ms": {
+        "generation": {
+          "mean": 185.03939269576222,
+          "median": 157.66137186437845,
+          "p95": 399.77348409593105
+        },
+        "total": {
+          "mean": 229.84844343736768,
+          "median": 176.2111815623939,
+          "p95": 824.0872900933027
+        },
+        "vision_encoder": {
+          "mean": 85.96897974014283,
+          "median": 61.12003135681152,
+          "p95": 272.40423583984375
+        }
+      },
+      "peak_allocated_mib": 7726.44921875,
+      "peak_reserved_mib": 8350.0,
+      "tokens": {
+        "input": {
+          "mean": 438.6,
+          "median": 322.5,
+          "p95": 1280
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 393.25,
+          "median": 278.0,
+          "p95": 1225
+        }
+      }
+    },
+    "subtype:mme:position": {
+      "accuracy": 0.8833333333333333,
+      "all_questions_per_image_accuracy": 0.8,
+      "examples": 60,
+      "latency_ms": {
+        "generation": {
+          "mean": 173.97792734360942,
+          "median": 170.98480835556984,
+          "p95": 198.4337060712278
+        },
+        "total": {
+          "mean": 201.64085098076612,
+          "median": 198.75792041420937,
+          "p95": 235.12659408152103
+        },
+        "vision_encoder": {
+          "mean": 77.77049605051677,
+          "median": 76.12123107910156,
+          "p95": 99.05049896240234
+        }
+      },
+      "peak_allocated_mib": 7467.66796875,
+      "peak_reserved_mib": 8350.0,
+      "tokens": {
+        "input": {
+          "mean": 412.98333333333335,
+          "median": 419.0,
+          "p95": 529
+        },
+        "output": {
+          "mean": 2.9833333333333334,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 369.5,
+          "median": 379.5,
+          "p95": 483
+        }
+      }
+    },
+    "subtype:ocrbench:IAM::Handwriting Recognition": {
+      "accuracy": 0.58,
+      "all_questions_per_image_accuracy": 0.58,
+      "examples": 50,
+      "latency_ms": {
+        "generation": {
+          "mean": 152.4166492279619,
+          "median": 152.53058448433876,
+          "p95": 212.1642497368157
+        },
+        "total": {
+          "mean": 165.16223318874836,
+          "median": 165.2581614907831,
+          "p95": 224.04797514900565
+        },
+        "vision_encoder": {
+          "mean": 61.42007621765137,
+          "median": 61.768062591552734,
+          "p95": 67.25222778320312
+        }
+      },
+      "peak_allocated_mib": 7399.18408203125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 312.96,
+          "median": 311.0,
+          "p95": 328
+        },
+        "output": {
+          "mean": 2.84,
+          "median": 3.0,
+          "p95": 5
+        },
+        "visual": {
+          "mean": 272.96,
+          "median": 271.0,
+          "p95": 288
+        }
+      }
+    },
+    "subtype:ocrbench:IC13_857::Regular Text Recognition": {
+      "accuracy": 0.9444444444444444,
+      "all_questions_per_image_accuracy": 0.9444444444444444,
+      "examples": 18,
+      "latency_ms": {
+        "generation": {
+          "mean": 150.95518788115845,
+          "median": 149.18849733658135,
+          "p95": 220.3113422729075
+        },
+        "total": {
+          "mean": 164.3222144080533,
+          "median": 161.36964363977313,
+          "p95": 233.45982795581222
+        },
+        "vision_encoder": {
+          "mean": 60.70655886332194,
+          "median": 60.352975845336914,
+          "p95": 66.51465606689453
+        }
+      },
+      "peak_allocated_mib": 7399.18408203125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 314.6666666666667,
+          "median": 314.5,
+          "p95": 328
+        },
+        "output": {
+          "mean": 2.888888888888889,
+          "median": 3.0,
+          "p95": 6
+        },
+        "visual": {
+          "mean": 274.6666666666667,
+          "median": 274.5,
+          "p95": 288
+        }
+      }
+    },
+    "subtype:ocrbench:IC15_1811::Irregular Text Recognition": {
+      "accuracy": 0.875,
+      "all_questions_per_image_accuracy": 0.875,
+      "examples": 8,
+      "latency_ms": {
+        "generation": {
+          "mean": 132.6090696384199,
+          "median": 126.18492729961872,
+          "p95": 156.4775938168168
+        },
+        "total": {
+          "mean": 144.13899753708392,
+          "median": 138.4110520593822,
+          "p95": 167.16486681252718
+        },
+        "vision_encoder": {
+          "mean": 59.581899642944336,
+          "median": 60.31819152832031,
+          "p95": 61.228031158447266
+        }
+      },
+      "peak_allocated_mib": 7395.84228515625,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 312.125,
+          "median": 310.0,
+          "p95": 326
+        },
+        "output": {
+          "mean": 2.375,
+          "median": 2.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 272.125,
+          "median": 270.0,
+          "p95": 286
+        }
+      }
+    },
+    "subtype:ocrbench:IIIT5K::Regular Text Recognition": {
+      "accuracy": 0.9333333333333333,
+      "all_questions_per_image_accuracy": 0.9333333333333333,
+      "examples": 15,
+      "latency_ms": {
+        "generation": {
+          "mean": 151.432346769919,
+          "median": 133.29178094863892,
+          "p95": 320.1437178067863
+        },
+        "total": {
+          "mean": 167.05644944061837,
+          "median": 146.38168271631002,
+          "p95": 377.69395811483264
+        },
+        "vision_encoder": {
+          "mean": 68.61914647420248,
+          "median": 65.37741088867188,
+          "p95": 150.5443878173828
+        }
+      },
+      "peak_allocated_mib": 7554.94287109375,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 349.53333333333336,
+          "median": 320,
+          "p95": 782
+        },
+        "output": {
+          "mean": 2.6,
+          "median": 2,
+          "p95": 5
+        },
+        "visual": {
+          "mean": 309.53333333333336,
+          "median": 280,
+          "p95": 742
+        }
+      }
+    },
+    "subtype:ocrbench:NonSemanticText::Non-Semantic Text Recognition": {
+      "accuracy": 0.94,
+      "all_questions_per_image_accuracy": 0.94,
+      "examples": 50,
+      "latency_ms": {
+        "generation": {
+          "mean": 185.05521626211703,
+          "median": 185.0903385784477,
+          "p95": 238.55047579854727
+        },
+        "total": {
+          "mean": 197.34650555998087,
+          "median": 196.67332875542343,
+          "p95": 249.90207888185978
+        },
+        "vision_encoder": {
+          "mean": 59.47631622314453,
+          "median": 59.46667289733887,
+          "p95": 66.16883087158203
+        }
+      },
+      "peak_allocated_mib": 7400.83642578125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 317.64,
+          "median": 319.5,
+          "p95": 330
+        },
+        "output": {
+          "mean": 4.18,
+          "median": 4.0,
+          "p95": 6
+        },
+        "visual": {
+          "mean": 277.64,
+          "median": 279.5,
+          "p95": 290
+        }
+      }
+    },
+    "subtype:ocrbench:ORAND::Digit String Recognition": {
+      "accuracy": 0.66,
+      "all_questions_per_image_accuracy": 0.66,
+      "examples": 50,
+      "latency_ms": {
+        "generation": {
+          "mean": 220.27198120951653,
+          "median": 217.9468844551593,
+          "p95": 267.01576774939895
+        },
+        "total": {
+          "mean": 232.46379110962152,
+          "median": 230.45242112129927,
+          "p95": 278.9237299002707
+        },
+        "vision_encoder": {
+          "mean": 59.91989433288574,
+          "median": 60.73753547668457,
+          "p95": 66.95292663574219
+        }
+      },
+      "peak_allocated_mib": 7399.21923828125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 314.78,
+          "median": 317.0,
+          "p95": 329
+        },
+        "output": {
+          "mean": 5.3,
+          "median": 5.0,
+          "p95": 7
+        },
+        "visual": {
+          "mean": 273.78,
+          "median": 276.0,
+          "p95": 288
+        }
+      }
+    },
+    "subtype:ocrbench:WordArt::Artistic Text Recognition": {
+      "accuracy": 0.9,
+      "all_questions_per_image_accuracy": 0.9,
+      "examples": 50,
+      "latency_ms": {
+        "generation": {
+          "mean": 161.25783126801252,
+          "median": 157.8978542238474,
+          "p95": 214.3249330110848
+        },
+        "total": {
+          "mean": 179.3602866306901,
+          "median": 175.69969780743122,
+          "p95": 249.94461331516504
+        },
+        "vision_encoder": {
+          "mean": 67.92296524047852,
+          "median": 61.97960090637207,
+          "p95": 131.3269805908203
+        }
+      },
+      "peak_allocated_mib": 7629.90478515625,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 345.36,
+          "median": 315.0,
+          "p95": 669
+        },
+        "output": {
+          "mean": 2.9,
+          "median": 3.0,
+          "p95": 4
+        },
+        "visual": {
+          "mean": 305.36,
+          "median": 275.0,
+          "p95": 629
+        }
+      }
+    },
+    "subtype:ocrbench:cocotext::Irregular Text Recognition": {
+      "accuracy": 0.625,
+      "all_questions_per_image_accuracy": 0.625,
+      "examples": 8,
+      "latency_ms": {
+        "generation": {
+          "mean": 153.25260325334966,
+          "median": 158.43182639218867,
+          "p95": 194.08770510926843
+        },
+        "total": {
+          "mean": 164.65633548796177,
+          "median": 170.62624194659293,
+          "p95": 206.47498778998852
+        },
+        "vision_encoder": {
+          "mean": 60.22228813171387,
+          "median": 60.070655822753906,
+          "p95": 67.96185302734375
+        }
+      },
+      "peak_allocated_mib": 7399.18408203125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 316.125,
+          "median": 316.5,
+          "p95": 328
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 4
+        },
+        "visual": {
+          "mean": 276.125,
+          "median": 276.5,
+          "p95": 288
+        }
+      }
+    },
+    "subtype:ocrbench:ct80::Irregular Text Recognition": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 9,
+      "latency_ms": {
+        "generation": {
+          "mean": 165.8070424778594,
+          "median": 159.02198711410165,
+          "p95": 245.0261008925736
+        },
+        "total": {
+          "mean": 179.04011310181684,
+          "median": 172.480845823884,
+          "p95": 261.10876305028796
+        },
+        "vision_encoder": {
+          "mean": 61.36205164591471,
+          "median": 62.52374267578125,
+          "p95": 68.22086334228516
+        }
+      },
+      "peak_allocated_mib": 7399.18408203125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 317.44444444444446,
+          "median": 320,
+          "p95": 328
+        },
+        "output": {
+          "mean": 3.3333333333333335,
+          "median": 3,
+          "p95": 6
+        },
+        "visual": {
+          "mean": 277.44444444444446,
+          "median": 280,
+          "p95": 288
+        }
+      }
+    },
+    "subtype:ocrbench:ctw::Irregular Text Recognition": {
+      "accuracy": 0.875,
+      "all_questions_per_image_accuracy": 0.875,
+      "examples": 8,
+      "latency_ms": {
+        "generation": {
+          "mean": 158.75931398477405,
+          "median": 154.72445101477206,
+          "p95": 211.8027708493173
+        },
+        "total": {
+          "mean": 171.06898629572242,
+          "median": 167.97982854768634,
+          "p95": 222.88988810032606
+        },
+        "vision_encoder": {
+          "mean": 61.2122278213501,
+          "median": 61.50796890258789,
+          "p95": 65.67427062988281
+        }
+      },
+      "peak_allocated_mib": 7393.75927734375,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 313.625,
+          "median": 312.5,
+          "p95": 320
+        },
+        "output": {
+          "mean": 3.125,
+          "median": 3.0,
+          "p95": 5
+        },
+        "visual": {
+          "mean": 273.625,
+          "median": 272.5,
+          "p95": 280
+        }
+      }
+    },
+    "subtype:ocrbench:svt::Regular Text Recognition": {
+      "accuracy": 0.9411764705882353,
+      "all_questions_per_image_accuracy": 0.9411764705882353,
+      "examples": 17,
+      "latency_ms": {
+        "generation": {
+          "mean": 150.7282895857797,
+          "median": 145.45249799266458,
+          "p95": 243.0924721993506
+        },
+        "total": {
+          "mean": 163.25069588663823,
+          "median": 156.28594998270273,
+          "p95": 256.97240605950356
+        },
+        "vision_encoder": {
+          "mean": 60.39599250344669,
+          "median": 61.71356964111328,
+          "p95": 67.09638214111328
+        }
+      },
+      "peak_allocated_mib": 7397.52978515625,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 315.52941176470586,
+          "median": 315,
+          "p95": 328
+        },
+        "output": {
+          "mean": 2.8823529411764706,
+          "median": 3,
+          "p95": 6
+        },
+        "visual": {
+          "mean": 275.52941176470586,
+          "median": 275,
+          "p95": 288
+        }
+      }
+    },
+    "subtype:ocrbench:svtp::Irregular Text Recognition": {
+      "accuracy": 0.8888888888888888,
+      "all_questions_per_image_accuracy": 0.8888888888888888,
+      "examples": 9,
+      "latency_ms": {
+        "generation": {
+          "mean": 135.36073314025998,
+          "median": 139.81100311502814,
+          "p95": 162.53396309912205
+        },
+        "total": {
+          "mean": 146.78468622474207,
+          "median": 151.21701499447227,
+          "p95": 175.41837692260742
+        },
+        "vision_encoder": {
+          "mean": 59.12716759575738,
+          "median": 57.03782272338867,
+          "p95": 66.15446472167969
+        }
+      },
+      "peak_allocated_mib": 7397.52978515625,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 312.3333333333333,
+          "median": 310,
+          "p95": 328
+        },
+        "output": {
+          "mean": 2.5555555555555554,
+          "median": 3,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 272.3333333333333,
+          "median": 270,
+          "p95": 288
+        }
+      }
+    },
+    "subtype:ocrbench:totaltext::Irregular Text Recognition": {
+      "accuracy": 0.75,
+      "all_questions_per_image_accuracy": 0.75,
+      "examples": 8,
+      "latency_ms": {
+        "generation": {
+          "mean": 148.64610490622,
+          "median": 144.25714151002467,
+          "p95": 196.08956901356578
+        },
+        "total": {
+          "mean": 161.03625256801024,
+          "median": 157.1572022512555,
+          "p95": 210.8782110735774
+        },
+        "vision_encoder": {
+          "mean": 60.82454824447632,
+          "median": 61.01299285888672,
+          "p95": 65.14995574951172
+        }
+      },
+      "peak_allocated_mib": 7396.25634765625,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 314.125,
+          "median": 315.5,
+          "p95": 325
+        },
+        "output": {
+          "mean": 2.75,
+          "median": 2.5,
+          "p95": 4
+        },
+        "visual": {
+          "mean": 274.125,
+          "median": 275.5,
+          "p95": 285
+        }
+      }
+    },
+    "subtype:pope:adversarial": {
+      "accuracy": 0.86,
+      "all_questions_per_image_accuracy": 0.8478260869565217,
+      "examples": 100,
+      "latency_ms": {
+        "generation": {
+          "mean": 150.42363452725112,
+          "median": 150.2678964752704,
+          "p95": 183.10996005311608
+        },
+        "total": {
+          "mean": 176.2506905430928,
+          "median": 177.42963461205363,
+          "p95": 215.20970622077584
+        },
+        "vision_encoder": {
+          "mean": 74.4479263305664,
+          "median": 71.84185409545898,
+          "p95": 89.13849639892578
+        }
+      },
+      "peak_allocated_mib": 7478.548828125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 396.8,
+          "median": 381.0,
+          "p95": 495
+        },
+        "output": {
+          "mean": 2.41,
+          "median": 2.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 361.59,
+          "median": 345.0,
+          "p95": 460
+        }
+      }
+    },
+    "subtype:pope:popular": {
+      "accuracy": 0.88,
+      "all_questions_per_image_accuracy": 0.8681318681318682,
+      "examples": 100,
+      "latency_ms": {
+        "generation": {
+          "mean": 153.45257042441517,
+          "median": 151.39268478378654,
+          "p95": 184.7422239370644
+        },
+        "total": {
+          "mean": 179.75718325003982,
+          "median": 178.29357250593603,
+          "p95": 215.03649884834886
+        },
+        "vision_encoder": {
+          "mean": 75.3114962387085,
+          "median": 71.69208145141602,
+          "p95": 91.48381042480469
+        }
+      },
+      "peak_allocated_mib": 7478.548828125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 397.49,
+          "median": 381.0,
+          "p95": 520
+        },
+        "output": {
+          "mean": 2.43,
+          "median": 2.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 362.23,
+          "median": 345.0,
+          "p95": 484
+        }
+      }
+    },
+    "subtype:pope:random": {
+      "accuracy": 0.89,
+      "all_questions_per_image_accuracy": 0.8924731182795699,
+      "examples": 100,
+      "latency_ms": {
+        "generation": {
+          "mean": 155.0068139936775,
+          "median": 152.11210190318525,
+          "p95": 182.1334371343255
+        },
+        "total": {
+          "mean": 181.72626106068492,
+          "median": 179.5275139156729,
+          "p95": 222.50804211944342
+        },
+        "vision_encoder": {
+          "mean": 75.86761539459229,
+          "median": 71.44038391113281,
+          "p95": 98.46063995361328
+        }
+      },
+      "peak_allocated_mib": 7478.8740234375,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 398.64,
+          "median": 381.0,
+          "p95": 519
+        },
+        "output": {
+          "mean": 2.43,
+          "median": 2.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 363.32,
+          "median": 345.0,
+          "p95": 484
+        }
+      }
+    },
+    "subtype:tallyqa:complex": {
+      "accuracy": 0.6733333333333333,
+      "all_questions_per_image_accuracy": 0.6733333333333333,
+      "examples": 150,
+      "latency_ms": {
+        "generation": {
+          "mean": 127.73914420045912,
+          "median": 127.71621416322887,
+          "p95": 137.3029830865562
+        },
+        "total": {
+          "mean": 147.09686756754914,
+          "median": 146.8432154506445,
+          "p95": 160.50143679603934
+        },
+        "vision_encoder": {
+          "mean": 61.203239568074544,
+          "median": 60.73286437988281,
+          "p95": 67.05667114257812
+        }
+      },
+      "peak_allocated_mib": 7538.826171875,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 314.1066666666667,
+          "median": 313.5,
+          "p95": 325
+        },
+        "output": {
+          "mean": 2.026666666666667,
+          "median": 2.0,
+          "p95": 2
+        },
+        "visual": {
+          "mean": 277.76666666666665,
+          "median": 278.0,
+          "p95": 288
+        }
+      }
+    },
+    "subtype:tallyqa:simple": {
+      "accuracy": 0.7666666666666667,
+      "all_questions_per_image_accuracy": 0.7666666666666667,
+      "examples": 150,
+      "latency_ms": {
+        "generation": {
+          "mean": 142.18788702972233,
+          "median": 128.15166846849024,
+          "p95": 201.49010606110096
+        },
+        "total": {
+          "mean": 167.60841533231238,
+          "median": 147.36220706254244,
+          "p95": 255.14619192108512
+        },
+        "vision_encoder": {
+          "mean": 75.18185254414877,
+          "median": 60.9167366027832,
+          "p95": 129.5831298828125
+        }
+      },
+      "peak_allocated_mib": 7641.818359375,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 381.04,
+          "median": 308.5,
+          "p95": 645
+        },
+        "output": {
+          "mean": 2.02,
+          "median": 2.0,
+          "p95": 2
+        },
+        "visual": {
+          "mean": 347.1933333333333,
+          "median": 275.5,
+          "p95": 609
+        }
+      }
+    },
+    "subtype:vqav2_color:color": {
+      "accuracy": 0.9666666666666667,
+      "all_questions_per_image_accuracy": 0.9663299663299664,
+      "examples": 300,
+      "latency_ms": {
+        "generation": {
+          "mean": 142.51552909767875,
+          "median": 139.23002616502345,
+          "p95": 164.92365626618266
+        },
+        "total": {
+          "mean": 169.19843694971254,
+          "median": 165.35798157565296,
+          "p95": 198.92203714698553
+        },
+        "vision_encoder": {
+          "mean": 75.67063046773275,
+          "median": 71.6696662902832,
+          "p95": 95.6014404296875
+        }
+      },
+      "peak_allocated_mib": 7480.173828125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 400.63,
+          "median": 387.0,
+          "p95": 523
+        },
+        "output": {
+          "mean": 2.02,
+          "median": 2.0,
+          "p95": 2
+        },
+        "visual": {
+          "mean": 360.53333333333336,
+          "median": 345.0,
+          "p95": 483
+        }
+      }
+    },
+    "subtype:vsr:above": {
+      "accuracy": 0.8333333333333334,
+      "all_questions_per_image_accuracy": 0.8333333333333334,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 173.08400524780154,
+          "median": 177.62719956226647,
+          "p95": 181.5680516883731
+        },
+        "total": {
+          "mean": 200.34123646716276,
+          "median": 205.60318254865706,
+          "p95": 211.1966870725155
+        },
+        "vision_encoder": {
+          "mean": 80.0239855448405,
+          "median": 83.41299438476562,
+          "p95": 84.421630859375
+        }
+      },
+      "peak_allocated_mib": 7433.8251953125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 425.5,
+          "median": 433.0,
+          "p95": 434
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 383.3333333333333,
+          "median": 391.0,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:across": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 3,
+      "latency_ms": {
+        "generation": {
+          "mean": 167.63907267401615,
+          "median": 168.04348910227418,
+          "p95": 177.24982788786292
+        },
+        "total": {
+          "mean": 192.51698131362596,
+          "median": 193.94110795110464,
+          "p95": 206.054313108325
+        },
+        "vision_encoder": {
+          "mean": 71.39989217122395,
+          "median": 70.48883056640625,
+          "p95": 83.02591705322266
+        }
+      },
+      "peak_allocated_mib": 7433.50048828125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 376.3333333333333,
+          "median": 387,
+          "p95": 433
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 334.0,
+          "median": 345,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:across from": {
+      "accuracy": 0.6666666666666666,
+      "all_questions_per_image_accuracy": 0.6666666666666666,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 173.7910653464496,
+          "median": 173.9794509485364,
+          "p95": 181.59782281145453
+        },
+        "total": {
+          "mean": 201.3070376124233,
+          "median": 201.28748193383217,
+          "p95": 211.03193098679185
+        },
+        "vision_encoder": {
+          "mean": 78.81979878743489,
+          "median": 81.10856246948242,
+          "p95": 83.91065979003906
+        }
+      },
+      "peak_allocated_mib": 7441.7138671875,
+      "peak_reserved_mib": 8350.0,
+      "tokens": {
+        "input": {
+          "mean": 422.6666666666667,
+          "median": 434.0,
+          "p95": 457
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 379.5,
+          "median": 391.0,
+          "p95": 414
+        }
+      }
+    },
+    "subtype:vsr:adjacent to": {
+      "accuracy": 0.8333333333333334,
+      "all_questions_per_image_accuracy": 0.8333333333333334,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 176.25832410218814,
+          "median": 178.40287392027676,
+          "p95": 182.59613635018468
+        },
+        "total": {
+          "mean": 202.8785212120662,
+          "median": 205.2038994152099,
+          "p95": 212.58052624762058
+        },
+        "vision_encoder": {
+          "mean": 78.90652211507161,
+          "median": 82.0848503112793,
+          "p95": 84.81279754638672
+        }
+      },
+      "peak_allocated_mib": 7433.8251953125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 413.3333333333333,
+          "median": 434.0,
+          "p95": 434
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 370.1666666666667,
+          "median": 391.0,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:against": {
+      "accuracy": 0.8333333333333334,
+      "all_questions_per_image_accuracy": 0.8333333333333334,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 167.6926470051209,
+          "median": 168.42166357673705,
+          "p95": 184.1200073249638
+        },
+        "total": {
+          "mean": 192.84280956101915,
+          "median": 194.89656295627356,
+          "p95": 212.04400388523936
+        },
+        "vision_encoder": {
+          "mean": 72.25912475585938,
+          "median": 70.66267013549805,
+          "p95": 84.85273742675781
+        }
+      },
+      "peak_allocated_mib": 7433.50048828125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 393.0,
+          "median": 398.5,
+          "p95": 433
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 351.0,
+          "median": 356.5,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:ahead of": {
+      "accuracy": 0.6666666666666666,
+      "all_questions_per_image_accuracy": 0.6666666666666666,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 168.92604576423764,
+          "median": 175.0378191936761,
+          "p95": 181.82397028431296
+        },
+        "total": {
+          "mean": 194.77294610502818,
+          "median": 200.60442201793194,
+          "p95": 210.4780189692974
+        },
+        "vision_encoder": {
+          "mean": 76.28913116455078,
+          "median": 77.93443298339844,
+          "p95": 84.76908874511719
+        }
+      },
+      "peak_allocated_mib": 7434.150390625,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 407.3333333333333,
+          "median": 411.0,
+          "p95": 435
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 364.1666666666667,
+          "median": 368.0,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:along": {
+      "accuracy": 0.0,
+      "all_questions_per_image_accuracy": 0.0,
+      "examples": 2,
+      "latency_ms": {
+        "generation": {
+          "mean": 165.4796360526234,
+          "median": 165.4796360526234,
+          "p95": 178.63995116204023
+        },
+        "total": {
+          "mean": 188.83439642377198,
+          "median": 188.83439642377198,
+          "p95": 208.09249486774206
+        },
+        "vision_encoder": {
+          "mean": 70.47683334350586,
+          "median": 70.47683334350586,
+          "p95": 83.0987548828125
+        }
+      },
+      "peak_allocated_mib": 7433.50048828125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 377.5,
+          "median": 377.5,
+          "p95": 433
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 335.5,
+          "median": 335.5,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:alongside": {
+      "accuracy": 0.8,
+      "all_questions_per_image_accuracy": 0.8,
+      "examples": 5,
+      "latency_ms": {
+        "generation": {
+          "mean": 170.69934839382768,
+          "median": 178.48420375958085,
+          "p95": 179.58658142015338
+        },
+        "total": {
+          "mean": 198.3179971575737,
+          "median": 207.90853211656213,
+          "p95": 209.54645378515124
+        },
+        "vision_encoder": {
+          "mean": 77.39425811767578,
+          "median": 83.09555053710938,
+          "p95": 83.85126495361328
+        }
+      },
+      "peak_allocated_mib": 7433.50048828125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 419.6,
+          "median": 433,
+          "p95": 433
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 377.2,
+          "median": 391,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:around": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 1,
+      "latency_ms": {
+        "generation": {
+          "mean": 185.42541284114122,
+          "median": 185.42541284114122,
+          "p95": 185.42541284114122
+        },
+        "total": {
+          "mean": 212.63123117387295,
+          "median": 212.63123117387295,
+          "p95": 212.63123117387295
+        },
+        "vision_encoder": {
+          "mean": 84.1135025024414,
+          "median": 84.1135025024414,
+          "p95": 84.1135025024414
+        }
+      },
+      "peak_allocated_mib": 7433.50048828125,
+      "peak_reserved_mib": 8350.0,
+      "tokens": {
+        "input": {
+          "mean": 433.0,
+          "median": 433,
+          "p95": 433
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 391.0,
+          "median": 391,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:at": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 1,
+      "latency_ms": {
+        "generation": {
+          "mean": 180.35923689603806,
+          "median": 180.35923689603806,
+          "p95": 180.35923689603806
+        },
+        "total": {
+          "mean": 207.3828363791108,
+          "median": 207.3828363791108,
+          "p95": 207.3828363791108
+        },
+        "vision_encoder": {
+          "mean": 84.31001281738281,
+          "median": 84.31001281738281,
+          "p95": 84.31001281738281
+        }
+      },
+      "peak_allocated_mib": 7433.50048828125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 433.0,
+          "median": 433,
+          "p95": 433
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 391.0,
+          "median": 391,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:at the back of": {
+      "accuracy": 0.8333333333333334,
+      "all_questions_per_image_accuracy": 0.8333333333333334,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 166.05901842315993,
+          "median": 163.07545104064047,
+          "p95": 182.9169183038175
+        },
+        "total": {
+          "mean": 188.74969178189835,
+          "median": 186.20510306209326,
+          "p95": 206.85206213966012
+        },
+        "vision_encoder": {
+          "mean": 70.48686854044597,
+          "median": 66.52271842956543,
+          "p95": 84.86399841308594
+        }
+      },
+      "peak_allocated_mib": 7450.5751953125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 373.8333333333333,
+          "median": 350.5,
+          "p95": 483
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 328.5,
+          "median": 305.5,
+          "p95": 437
+        }
+      }
+    },
+    "subtype:vsr:at the edge of": {
+      "accuracy": 0.5,
+      "all_questions_per_image_accuracy": 0.5,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 176.86005518771708,
+          "median": 179.21885009855032,
+          "p95": 193.59518308192492
+        },
+        "total": {
+          "mean": 205.28588506082693,
+          "median": 207.22365332767367,
+          "p95": 228.64719480276108
+        },
+        "vision_encoder": {
+          "mean": 81.71453221638997,
+          "median": 83.68942260742188,
+          "p95": 98.00498962402344
+        }
+      },
+      "peak_allocated_mib": 7466.3681640625,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 433.6666666666667,
+          "median": 437.5,
+          "p95": 529
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 387.6666666666667,
+          "median": 391.0,
+          "p95": 484
+        }
+      }
+    },
+    "subtype:vsr:at the left side of": {
+      "accuracy": 0.8333333333333334,
+      "all_questions_per_image_accuracy": 0.8333333333333334,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 176.34089399750033,
+          "median": 175.1695405691862,
+          "p95": 195.8646597340703
+        },
+        "total": {
+          "mean": 204.07024080244204,
+          "median": 203.79998185671866,
+          "p95": 232.49564319849014
+        },
+        "vision_encoder": {
+          "mean": 78.61756324768066,
+          "median": 77.7543830871582,
+          "p95": 97.36937713623047
+        }
+      },
+      "peak_allocated_mib": 7467.13671875,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 419.3333333333333,
+          "median": 414.5,
+          "p95": 531
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 372.6666666666667,
+          "median": 368.0,
+          "p95": 484
+        }
+      }
+    },
+    "subtype:vsr:at the right side of": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 179.00838213972747,
+          "median": 181.4031309913844,
+          "p95": 185.77502015978098
+        },
+        "total": {
+          "mean": 207.33883130985,
+          "median": 210.76732710935175,
+          "p95": 219.63420696556568
+        },
+        "vision_encoder": {
+          "mean": 81.81231435139973,
+          "median": 84.04735946655273,
+          "p95": 88.5370864868164
+        }
+      },
+      "peak_allocated_mib": 7458.46142578125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 429.0,
+          "median": 437.0,
+          "p95": 506
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 382.8333333333333,
+          "median": 391.0,
+          "p95": 460
+        }
+      }
+    },
+    "subtype:vsr:at the side of": {
+      "accuracy": 0.8333333333333334,
+      "all_questions_per_image_accuracy": 0.8333333333333334,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 166.95481864735484,
+          "median": 167.267577489838,
+          "p95": 181.7062869668007
+        },
+        "total": {
+          "mean": 193.0667325699081,
+          "median": 190.93107199296355,
+          "p95": 209.60081182420254
+        },
+        "vision_encoder": {
+          "mean": 73.69769541422527,
+          "median": 71.55411148071289,
+          "p95": 83.97516632080078
+        }
+      },
+      "peak_allocated_mib": 7435.125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 402.6666666666667,
+          "median": 391.5,
+          "p95": 438
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 356.8333333333333,
+          "median": 345.0,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:attached to": {
+      "accuracy": 0.8333333333333334,
+      "all_questions_per_image_accuracy": 0.8333333333333334,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 172.38413612358272,
+          "median": 174.29852136410773,
+          "p95": 198.1769702397287
+        },
+        "total": {
+          "mean": 199.38836696868142,
+          "median": 199.40483709797263,
+          "p95": 236.30367685109377
+        },
+        "vision_encoder": {
+          "mean": 78.01339594523112,
+          "median": 76.0893440246582,
+          "p95": 103.72057342529297
+        }
+      },
+      "peak_allocated_mib": 7481.1484375,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 415.6666666666667,
+          "median": 411.0,
+          "p95": 572
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 372.5,
+          "median": 368.0,
+          "p95": 529
+        }
+      }
+    },
+    "subtype:vsr:away from": {
+      "accuracy": 0.8333333333333334,
+      "all_questions_per_image_accuracy": 0.8333333333333334,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 178.063471801579,
+          "median": 180.94374937936664,
+          "p95": 183.25516022741795
+        },
+        "total": {
+          "mean": 206.457198675101,
+          "median": 210.342237027362,
+          "p95": 213.19980965927243
+        },
+        "vision_encoder": {
+          "mean": 81.07290649414062,
+          "median": 83.76115036010742,
+          "p95": 84.93446350097656
+        }
+      },
+      "peak_allocated_mib": 7434.80029296875,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 427.1666666666667,
+          "median": 434.0,
+          "p95": 437
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 383.3333333333333,
+          "median": 391.0,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:behind": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 177.80179639036456,
+          "median": 178.89212328009307,
+          "p95": 202.03942898660898
+        },
+        "total": {
+          "mean": 204.76127043366432,
+          "median": 205.63963963650167,
+          "p95": 237.5848707742989
+        },
+        "vision_encoder": {
+          "mean": 80.42970848083496,
+          "median": 82.20672225952148,
+          "p95": 103.41033935546875
+        }
+      },
+      "peak_allocated_mib": 7480.82373046875,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 432.0,
+          "median": 433.0,
+          "p95": 571
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 389.1666666666667,
+          "median": 391.0,
+          "p95": 529
+        }
+      }
+    },
+    "subtype:vsr:below": {
+      "accuracy": 0.6666666666666666,
+      "all_questions_per_image_accuracy": 0.6666666666666666,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 175.02835804286102,
+          "median": 179.86410553567111,
+          "p95": 195.64850023016334
+        },
+        "total": {
+          "mean": 202.26765237748623,
+          "median": 209.66561301611364,
+          "p95": 227.96831373125315
+        },
+        "vision_encoder": {
+          "mean": 80.95539156595866,
+          "median": 85.30526351928711,
+          "p95": 97.80425262451172
+        }
+      },
+      "peak_allocated_mib": 7465.39306640625,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 445.6666666666667,
+          "median": 456.5,
+          "p95": 526
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 403.5,
+          "median": 414.0,
+          "p95": 484
+        }
+      }
+    },
+    "subtype:vsr:beneath": {
+      "accuracy": 0.8333333333333334,
+      "all_questions_per_image_accuracy": 0.8333333333333334,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 170.48475239425898,
+          "median": 169.28471089340746,
+          "p95": 178.9582883939147
+        },
+        "total": {
+          "mean": 197.7869033192595,
+          "median": 196.40434393659234,
+          "p95": 207.19454297795892
+        },
+        "vision_encoder": {
+          "mean": 76.41481145222981,
+          "median": 76.16302490234375,
+          "p95": 83.37433624267578
+        }
+      },
+      "peak_allocated_mib": 7433.8251953125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 414.1666666666667,
+          "median": 421.5,
+          "p95": 434
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 371.8333333333333,
+          "median": 379.5,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:beside": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 176.1731174774468,
+          "median": 174.53440208919346,
+          "p95": 195.8434283733368
+        },
+        "total": {
+          "mean": 204.02684109285474,
+          "median": 201.27800735644996,
+          "p95": 230.08730169385672
+        },
+        "vision_encoder": {
+          "mean": 80.82645797729492,
+          "median": 80.87710189819336,
+          "p95": 97.66425323486328
+        }
+      },
+      "peak_allocated_mib": 7465.39306640625,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 437.0,
+          "median": 433.0,
+          "p95": 526
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 395.0,
+          "median": 391.0,
+          "p95": 484
+        }
+      }
+    },
+    "subtype:vsr:beyond": {
+      "accuracy": 0.8,
+      "all_questions_per_image_accuracy": 0.8,
+      "examples": 5,
+      "latency_ms": {
+        "generation": {
+          "mean": 169.40793190151453,
+          "median": 170.4753669910133,
+          "p95": 182.77262477204204
+        },
+        "total": {
+          "mean": 194.09370282664895,
+          "median": 199.34033788740635,
+          "p95": 209.73616279661655
+        },
+        "vision_encoder": {
+          "mean": 74.2032958984375,
+          "median": 83.02665710449219,
+          "p95": 84.09260559082031
+        }
+      },
+      "peak_allocated_mib": 7433.50048828125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 386.2,
+          "median": 433,
+          "p95": 433
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 343.8,
+          "median": 391,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:by": {
+      "accuracy": 0.5,
+      "all_questions_per_image_accuracy": 0.5,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 170.3857173367093,
+          "median": 172.7957350667566,
+          "p95": 180.47314882278442
+        },
+        "total": {
+          "mean": 197.06845632754266,
+          "median": 200.19337139092386,
+          "p95": 208.4005163051188
+        },
+        "vision_encoder": {
+          "mean": 75.35047403971355,
+          "median": 75.66428756713867,
+          "p95": 83.75820922851562
+        }
+      },
+      "peak_allocated_mib": 7433.50048828125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 410.3333333333333,
+          "median": 411.0,
+          "p95": 433
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 368.0,
+          "median": 368.0,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:close to": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 166.117277306815,
+          "median": 163.54289068840444,
+          "p95": 181.7038427107036
+        },
+        "total": {
+          "mean": 189.3536220304668,
+          "median": 186.58479629084468,
+          "p95": 212.3202970251441
+        },
+        "vision_encoder": {
+          "mean": 69.1865660349528,
+          "median": 65.70598411560059,
+          "p95": 83.7318115234375
+        }
+      },
+      "peak_allocated_mib": 7433.8251953125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 374.1666666666667,
+          "median": 372.0,
+          "p95": 434
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 330.6666666666667,
+          "median": 328.0,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:connected to": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 5,
+      "latency_ms": {
+        "generation": {
+          "mean": 170.80903435125947,
+          "median": 181.01162603124976,
+          "p95": 192.05432198941708
+        },
+        "total": {
+          "mean": 199.0993620827794,
+          "median": 209.75465001538396,
+          "p95": 226.386615075171
+        },
+        "vision_encoder": {
+          "mean": 81.01998596191406,
+          "median": 83.34742736816406,
+          "p95": 97.68316650390625
+        }
+      },
+      "peak_allocated_mib": 7473.5869140625,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 439.4,
+          "median": 434,
+          "p95": 550
+        },
+        "output": {
+          "mean": 2.8,
+          "median": 3,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 395.6,
+          "median": 391,
+          "p95": 506
+        }
+      }
+    },
+    "subtype:vsr:consists of": {
+      "accuracy": 0.75,
+      "all_questions_per_image_accuracy": 0.75,
+      "examples": 4,
+      "latency_ms": {
+        "generation": {
+          "mean": 166.70981992501765,
+          "median": 163.18188165314496,
+          "p95": 179.7517747618258
+        },
+        "total": {
+          "mean": 194.01154527440667,
+          "median": 189.41068439744413,
+          "p95": 210.0602281279862
+        },
+        "vision_encoder": {
+          "mean": 77.65584754943848,
+          "median": 79.1874885559082,
+          "p95": 83.00758361816406
+        }
+      },
+      "peak_allocated_mib": 7441.388671875,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 427.25,
+          "median": 433.0,
+          "p95": 456
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 385.25,
+          "median": 391.0,
+          "p95": 414
+        }
+      }
+    },
+    "subtype:vsr:contains": {
+      "accuracy": 0.5,
+      "all_questions_per_image_accuracy": 0.5,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 171.49470296377936,
+          "median": 174.10647473298013,
+          "p95": 181.4483441412449
+        },
+        "total": {
+          "mean": 200.8179014082998,
+          "median": 203.91554455272853,
+          "p95": 211.82824205607176
+        },
+        "vision_encoder": {
+          "mean": 81.57011032104492,
+          "median": 83.31398391723633,
+          "p95": 84.61106872558594
+        }
+      },
+      "peak_allocated_mib": 7456.8369140625,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 436.1666666666667,
+          "median": 432.0,
+          "p95": 501
+        },
+        "output": {
+          "mean": 2.8333333333333335,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 394.8333333333333,
+          "median": 391.0,
+          "p95": 460
+        }
+      }
+    },
+    "subtype:vsr:detached from": {
+      "accuracy": 0.75,
+      "all_questions_per_image_accuracy": 0.75,
+      "examples": 4,
+      "latency_ms": {
+        "generation": {
+          "mean": 165.45039147604257,
+          "median": 160.75528436340392,
+          "p95": 184.49477618560195
+        },
+        "total": {
+          "mean": 191.3082686951384,
+          "median": 187.77088751085103,
+          "p95": 213.6530806310475
+        },
+        "vision_encoder": {
+          "mean": 74.840256690979,
+          "median": 77.46963500976562,
+          "p95": 84.51468658447266
+        }
+      },
+      "peak_allocated_mib": 7441.7138671875,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 408.5,
+          "median": 434.0,
+          "p95": 457
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 365.5,
+          "median": 391.0,
+          "p95": 414
+        }
+      }
+    },
+    "subtype:vsr:down from": {
+      "accuracy": 0.6,
+      "all_questions_per_image_accuracy": 0.6,
+      "examples": 5,
+      "latency_ms": {
+        "generation": {
+          "mean": 162.63521816581488,
+          "median": 166.3889978080988,
+          "p95": 177.72440006956458
+        },
+        "total": {
+          "mean": 187.0823111385107,
+          "median": 191.4860219694674,
+          "p95": 207.19454297795892
+        },
+        "vision_encoder": {
+          "mean": 69.37849655151368,
+          "median": 69.46470642089844,
+          "p95": 84.18201446533203
+        }
+      },
+      "peak_allocated_mib": 7433.8251953125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 377.0,
+          "median": 388,
+          "p95": 434
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 333.8,
+          "median": 345,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:enclosed by": {
+      "accuracy": 0.5,
+      "all_questions_per_image_accuracy": 0.5,
+      "examples": 2,
+      "latency_ms": {
+        "generation": {
+          "mean": 159.32715847156942,
+          "median": 159.32715847156942,
+          "p95": 164.75806199014187
+        },
+        "total": {
+          "mean": 180.79780670814216,
+          "median": 180.79780670814216,
+          "p95": 189.8182793520391
+        },
+        "vision_encoder": {
+          "mean": 68.26075172424316,
+          "median": 68.26075172424316,
+          "p95": 79.57609558105469
+        }
+      },
+      "peak_allocated_mib": 7434.47509765625,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 372.5,
+          "median": 372.5,
+          "p95": 436
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 328.5,
+          "median": 328.5,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:facing": {
+      "accuracy": 0.6666666666666666,
+      "all_questions_per_image_accuracy": 0.6666666666666666,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 173.98070528482398,
+          "median": 179.6256231609732,
+          "p95": 180.9899052605033
+        },
+        "total": {
+          "mean": 200.88959004109105,
+          "median": 208.57960358262062,
+          "p95": 209.8520789295435
+        },
+        "vision_encoder": {
+          "mean": 78.00553067525227,
+          "median": 83.41846466064453,
+          "p95": 84.68787384033203
+        }
+      },
+      "peak_allocated_mib": 7434.150390625,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 404.3333333333333,
+          "median": 433.0,
+          "p95": 435
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 361.5,
+          "median": 391.0,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:facing away from": {
+      "accuracy": 0.5,
+      "all_questions_per_image_accuracy": 0.5,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 172.85161721520126,
+          "median": 179.92941639386117,
+          "p95": 182.31698079034686
+        },
+        "total": {
+          "mean": 197.70986672180393,
+          "median": 207.0294595323503,
+          "p95": 212.01376290991902
+        },
+        "vision_encoder": {
+          "mean": 75.50378608703613,
+          "median": 82.17964553833008,
+          "p95": 84.68800354003906
+        }
+      },
+      "peak_allocated_mib": 7434.150390625,
+      "peak_reserved_mib": 8350.0,
+      "tokens": {
+        "input": {
+          "mean": 395.6666666666667,
+          "median": 435.0,
+          "p95": 435
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 351.6666666666667,
+          "median": 391.0,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:far away from": {
+      "accuracy": 0.8333333333333334,
+      "all_questions_per_image_accuracy": 0.8333333333333334,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 174.34725064473847,
+          "median": 181.5671189688146,
+          "p95": 196.346006821841
+        },
+        "total": {
+          "mean": 202.32033287175,
+          "median": 211.15808887407184,
+          "p95": 226.7405018210411
+        },
+        "vision_encoder": {
+          "mean": 81.12013943990071,
+          "median": 84.07510375976562,
+          "p95": 98.03584289550781
+        }
+      },
+      "peak_allocated_mib": 7467.013671875,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 440.6666666666667,
+          "median": 436.5,
+          "p95": 529
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 395.6666666666667,
+          "median": 391.0,
+          "p95": 484
+        }
+      }
+    },
+    "subtype:vsr:far from": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 169.14047688866654,
+          "median": 167.46061039157212,
+          "p95": 177.85592982545495
+        },
+        "total": {
+          "mean": 195.4212784767151,
+          "median": 194.34557459317148,
+          "p95": 202.68148183822632
+        },
+        "vision_encoder": {
+          "mean": 72.1527468363444,
+          "median": 70.92070388793945,
+          "p95": 79.6231689453125
+        }
+      },
+      "peak_allocated_mib": 7434.150390625,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 392.6666666666667,
+          "median": 388.0,
+          "p95": 435
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 349.1666666666667,
+          "median": 345.0,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:has as a part": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 168.3295596546183,
+          "median": 167.13931364938617,
+          "p95": 181.75922613590956
+        },
+        "total": {
+          "mean": 194.2218334103624,
+          "median": 193.05229582823813,
+          "p95": 210.84091486409307
+        },
+        "vision_encoder": {
+          "mean": 75.80403645833333,
+          "median": 79.92670440673828,
+          "p95": 83.91474914550781
+        }
+      },
+      "peak_allocated_mib": 7434.150390625,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 406.5,
+          "median": 435.0,
+          "p95": 435
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 362.5,
+          "median": 391.0,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:in": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 160.11658171191812,
+          "median": 162.00596117414534,
+          "p95": 171.33874725550413
+        },
+        "total": {
+          "mean": 185.18323614262044,
+          "median": 184.96618582867086,
+          "p95": 197.6853758096695
+        },
+        "vision_encoder": {
+          "mean": 70.43548329671223,
+          "median": 70.51768112182617,
+          "p95": 83.1661148071289
+        }
+      },
+      "peak_allocated_mib": 7433.50048828125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 384.3333333333333,
+          "median": 387.5,
+          "p95": 433
+        },
+        "output": {
+          "mean": 2.8333333333333335,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 341.8333333333333,
+          "median": 345.0,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:in front of": {
+      "accuracy": 0.6666666666666666,
+      "all_questions_per_image_accuracy": 0.6666666666666666,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 168.9419091368715,
+          "median": 169.9818589258939,
+          "p95": 185.57815486565232
+        },
+        "total": {
+          "mean": 195.47848232711354,
+          "median": 195.62584697268903,
+          "p95": 214.5941937342286
+        },
+        "vision_encoder": {
+          "mean": 76.55768585205078,
+          "median": 76.69009780883789,
+          "p95": 86.12044525146484
+        }
+      },
+      "peak_allocated_mib": 7442.03857421875,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 412.8333333333333,
+          "median": 414.0,
+          "p95": 458
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 368.0,
+          "median": 368.0,
+          "p95": 414
+        }
+      }
+    },
+    "subtype:vsr:in the middle of": {
+      "accuracy": 0.5,
+      "all_questions_per_image_accuracy": 0.5,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 176.21123938200375,
+          "median": 180.58420601300895,
+          "p95": 188.84510826319456
+        },
+        "total": {
+          "mean": 205.2587625415375,
+          "median": 209.91019858047366,
+          "p95": 222.88881707936525
+        },
+        "vision_encoder": {
+          "mean": 84.1453119913737,
+          "median": 83.38270568847656,
+          "p95": 102.55795288085938
+        }
+      },
+      "peak_allocated_mib": 7481.79833984375,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 452.0,
+          "median": 437.0,
+          "p95": 574
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 406.3333333333333,
+          "median": 391.0,
+          "p95": 529
+        }
+      }
+    },
+    "subtype:vsr:inside": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 179.080362431705,
+          "median": 179.49838121421635,
+          "p95": 182.3047404177487
+        },
+        "total": {
+          "mean": 207.29247612568238,
+          "median": 207.22294435836375,
+          "p95": 212.57673297077417
+        },
+        "vision_encoder": {
+          "mean": 83.77426020304362,
+          "median": 83.5091667175293,
+          "p95": 86.18278503417969
+        }
+      },
+      "peak_allocated_mib": 7449.275390625,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 441.0,
+          "median": 433.5,
+          "p95": 479
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 398.6666666666667,
+          "median": 391.0,
+          "p95": 437
+        }
+      }
+    },
+    "subtype:vsr:into": {
+      "accuracy": 0.8333333333333334,
+      "all_questions_per_image_accuracy": 0.8333333333333334,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 167.42580011487007,
+          "median": 168.0037402547896,
+          "p95": 179.18876511976123
+        },
+        "total": {
+          "mean": 191.90309840875366,
+          "median": 194.44727315567434,
+          "p95": 209.30654788389802
+        },
+        "vision_encoder": {
+          "mean": 72.57424990336101,
+          "median": 74.93879699707031,
+          "p95": 83.2573471069336
+        }
+      },
+      "peak_allocated_mib": 7433.8251953125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 384.8333333333333,
+          "median": 410.0,
+          "p95": 434
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 342.3333333333333,
+          "median": 368.0,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:left of": {
+      "accuracy": 0.8333333333333334,
+      "all_questions_per_image_accuracy": 0.8333333333333334,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 171.35676896820465,
+          "median": 174.3380781263113,
+          "p95": 183.29441081732512
+        },
+        "total": {
+          "mean": 198.39027469667295,
+          "median": 201.89442834816873,
+          "p95": 213.4723998606205
+        },
+        "vision_encoder": {
+          "mean": 78.52673467000325,
+          "median": 82.34307098388672,
+          "p95": 84.88966369628906
+        }
+      },
+      "peak_allocated_mib": 7441.7138671875,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 419.3333333333333,
+          "median": 435.0,
+          "p95": 457
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 375.6666666666667,
+          "median": 391.0,
+          "p95": 414
+        }
+      }
+    },
+    "subtype:vsr:near": {
+      "accuracy": 0.5,
+      "all_questions_per_image_accuracy": 0.5,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 174.68596971593797,
+          "median": 170.8474475890398,
+          "p95": 206.12715696915984
+        },
+        "total": {
+          "mean": 203.29228113405406,
+          "median": 197.18171446584165,
+          "p95": 245.94395700842142
+        },
+        "vision_encoder": {
+          "mean": 81.65240542093913,
+          "median": 78.78076553344727,
+          "p95": 106.29657745361328
+        }
+      },
+      "peak_allocated_mib": 7480.82373046875,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 443.0,
+          "median": 433.0,
+          "p95": 571
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 401.0,
+          "median": 391.0,
+          "p95": 529
+        }
+      }
+    },
+    "subtype:vsr:next to": {
+      "accuracy": 0.8333333333333334,
+      "all_questions_per_image_accuracy": 0.8333333333333334,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 173.34721772931516,
+          "median": 167.03401948325336,
+          "p95": 202.20362674444914
+        },
+        "total": {
+          "mean": 200.18187436896065,
+          "median": 193.5644077602774,
+          "p95": 235.2680223993957
+        },
+        "vision_encoder": {
+          "mean": 82.0525754292806,
+          "median": 80.41259384155273,
+          "p95": 101.63494110107422
+        }
+      },
+      "peak_allocated_mib": 7481.1484375,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 441.6666666666667,
+          "median": 434.0,
+          "p95": 572
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 398.6666666666667,
+          "median": 391.0,
+          "p95": 529
+        }
+      }
+    },
+    "subtype:vsr:off": {
+      "accuracy": 0.5,
+      "all_questions_per_image_accuracy": 0.5,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 176.4911609546592,
+          "median": 172.95727832242846,
+          "p95": 196.46615395322442
+        },
+        "total": {
+          "mean": 203.46442928227285,
+          "median": 198.98403226397932,
+          "p95": 229.59163784980774
+        },
+        "vision_encoder": {
+          "mean": 79.0860538482666,
+          "median": 76.77473831176758,
+          "p95": 97.15023803710938
+        }
+      },
+      "peak_allocated_mib": 7465.39306640625,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 430.6666666666667,
+          "median": 410.5,
+          "p95": 526
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 388.1666666666667,
+          "median": 368.0,
+          "p95": 484
+        }
+      }
+    },
+    "subtype:vsr:on": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 176.1192464424918,
+          "median": 181.0369174927473,
+          "p95": 202.76990113779902
+        },
+        "total": {
+          "mean": 205.48437365020314,
+          "median": 208.6506076157093,
+          "p95": 242.49919364228845
+        },
+        "vision_encoder": {
+          "mean": 84.8990084330241,
+          "median": 84.13253021240234,
+          "p95": 104.36787414550781
+        }
+      },
+      "peak_allocated_mib": 7480.82373046875,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 453.3333333333333,
+          "median": 434.5,
+          "p95": 571
+        },
+        "output": {
+          "mean": 2.8333333333333335,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 410.1666666666667,
+          "median": 391.0,
+          "p95": 529
+        }
+      }
+    },
+    "subtype:vsr:on top of": {
+      "accuracy": 0.8333333333333334,
+      "all_questions_per_image_accuracy": 0.8333333333333334,
+      "examples": 6,
+      "latency_ms": {
+        "generation": {
+          "mean": 175.73753775407872,
+          "median": 174.81306963600218,
+          "p95": 202.96818111091852
+        },
+        "total": {
+          "mean": 203.7983409439524,
+          "median": 202.0153240300715,
+          "p95": 237.89859982207417
+        },
+        "vision_encoder": {
+          "mean": 82.49858220418294,
+          "median": 81.59952163696289,
+          "p95": 102.54729461669922
+        }
+      },
+      "peak_allocated_mib": 7481.4736328125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 445.1666666666667,
+          "median": 435.5,
+          "p95": 573
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 401.0,
+          "median": 391.0,
+          "p95": 529
+        }
+      }
+    },
+    "subtype:vsr:opposite to": {
+      "accuracy": 0.5,
+      "all_questions_per_image_accuracy": 0.5,
+      "examples": 4,
+      "latency_ms": {
+        "generation": {
+          "mean": 171.3376563275233,
+          "median": 164.45719357579947,
+          "p95": 197.721763048321
+        },
+        "total": {
+          "mean": 199.05406585894525,
+          "median": 192.34050693921745,
+          "p95": 227.3068679496646
+        },
+        "vision_encoder": {
+          "mean": 81.2026309967041,
+          "median": 77.47066879272461,
+          "p95": 97.90672302246094
+        }
+      },
+      "peak_allocated_mib": 7465.71826171875,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 445.75,
+          "median": 434.0,
+          "p95": 527
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 402.75,
+          "median": 391.0,
+          "p95": 484
+        }
+      }
+    },
+    "subtype:vsr:out of": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 1,
+      "latency_ms": {
+        "generation": {
+          "mean": 176.8671669997275,
+          "median": 176.8671669997275,
+          "p95": 176.8671669997275
+        },
+        "total": {
+          "mean": 206.3859198242426,
+          "median": 206.3859198242426,
+          "p95": 206.3859198242426
+        },
+        "vision_encoder": {
+          "mean": 82.61325073242188,
+          "median": 82.61325073242188,
+          "p95": 82.61325073242188
+        }
+      },
+      "peak_allocated_mib": 7433.8251953125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 434.0,
+          "median": 434,
+          "p95": 434
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 391.0,
+          "median": 391,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:outside": {
+      "accuracy": 0.75,
+      "all_questions_per_image_accuracy": 0.75,
+      "examples": 4,
+      "latency_ms": {
+        "generation": {
+          "mean": 174.809550633654,
+          "median": 176.49340932257473,
+          "p95": 180.55884400382638
+        },
+        "total": {
+          "mean": 201.94231206551194,
+          "median": 204.37616296112537,
+          "p95": 207.75942131876945
+        },
+        "vision_encoder": {
+          "mean": 79.16935157775879,
+          "median": 81.23854446411133,
+          "p95": 83.77587127685547
+        }
+      },
+      "peak_allocated_mib": 7433.50048828125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 421.5,
+          "median": 433.0,
+          "p95": 433
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 379.5,
+          "median": 391.0,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:over": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 4,
+      "latency_ms": {
+        "generation": {
+          "mean": 174.59827661514282,
+          "median": 176.3733965344727,
+          "p95": 196.51252822950482
+        },
+        "total": {
+          "mean": 201.19327818974853,
+          "median": 203.31832044757903,
+          "p95": 228.54781104251742
+        },
+        "vision_encoder": {
+          "mean": 80.99008750915527,
+          "median": 80.56489562988281,
+          "p95": 97.64579010009766
+        }
+      },
+      "peak_allocated_mib": 7465.39306640625,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 450.5,
+          "median": 433.0,
+          "p95": 526
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 408.5,
+          "median": 391.0,
+          "p95": 484
+        }
+      }
+    },
+    "subtype:vsr:parallel to": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 4,
+      "latency_ms": {
+        "generation": {
+          "mean": 175.53305951878428,
+          "median": 175.68010627292097,
+          "p95": 181.51643872261047
+        },
+        "total": {
+          "mean": 203.66532204207033,
+          "median": 203.62369157373905,
+          "p95": 211.62863494828343
+        },
+        "vision_encoder": {
+          "mean": 80.8491382598877,
+          "median": 83.47185897827148,
+          "p95": 85.1968002319336
+        }
+      },
+      "peak_allocated_mib": 7441.7138671875,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 428.25,
+          "median": 434.0,
+          "p95": 457
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 385.25,
+          "median": 391.0,
+          "p95": 414
+        }
+      }
+    },
+    "subtype:vsr:part of": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 4,
+      "latency_ms": {
+        "generation": {
+          "mean": 170.16612249426544,
+          "median": 176.49621237069368,
+          "p95": 180.7854981161654
+        },
+        "total": {
+          "mean": 195.00379159580916,
+          "median": 203.3575363457203,
+          "p95": 209.32123577222228
+        },
+        "vision_encoder": {
+          "mean": 76.44444751739502,
+          "median": 82.12742233276367,
+          "p95": 83.31980895996094
+        }
+      },
+      "peak_allocated_mib": 7433.8251953125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 403.75,
+          "median": 434.0,
+          "p95": 434
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 360.75,
+          "median": 391.0,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:perpendicular to": {
+      "accuracy": 0.5,
+      "all_questions_per_image_accuracy": 0.5,
+      "examples": 4,
+      "latency_ms": {
+        "generation": {
+          "mean": 167.28484572377056,
+          "median": 168.8330990727991,
+          "p95": 182.76564218103886
+        },
+        "total": {
+          "mean": 194.32995666284114,
+          "median": 197.0709953457117,
+          "p95": 210.71317605674267
+        },
+        "vision_encoder": {
+          "mean": 78.75134468078613,
+          "median": 82.2400016784668,
+          "p95": 84.89641571044922
+        }
+      },
+      "peak_allocated_mib": 7433.8251953125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 423.0,
+          "median": 434.0,
+          "p95": 434
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 379.5,
+          "median": 391.0,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:right of": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 4,
+      "latency_ms": {
+        "generation": {
+          "mean": 166.30648518912494,
+          "median": 164.41532387398183,
+          "p95": 184.39488299190998
+        },
+        "total": {
+          "mean": 192.97991727944463,
+          "median": 191.78079743869603,
+          "p95": 218.86399621143937
+        },
+        "vision_encoder": {
+          "mean": 73.49630355834961,
+          "median": 74.55228805541992,
+          "p95": 87.50694274902344
+        }
+      },
+      "peak_allocated_mib": 7458.13671875,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 409.0,
+          "median": 411.0,
+          "p95": 505
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 365.5,
+          "median": 368.0,
+          "p95": 460
+        }
+      }
+    },
+    "subtype:vsr:surrounding": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 4,
+      "latency_ms": {
+        "generation": {
+          "mean": 163.93292893189937,
+          "median": 164.76798756048083,
+          "p95": 168.72374480590224
+        },
+        "total": {
+          "mean": 187.29655945207924,
+          "median": 189.72246581688523,
+          "p95": 195.77961321920156
+        },
+        "vision_encoder": {
+          "mean": 72.24368190765381,
+          "median": 74.7705307006836,
+          "p95": 78.82128143310547
+        }
+      },
+      "peak_allocated_mib": 7433.50048828125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 394.0,
+          "median": 410.0,
+          "p95": 433
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 351.75,
+          "median": 368.0,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:through": {
+      "accuracy": 0.0,
+      "all_questions_per_image_accuracy": 0.0,
+      "examples": 1,
+      "latency_ms": {
+        "generation": {
+          "mean": 150.71309311315417,
+          "median": 150.71309311315417,
+          "p95": 150.71309311315417
+        },
+        "total": {
+          "mean": 172.56081383675337,
+          "median": 172.56081383675337,
+          "p95": 172.56081383675337
+        },
+        "vision_encoder": {
+          "mean": 65.6732177734375,
+          "median": 65.6732177734375,
+          "p95": 65.6732177734375
+        }
+      },
+      "peak_allocated_mib": 7403.67626953125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 342.0,
+          "median": 342,
+          "p95": 342
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 299.0,
+          "median": 299,
+          "p95": 299
+        }
+      }
+    },
+    "subtype:vsr:touching": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 4,
+      "latency_ms": {
+        "generation": {
+          "mean": 165.90258362703025,
+          "median": 161.31478361785412,
+          "p95": 182.35713988542557
+        },
+        "total": {
+          "mean": 190.14433049596846,
+          "median": 184.45743550546467,
+          "p95": 212.32225187122822
+        },
+        "vision_encoder": {
+          "mean": 69.41380882263184,
+          "median": 66.32129669189453,
+          "p95": 84.10614776611328
+        }
+      },
+      "peak_allocated_mib": 7433.50048828125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 385.0,
+          "median": 399.5,
+          "p95": 433
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 342.5,
+          "median": 356.5,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:toward": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 4,
+      "latency_ms": {
+        "generation": {
+          "mean": 165.90856737457216,
+          "median": 156.84772632084787,
+          "p95": 197.9577369056642
+        },
+        "total": {
+          "mean": 191.2756161764264,
+          "median": 177.73056449368596,
+          "p95": 234.22149382531643
+        },
+        "vision_encoder": {
+          "mean": 72.49894523620605,
+          "median": 65.3992977142334,
+          "p95": 99.82361602783203
+        }
+      },
+      "peak_allocated_mib": 7465.05078125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 390.75,
+          "median": 365.0,
+          "p95": 525
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 348.25,
+          "median": 322.0,
+          "p95": 483
+        }
+      }
+    },
+    "subtype:vsr:under": {
+      "accuracy": 0.5,
+      "all_questions_per_image_accuracy": 0.5,
+      "examples": 4,
+      "latency_ms": {
+        "generation": {
+          "mean": 167.545847594738,
+          "median": 166.4369972422719,
+          "p95": 179.65336795896292
+        },
+        "total": {
+          "mean": 191.73126760870218,
+          "median": 190.97962137311697,
+          "p95": 207.3298478499055
+        },
+        "vision_encoder": {
+          "mean": 69.99730491638184,
+          "median": 68.69553756713867,
+          "p95": 81.74899291992188
+        }
+      },
+      "peak_allocated_mib": 7433.50048828125,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 379.0,
+          "median": 387.0,
+          "p95": 433
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 336.75,
+          "median": 345.0,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:with": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 4,
+      "latency_ms": {
+        "generation": {
+          "mean": 166.6926642647013,
+          "median": 168.02420397289097,
+          "p95": 183.54947213083506
+        },
+        "total": {
+          "mean": 192.19096307642758,
+          "median": 195.12358121573925,
+          "p95": 210.957202129066
+        },
+        "vision_encoder": {
+          "mean": 78.04493522644043,
+          "median": 81.12569427490234,
+          "p95": 85.06079864501953
+        }
+      },
+      "peak_allocated_mib": 7434.150390625,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 422.0,
+          "median": 433.0,
+          "p95": 435
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 379.5,
+          "median": 391.0,
+          "p95": 391
+        }
+      }
+    },
+    "subtype:vsr:within": {
+      "accuracy": 1.0,
+      "all_questions_per_image_accuracy": 1.0,
+      "examples": 3,
+      "latency_ms": {
+        "generation": {
+          "mean": 178.64367629711828,
+          "median": 185.26832107454538,
+          "p95": 194.19174920767546
+        },
+        "total": {
+          "mean": 206.64174932365617,
+          "median": 216.06929320842028,
+          "p95": 228.63865178078413
+        },
+        "vision_encoder": {
+          "mean": 81.85948816935222,
+          "median": 88.04863739013672,
+          "p95": 97.26742553710938
+        }
+      },
+      "peak_allocated_mib": 7465.71826171875,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 445.6666666666667,
+          "median": 502,
+          "p95": 527
+        },
+        "output": {
+          "mean": 3.0,
+          "median": 3,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 403.3333333333333,
+          "median": 460,
+          "p95": 484
+        }
+      }
+    },
+    "suite:controlled": {
+      "accuracy": 0.8857142857142857,
+      "all_questions_per_image_accuracy": 0.7692307692307693,
+      "examples": 280,
+      "latency_ms": {
+        "generation": {
+          "mean": 173.02628280428638,
+          "median": 168.00443059764802,
+          "p95": 195.26479206979275
+        },
+        "total": {
+          "mean": 202.1411891394694,
+          "median": 193.9687537960708,
+          "p95": 233.65801386535168
+        },
+        "vision_encoder": {
+          "mean": 77.06771992274693,
+          "median": 71.213134765625,
+          "p95": 97.8186264038086
+        }
+      },
+      "peak_allocated_mib": 7726.44921875,
+      "peak_reserved_mib": 8350.0,
+      "tokens": {
+        "input": {
+          "mean": 406.2392857142857,
+          "median": 388.0,
+          "p95": 526
+        },
+        "output": {
+          "mean": 2.982142857142857,
+          "median": 3.0,
+          "p95": 3
+        },
+        "visual": {
+          "mean": 363.37857142857143,
+          "median": 345.0,
+          "p95": 484
+        }
+      }
+    },
+    "suite:external": {
+      "accuracy": 0.8333333333333334,
+      "all_questions_per_image_accuracy": 0.8224442736356649,
+      "examples": 1500,
+      "latency_ms": {
+        "generation": {
+          "mean": 154.3563579833135,
+          "median": 150.23478399962187,
+          "p95": 206.12715696915984
+        },
+        "total": {
+          "mean": 177.4562180871144,
+          "median": 175.44587701559067,
+          "p95": 236.30893882364035
+        },
+        "vision_encoder": {
+          "mean": 71.70949245198568,
+          "median": 68.63137817382812,
+          "p95": 97.33427429199219
+        }
+      },
+      "peak_allocated_mib": 7641.818359375,
+      "peak_reserved_mib": 8432.0,
+      "tokens": {
+        "input": {
+          "mean": 376.74266666666665,
+          "median": 380.0,
+          "p95": 526
+        },
+        "output": {
+          "mean": 2.5866666666666664,
+          "median": 2.0,
+          "p95": 5
+        },
+        "visual": {
+          "mean": 337.9653333333333,
+          "median": 345.0,
+          "p95": 484
+        }
+      }
+    }
+  },
+  "overall": {
+    "accuracy": 0.8415730337078652,
+    "all_questions_per_image_accuracy": 0.8176100628930818,
+    "examples": 1780,
+    "latency_ms": {
+      "generation": {
+        "mean": 157.2932000899834,
+        "median": 154.41357879899442,
+        "p95": 203.4242250956595
+      },
+      "total": {
+        "mean": 181.33924724141744,
+        "median": 178.6647797562182,
+        "p95": 235.2680223993957
+      },
+      "vision_encoder": {
+        "mean": 72.55235969457733,
+        "median": 70.00127792358398,
+        "p95": 97.48684692382812
+      }
+    },
+    "peak_allocated_mib": 7726.44921875,
+    "peak_reserved_mib": 8432.0,
+    "tokens": {
+      "input": {
+        "mean": 381.3825842696629,
+        "median": 380.0,
+        "p95": 526
+      },
+      "output": {
+        "mean": 2.648876404494382,
+        "median": 3.0,
+        "p95": 4
+      },
+      "visual": {
+        "mean": 341.9629213483146,
+        "median": 345.0,
+        "p95": 484
+      }
+    }
+  }
+}

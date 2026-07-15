@@ -43,8 +43,12 @@ behavioral recovery.
 9. Completed interaction-aware K8 beam search and pairwise interaction mapping on development data.
 10. Froze, committed, and ran four external conditions: full, generic K8, conditional K8, and
     conditional K4. All 5,000 predictions are retained off-instance.
-11. Reviewed eight closely related pruning papers. Existing work includes generic VLM pruning and
-   task-specific encoder pruning, so novelty cannot rest on claiming either concept is new.
+11. Reviewed 18 closely related pruning papers, including ten full additional papers on dynamic
+    visual computation, token pruning, transition metrics, and evolutionary VLM pruning. Generic
+    evolutionary pruning and task/sample routing already exist, so neither is sufficient novelty.
+12. Frozen a source-balanced, no-fine-tuning route-search protocol for K4, K6, and K8 before
+    candidate inference. The 904-row development split is search-only; the image-disjoint 876-row
+    test split is method-selection-only. The consumed external set is excluded from the pipeline.
 
 ## Main Experimental Results
 
@@ -171,6 +175,14 @@ poorly; they do not show that the bridge itself is effective.
 
 Do not tune any route against the external outcomes and do not rerun the already completed
 independent K8/K12/K16 or Phase 3 searches as if they were new evidence.
+
+The active experiment now searches one generic and five capability-specific route families at
+each of K4, K6, and K8. Evolution uses source-balanced paired accuracy drops, worst-source loss,
+source variability, and task collateral damage. The search is fixed to 16 routes, three evaluated
+generations, and three seeds; Pareto selection advances two development finalists per seed and
+three candidates to method selection. The complete 1,780-row unpruned baseline is cached: accuracy
+is 84.62% on search and 83.68% on selection. These partitions were used in earlier discovery, so
+the result can select a method but cannot replace a new sealed source-transfer evaluation.
 
 The next research stage should test whether the observed heterogeneity is reproducible rather than
 searching harder on this test set:

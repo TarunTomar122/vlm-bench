@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "status": "frozen before robust route search",
+  "seed": 20260715,
+  "model_config": "configs/baseline_qwen25_vl_3b.json",
+  "baseline_predictions": "results/robust-route-search-qwen25-vl-3b/baseline/predictions.jsonl",
+  "output_dir": "results/robust-route-search-qwen25-vl-3b",
+  "data": {
+    "root": "data/processed-v2",
+    "manifest": "data/processed-v2/manifests/all.jsonl",
+    "manifest_sha256": "ec3712d74a43caf8dd3d1818788ee0a92bc82e7aa597d640b00f089c6ed357c8",
+    "expected_examples": 1780,
+    "expected_images": 1431,
+    "prepared_dir": "data/processed-v2/robust-route-search/prepared",
+    "search_source_split": "development",
+    "selection_source_split": "test",
+    "partition_policy": "preserve the existing image-disjoint source split without resampling",
+    "selection_fraction": 0.4856743535988819,
+    "selection_fraction_basis": "observed unique-image fraction from the preserved test split; not a resampling target",
+    "selection_example_fraction": 0.49213483146067416,
+    "selection_status": "method-selection evidence only; both source splits were used by earlier single-block discovery"
+  },
+  "priors": {
+    "sensitivity": "results/task-route-design-qwen25-vl-3b/sensitivity.json",
+    "routes": "results/task-route-design-qwen25-vl-3b/routes.json",
+    "phase3_root": "results/phase3-interaction-search-qwen25-vl-3b"
+  },
+  "cache": {
+    "reuse_phase3": true,
+    "identity": "model config + baseline + source manifest + prepared manifests + priors"
+  },
+  "route": {
+    "operation": "replace each selected vision transformer block with the identity",
+    "k_values": [
+      4,
+      6,
+      8
+    ],
+    "fine_tuning": "none"
+  },
+  "scouts": {
+    "source_split": "development",
+    "generic_images_per_capability_source": 8,
+    "generic_max_capability_source_strata": 10,
+    "generic_max_images_before_cross_stratum_deduplication": 80,
+    "task_target_images_per_source": 6,
+    "task_collateral_images_per_non_target_stratum": 1,
+    "task_max_images_before_cross_stratum_deduplication": 20,
+    "development_evaluation_max_images_per_capability_source": 24,
+    "selection": "seeded SHA-256 ordering within capability+source strata with exact quota balancing; retain every search row in each selected global image group"
+  },
+  "optimizer": {
+    "algorithm": "seeded evolutionary subset search",
+    "population_size": 16,
+    "generations": 3,
+    "generation_count_includes_initial_population": true,
+    "development_finalists_per_seed": 2,
+    "selection_finalists": 3,
+    "seeds": [
+      20260715,
+      20260716,
+      20260717
+    ],
+    "evolution_selection": "Pareto front, NSGA-II crowding distance, frozen scalar selection score, then lexicographic route order",
+    "deduplicate_routes": true,
+    "tie_break": "lexicographically sorted block indices"
+  },
+  "objectives": {
+    "generic": {
+      "direction": "minimize",
+      "scalar_loss": "0.50 * mean_drop_pp + 0.30 * worst_source_drop_pp + 0.20 * source_variability_pp",
+      "weights": {
+        "mean_drop_pp": 0.5,
+        "worst_source_drop_pp": 0.3,
+        "source_variability_pp": 0.2
+      },
+      "scope": "all capabilities and sources"
+    },
+    "task": {
+      "direction": "minimize",
+      "scalar_loss": "0.45 * mean_drop_pp + 0.30 * worst_source_drop_pp + 0.15 * collateral_drop_pp + 0.10 * source_variability_pp",
+      "weights": {
+        "mean_drop_pp": 0.45,
+        "worst_source_drop_pp": 0.3,
+        "collateral_drop_pp": 0.15,
+        "source_variability_pp": 0.1
+      }
+    },
+    "paired_reference": "full-model predictions on the identical examples",
+    "failed_or_malformed_generations": "count as incorrect"
+  },
+  "selection": {
+    "candidate_pool": "deduplicate two development finalists from each of three seeds and evaluate all six on prepared/development-evaluation.jsonl, then advance at most three finalists per objective and K",
+    "development_ranking": "the matching frozen scalar loss on prepared/development-evaluation.jsonl",
+    "ranking": "the matching frozen scalar loss on prepared/selection.jsonl",
+    "final_tie_break": "lexicographically sorted block indices",
+    "reuse_across_k": false
+  },
+  "runtime": {
+    "prepared_scout_rows": {
+      "generic": 133,
+      "task_by_capability": {
+        "attribute": 33,
+        "counting": 32,
+        "object": 38,
+        "ocr": 32,
+        "spatial": 32
+      },
+      "task_total": 167,
+      "development_evaluation": 300
+    },
+    "approximate_scout_predictions_before_cache_reuse": 129600,
+    "scout_prediction_formula": "3 K values * 3 seeds * 16 population * 3 evaluated generations * (133 generic rows + 167 task rows)",
+    "approximate_development_finalist_predictions_before_cache_reuse": 32400,
+    "development_finalist_prediction_formula": "3 K values * 6 route families * 6 development finalists * 300 development-evaluation rows",
+    "approximate_selection_predictions_before_cache_reuse": 47304,
+    "selection_prediction_formula": "3 K values * 6 route families * 3 selection finalists * 876 selection rows",
+    "approximate_new_route_predictions_before_cache_reuse": 209304,
+    "approximate_sequential_gpu_hours": 13,
+    "approximate_two_family_worker_wall_hours": 7,
+    "estimate_scope": "route candidates and finalists only; excludes cached predictions, matched controls, full-model references, retries, and audit"
+  },
+  "baselines": {
+    "same_k_required": [
+      "generic independent single-block ranking",
+      "capability-conditional independent single-block ranking",
+      "least-damaging contiguous route",
+      "three deterministic random routes"
+    ],
+    "unpruned_full_model": "accuracy reference only; not a same-compute route"
+  },
+  "external_benchmark": {
+    "manifest": "data/external-heldout-v1/manifests/heldout.jsonl",
+    "status": "consumed; audit-only",
+    "allowed_use": "descriptive post-freeze audit of already frozen routes",
+    "forbidden_use": "route, finalist, K, objective, prompt, decoding, scoring, or hyperparameter selection"
+  }
+}

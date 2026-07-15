@@ -1,0 +1,42 @@
+{
+  "attribute_per_capability": 300,
+  "counts_by_capability": {
+    "attribute": 360,
+    "counting": 360,
+    "object": 360,
+    "ocr": 340,
+    "spatial": 360
+  },
+  "counts_by_source": {
+    "mme": 280,
+    "ocrbench": 300,
+    "pope": 300,
+    "tallyqa": 300,
+    "vqav2_color": 300,
+    "vsr": 300
+  },
+  "counts_by_split": {
+    "development": 904,
+    "test": 876
+  },
+  "counts_by_suite": {
+    "controlled": 280,
+    "external": 1500
+  },
+  "external_per_capability": 300,
+  "manifest_sha256": "ec3712d74a43caf8dd3d1818788ee0a92bc82e7aa597d640b00f089c6ed357c8",
+  "seed": 20260713,
+  "source_revisions": {
+    "cambridgeltl/vsr_random": "b2053328fafdd018ff56cf1dfa9643caaa4e69b8",
+    "echo840/OCRBench": "92a54bd1384387c178d5a07140a2d85e0a3d12e1",
+    "lmms-lab/MME": "d6c9023f017b564f7b3ccccf5348166bce8fdbcd",
+    "lmms-lab/POPE": "4db1276663dfa5eb8ad16a52d24c31a09e470896",
+    "vikhyatk/tallyqa-test": "2636200d9845bf54d545ed9e66b2957532c5bf13",
+    "vqav2_annotations_sha256": "0caae7c8d1dafd852727f5ac046bc1efca9b72026bd6ffa34fc489f3a7b3291e",
+    "vqav2_annotations_url": "https://s3.amazonaws.com/cvmlp/vqa/mscoco/vqa/v2_Annotations_Val_mscoco.zip",
+    "vqav2_questions_sha256": "e71f6c5c3e97a51d050f28243e262b28cd0c48d11a6b4632d769d30d3f93222a",
+    "vqav2_questions_url": "https://s3.amazonaws.com/cvmlp/vqa/mscoco/vqa/v2_Questions_Val_mscoco.zip"
+  },
+  "total_examples": 1780,
+  "unique_images": 1431
+}

@@ -1,0 +1,21 @@
+{
+  "image_overlap": 0,
+  "search_counts": {
+    "attribute": 100,
+    "counting": 100,
+    "object": 100,
+    "ocr": 100,
+    "spatial": 100
+  },
+  "search_examples": 500,
+  "seed": 20260714,
+  "source_manifest": "/home/ubuntu/vlm-bench/data/processed-v2/manifests/development.jsonl",
+  "validation_counts": {
+    "attribute": 94,
+    "counting": 79,
+    "object": 67,
+    "ocr": 85,
+    "spatial": 79
+  },
+  "validation_examples": 404
+}
