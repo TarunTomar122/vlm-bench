@@ -1,0 +1,13 @@
+{
+  "completed_candidates": {
+    "development": 15,
+    "scout": 240,
+    "selection": 9
+  },
+  "current": {
+    "status": "complete"
+  },
+  "family": "generic",
+  "status": "complete",
+  "updated_at": "2026-07-15T17:51:53.676319+00:00"
+}

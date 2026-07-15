@@ -1,0 +1,5 @@
+{
+  "baseline": "results/baseline-qwen25-vl-3b/summary.json",
+  "external_analysis": "results/external-frozen-qwen25-vl-3b/analysis.json",
+  "robust_analysis": "results/robust-route-search-qwen25-vl-3b/analysis/analysis.json"
+}

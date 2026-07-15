@@ -47,6 +47,25 @@ standard image VLM on edge-relevant hardware.
 
 Use "underexplored" rather than "never studied" until a complete systematic review is finished.
 
+## Positioning After The Completed Route Search
+
+The completed Qwen2.5-VL-3B search changes the immediate claim. On the image-disjoint
+method-selection split, source-aware capability routes do **not** show a clear aggregate advantage
+at K4 or K8. K6 has a narrow positive signal: the conditional policy is +2.17 percentage points
+over the evolved generic route, with OCR +7.10 points and a paired 95% interval of [0.65, 14.19].
+The selection split had contributed to earlier one-block discovery, so this is not fresh
+source-transfer evidence.
+
+The next defensible research question is therefore not "can a learned router be deployed?" It is:
+**does a frozen, source-balanced route-selection rule reproduce the K6/OCR effect on a newly
+sealed source family and a second VLM?** A negative replication would still be useful: it would
+show that apparent capability pathways are source- or architecture-dependent rather than stable
+compression structure.
+
+Only after this replication should a learned task router be compared with the frozen generic route
+at matched K and fixed-clock latency. Token pruning or decoder compression should remain separate
+ablations until the contribution of block routing is isolated.
+
 ## Required Baselines
 
 Any final comparison should include:

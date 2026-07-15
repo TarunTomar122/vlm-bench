@@ -26,6 +26,14 @@ features numerically closer to the full model, but generally did not recover cor
 is useful negative evidence: final-boundary feature similarity is not an adequate proxy for
 behavioral recovery.
 
+The completed source-aware route search adds a more controlled method-selection result. At matched
+K6, the evolved capability-conditional policy scored 81.28% versus 79.11% for the evolved generic
+route: a +2.17 point paired advantage with a 95% interval of [0.00, 4.34]. OCR accounts for the
+only capability-level interval excluding zero at this budget: +7.10 points [0.65, 14.19]. K4
+(+0.11 [-1.83, 2.05]) and K8 (+0.68 [-1.71, 3.08]) have no clear overall task-policy advantage.
+This is image-disjoint method-selection evidence only, since both partitions informed prior
+single-block discovery; it is not a replacement for a fresh sealed source-transfer evaluation.
+
 ## What Has Been Completed
 
 1. Built a five-capability benchmark for attribute/color, counting, object existence, OCR, and
@@ -49,6 +57,9 @@ behavioral recovery.
 12. Frozen a source-balanced, no-fine-tuning route-search protocol for K4, K6, and K8 before
     candidate inference. The 904-row development split is search-only; the image-disjoint 876-row
     test split is method-selection-only. The consumed external set is excluded from the pipeline.
+13. Completed all six route families, froze their selected routes, evaluated 18 matched-K controls,
+    and generated a compact analysis plus a static day-0-to-current research report. Raw prediction
+    caches are backed up off-instance and remain excluded from Git.
 
 ## Main Experimental Results
 
@@ -125,6 +136,27 @@ of [-3.60, 0.96]. Spatial was the only clear task-K8 win: +6.40 points [1.60, 11
 therefore supports capability-dependent differences but rejects a universal claim that the current
 task-route selection method beats generic pruning.
 
+### Completed Source-Aware Matched-K Search
+
+This final no-fine-tuning experiment fixed search budgets, source-balanced objectives, seeds,
+selection rules, and K values before route inference. It searched one generic and five
+capability-specific route families at each K on 904 search rows, then selected among frozen
+finalists on 876 image-disjoint method-selection rows. Every row was paired with the same full
+model prediction. Eighteen same-K controls were also evaluated: generic independent ranking,
+task independent ranking, contiguous deletion, and three deterministic random routes at each K.
+
+| K | Full | Evolved generic | Evolved task policy | Task minus generic | Paired 95% interval | Best confirmed capability effect |
+|---:|---:|---:|---:|---:|---:|---|
+| 4 | 83.68% | 81.28% | 81.39% | +0.11 pp | [-1.83, 2.05] | None |
+| 6 | 83.68% | 79.11% | 81.28% | +2.17 pp | [0.00, 4.34] | OCR +7.10 pp [0.65, 14.19] |
+| 8 | 83.68% | 75.91% | 76.60% | +0.68 pp | [-1.71, 3.08] | None |
+
+The evolved routes beat their independent and contiguous controls at every tested K, confirming
+that route interactions matter. This does **not** establish that a capability router generalizes:
+the selection split was image-disjoint but was exposed during earlier single-block discovery. The
+already-consumed 1,250-row external benchmark was never accessed by this search, control, or
+analysis pipeline.
+
 ### Phase 2 Feature Repair
 
 Phase 2 used 200 image-disjoint calibration examples and 704 development evaluation examples. It
@@ -170,19 +202,22 @@ poorly; they do not show that the bridge itself is effective.
 6. The current evidence is a credible negative/diagnostic result, not yet a complete paper. It
    comes from one model, one GPU, identity removal only, and no physical compact checkpoint or
    edge-device test.
+7. The best new signal is narrow: source-balanced K6 task routing improves the method-selection
+   split primarily through OCR, while K4 and K8 do not show a clear overall conditional advantage.
+   This needs replication on a fresh source family and a second model before it becomes a paper
+   claim.
 
 ## Current Research Decision
 
-Do not tune any route against the external outcomes and do not rerun the already completed
-independent K8/K12/K16 or Phase 3 searches as if they were new evidence.
+Do not tune any route against the consumed external outcomes or the completed 876-row
+method-selection outcomes. Do not rerun the already completed independent K8/K12/K16 or Phase 3
+searches as if they were new evidence.
 
-The active experiment now searches one generic and five capability-specific route families at
-each of K4, K6, and K8. Evolution uses source-balanced paired accuracy drops, worst-source loss,
-source variability, and task collateral damage. The search is fixed to 16 routes, three evaluated
-generations, and three seeds; Pareto selection advances two development finalists per seed and
-three candidates to method selection. The complete 1,780-row unpruned baseline is cached: accuracy
-is 84.62% on search and 83.68% on selection. These partitions were used in earlier discovery, so
-the result can select a method but cannot replace a new sealed source-transfer evaluation.
+The robust source-aware experiment is complete. Its strongest result is a K6 OCR-sensitive signal,
+not proof of a generally useful task router. The next experiment must freeze the route-selection
+rule and test it on a genuinely new source family, then repeat the same protocol on a second VLM.
+Only after that replication should we consider a lightweight task router or combine block routing
+with token pruning/decoder compression.
 
 The next research stage should test whether the observed heterogeneity is reproducible rather than
 searching harder on this test set:

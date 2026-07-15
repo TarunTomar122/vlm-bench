@@ -193,6 +193,11 @@ configuration, and dataset-manifest hash.
   only clear matched-K8 task win at +6.40 points [1.60, 11.20].
 - Task K4 scored 68.08% and preserved OCR and spatial better than generic K8, but that comparison
   uses different pruning budgets and is not evidence of matched-compute superiority.
+- The completed source-aware matched-K search found no clear overall conditional advantage at K4
+  (+0.11 pp, 95% interval [-1.83, 2.05]) or K8 (+0.68 pp, [-1.71, 3.08]). At K6, the evolved
+  capability policy beat the evolved generic route by +2.17 pp [0.00, 4.34], driven by OCR
+  (+7.10 pp [0.65, 14.19]). This remains image-disjoint method-selection evidence, not a sealed
+  source-transfer result.
 
 ## Detailed Documentation
 
@@ -210,5 +215,7 @@ configuration, and dataset-manifest hash.
 - [Phase 2 feature-gap results](results/phase2-feature-gap-qwen25-vl-3b/analysis/README.md)
 - [Phase 3 interaction-search protocol](docs/phase3_interaction_search_protocol.md)
 - [Source-aware robust route-search protocol](docs/robust_route_search_protocol.md)
+- [Matched-K robust route-search results](results/robust-route-search-qwen25-vl-3b/analysis/README.md)
+- [Static research report](results/robust-route-search-qwen25-vl-3b/site/index.html)
 - [External held-out protocol](docs/external_heldout_protocol.md)
 - [Frozen external evaluation](results/external-frozen-qwen25-vl-3b/README.md)

@@ -1,0 +1,778 @@
+{
+  "budgets": {
+    "4": {
+      "development_finalists": [
+        {
+          "blocks": [
+            5,
+            9,
+            25,
+            28
+          ],
+          "objective": {
+            "collateral_drop_pp": -0.011638293400588473,
+            "kind": "task",
+            "mean_drop_pp": -2.0833333333333313,
+            "objective_vector": [
+              -2.0833333333333313,
+              8.333333333333337,
+              -0.011638293400588473,
+              10.416666666666668
+            ],
+            "selection_score": 2.602420922656581,
+            "source_variability_pp": 10.416666666666668,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 8.333333333333337
+          }
+        },
+        {
+          "blocks": [
+            4,
+            5,
+            9,
+            20
+          ],
+          "objective": {
+            "collateral_drop_pp": 2.4798891340899534,
+            "kind": "task",
+            "mean_drop_pp": 8.333333333333337,
+            "objective_vector": [
+              8.333333333333337,
+              12.5,
+              2.4798891340899534,
+              4.1666666666666625
+            ],
+            "selection_score": 8.288650036780162,
+            "source_variability_pp": 4.1666666666666625,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 12.5
+          }
+        },
+        {
+          "blocks": [
+            5,
+            6,
+            24,
+            28
+          ],
+          "objective": {
+            "collateral_drop_pp": 1.6810503362757467,
+            "kind": "task",
+            "mean_drop_pp": 10.416666666666668,
+            "objective_vector": [
+              10.416666666666668,
+              25.0,
+              1.6810503362757467,
+              14.583333333333332
+            ],
+            "selection_score": 13.897990883774696,
+            "source_variability_pp": 14.583333333333332,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 25.0
+          }
+        },
+        {
+          "blocks": [
+            3,
+            5,
+            9,
+            28
+          ],
+          "objective": {
+            "collateral_drop_pp": 3.493474336455893,
+            "kind": "task",
+            "mean_drop_pp": 12.500000000000007,
+            "objective_vector": [
+              12.500000000000007,
+              29.166666666666675,
+              3.493474336455893,
+              16.666666666666668
+            ],
+            "selection_score": 16.565687817135057,
+            "source_variability_pp": 16.666666666666668,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 29.166666666666675
+          }
+        }
+      ],
+      "frozen_route": {
+        "blocks": [
+          5,
+          9,
+          25,
+          28
+        ],
+        "objective": {
+          "collateral_drop_pp": -0.6636017738394908,
+          "kind": "task",
+          "mean_drop_pp": 4.67625899280576,
+          "objective_vector": [
+            4.67625899280576,
+            9.35251798561152,
+            -0.6636017738394908,
+            4.67625899280576
+          ],
+          "selection_score": 5.278157575650701,
+          "source_variability_pp": 4.67625899280576,
+          "target_capability": "ocr",
+          "worst_source_drop_pp": 9.35251798561152
+        }
+      },
+      "seed_development_winners": [
+        [
+          5,
+          6,
+          24,
+          28
+        ],
+        [
+          5,
+          9,
+          25,
+          28
+        ],
+        [
+          5,
+          9,
+          25,
+          28
+        ]
+      ],
+      "seed_route_stability_jaccard": 0.5555555555555555,
+      "selection_candidates": [
+        {
+          "blocks": [
+            5,
+            9,
+            25,
+            28
+          ],
+          "objective": {
+            "collateral_drop_pp": -0.6636017738394908,
+            "kind": "task",
+            "mean_drop_pp": 4.67625899280576,
+            "objective_vector": [
+              4.67625899280576,
+              9.35251798561152,
+              -0.6636017738394908,
+              4.67625899280576
+            ],
+            "selection_score": 5.278157575650701,
+            "source_variability_pp": 4.67625899280576,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 9.35251798561152
+          }
+        },
+        {
+          "blocks": [
+            4,
+            5,
+            9,
+            20
+          ],
+          "objective": {
+            "collateral_drop_pp": 1.1583123629986245,
+            "kind": "task",
+            "mean_drop_pp": 3.7095323741007213,
+            "objective_vector": [
+              3.7095323741007213,
+              13.669064748201443,
+              1.1583123629986245,
+              9.959532374100721
+            ],
+            "selection_score": 6.9397090846656235,
+            "source_variability_pp": 9.959532374100721,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 13.669064748201443
+          }
+        },
+        {
+          "blocks": [
+            5,
+            6,
+            24,
+            28
+          ],
+          "objective": {
+            "collateral_drop_pp": 2.000346069635908,
+            "kind": "task",
+            "mean_drop_pp": 6.834532374100721,
+            "objective_vector": [
+              6.834532374100721,
+              13.669064748201443,
+              2.000346069635908,
+              6.834532374100721
+            ],
+            "selection_score": 8.159764140661217,
+            "source_variability_pp": 6.834532374100721,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 13.669064748201443
+          }
+        }
+      ]
+    },
+    "6": {
+      "development_finalists": [
+        {
+          "blocks": [
+            4,
+            5,
+            9,
+            26,
+            27,
+            28
+          ],
+          "objective": {
+            "collateral_drop_pp": 3.481491698192518,
+            "kind": "task",
+            "mean_drop_pp": 4.166666666666675,
+            "objective_vector": [
+              4.166666666666675,
+              16.666666666666675,
+              3.481491698192518,
+              12.5
+            ],
+            "selection_score": 8.647223754728884,
+            "source_variability_pp": 12.5,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 16.666666666666675
+          }
+        },
+        {
+          "blocks": [
+            4,
+            5,
+            9,
+            25,
+            28,
+            29
+          ],
+          "objective": {
+            "collateral_drop_pp": 3.6848850432354543,
+            "kind": "task",
+            "mean_drop_pp": 12.500000000000005,
+            "objective_vector": [
+              12.500000000000005,
+              20.833333333333336,
+              3.6848850432354543,
+              8.33333333333333
+            ],
+            "selection_score": 13.261066089818655,
+            "source_variability_pp": 8.33333333333333,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 20.833333333333336
+          }
+        },
+        {
+          "blocks": [
+            4,
+            5,
+            9,
+            21,
+            25,
+            27
+          ],
+          "objective": {
+            "collateral_drop_pp": 4.508678053503873,
+            "kind": "task",
+            "mean_drop_pp": 14.583333333333337,
+            "objective_vector": [
+              14.583333333333337,
+              25.0,
+              4.508678053503873,
+              10.416666666666663
+            ],
+            "selection_score": 15.78046837469225,
+            "source_variability_pp": 10.416666666666663,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 25.0
+          }
+        },
+        {
+          "blocks": [
+            3,
+            4,
+            8,
+            9,
+            26,
+            28
+          ],
+          "objective": {
+            "collateral_drop_pp": 7.85860843391581,
+            "kind": "task",
+            "mean_drop_pp": 22.916666666666668,
+            "objective_vector": [
+              22.916666666666668,
+              45.833333333333336,
+              7.85860843391581,
+              22.916666666666668
+            ],
+            "selection_score": 27.53295793175404,
+            "source_variability_pp": 22.916666666666668,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 45.833333333333336
+          }
+        }
+      ],
+      "frozen_route": {
+        "blocks": [
+          4,
+          5,
+          9,
+          26,
+          27,
+          28
+        ],
+        "objective": {
+          "collateral_drop_pp": 1.2423454995906635,
+          "kind": "task",
+          "mean_drop_pp": -0.1348920863309342,
+          "objective_vector": [
+            -0.1348920863309342,
+            12.230215827338132,
+            1.2423454995906635,
+            12.365107913669066
+          ],
+          "selection_score": 5.031225925658025,
+          "source_variability_pp": 12.365107913669066,
+          "target_capability": "ocr",
+          "worst_source_drop_pp": 12.230215827338132
+        }
+      },
+      "seed_development_winners": [
+        [
+          4,
+          5,
+          9,
+          26,
+          27,
+          28
+        ],
+        [
+          4,
+          5,
+          9,
+          26,
+          27,
+          28
+        ],
+        [
+          4,
+          5,
+          9,
+          26,
+          27,
+          28
+        ]
+      ],
+      "seed_route_stability_jaccard": 1.0,
+      "selection_candidates": [
+        {
+          "blocks": [
+            4,
+            5,
+            9,
+            26,
+            27,
+            28
+          ],
+          "objective": {
+            "collateral_drop_pp": 1.2423454995906635,
+            "kind": "task",
+            "mean_drop_pp": -0.1348920863309342,
+            "objective_vector": [
+              -0.1348920863309342,
+              12.230215827338132,
+              1.2423454995906635,
+              12.365107913669066
+            ],
+            "selection_score": 5.031225925658025,
+            "source_variability_pp": 12.365107913669066,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 12.230215827338132
+          }
+        },
+        {
+          "blocks": [
+            4,
+            5,
+            9,
+            25,
+            28,
+            29
+          ],
+          "objective": {
+            "collateral_drop_pp": 1.4311721244921554,
+            "kind": "task",
+            "mean_drop_pp": 2.742805755395688,
+            "objective_vector": [
+              2.742805755395688,
+              17.985611510791376,
+              1.4311721244921554,
+              15.242805755395688
+            ],
+            "selection_score": 8.368902437378864,
+            "source_variability_pp": 15.242805755395688,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 17.985611510791376
+          }
+        },
+        {
+          "blocks": [
+            4,
+            5,
+            9,
+            21,
+            25,
+            27
+          ],
+          "objective": {
+            "collateral_drop_pp": 1.6403987368218367,
+            "kind": "task",
+            "mean_drop_pp": 8.026079136690651,
+            "objective_vector": [
+              8.026079136690651,
+              22.302158273381302,
+              1.6403987368218367,
+              14.276079136690651
+            ],
+            "selection_score": 11.976050817717526,
+            "source_variability_pp": 14.276079136690651,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 22.302158273381302
+          }
+        }
+      ]
+    },
+    "8": {
+      "development_finalists": [
+        {
+          "blocks": [
+            4,
+            5,
+            6,
+            9,
+            25,
+            26,
+            27,
+            28
+          ],
+          "objective": {
+            "collateral_drop_pp": 9.85397150663544,
+            "kind": "task",
+            "mean_drop_pp": 14.583333333333337,
+            "objective_vector": [
+              14.583333333333337,
+              29.166666666666675,
+              9.85397150663544,
+              14.583333333333337
+            ],
+            "selection_score": 18.248929059328656,
+            "source_variability_pp": 14.583333333333337,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 29.166666666666675
+          }
+        },
+        {
+          "blocks": [
+            4,
+            5,
+            9,
+            11,
+            20,
+            26,
+            27,
+            28
+          ],
+          "objective": {
+            "collateral_drop_pp": 7.6281619678136074,
+            "kind": "task",
+            "mean_drop_pp": 18.750000000000004,
+            "objective_vector": [
+              18.750000000000004,
+              33.333333333333336,
+              7.6281619678136074,
+              14.58333333333333
+            ],
+            "selection_score": 21.04005762850538,
+            "source_variability_pp": 14.58333333333333,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 33.333333333333336
+          }
+        },
+        {
+          "blocks": [
+            4,
+            5,
+            9,
+            11,
+            25,
+            26,
+            27,
+            28
+          ],
+          "objective": {
+            "collateral_drop_pp": 7.834702268360054,
+            "kind": "task",
+            "mean_drop_pp": 20.833333333333336,
+            "objective_vector": [
+              20.833333333333336,
+              33.333333333333336,
+              7.834702268360054,
+              12.5
+            ],
+            "selection_score": 21.80020534025401,
+            "source_variability_pp": 12.5,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 33.333333333333336
+          }
+        },
+        {
+          "blocks": [
+            5,
+            6,
+            8,
+            11,
+            22,
+            25,
+            28,
+            29
+          ],
+          "objective": {
+            "collateral_drop_pp": 8.436484792529875,
+            "kind": "task",
+            "mean_drop_pp": 25.0,
+            "objective_vector": [
+              25.0,
+              50.0,
+              8.436484792529875,
+              25.0
+            ],
+            "selection_score": 30.015472718879483,
+            "source_variability_pp": 25.0,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 50.0
+          }
+        },
+        {
+          "blocks": [
+            2,
+            4,
+            5,
+            6,
+            9,
+            25,
+            26,
+            28
+          ],
+          "objective": {
+            "collateral_drop_pp": 10.58094262295082,
+            "kind": "task",
+            "mean_drop_pp": 27.083333333333336,
+            "objective_vector": [
+              27.083333333333336,
+              50.0,
+              10.58094262295082,
+              22.916666666666664
+            ],
+            "selection_score": 31.06630806010929,
+            "source_variability_pp": 22.916666666666664,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 50.0
+          }
+        }
+      ],
+      "frozen_route": {
+        "blocks": [
+          4,
+          5,
+          9,
+          11,
+          25,
+          26,
+          27,
+          28
+        ],
+        "objective": {
+          "collateral_drop_pp": 3.008731025270814,
+          "kind": "task",
+          "mean_drop_pp": 12.589928057553962,
+          "objective_vector": [
+            12.589928057553962,
+            25.179856115107924,
+            3.008731025270814,
+            12.589928057553962
+          ],
+          "selection_score": 14.929726919977679,
+          "source_variability_pp": 12.589928057553962,
+          "target_capability": "ocr",
+          "worst_source_drop_pp": 25.179856115107924
+        }
+      },
+      "seed_development_winners": [
+        [
+          4,
+          5,
+          6,
+          9,
+          25,
+          26,
+          27,
+          28
+        ],
+        [
+          4,
+          5,
+          9,
+          11,
+          20,
+          26,
+          27,
+          28
+        ],
+        [
+          4,
+          5,
+          6,
+          9,
+          25,
+          26,
+          27,
+          28
+        ]
+      ],
+      "seed_route_stability_jaccard": 0.7333333333333334,
+      "selection_candidates": [
+        {
+          "blocks": [
+            4,
+            5,
+            9,
+            11,
+            25,
+            26,
+            27,
+            28
+          ],
+          "objective": {
+            "collateral_drop_pp": 3.008731025270814,
+            "kind": "task",
+            "mean_drop_pp": 12.589928057553962,
+            "objective_vector": [
+              12.589928057553962,
+              25.179856115107924,
+              3.008731025270814,
+              12.589928057553962
+            ],
+            "selection_score": 14.929726919977679,
+            "source_variability_pp": 12.589928057553962,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 25.179856115107924
+          }
+        },
+        {
+          "blocks": [
+            4,
+            5,
+            9,
+            11,
+            20,
+            26,
+            27,
+            28
+          ],
+          "objective": {
+            "collateral_drop_pp": 2.5715743080928695,
+            "kind": "task",
+            "mean_drop_pp": 13.309352517985612,
+            "objective_vector": [
+              13.309352517985612,
+              26.618705035971225,
+              2.5715743080928695,
+              13.309352517985612
+            ],
+            "selection_score": 15.691491541897385,
+            "source_variability_pp": 13.309352517985612,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 26.618705035971225
+          }
+        },
+        {
+          "blocks": [
+            4,
+            5,
+            6,
+            9,
+            25,
+            26,
+            27,
+            28
+          ],
+          "objective": {
+            "collateral_drop_pp": 5.548209491074195,
+            "kind": "task",
+            "mean_drop_pp": 15.355215827338132,
+            "objective_vector": [
+              15.355215827338132,
+              24.460431654676263,
+              5.548209491074195,
+              9.105215827338132
+            ],
+            "selection_score": 15.99072962509998,
+            "source_variability_pp": 9.105215827338132,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 24.460431654676263
+          }
+        }
+      ]
+    }
+  },
+  "evidence_status": "processed-v2 method-selection evidence; not sealed external-heldout evidence",
+  "family": "ocr",
+  "input_hashes": {
+    "all_manifest": "ec3712d74a43caf8dd3d1818788ee0a92bc82e7aa597d640b00f089c6ed357c8",
+    "baseline_predictions": "f034fcda56c7d6bd00932c73742572c98b302d69c0b16984af91ccbbbc0aee67",
+    "model_config": "8bd5fe3cf68cdbd2305038a12e351c05e42f7f85eed31274b7cd180073f3f687",
+    "phase3_summaries": {
+      "pairwise_summary.json": "43133dae80437d01a457f0b3c1dc307d96e3de2ae0ba3f6fd48f299a7e761cc8",
+      "search_summary.json": "21f0901ea6f354131fe728d640bc3626b79fea238e051a8d1bfa8f50a6311813",
+      "validation_summary.json": "586f90c51ec62c7645890179ec889978e295d8ddb89f7a70affae2a1c2ce5bbb"
+    },
+    "prepared_manifests": {
+      "development": {
+        "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search/prepared/development-evaluation.jsonl",
+        "sha256": "baeb12ea431168c0ac1f6acd9d9612104bec5f269d39e2f54789af65d69faaae"
+      },
+      "scout": {
+        "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search/prepared/scout-task-ocr.jsonl",
+        "sha256": "0a50ac997490d3b80676988188e8ca29a9c2cbeeba8fe41e4ef39da200d65a95"
+      },
+      "selection": {
+        "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search/prepared/selection.jsonl",
+        "sha256": "343d7e7e85baf2cc1ed6f6d5b973f8a1d1b1edb1f243e594ffd410b27dba0f82"
+      }
+    },
+    "routes": "1ca8d3583c6eed93e0375dafc96f90984e8212730be5c2ebcb4be84f9fbfb67c",
+    "search_config": "41ba104f2d9df24b67d38e137377de1734e6ada9c7c5f1148c4d3e4afea0170f",
+    "sensitivity": "66b4d7f8317a791f9bab0a21d1f3741f11312ec8b43acf2402b0f9b813ae38b2"
+  },
+  "protocol": {
+    "budgets": [
+      4,
+      6,
+      8
+    ],
+    "development_finalists_per_seed": 2,
+    "generations": 3,
+    "population_size": 16,
+    "seeds": [
+      20260715,
+      20260716,
+      20260717
+    ],
+    "selection_finalists": 3
+  },
+  "schema_version": 1,
+  "status": "complete",
+  "updated_at": "2026-07-15T19:06:35.456419+00:00"
+}

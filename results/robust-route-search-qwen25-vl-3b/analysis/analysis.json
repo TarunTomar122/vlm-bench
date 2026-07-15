@@ -1,0 +1,2641 @@
+{
+  "budgets": {
+    "4": {
+      "comparisons": {
+        "evolved_generic_minus_generic_independent": {
+          "capabilities": {
+            "attribute": {
+              "ci95_high_pp": 3.0120481927710845,
+              "ci95_low_pp": -1.8072289156626504,
+              "examples": 166,
+              "mean_pp": 0.6024096385542169
+            },
+            "counting": {
+              "ci95_high_pp": 3.314917127071823,
+              "ci95_low_pp": -5.524861878453039,
+              "examples": 181,
+              "mean_pp": -1.1049723756906076
+            },
+            "object": {
+              "ci95_high_pp": 2.5906735751295336,
+              "ci95_low_pp": -4.66321243523316,
+              "examples": 193,
+              "mean_pp": -1.0362694300518136
+            },
+            "ocr": {
+              "ci95_high_pp": 12.258064516129032,
+              "ci95_low_pp": -0.6451612903225806,
+              "examples": 155,
+              "mean_pp": 5.806451612903226
+            },
+            "spatial": {
+              "ci95_high_pp": 6.077348066298343,
+              "ci95_low_pp": -2.7624309392265194,
+              "examples": 181,
+              "mean_pp": 1.6574585635359116
+            }
+          },
+          "overall": {
+            "ci95_high_pp": 2.968036529680365,
+            "ci95_low_pp": -0.7990867579908676,
+            "examples": 876,
+            "mean_pp": 1.0273972602739725
+          }
+        },
+        "evolved_task_minus_evolved_generic": {
+          "capabilities": {
+            "attribute": {
+              "ci95_high_pp": 3.0120481927710845,
+              "ci95_low_pp": -3.0120481927710845,
+              "examples": 166,
+              "mean_pp": 0.0
+            },
+            "counting": {
+              "ci95_high_pp": 4.972375690607735,
+              "ci95_low_pp": -4.972375690607735,
+              "examples": 181,
+              "mean_pp": 0.0
+            },
+            "object": {
+              "ci95_high_pp": 5.181347150259067,
+              "ci95_low_pp": -1.5544041450777202,
+              "examples": 193,
+              "mean_pp": 1.5544041450777202
+            },
+            "ocr": {
+              "ci95_high_pp": 4.516129032258064,
+              "ci95_low_pp": -7.096774193548387,
+              "examples": 155,
+              "mean_pp": -1.2903225806451613
+            },
+            "spatial": {
+              "ci95_high_pp": 4.41988950276243,
+              "ci95_low_pp": -4.41988950276243,
+              "examples": 181,
+              "mean_pp": 0.0
+            }
+          },
+          "overall": {
+            "ci95_high_pp": 2.054794520547945,
+            "ci95_low_pp": -1.82648401826484,
+            "examples": 876,
+            "mean_pp": 0.1141552511415525
+          }
+        },
+        "evolved_task_minus_task_independent": {
+          "capabilities": {
+            "attribute": {
+              "ci95_high_pp": 4.819277108433735,
+              "ci95_low_pp": -1.2048192771084338,
+              "examples": 166,
+              "mean_pp": 1.8072289156626504
+            },
+            "counting": {
+              "ci95_high_pp": 8.83977900552486,
+              "ci95_low_pp": -3.867403314917127,
+              "examples": 181,
+              "mean_pp": 2.209944751381215
+            },
+            "object": {
+              "ci95_high_pp": 5.181347150259067,
+              "ci95_low_pp": -2.072538860103627,
+              "examples": 193,
+              "mean_pp": 1.5544041450777202
+            },
+            "ocr": {
+              "ci95_high_pp": 1.935483870967742,
+              "ci95_low_pp": -9.032258064516128,
+              "examples": 155,
+              "mean_pp": -3.225806451612903
+            },
+            "spatial": {
+              "ci95_high_pp": 2.7624309392265194,
+              "ci95_low_pp": -7.18232044198895,
+              "examples": 181,
+              "mean_pp": -2.209944751381215
+            }
+          },
+          "overall": {
+            "ci95_high_pp": 2.28310502283105,
+            "ci95_low_pp": -2.054794520547945,
+            "examples": 876,
+            "mean_pp": 0.1141552511415525
+          }
+        }
+      },
+      "conditions": {
+        "contiguous": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.927710843373494,
+              "accuracy_drop_pp": 2.409638554216864,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.7348066298342542,
+              "accuracy_drop_pp": 1.6574585635359074,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.8756476683937824,
+              "accuracy_drop_pp": -1.0362694300518172,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.6516129032258065,
+              "accuracy_drop_pp": 15.48387096774193,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.7900552486187845,
+              "accuracy_drop_pp": 2.209944751381221,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.7990867579908676,
+            "accuracy_drop_pp": 3.767123287671237,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": 3.6451572293473666,
+            "selection_score": 7.887689655319451,
+            "source_variability_pp": 5.505411318336741,
+            "worst_source_drop_pp": 16.546762589928065
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.8623188405797102,
+              "accuracy_drop_pp": 2.898550724637672,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.6474820143884892,
+              "accuracy_drop_pp": 16.546762589928065,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.8545454545454545,
+              "accuracy_drop_pp": -0.6060606060605989,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.7006802721088435,
+              "accuracy_drop_pp": 2.0408163265306145,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.9420289855072463,
+              "accuracy_drop_pp": 2.1739130434782594,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.785234899328859,
+              "accuracy_drop_pp": 0.6711409395973145,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        },
+        "evolved-generic": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.9578313253012049,
+              "accuracy_drop_pp": -0.6024096385542244,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.7292817679558011,
+              "accuracy_drop_pp": 2.20994475138121,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.8497409326424871,
+              "accuracy_drop_pp": 1.5544041450777146,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.7354838709677419,
+              "accuracy_drop_pp": 7.096774193548383,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.7900552486187845,
+              "accuracy_drop_pp": 2.209944751381221,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.8127853881278538,
+            "accuracy_drop_pp": 2.3972602739726123,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": 1.6006483172644603,
+            "selection_score": 4.116350004551552,
+            "source_variability_pp": 4.709625632474296,
+            "worst_source_drop_pp": 7.913669064748207
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.8840579710144928,
+              "accuracy_drop_pp": 0.7246376811594124,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.7338129496402878,
+              "accuracy_drop_pp": 7.913669064748207,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.8363636363636363,
+              "accuracy_drop_pp": 1.21212121212122,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.7006802721088435,
+              "accuracy_drop_pp": 2.0408163265306145,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.9492753623188406,
+              "accuracy_drop_pp": 1.449275362318836,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.7785234899328859,
+              "accuracy_drop_pp": 1.342281879194629,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        },
+        "evolved-task": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.9578313253012049,
+              "accuracy_drop_pp": -0.6024096385542244,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.7292817679558011,
+              "accuracy_drop_pp": 2.20994475138121,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.8652849740932642,
+              "accuracy_drop_pp": 0.0,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.7225806451612903,
+              "accuracy_drop_pp": 8.387096774193548,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.7900552486187845,
+              "accuracy_drop_pp": 2.209944751381221,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.8139269406392694,
+            "accuracy_drop_pp": 2.2831050228310557,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": 1.0986764476737876,
+            "selection_score": 4.2223379783092545,
+            "source_variability_pp": 4.336221793944521,
+            "worst_source_drop_pp": 9.35251798561152
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.8985507246376812,
+              "accuracy_drop_pp": -0.7246376811594235,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.7194244604316546,
+              "accuracy_drop_pp": 9.35251798561152,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.8484848484848485,
+              "accuracy_drop_pp": 0.0,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.6870748299319728,
+              "accuracy_drop_pp": 3.401360544217691,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.9565217391304348,
+              "accuracy_drop_pp": 0.7246376811594124,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.7785234899328859,
+              "accuracy_drop_pp": 1.342281879194629,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        },
+        "generic-independent": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.9518072289156626,
+              "accuracy_drop_pp": 0.0,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.7403314917127072,
+              "accuracy_drop_pp": 1.104972375690605,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.8601036269430051,
+              "accuracy_drop_pp": 0.5181347150259086,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.6774193548387096,
+              "accuracy_drop_pp": 12.903225806451612,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.7734806629834254,
+              "accuracy_drop_pp": 3.8674033149171283,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.8025114155251142,
+            "accuracy_drop_pp": 3.424657534246578,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": 2.2809704627642513,
+            "selection_score": 6.769682271241273,
+            "source_variability_pp": 5.484114695698606,
+            "worst_source_drop_pp": 15.107913669064754
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.8768115942028986,
+              "accuracy_drop_pp": 1.449275362318836,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.6618705035971223,
+              "accuracy_drop_pp": 15.107913669064754,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.8484848484848485,
+              "accuracy_drop_pp": 0.0,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.7142857142857143,
+              "accuracy_drop_pp": 0.6802721088435382,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.9565217391304348,
+              "accuracy_drop_pp": 0.7246376811594124,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.7583892617449665,
+              "accuracy_drop_pp": 3.3557046979865723,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        },
+        "random-0": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.8674698795180723,
+              "accuracy_drop_pp": 8.43373493975903,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.6132596685082873,
+              "accuracy_drop_pp": 13.812154696132595,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.8082901554404145,
+              "accuracy_drop_pp": 5.699481865284972,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.12258064516129032,
+              "accuracy_drop_pp": 68.38709677419355,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.7292817679558011,
+              "accuracy_drop_pp": 8.287292817679559,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.6415525114155252,
+            "accuracy_drop_pp": 19.52054794520548,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": 16.41346212343113,
+            "selection_score": 34.807817558932214,
+            "source_variability_pp": 20.775216658745116,
+            "worst_source_drop_pp": 74.82014388489209
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.7753623188405797,
+              "accuracy_drop_pp": 11.594202898550721,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.06474820143884892,
+              "accuracy_drop_pp": 74.82014388489209,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.7878787878787878,
+              "accuracy_drop_pp": 6.060606060606066,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.6054421768707483,
+              "accuracy_drop_pp": 11.564625850340137,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.855072463768116,
+              "accuracy_drop_pp": 10.869565217391298,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.7315436241610739,
+              "accuracy_drop_pp": 6.040268456375831,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        },
+        "random-1": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.9397590361445783,
+              "accuracy_drop_pp": 1.2048192771084265,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.6795580110497238,
+              "accuracy_drop_pp": 7.182320441988943,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.8186528497409327,
+              "accuracy_drop_pp": 4.663212435233155,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.5741935483870968,
+              "accuracy_drop_pp": 23.225806451612897,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.7845303867403315,
+              "accuracy_drop_pp": 2.7624309392265234,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.7625570776255708,
+            "accuracy_drop_pp": 7.420091324200917,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": 3.646197083454897,
+            "selection_score": 11.364852905282515,
+            "source_variability_pp": 8.859850954465971,
+            "worst_source_drop_pp": 25.899280575539574
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.9130434782608695,
+              "accuracy_drop_pp": -2.1739130434782594,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.5539568345323741,
+              "accuracy_drop_pp": 25.899280575539574,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.793939393939394,
+              "accuracy_drop_pp": 5.454545454545457,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.6326530612244898,
+              "accuracy_drop_pp": 8.843537414965985,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.927536231884058,
+              "accuracy_drop_pp": 3.6231884057970953,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.7583892617449665,
+              "accuracy_drop_pp": 3.3557046979865723,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        },
+        "random-2": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.927710843373494,
+              "accuracy_drop_pp": 2.409638554216864,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.712707182320442,
+              "accuracy_drop_pp": 3.8674033149171283,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.8497409326424871,
+              "accuracy_drop_pp": 1.5544041450777146,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.5483870967741935,
+              "accuracy_drop_pp": 25.806451612903224,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.7734806629834254,
+              "accuracy_drop_pp": 3.8674033149171283,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.7671232876712328,
+            "accuracy_drop_pp": 6.9634703196347125,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": 4.6852553603898075,
+            "selection_score": 12.977925961550657,
+            "source_variability_pp": 8.931887090231994,
+            "worst_source_drop_pp": 29.496402877697847
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.8695652173913043,
+              "accuracy_drop_pp": 2.1739130434782594,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.5179856115107914,
+              "accuracy_drop_pp": 29.496402877697847,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.8303030303030303,
+              "accuracy_drop_pp": 1.8181818181818188,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.6870748299319728,
+              "accuracy_drop_pp": 3.401360544217691,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.9347826086956522,
+              "accuracy_drop_pp": 2.898550724637672,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.7583892617449665,
+              "accuracy_drop_pp": 3.3557046979865723,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        },
+        "task-independent": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.9397590361445783,
+              "accuracy_drop_pp": 1.2048192771084265,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.7071823204419889,
+              "accuracy_drop_pp": 4.41988950276243,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.8497409326424871,
+              "accuracy_drop_pp": 1.5544041450777146,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.7548387096774194,
+              "accuracy_drop_pp": 5.161290322580636,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.8121546961325967,
+              "accuracy_drop_pp": 0.0,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.8127853881278538,
+            "accuracy_drop_pp": 2.3972602739726123,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": 1.6028699054124762,
+            "selection_score": 3.5145354522758883,
+            "source_variability_pp": 3.853272282020907,
+            "worst_source_drop_pp": 6.474820143884896
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.8768115942028986,
+              "accuracy_drop_pp": 1.449275362318836,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.7482014388489209,
+              "accuracy_drop_pp": 6.474820143884896,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.8363636363636363,
+              "accuracy_drop_pp": 1.21212121212122,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.6802721088435374,
+              "accuracy_drop_pp": 4.081632653061229,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.9420289855072463,
+              "accuracy_drop_pp": 2.1739130434782594,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.7986577181208053,
+              "accuracy_drop_pp": -0.6711409395973145,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        }
+      },
+      "routes": {
+        "evolved-generic": [
+          3,
+          9,
+          20,
+          28
+        ],
+        "evolved-task": {
+          "attribute": [
+            4,
+            8,
+            9,
+            22
+          ],
+          "counting": [
+            3,
+            19,
+            24,
+            25
+          ],
+          "object": [
+            3,
+            5,
+            10,
+            19
+          ],
+          "ocr": [
+            5,
+            9,
+            25,
+            28
+          ],
+          "spatial": [
+            3,
+            19,
+            24,
+            25
+          ]
+        }
+      }
+    },
+    "6": {
+      "comparisons": {
+        "evolved_generic_minus_generic_independent": {
+          "capabilities": {
+            "attribute": {
+              "ci95_high_pp": 2.4096385542168677,
+              "ci95_low_pp": -6.024096385542169,
+              "examples": 166,
+              "mean_pp": -1.8072289156626504
+            },
+            "counting": {
+              "ci95_high_pp": 8.287292817679557,
+              "ci95_low_pp": -1.6574585635359116,
+              "examples": 181,
+              "mean_pp": 3.314917127071823
+            },
+            "object": {
+              "ci95_high_pp": 2.072538860103627,
+              "ci95_low_pp": -2.072538860103627,
+              "examples": 193,
+              "mean_pp": 0.0
+            },
+            "ocr": {
+              "ci95_high_pp": 7.741935483870968,
+              "ci95_low_pp": -2.5806451612903225,
+              "examples": 155,
+              "mean_pp": 2.5806451612903225
+            },
+            "spatial": {
+              "ci95_high_pp": 6.077348066298343,
+              "ci95_low_pp": -3.867403314917127,
+              "examples": 181,
+              "mean_pp": 1.1049723756906076
+            }
+          },
+          "overall": {
+            "ci95_high_pp": 2.968036529680365,
+            "ci95_low_pp": -0.91324200913242,
+            "examples": 876,
+            "mean_pp": 1.0273972602739725
+          }
+        },
+        "evolved_task_minus_evolved_generic": {
+          "capabilities": {
+            "attribute": {
+              "ci95_high_pp": 5.421686746987952,
+              "ci95_low_pp": -3.0120481927710845,
+              "examples": 166,
+              "mean_pp": 1.2048192771084338
+            },
+            "counting": {
+              "ci95_high_pp": 6.629834254143646,
+              "ci95_low_pp": -3.867403314917127,
+              "examples": 181,
+              "mean_pp": 1.1049723756906076
+            },
+            "object": {
+              "ci95_high_pp": 3.1088082901554404,
+              "ci95_low_pp": -3.1088082901554404,
+              "examples": 193,
+              "mean_pp": 0.0
+            },
+            "ocr": {
+              "ci95_high_pp": 14.193548387096774,
+              "ci95_low_pp": 0.6451612903225806,
+              "examples": 155,
+              "mean_pp": 7.096774193548387
+            },
+            "spatial": {
+              "ci95_high_pp": 6.629834254143646,
+              "ci95_low_pp": -2.209944751381215,
+              "examples": 181,
+              "mean_pp": 2.209944751381215
+            }
+          },
+          "overall": {
+            "ci95_high_pp": 4.337899543378995,
+            "ci95_low_pp": 0.0,
+            "examples": 876,
+            "mean_pp": 2.1689497716894977
+          }
+        },
+        "evolved_task_minus_task_independent": {
+          "capabilities": {
+            "attribute": {
+              "ci95_high_pp": 6.024096385542169,
+              "ci95_low_pp": -1.8072289156626504,
+              "examples": 166,
+              "mean_pp": 1.8072289156626504
+            },
+            "counting": {
+              "ci95_high_pp": 12.70718232044199,
+              "ci95_low_pp": -0.5524861878453038,
+              "examples": 181,
+              "mean_pp": 6.077348066298343
+            },
+            "object": {
+              "ci95_high_pp": 7.772020725388601,
+              "ci95_low_pp": 1.0362694300518136,
+              "examples": 193,
+              "mean_pp": 4.145077720207254
+            },
+            "ocr": {
+              "ci95_high_pp": 13.548387096774196,
+              "ci95_low_pp": -0.6451612903225806,
+              "examples": 155,
+              "mean_pp": 6.451612903225806
+            },
+            "spatial": {
+              "ci95_high_pp": 6.077348066298343,
+              "ci95_low_pp": -4.972375690607735,
+              "examples": 181,
+              "mean_pp": 0.5524861878453038
+            }
+          },
+          "overall": {
+            "ci95_high_pp": 6.164383561643835,
+            "ci95_low_pp": 1.36986301369863,
+            "examples": 876,
+            "mean_pp": 3.767123287671233
+          }
+        }
+      },
+      "conditions": {
+        "contiguous": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.8795180722891566,
+              "accuracy_drop_pp": 7.2289156626506035,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.6519337016574586,
+              "accuracy_drop_pp": 9.944751381215466,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.8134715025906736,
+              "accuracy_drop_pp": 5.181347150259064,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.3225806451612903,
+              "accuracy_drop_pp": 48.387096774193544,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.7016574585635359,
+              "accuracy_drop_pp": 11.049723756906083,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.682648401826484,
+            "accuracy_drop_pp": 15.410958904109595,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": 12.950456671647515,
+            "selection_score": 25.555650897905622,
+            "source_variability_pp": 14.466861011848163,
+            "worst_source_drop_pp": 53.956834532374096
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.7898550724637681,
+              "accuracy_drop_pp": 10.144927536231885,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.2733812949640288,
+              "accuracy_drop_pp": 53.956834532374096,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.806060606060606,
+              "accuracy_drop_pp": 4.2424242424242475,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.6394557823129252,
+              "accuracy_drop_pp": 8.163265306122447,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.8840579710144928,
+              "accuracy_drop_pp": 7.971014492753614,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.6845637583892618,
+              "accuracy_drop_pp": 10.738255033557042,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        },
+        "evolved-generic": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.9216867469879518,
+              "accuracy_drop_pp": 3.0120481927710774,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.7348066298342542,
+              "accuracy_drop_pp": 1.6574585635359074,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.8756476683937824,
+              "accuracy_drop_pp": -1.0362694300518172,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.6387096774193548,
+              "accuracy_drop_pp": 16.774193548387096,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.7679558011049724,
+              "accuracy_drop_pp": 4.41988950276243,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.791095890410959,
+            "accuracy_drop_pp": 4.5662100456621,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": 2.8326069876999567,
+            "selection_score": 8.251092676861877,
+            "source_variability_pp": 6.11639195822495,
+            "worst_source_drop_pp": 18.705035971223026
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.8913043478260869,
+              "accuracy_drop_pp": 0.0,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.6258992805755396,
+              "accuracy_drop_pp": 18.705035971223026,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.8606060606060606,
+              "accuracy_drop_pp": -1.2121212121212088,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.6938775510204082,
+              "accuracy_drop_pp": 2.7210884353741527,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.9202898550724637,
+              "accuracy_drop_pp": 4.347826086956519,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.7516778523489933,
+              "accuracy_drop_pp": 4.026845637583887,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        },
+        "evolved-task": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.9337349397590361,
+              "accuracy_drop_pp": 1.8072289156626509,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.7458563535911602,
+              "accuracy_drop_pp": 0.5524861878453025,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.8756476683937824,
+              "accuracy_drop_pp": -1.0362694300518172,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.7096774193548387,
+              "accuracy_drop_pp": 9.677419354838701,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.7900552486187845,
+              "accuracy_drop_pp": 2.209944751381221,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.8127853881278538,
+            "accuracy_drop_pp": 2.3972602739726123,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": -0.33117560878305746,
+            "selection_score": 4.725493690827381,
+            "source_variability_pp": 6.110083735087355,
+            "worst_source_drop_pp": 12.230215827338132
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.927536231884058,
+              "accuracy_drop_pp": -3.6231884057971064,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.6906474820143885,
+              "accuracy_drop_pp": 12.230215827338132,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.8606060606060606,
+              "accuracy_drop_pp": -1.2121212121212088,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.7006802721088435,
+              "accuracy_drop_pp": 2.0408163265306145,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.9347826086956522,
+              "accuracy_drop_pp": 2.898550724637672,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.7651006711409396,
+              "accuracy_drop_pp": 2.684563758389258,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        },
+        "generic-independent": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.9397590361445783,
+              "accuracy_drop_pp": 1.2048192771084265,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.7016574585635359,
+              "accuracy_drop_pp": 4.972375690607733,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.8756476683937824,
+              "accuracy_drop_pp": -1.0362694300518172,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.6129032258064516,
+              "accuracy_drop_pp": 19.354838709677413,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.7569060773480663,
+              "accuracy_drop_pp": 5.524861878453047,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.7808219178082192,
+            "accuracy_drop_pp": 5.593607305936077,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": 4.349738665448259,
+            "selection_score": 10.00315436162706,
+            "source_variability_pp": 6.767324425090173,
+            "worst_source_drop_pp": 21.58273381294965
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.8623188405797102,
+              "accuracy_drop_pp": 2.898550724637672,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.5971223021582733,
+              "accuracy_drop_pp": 21.58273381294965,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.8606060606060606,
+              "accuracy_drop_pp": -1.2121212121212088,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.6802721088435374,
+              "accuracy_drop_pp": 4.081632653061229,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.9420289855072463,
+              "accuracy_drop_pp": 2.1739130434782594,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.738255033557047,
+              "accuracy_drop_pp": 5.369127516778516,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        },
+        "random-0": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.8975903614457831,
+              "accuracy_drop_pp": 5.421686746987953,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.6187845303867403,
+              "accuracy_drop_pp": 13.259668508287293,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.8082901554404145,
+              "accuracy_drop_pp": 5.699481865284972,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.07741935483870968,
+              "accuracy_drop_pp": 72.90322580645162,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.6906077348066298,
+              "accuracy_drop_pp": 12.154696132596687,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.632420091324201,
+            "accuracy_drop_pp": 20.4337899543379,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": 16.586614434635553,
+            "selection_score": 36.384896082859456,
+            "source_variability_pp": 21.752908356485378,
+            "worst_source_drop_pp": 79.13669064748203
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.7971014492753623,
+              "accuracy_drop_pp": 9.420289855072461,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.02158273381294964,
+              "accuracy_drop_pp": 79.13669064748203,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.7878787878787878,
+              "accuracy_drop_pp": 6.060606060606066,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.6054421768707483,
+              "accuracy_drop_pp": 11.564625850340137,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.8985507246376812,
+              "accuracy_drop_pp": 6.521739130434778,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.6577181208053692,
+              "accuracy_drop_pp": 13.4228187919463,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        },
+        "random-1": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.9096385542168675,
+              "accuracy_drop_pp": 4.216867469879515,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.6519337016574586,
+              "accuracy_drop_pp": 9.944751381215466,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.8082901554404145,
+              "accuracy_drop_pp": 5.699481865284972,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.22580645161290322,
+              "accuracy_drop_pp": 58.06451612903225,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.6961325966850829,
+              "accuracy_drop_pp": 11.602209944751385,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.6689497716894978,
+            "accuracy_drop_pp": 16.78082191780822,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": 15.285116285820052,
+            "selection_score": 29.70977271174382,
+            "source_variability_pp": 17.530317448485516,
+            "worst_source_drop_pp": 61.87050359712231
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.7753623188405797,
+              "accuracy_drop_pp": 11.594202898550721,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.19424460431654678,
+              "accuracy_drop_pp": 61.87050359712231,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.7818181818181819,
+              "accuracy_drop_pp": 6.666666666666665,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.6530612244897959,
+              "accuracy_drop_pp": 6.802721088435382,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.9130434782608695,
+              "accuracy_drop_pp": 5.072463768115942,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.6778523489932886,
+              "accuracy_drop_pp": 11.409395973154357,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        },
+        "random-2": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.8012048192771084,
+              "accuracy_drop_pp": 15.06024096385542,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.6574585635359116,
+              "accuracy_drop_pp": 9.392265193370164,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.844559585492228,
+              "accuracy_drop_pp": 2.072538860103623,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.07741935483870968,
+              "accuracy_drop_pp": 72.90322580645162,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.7513812154696132,
+              "accuracy_drop_pp": 6.077348066298349,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.6426940639269406,
+            "accuracy_drop_pp": 19.406392694063936,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": 16.25268242781244,
+            "selection_score": 36.40596897794669,
+            "source_variability_pp": 21.61396615833184,
+            "worst_source_drop_pp": 79.85611510791367
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.7898550724637681,
+              "accuracy_drop_pp": 10.144927536231885,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.014388489208633094,
+              "accuracy_drop_pp": 79.85611510791367,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.8363636363636363,
+              "accuracy_drop_pp": 1.21212121212122,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.6394557823129252,
+              "accuracy_drop_pp": 8.163265306122447,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.8043478260869565,
+              "accuracy_drop_pp": 15.942028985507239,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.7315436241610739,
+              "accuracy_drop_pp": 6.040268456375831,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        },
+        "task-independent": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.9156626506024096,
+              "accuracy_drop_pp": 3.6144578313253017,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.6850828729281768,
+              "accuracy_drop_pp": 6.62983425414364,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.8341968911917098,
+              "accuracy_drop_pp": 3.1088082901554404,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.6451612903225806,
+              "accuracy_drop_pp": 16.129032258064512,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.7845303867403315,
+              "accuracy_drop_pp": 2.7624309392265234,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.7751141552511416,
+            "accuracy_drop_pp": 6.164383561643838,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": 5.756379743539864,
+            "selection_score": 9.318776178878705,
+            "source_variability_pp": 5.224514269356804,
+            "worst_source_drop_pp": 17.985611510791376
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.8333333333333334,
+              "accuracy_drop_pp": 5.797101449275354,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.6330935251798561,
+              "accuracy_drop_pp": 17.985611510791376,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.8242424242424242,
+              "accuracy_drop_pp": 2.4242424242424288,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.6598639455782312,
+              "accuracy_drop_pp": 6.1224489795918435,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.9202898550724637,
+              "accuracy_drop_pp": 4.347826086956519,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.7785234899328859,
+              "accuracy_drop_pp": 1.342281879194629,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        }
+      },
+      "routes": {
+        "evolved-generic": [
+          5,
+          9,
+          11,
+          25,
+          28,
+          29
+        ],
+        "evolved-task": {
+          "attribute": [
+            3,
+            8,
+            9,
+            18,
+            20,
+            25
+          ],
+          "counting": [
+            4,
+            5,
+            10,
+            20,
+            21,
+            29
+          ],
+          "object": [
+            2,
+            5,
+            9,
+            10,
+            23,
+            30
+          ],
+          "ocr": [
+            4,
+            5,
+            9,
+            26,
+            27,
+            28
+          ],
+          "spatial": [
+            3,
+            5,
+            12,
+            20,
+            22,
+            26
+          ]
+        }
+      }
+    },
+    "8": {
+      "comparisons": {
+        "evolved_generic_minus_generic_independent": {
+          "capabilities": {
+            "attribute": {
+              "ci95_high_pp": 3.614457831325301,
+              "ci95_low_pp": -2.4096385542168677,
+              "examples": 166,
+              "mean_pp": 0.6024096385542169
+            },
+            "counting": {
+              "ci95_high_pp": 7.18232044198895,
+              "ci95_low_pp": -2.7624309392265194,
+              "examples": 181,
+              "mean_pp": 2.209944751381215
+            },
+            "object": {
+              "ci95_high_pp": 6.7357512953367875,
+              "ci95_low_pp": -1.0362694300518136,
+              "examples": 193,
+              "mean_pp": 2.5906735751295336
+            },
+            "ocr": {
+              "ci95_high_pp": 17.419354838709676,
+              "ci95_low_pp": 5.161290322580645,
+              "examples": 155,
+              "mean_pp": 10.967741935483872
+            },
+            "spatial": {
+              "ci95_high_pp": 6.629834254143646,
+              "ci95_low_pp": -2.209944751381215,
+              "examples": 181,
+              "mean_pp": 2.209944751381215
+            }
+          },
+          "overall": {
+            "ci95_high_pp": 5.5936073059360725,
+            "ci95_low_pp": 1.5981735159817352,
+            "examples": 876,
+            "mean_pp": 3.5388127853881275
+          }
+        },
+        "evolved_task_minus_evolved_generic": {
+          "capabilities": {
+            "attribute": {
+              "ci95_high_pp": 2.4096385542168677,
+              "ci95_low_pp": -5.421686746987952,
+              "examples": 166,
+              "mean_pp": -1.8072289156626504
+            },
+            "counting": {
+              "ci95_high_pp": 5.524861878453039,
+              "ci95_low_pp": -5.524861878453039,
+              "examples": 181,
+              "mean_pp": 0.0
+            },
+            "object": {
+              "ci95_high_pp": 5.699481865284974,
+              "ci95_low_pp": -3.6269430051813467,
+              "examples": 193,
+              "mean_pp": 1.0362694300518136
+            },
+            "ocr": {
+              "ci95_high_pp": 9.67741935483871,
+              "ci95_low_pp": -4.516129032258064,
+              "examples": 155,
+              "mean_pp": 2.5806451612903225
+            },
+            "spatial": {
+              "ci95_high_pp": 7.18232044198895,
+              "ci95_low_pp": -3.314917127071823,
+              "examples": 181,
+              "mean_pp": 1.6574585635359116
+            }
+          },
+          "overall": {
+            "ci95_high_pp": 3.0821917808219177,
+            "ci95_low_pp": -1.7123287671232876,
+            "examples": 876,
+            "mean_pp": 0.684931506849315
+          }
+        },
+        "evolved_task_minus_task_independent": {
+          "capabilities": {
+            "attribute": {
+              "ci95_high_pp": 16.867469879518072,
+              "ci95_low_pp": 5.421686746987952,
+              "examples": 166,
+              "mean_pp": 10.843373493975903
+            },
+            "counting": {
+              "ci95_high_pp": 13.259668508287293,
+              "ci95_low_pp": -1.1049723756906076,
+              "examples": 181,
+              "mean_pp": 6.077348066298343
+            },
+            "object": {
+              "ci95_high_pp": 0.0,
+              "ci95_low_pp": 0.0,
+              "examples": 193,
+              "mean_pp": 0.0
+            },
+            "ocr": {
+              "ci95_high_pp": 29.03225806451613,
+              "ci95_low_pp": 13.548387096774196,
+              "examples": 155,
+              "mean_pp": 21.29032258064516
+            },
+            "spatial": {
+              "ci95_high_pp": 12.70718232044199,
+              "ci95_low_pp": 0.5524861878453038,
+              "examples": 181,
+              "mean_pp": 6.629834254143646
+            }
+          },
+          "overall": {
+            "ci95_high_pp": 11.073059360730593,
+            "ci95_low_pp": 5.821917808219178,
+            "examples": 876,
+            "mean_pp": 8.447488584474886
+          }
+        }
+      },
+      "conditions": {
+        "contiguous": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.5060240963855421,
+              "accuracy_drop_pp": 44.57831325301205,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.39779005524861877,
+              "accuracy_drop_pp": 35.35911602209944,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.5181347150259067,
+              "accuracy_drop_pp": 34.715025906735754,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.07741935483870968,
+              "accuracy_drop_pp": 72.90322580645162,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.5027624309392266,
+              "accuracy_drop_pp": 30.939226519337016,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.4098173515981735,
+            "accuracy_drop_pp": 42.69406392694064,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": 37.40352834568108,
+            "selection_score": 46.911446899483856,
+            "source_variability_pp": 19.105967590051087,
+            "worst_source_drop_pp": 81.29496402877699
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.5652173913043478,
+              "accuracy_drop_pp": 32.608695652173914,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.0,
+              "accuracy_drop_pp": 81.29496402877699,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.5151515151515151,
+              "accuracy_drop_pp": 33.333333333333336,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.3673469387755102,
+              "accuracy_drop_pp": 35.374149659863946,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.4855072463768116,
+              "accuracy_drop_pp": 47.826086956521735,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.5033557046979866,
+              "accuracy_drop_pp": 28.859060402684555,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        },
+        "evolved-generic": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.9337349397590361,
+              "accuracy_drop_pp": 1.8072289156626509,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.6906077348066298,
+              "accuracy_drop_pp": 6.077348066298338,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.8393782383419689,
+              "accuracy_drop_pp": 2.590673575129532,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.5548387096774193,
+              "accuracy_drop_pp": 25.161290322580644,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.7569060773480663,
+              "accuracy_drop_pp": 5.524861878453047,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.7591324200913242,
+            "accuracy_drop_pp": 7.762557077625576,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": 5.108076917382666,
+            "selection_score": 13.053765965304034,
+            "source_variability_pp": 9.333169907164214,
+            "worst_source_drop_pp": 28.776978417266196
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.8695652173913043,
+              "accuracy_drop_pp": 2.1739130434782594,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.5251798561151079,
+              "accuracy_drop_pp": 28.776978417266196,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.8242424242424242,
+              "accuracy_drop_pp": 2.4242424242424288,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.6598639455782312,
+              "accuracy_drop_pp": 6.1224489795918435,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.927536231884058,
+              "accuracy_drop_pp": 3.6231884057970953,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.7449664429530202,
+              "accuracy_drop_pp": 4.697986577181201,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        },
+        "evolved-task": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.9156626506024096,
+              "accuracy_drop_pp": 3.6144578313253017,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.6906077348066298,
+              "accuracy_drop_pp": 6.077348066298338,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.8497409326424871,
+              "accuracy_drop_pp": 1.5544041450777146,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.5806451612903226,
+              "accuracy_drop_pp": 22.580645161290313,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.7734806629834254,
+              "accuracy_drop_pp": 3.8674033149171283,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.7659817351598174,
+            "accuracy_drop_pp": 7.077625570776258,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": 5.876852949463828,
+            "selection_score": 11.83576381511078,
+            "source_variability_pp": 6.716902529232446,
+            "worst_source_drop_pp": 25.179856115107924
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.8478260869565217,
+              "accuracy_drop_pp": 4.347826086956519,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.5611510791366906,
+              "accuracy_drop_pp": 25.179856115107924,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.8363636363636363,
+              "accuracy_drop_pp": 1.21212121212122,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.6598639455782312,
+              "accuracy_drop_pp": 6.1224489795918435,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.927536231884058,
+              "accuracy_drop_pp": 3.6231884057970953,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.7583892617449665,
+              "accuracy_drop_pp": 3.3557046979865723,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        },
+        "generic-independent": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.927710843373494,
+              "accuracy_drop_pp": 2.409638554216864,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.6685082872928176,
+              "accuracy_drop_pp": 8.287292817679559,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.8134715025906736,
+              "accuracy_drop_pp": 5.181347150259064,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.44516129032258067,
+              "accuracy_drop_pp": 36.129032258064505,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.7348066298342542,
+              "accuracy_drop_pp": 7.734806629834257,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.723744292237443,
+            "accuracy_drop_pp": 11.301369863013699,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": 8.915193314250647,
+            "selection_score": 18.48099463902578,
+            "source_variability_pp": 10.764471923890774,
+            "worst_source_drop_pp": 39.56834532374101
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.8405797101449275,
+              "accuracy_drop_pp": 5.072463768115942,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.4172661870503597,
+              "accuracy_drop_pp": 39.56834532374101,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.8,
+              "accuracy_drop_pp": 4.848484848484846,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.6394557823129252,
+              "accuracy_drop_pp": 8.163265306122447,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.927536231884058,
+              "accuracy_drop_pp": 3.6231884057970953,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.7114093959731543,
+              "accuracy_drop_pp": 8.053691275167784,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        },
+        "random-0": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.45180722891566266,
+              "accuracy_drop_pp": 49.99999999999999,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.35911602209944754,
+              "accuracy_drop_pp": 39.22651933701657,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.533678756476684,
+              "accuracy_drop_pp": 33.16062176165803,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.05161290322580645,
+              "accuracy_drop_pp": 75.48387096774192,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.5027624309392266,
+              "accuracy_drop_pp": 30.939226519337016,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.3904109589041096,
+            "accuracy_drop_pp": 44.63470319634703,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": 41.00654504178839,
+            "selection_score": 47.976712442248406,
+            "source_variability_pp": 15.424753563605591,
+            "worst_source_drop_pp": 81.29496402877699
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.5362318840579711,
+              "accuracy_drop_pp": 35.50724637681159,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.0,
+              "accuracy_drop_pp": 81.29496402877699,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.5333333333333333,
+              "accuracy_drop_pp": 31.51515151515152,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.30612244897959184,
+              "accuracy_drop_pp": 41.49659863945578,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.4420289855072464,
+              "accuracy_drop_pp": 52.17391304347825,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.4966442953020134,
+              "accuracy_drop_pp": 29.530201342281874,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        },
+        "random-1": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.4578313253012048,
+              "accuracy_drop_pp": 49.39759036144578,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.34806629834254144,
+              "accuracy_drop_pp": 40.33149171270718,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.48186528497409326,
+              "accuracy_drop_pp": 38.34196891191709,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.05806451612903226,
+              "accuracy_drop_pp": 74.83870967741935,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.48066298342541436,
+              "accuracy_drop_pp": 33.149171270718234,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.3744292237442922,
+            "accuracy_drop_pp": 46.232876712328775,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": 40.671708133313565,
+            "selection_score": 48.07985993924821,
+            "source_variability_pp": 16.777583319791642,
+            "worst_source_drop_pp": 81.29496402877699
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.5579710144927537,
+              "accuracy_drop_pp": 33.33333333333333,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.0,
+              "accuracy_drop_pp": 81.29496402877699,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.4727272727272727,
+              "accuracy_drop_pp": 37.57575757575758,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.2925170068027211,
+              "accuracy_drop_pp": 42.85714285714286,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.42028985507246375,
+              "accuracy_drop_pp": 54.347826086956516,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.48322147651006714,
+              "accuracy_drop_pp": 30.872483221476504,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        },
+        "random-2": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.8313253012048193,
+              "accuracy_drop_pp": 12.04819277108433,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.6353591160220995,
+              "accuracy_drop_pp": 11.602209944751374,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.8134715025906736,
+              "accuracy_drop_pp": 5.181347150259064,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.2064516129032258,
+              "accuracy_drop_pp": 60.0,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.6740331491712708,
+              "accuracy_drop_pp": 13.812154696132595,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.6438356164383562,
+            "accuracy_drop_pp": 19.292237442922378,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": 13.462496369531667,
+            "selection_score": 30.86251361703098,
+            "source_variability_pp": 19.217478240462448,
+            "worst_source_drop_pp": 67.62589928057554
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.8333333333333334,
+              "accuracy_drop_pp": 5.797101449275354,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.1366906474820144,
+              "accuracy_drop_pp": 67.62589928057554,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.793939393939394,
+              "accuracy_drop_pp": 5.454545454545457,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.6122448979591837,
+              "accuracy_drop_pp": 10.8843537414966,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.8188405797101449,
+              "accuracy_drop_pp": 14.492753623188403,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.6442953020134228,
+              "accuracy_drop_pp": 14.76510067114094,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        },
+        "task-independent": {
+          "capabilities": {
+            "attribute": {
+              "accuracy": 0.8072289156626506,
+              "accuracy_drop_pp": 14.457831325301196,
+              "baseline_accuracy": 0.9518072289156626,
+              "examples": 166
+            },
+            "counting": {
+              "accuracy": 0.6298342541436464,
+              "accuracy_drop_pp": 12.154696132596687,
+              "baseline_accuracy": 0.7513812154696132,
+              "examples": 181
+            },
+            "object": {
+              "accuracy": 0.8497409326424871,
+              "accuracy_drop_pp": 1.5544041450777146,
+              "baseline_accuracy": 0.8652849740932642,
+              "examples": 193
+            },
+            "ocr": {
+              "accuracy": 0.36774193548387096,
+              "accuracy_drop_pp": 43.87096774193548,
+              "baseline_accuracy": 0.8064516129032258,
+              "examples": 155
+            },
+            "spatial": {
+              "accuracy": 0.7071823204419889,
+              "accuracy_drop_pp": 10.497237569060779,
+              "baseline_accuracy": 0.8121546961325967,
+              "examples": 181
+            }
+          },
+          "overall": {
+            "accuracy": 0.6815068493150684,
+            "accuracy_drop_pp": 15.525114155251153,
+            "baseline_accuracy": 0.83675799086758,
+            "examples": 876
+          },
+          "source_balanced": {
+            "mean_drop_pp": 13.263956019263835,
+            "selection_score": 23.742247429903262,
+            "source_variability_pp": 13.24918882797542,
+            "worst_source_drop_pp": 48.201438848920866
+          },
+          "sources": {
+            "mme": {
+              "accuracy": 0.7898550724637681,
+              "accuracy_drop_pp": 10.144927536231885,
+              "baseline_accuracy": 0.8913043478260869,
+              "examples": 138
+            },
+            "ocrbench": {
+              "accuracy": 0.33093525179856115,
+              "accuracy_drop_pp": 48.201438848920866,
+              "baseline_accuracy": 0.8129496402877698,
+              "examples": 139
+            },
+            "pope": {
+              "accuracy": 0.8363636363636363,
+              "accuracy_drop_pp": 1.21212121212122,
+              "baseline_accuracy": 0.8484848484848485,
+              "examples": 165
+            },
+            "tallyqa": {
+              "accuracy": 0.6258503401360545,
+              "accuracy_drop_pp": 9.523809523809524,
+              "baseline_accuracy": 0.7210884353741497,
+              "examples": 147
+            },
+            "vqav2_color": {
+              "accuracy": 0.7971014492753623,
+              "accuracy_drop_pp": 16.666666666666664,
+              "baseline_accuracy": 0.9637681159420289,
+              "examples": 138
+            },
+            "vsr": {
+              "accuracy": 0.6845637583892618,
+              "accuracy_drop_pp": 10.738255033557042,
+              "baseline_accuracy": 0.7919463087248322,
+              "examples": 149
+            }
+          }
+        }
+      },
+      "routes": {
+        "evolved-generic": [
+          4,
+          6,
+          8,
+          9,
+          20,
+          24,
+          25,
+          28
+        ],
+        "evolved-task": {
+          "attribute": [
+            3,
+            6,
+            8,
+            13,
+            20,
+            25,
+            26,
+            28
+          ],
+          "counting": [
+            3,
+            6,
+            11,
+            12,
+            17,
+            24,
+            27,
+            28
+          ],
+          "object": [
+            2,
+            3,
+            9,
+            10,
+            20,
+            21,
+            23,
+            30
+          ],
+          "ocr": [
+            4,
+            5,
+            9,
+            11,
+            25,
+            26,
+            27,
+            28
+          ],
+          "spatial": [
+            4,
+            6,
+            16,
+            19,
+            22,
+            26,
+            28,
+            29
+          ]
+        }
+      }
+    }
+  },
+  "evidence_status": "processed-v2 method-selection; external heldout not accessed",
+  "examples": 876,
+  "full": {
+    "capabilities": {
+      "attribute": {
+        "accuracy": 0.9518072289156626,
+        "accuracy_drop_pp": 0.0,
+        "baseline_accuracy": 0.9518072289156626,
+        "examples": 166
+      },
+      "counting": {
+        "accuracy": 0.7513812154696132,
+        "accuracy_drop_pp": 0.0,
+        "baseline_accuracy": 0.7513812154696132,
+        "examples": 181
+      },
+      "object": {
+        "accuracy": 0.8652849740932642,
+        "accuracy_drop_pp": 0.0,
+        "baseline_accuracy": 0.8652849740932642,
+        "examples": 193
+      },
+      "ocr": {
+        "accuracy": 0.8064516129032258,
+        "accuracy_drop_pp": 0.0,
+        "baseline_accuracy": 0.8064516129032258,
+        "examples": 155
+      },
+      "spatial": {
+        "accuracy": 0.8121546961325967,
+        "accuracy_drop_pp": 0.0,
+        "baseline_accuracy": 0.8121546961325967,
+        "examples": 181
+      }
+    },
+    "overall": {
+      "accuracy": 0.83675799086758,
+      "accuracy_drop_pp": 0.0,
+      "baseline_accuracy": 0.83675799086758,
+      "examples": 876
+    },
+    "source_balanced": {
+      "mean_drop_pp": 0.0,
+      "selection_score": 0.0,
+      "source_variability_pp": 0.0,
+      "worst_source_drop_pp": 0.0
+    },
+    "sources": {
+      "mme": {
+        "accuracy": 0.8913043478260869,
+        "accuracy_drop_pp": 0.0,
+        "baseline_accuracy": 0.8913043478260869,
+        "examples": 138
+      },
+      "ocrbench": {
+        "accuracy": 0.8129496402877698,
+        "accuracy_drop_pp": 0.0,
+        "baseline_accuracy": 0.8129496402877698,
+        "examples": 139
+      },
+      "pope": {
+        "accuracy": 0.8484848484848485,
+        "accuracy_drop_pp": 0.0,
+        "baseline_accuracy": 0.8484848484848485,
+        "examples": 165
+      },
+      "tallyqa": {
+        "accuracy": 0.7210884353741497,
+        "accuracy_drop_pp": 0.0,
+        "baseline_accuracy": 0.7210884353741497,
+        "examples": 147
+      },
+      "vqav2_color": {
+        "accuracy": 0.9637681159420289,
+        "accuracy_drop_pp": 0.0,
+        "baseline_accuracy": 0.9637681159420289,
+        "examples": 138
+      },
+      "vsr": {
+        "accuracy": 0.7919463087248322,
+        "accuracy_drop_pp": 0.0,
+        "baseline_accuracy": 0.7919463087248322,
+        "examples": 149
+      }
+    }
+  },
+  "schema_version": 1
+}

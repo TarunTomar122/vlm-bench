@@ -1,0 +1,82 @@
+{
+  "completed_at": "2026-07-15T21:04:20.343743+00:00",
+  "conditions": {
+    "k04-contiguous": {
+      "completed_at": "2026-07-15T20:25:48.135697+00:00",
+      "status": "complete"
+    },
+    "k04-generic-independent": {
+      "completed_at": "2026-07-15T20:20:35.543207+00:00",
+      "status": "complete"
+    },
+    "k04-random-0": {
+      "completed_at": "2026-07-15T20:28:22.852997+00:00",
+      "status": "complete"
+    },
+    "k04-random-1": {
+      "completed_at": "2026-07-15T20:30:56.697188+00:00",
+      "status": "complete"
+    },
+    "k04-random-2": {
+      "completed_at": "2026-07-15T20:33:30.804737+00:00",
+      "status": "complete"
+    },
+    "k04-task-independent": {
+      "completed_at": "2026-07-15T20:23:13.524078+00:00",
+      "status": "complete"
+    },
+    "k06-contiguous": {
+      "completed_at": "2026-07-15T20:41:12.637771+00:00",
+      "status": "complete"
+    },
+    "k06-generic-independent": {
+      "completed_at": "2026-07-15T20:36:03.098219+00:00",
+      "status": "complete"
+    },
+    "k06-random-0": {
+      "completed_at": "2026-07-15T20:43:46.810491+00:00",
+      "status": "complete"
+    },
+    "k06-random-1": {
+      "completed_at": "2026-07-15T20:46:21.503676+00:00",
+      "status": "complete"
+    },
+    "k06-random-2": {
+      "completed_at": "2026-07-15T20:48:52.151267+00:00",
+      "status": "complete"
+    },
+    "k06-task-independent": {
+      "completed_at": "2026-07-15T20:38:36.786650+00:00",
+      "status": "complete"
+    },
+    "k08-contiguous": {
+      "completed_at": "2026-07-15T20:56:28.953401+00:00",
+      "status": "complete"
+    },
+    "k08-generic-independent": {
+      "completed_at": "2026-07-15T20:51:23.246217+00:00",
+      "status": "complete"
+    },
+    "k08-random-0": {
+      "completed_at": "2026-07-15T20:59:05.674406+00:00",
+      "status": "complete"
+    },
+    "k08-random-1": {
+      "completed_at": "2026-07-15T21:01:47.957192+00:00",
+      "status": "complete"
+    },
+    "k08-random-2": {
+      "completed_at": "2026-07-15T21:04:20.343143+00:00",
+      "status": "complete"
+    },
+    "k08-task-independent": {
+      "completed_at": "2026-07-15T20:53:58.042175+00:00",
+      "status": "complete"
+    }
+  },
+  "config_sha256": "a30ba36c77c62cf12f774f5ab2f3da54c2d19850d19d8dcdf56fa257cddb6520",
+  "frozen_routes_sha256": "3bb64914f76d2835132a23b77c1944ac3d8f2bef3d41822fd8ac27d4515bf42f",
+  "selection_manifest_sha256": "343d7e7e85baf2cc1ed6f6d5b973f8a1d1b1edb1f243e594ffd410b27dba0f82",
+  "started_at": "2026-07-15T20:17:54.405800+00:00",
+  "status": "complete"
+}

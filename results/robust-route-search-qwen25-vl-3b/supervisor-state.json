@@ -1,0 +1,17 @@
+{
+  "attempts": {
+    "analysis": 1,
+    "report": 1
+  },
+  "events": [
+    {
+      "at": "2026-07-15T21:04:46Z",
+      "message": "launching analysis from its checkpoint (attempt 1/2)"
+    },
+    {
+      "at": "2026-07-15T21:06:46Z",
+      "message": "launching report from its checkpoint (attempt 1/2)"
+    }
+  ],
+  "schema_version": 1
+}
