@@ -19,8 +19,8 @@ baselines before making causal claims.
 ## Current Phase
 
 The project has completed the one-block screen, controlled task-route comparisons at four pruning
-budgets, a locked-clock latency audit, and Phase 2 feature-gap repair. A sealed external benchmark
-is ready but has not been evaluated. Phase 3 now runs interaction-aware route search:
+budgets, a locked-clock latency audit, Phase 2 feature-gap repair, Phase 3 interaction-aware search,
+and a frozen external evaluation:
 
 1. Build a controlled screening suite and a balanced natural validation suite.
 2. Run Qwen2.5-VL-3B-Instruct with fixed deterministic settings.
@@ -33,8 +33,9 @@ is ready but has not been evaluated. Phase 3 now runs interaction-aware route se
 7. Measure full-versus-pruned states and fit frozen low-rank feature repairs on image-disjoint
    calibration examples. Completed; feature error decreased without reliable answer recovery.
 8. Recompute candidate importance after every selected removal instead of composing independent
-   one-block rankings. The automated Phase 3 search and pairwise interaction map implement this.
-9. Freeze the complete method before evaluating the sealed 1,250-example external set.
+   one-block rankings. Completed; target-only K8 search did not transfer reliably.
+9. Freeze the complete method before evaluating the sealed 1,250-example external set. Completed;
+   the matched K8 task route did not beat generic K8 overall, while spatial transferred positively.
 
 ## Dataset Design
 
@@ -56,9 +57,10 @@ route construction and a separate sealed suite for final source-transfer evaluat
 
 MME reduces answer-format confounds because its perception tasks share a binary protocol. The
 discovery mixture prevents conclusions from depending on MME's small size or yes/no format. The
-sealed suite contains 1,250 examples from different source families and remains unused until method
-selection is complete. Dataset images are never committed; deterministic manifests contain source
-identifiers, metadata, and content hashes.
+sealed suite contains 1,250 examples from different source families. Its first evaluation is
+complete, so it is now consumed and must not be used for further method selection. Dataset images
+are never committed; deterministic manifests contain source identifiers, metadata, and content
+hashes.
 
 ## Primary Models
 
@@ -127,8 +129,8 @@ configuration, and dataset-manifest hash.
   too few samples or confounds capability with answer format and source distribution.
 - Dynamic prompt-conditioned routing is a stretch goal. It is justified only if static
   capability-specific pathways first beat generic pruning at matched measured cost.
-- The finalized dataset has 1,480 examples and 1,136 unique images. The external suite is balanced
-  at 300 direct OCR, counting, spatial, and object-existence examples per capability.
+- The original discovery dataset has 1,480 examples and 1,136 unique images. The sealed external
+  suite has 1,250 examples, exactly 250 for each of five capabilities.
 - The verified Qwen2.5-VL-3B baseline scored 81.62% overall: 81.00% OCRBench, 72.00% TallyQA,
   79.33% VSR, 87.67% POPE, and 88.57% on the controlled MME suite.
 - Median vision-encoder latency was 69.48 ms; median end-to-end latency was 197.80 ms at batch
@@ -161,8 +163,13 @@ configuration, and dataset-manifest hash.
   and 704 evaluation examples. Every bridge reduced relative feature error, but answer recovery was
   negligible or negative except for +0.79 points on object and +0.69 points on OCR. Final-state L2
   similarity is therefore not an adequate behavioral-recovery objective.
-- A sealed external benchmark is ready with 1,250 examples, 250 per capability, and zero decoded-
-  pixel overlap with the V2 dataset. It remains unevaluated until the method is frozen.
+- Phase 3 target-only beam search did not reliably construct K8 routes: only attribute stayed near
+  its intended validation-loss range, and object, OCR, and spatial lost 14.93-23.53 points.
+- The frozen external full-model accuracy is 74.96%. Generic K8 scored 66.00% and task K8 scored
+  64.72%, so task K8 trailed by 1.28 points overall (95% interval [-3.60, 0.96]). Spatial was the
+  only clear matched-K8 task win at +6.40 points [1.60, 11.20].
+- Task K4 scored 68.08% and preserved OCR and spatial better than generic K8, but that comparison
+  uses different pruning budgets and is not evidence of matched-compute superiority.
 
 ## Detailed Documentation
 
@@ -180,3 +187,4 @@ configuration, and dataset-manifest hash.
 - [Phase 2 feature-gap results](results/phase2-feature-gap-qwen25-vl-3b/analysis/README.md)
 - [Phase 3 interaction-search protocol](docs/phase3_interaction_search_protocol.md)
 - [External held-out protocol](docs/external_heldout_protocol.md)
+- [Frozen external evaluation](results/external-frozen-qwen25-vl-3b/README.md)

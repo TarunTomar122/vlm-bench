@@ -102,6 +102,13 @@ def main() -> None:
         )
     lines.extend([
         "",
+        "## Interpretation",
+        "",
+        "- Task K8 versus generic K8 is the matched-compute test. Task K8 does not win overall, and its confidence interval crosses zero.",
+        "- Spatial is the only statistically clear task-K8 advantage. Counting is a statistically clear task-K8 failure.",
+        "- Task K4 has the highest compressed-model accuracy, but it removes half as many blocks as generic K8 and is not a matched-compute control.",
+        "- The external set is now consumed. These outcomes must not be used to alter routes or hyperparameters.",
+        "",
         "Concurrent execution invalidates latency comparisons from this run. Use the existing fixed-clock latency audit for speed claims.",
         "",
     ])

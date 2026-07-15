@@ -1,0 +1,297 @@
+{
+  "conditions": {
+    "full": {
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop_pp": 0.0,
+          "baseline_accuracy": 0.904,
+          "candidate_accuracy": 0.904,
+          "examples": 250,
+          "lost_correct": 0,
+          "recovered_correct": 0
+        },
+        "counting": {
+          "accuracy_drop_pp": 0.0,
+          "baseline_accuracy": 0.712,
+          "candidate_accuracy": 0.712,
+          "examples": 250,
+          "lost_correct": 0,
+          "recovered_correct": 0
+        },
+        "object": {
+          "accuracy_drop_pp": 0.0,
+          "baseline_accuracy": 0.956,
+          "candidate_accuracy": 0.956,
+          "examples": 250,
+          "lost_correct": 0,
+          "recovered_correct": 0
+        },
+        "ocr": {
+          "accuracy_drop_pp": 0.0,
+          "baseline_accuracy": 0.872,
+          "candidate_accuracy": 0.872,
+          "examples": 250,
+          "lost_correct": 0,
+          "recovered_correct": 0
+        },
+        "spatial": {
+          "accuracy_drop_pp": 0.0,
+          "baseline_accuracy": 0.304,
+          "candidate_accuracy": 0.304,
+          "examples": 250,
+          "lost_correct": 0,
+          "recovered_correct": 0
+        }
+      },
+      "overall": {
+        "accuracy_drop_pp": 0.0,
+        "baseline_accuracy": 0.7496,
+        "candidate_accuracy": 0.7496,
+        "examples": 1250,
+        "lost_correct": 0,
+        "recovered_correct": 0
+      }
+    },
+    "generic-k8": {
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop_pp": -0.8000000000000007,
+          "baseline_accuracy": 0.904,
+          "candidate_accuracy": 0.912,
+          "examples": 250,
+          "lost_correct": 6,
+          "recovered_correct": 8
+        },
+        "counting": {
+          "accuracy_drop_pp": 7.9999999999999964,
+          "baseline_accuracy": 0.712,
+          "candidate_accuracy": 0.632,
+          "examples": 250,
+          "lost_correct": 49,
+          "recovered_correct": 29
+        },
+        "object": {
+          "accuracy_drop_pp": 5.199999999999994,
+          "baseline_accuracy": 0.956,
+          "candidate_accuracy": 0.904,
+          "examples": 250,
+          "lost_correct": 15,
+          "recovered_correct": 2
+        },
+        "ocr": {
+          "accuracy_drop_pp": 25.6,
+          "baseline_accuracy": 0.872,
+          "candidate_accuracy": 0.616,
+          "examples": 250,
+          "lost_correct": 71,
+          "recovered_correct": 7
+        },
+        "spatial": {
+          "accuracy_drop_pp": 6.800000000000001,
+          "baseline_accuracy": 0.304,
+          "candidate_accuracy": 0.236,
+          "examples": 250,
+          "lost_correct": 30,
+          "recovered_correct": 13
+        }
+      },
+      "overall": {
+        "accuracy_drop_pp": 8.96,
+        "baseline_accuracy": 0.7496,
+        "candidate_accuracy": 0.66,
+        "examples": 1250,
+        "lost_correct": 171,
+        "recovered_correct": 59
+      }
+    },
+    "task-k4": {
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop_pp": 0.40000000000000036,
+          "baseline_accuracy": 0.904,
+          "candidate_accuracy": 0.9,
+          "examples": 250,
+          "lost_correct": 4,
+          "recovered_correct": 3
+        },
+        "counting": {
+          "accuracy_drop_pp": 18.399999999999995,
+          "baseline_accuracy": 0.712,
+          "candidate_accuracy": 0.528,
+          "examples": 250,
+          "lost_correct": 64,
+          "recovered_correct": 18
+        },
+        "object": {
+          "accuracy_drop_pp": 3.1999999999999917,
+          "baseline_accuracy": 0.956,
+          "candidate_accuracy": 0.924,
+          "examples": 250,
+          "lost_correct": 9,
+          "recovered_correct": 1
+        },
+        "ocr": {
+          "accuracy_drop_pp": 10.799999999999999,
+          "baseline_accuracy": 0.872,
+          "candidate_accuracy": 0.764,
+          "examples": 250,
+          "lost_correct": 32,
+          "recovered_correct": 5
+        },
+        "spatial": {
+          "accuracy_drop_pp": 1.6000000000000014,
+          "baseline_accuracy": 0.304,
+          "candidate_accuracy": 0.288,
+          "examples": 250,
+          "lost_correct": 15,
+          "recovered_correct": 11
+        }
+      },
+      "overall": {
+        "accuracy_drop_pp": 6.880000000000008,
+        "baseline_accuracy": 0.7496,
+        "candidate_accuracy": 0.6808,
+        "examples": 1250,
+        "lost_correct": 124,
+        "recovered_correct": 38
+      }
+    },
+    "task-k8": {
+      "capabilities": {
+        "attribute": {
+          "accuracy_drop_pp": 0.8000000000000007,
+          "baseline_accuracy": 0.904,
+          "candidate_accuracy": 0.896,
+          "examples": 250,
+          "lost_correct": 9,
+          "recovered_correct": 7
+        },
+        "counting": {
+          "accuracy_drop_pp": 19.199999999999996,
+          "baseline_accuracy": 0.712,
+          "candidate_accuracy": 0.52,
+          "examples": 250,
+          "lost_correct": 67,
+          "recovered_correct": 19
+        },
+        "object": {
+          "accuracy_drop_pp": 8.399999999999997,
+          "baseline_accuracy": 0.956,
+          "candidate_accuracy": 0.872,
+          "examples": 250,
+          "lost_correct": 25,
+          "recovered_correct": 4
+        },
+        "ocr": {
+          "accuracy_drop_pp": 22.4,
+          "baseline_accuracy": 0.872,
+          "candidate_accuracy": 0.648,
+          "examples": 250,
+          "lost_correct": 61,
+          "recovered_correct": 5
+        },
+        "spatial": {
+          "accuracy_drop_pp": 0.40000000000000036,
+          "baseline_accuracy": 0.304,
+          "candidate_accuracy": 0.3,
+          "examples": 250,
+          "lost_correct": 21,
+          "recovered_correct": 20
+        }
+      },
+      "overall": {
+        "accuracy_drop_pp": 10.240000000000006,
+        "baseline_accuracy": 0.7496,
+        "candidate_accuracy": 0.6472,
+        "examples": 1250,
+        "lost_correct": 183,
+        "recovered_correct": 55
+      }
+    }
+  },
+  "manifest_sha256": "c01c93a9f8f007bb21a11c1952ca50fa51bfdaa5232ebbd681a979156cca5a77",
+  "protocol_sha256": "f6d6182a3e0d802403ec79a57d69fac076a9b26cdcabffe961c652d22ba19f75",
+  "status": "sealed external evaluation; routes were frozen before inference",
+  "task_vs_generic": {
+    "task-k4": {
+      "capabilities": {
+        "attribute": {
+          "ci95_high_pp": 1.6,
+          "ci95_low_pp": -3.5999999999999996,
+          "examples": 250,
+          "mean_pp": -1.2
+        },
+        "counting": {
+          "ci95_high_pp": -3.5999999999999996,
+          "ci95_low_pp": -17.599999999999998,
+          "examples": 250,
+          "mean_pp": -10.4
+        },
+        "object": {
+          "ci95_high_pp": 6.0,
+          "ci95_low_pp": -1.6,
+          "examples": 250,
+          "mean_pp": 2.0
+        },
+        "ocr": {
+          "ci95_high_pp": 20.4,
+          "ci95_low_pp": 9.2,
+          "examples": 250,
+          "mean_pp": 14.799999999999999
+        },
+        "spatial": {
+          "ci95_high_pp": 10.0,
+          "ci95_low_pp": 0.4,
+          "examples": 250,
+          "mean_pp": 5.2
+        }
+      },
+      "overall": {
+        "ci95_high_pp": 4.32,
+        "ci95_low_pp": -0.24,
+        "examples": 1250,
+        "mean_pp": 2.08
+      }
+    },
+    "task-k8": {
+      "capabilities": {
+        "attribute": {
+          "ci95_high_pp": 1.2,
+          "ci95_low_pp": -4.8,
+          "examples": 250,
+          "mean_pp": -1.6
+        },
+        "counting": {
+          "ci95_high_pp": -4.0,
+          "ci95_low_pp": -18.4,
+          "examples": 250,
+          "mean_pp": -11.200000000000001
+        },
+        "object": {
+          "ci95_high_pp": 0.8,
+          "ci95_low_pp": -7.199999999999999,
+          "examples": 250,
+          "mean_pp": -3.2
+        },
+        "ocr": {
+          "ci95_high_pp": 8.799999999999999,
+          "ci95_low_pp": -2.4,
+          "examples": 250,
+          "mean_pp": 3.2
+        },
+        "spatial": {
+          "ci95_high_pp": 11.200000000000001,
+          "ci95_low_pp": 1.6,
+          "examples": 250,
+          "mean_pp": 6.4
+        }
+      },
+      "overall": {
+        "ci95_high_pp": 0.96,
+        "ci95_low_pp": -3.5999999999999996,
+        "examples": 1250,
+        "mean_pp": -1.28
+      }
+    }
+  }
+}

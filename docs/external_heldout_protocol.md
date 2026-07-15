@@ -61,6 +61,20 @@ The conditions may run concurrently to reduce wall time. Therefore this run supp
 transfer claims only; its latency values are diagnostic and must not be used for speed claims.
 Existing fixed-clock audits remain the latency evidence.
 
+## First Evaluation Result
+
+The protocol was committed as `8ed9dc7` before inference. All four conditions completed 1,250
+matched predictions. The full model scored 74.96%, generic K8 scored 66.00%, task K8 scored 64.72%,
+and task K4 scored 68.08%.
+
+At the matched K8 budget, task routing trailed generic by 1.28 percentage points overall with a
+paired 95% bootstrap interval of [-3.60, 0.96]. Spatial was the only statistically clear task-K8
+advantage at +6.40 points [1.60, 11.20]. Full results and per-capability flips are in
+`results/external-frozen-qwen25-vl-3b/`.
+
+The set is now consumed. Its outcomes may be analyzed but must not be used to alter route blocks,
+candidate pools, prompts, scoring, or repair hyperparameters.
+
 ### General protocol requirements
 
 Before running any model on this set, record the frozen:
@@ -72,9 +86,9 @@ Before running any model on this set, record the frozen:
 5. scoring implementation;
 6. latency measurement procedure.
 
-Run the full model, identity-pruned route, repaired route, repaired generic route, and random
-control without changing the method after inspecting held-out results. Report source-specific
-results because dataset identity remains partially confounded with capability.
+Future sealed evaluations should include matched generic and random controls for every pruning
+budget and any repaired condition. Report source-specific results because dataset identity remains
+partially confounded with capability.
 
 ## Limitations
 

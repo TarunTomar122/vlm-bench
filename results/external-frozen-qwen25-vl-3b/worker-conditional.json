@@ -1,0 +1,10 @@
+{
+  "completed_at": "2026-07-15T12:11:38.009604+00:00",
+  "conditions": [
+    "task-k8",
+    "task-k4"
+  ],
+  "protocol_sha256": "f6d6182a3e0d802403ec79a57d69fac076a9b26cdcabffe961c652d22ba19f75",
+  "status": "complete",
+  "worker": "conditional"
+}

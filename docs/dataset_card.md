@@ -16,9 +16,9 @@ screening whether task-by-block patterns exist without changing answer format be
 
 Source: https://mme-benchmark.github.io/home_page.html
 
-### External suite
+### Discovery natural suite
 
-The external suite samples 300 examples for each core capability:
+The original natural suite samples 300 examples for each core capability:
 
 | Capability | Dataset | Sampling |
 |---|---|---|
@@ -33,6 +33,14 @@ Sources:
 - TallyQA: https://ojs.aaai.org/index.php/AAAI/article/view/4815
 - VSR: https://github.com/cambridgeltl/visual-spatial-reasoning
 - POPE: https://github.com/RUCAIBox/POPE
+
+### Sealed external suite
+
+The source-transfer suite has 250 examples for each of five capabilities: TextVQA for OCR,
+CountBenchQA for counting, CV-Bench/ADE20K for spatial relations, and disjoint AMBER subsets for
+object existence and color attributes. All 1,250 images are unique and have zero decoded-pixel
+overlap with V2. Its first frozen evaluation was completed on 2026-07-15, so this set is consumed
+and cannot be used for additional route selection.
 
 ## Determinism
 
@@ -55,7 +63,7 @@ Genome, or other datasets with their own terms.
 
 ## Known Limitations
 
-- Dataset identity remains partly confounded with capability in the external suite.
+- Dataset identity remains partly confounded with capability in both natural suites.
 - MME is small and binary, with a 50% random-answer baseline.
 - OCRBench contains multiple OCR task styles, not only direct transcription.
 - VSR and POPE can contain object-recognition difficulty in addition to their nominal capability.
