@@ -249,11 +249,16 @@ class BaselineRunner:
         with Image.open(image_path) as source:
             image = source.convert("RGB")
         width, height = image.size
+        image_content = (
+            {"type": "image", "image": image}
+            if self.vision_adapter["input_mode"] == "smolvlm"
+            else {"type": "image"}
+        )
         messages = [
             {
                 "role": "user",
                 "content": [
-                    {"type": "image"},
+                    image_content,
                     {"type": "text", "text": self._prompt(row)},
                 ],
             }
