@@ -19,6 +19,8 @@ MODEL_CONFIG = Path("configs/baseline_smolvlm2_2b.json")
 PREPARED = Path("data/processed-v2/robust-route-search-smolvlm2-2b/prepared")
 ABLATION = Path("results/smolvlm2-2b-single-block")
 CONTROLS_CONFIG = Path("configs/robust_route_controls_smolvlm2_2b.json")
+FRESH_OCR_MANIFEST = Path("data/fresh-ocr-iiit5k-v1/manifests/heldout.jsonl")
+FRESH_OCR_ROOT = Path("results/fresh-ocr-iiit5k-smolvlm2-2b")
 LANES = (("generic", "object", "spatial"), ("attribute", "counting", "ocr"))
 
 
@@ -115,7 +117,14 @@ def step(state: dict) -> bool:
     if not analysis.exists():
         launch("analysis", command("scripts/analyze_robust_route_search.py", "--root", str(ROOT), "--manifest", str(PREPARED / "selection.jsonl")), state)
         return False
-    return True
+    if FRESH_OCR_MANIFEST.exists() and not (FRESH_OCR_ROOT / "analysis.json").exists():
+        launch(
+            "fresh-ocr-transfer",
+            command("scripts/run_fresh_ocr_transfer.py", "--frozen-routes", str(frozen), "--manifest", str(FRESH_OCR_MANIFEST), "--output-dir", str(FRESH_OCR_ROOT)),
+            state,
+        )
+        return False
+    return FRESH_OCR_MANIFEST.exists()
 
 
 def main() -> None:
