@@ -3,6 +3,7 @@ datasets==3.6.0
 huggingface-hub==0.33.2
 pandas==2.3.0
 matplotlib==3.10.3
+num2words==0.5.14
 pillow==11.2.1
 psutil==7.0.0
 pytest==8.4.1
