@@ -89,6 +89,13 @@ def main() -> None:
         "",
         "## Fresh OCR Transfer",
         "",
+        f"Full: {100 * fresh['conditions']['full']['candidate_accuracy']:.2f}%; "
+        f"generic K{fresh_budget}: {100 * fresh['conditions'][f'generic-k{fresh_budget}']['candidate_accuracy']:.2f}%; "
+        f"OCR K{fresh_budget}: {100 * fresh['conditions'][f'ocr-k{fresh_budget}']['candidate_accuracy']:.2f}%.",
+        "",
+        f"Frozen OCR route minus frozen generic route = {fresh_advantage['mean_pp']:+.2f} pp "
+        f"with paired 95% interval [{fresh_advantage['ci95_low_pp']:.2f}, {fresh_advantage['ci95_high_pp']:.2f}].",
+        "",
         "## SmolVLM2 Generic-Route Latency",
         "",
         f"Measurement mode: `{latency_measurement_mode}`.",
@@ -99,9 +106,6 @@ def main() -> None:
             f"| K{k} | {latency[str(k)]['vision_speedup_percent']:+.2f}% | {latency[str(k)]['total_speedup_percent']:+.2f}% |"
             for k in sorted((int(value) for value in latency))
         ],
-        "",
-        f"SmolVLM2 IIIT5K OCR K{fresh_budget}: frozen OCR route minus frozen generic route = {fresh_advantage['mean_pp']:+.2f} pp "
-        f"with paired 95% interval [{fresh_advantage['ci95_low_pp']:.2f}, {fresh_advantage['ci95_high_pp']:.2f}].",
         "",
         "## Evidence Boundary",
         "",

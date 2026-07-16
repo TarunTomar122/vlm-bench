@@ -1,0 +1,131 @@
+{
+  "allowed_blocks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "conditions": {
+    "4": {
+      "contiguous": {
+        "blocks": [
+          22,
+          23,
+          24,
+          25
+        ],
+        "kind": "fixed"
+      },
+      "generic-independent": {
+        "blocks": [
+          7,
+          24,
+          4,
+          5
+        ],
+        "kind": "fixed"
+      },
+      "random-0": {
+        "blocks": [
+          1,
+          5,
+          8,
+          26
+        ],
+        "kind": "fixed",
+        "seed": 20271116
+      },
+      "random-1": {
+        "blocks": [
+          20,
+          21,
+          23,
+          26
+        ],
+        "kind": "fixed",
+        "seed": 20271117
+      },
+      "random-2": {
+        "blocks": [
+          1,
+          4,
+          16,
+          18
+        ],
+        "kind": "fixed",
+        "seed": 20271118
+      },
+      "task-independent": {
+        "kind": "conditional",
+        "routes": {
+          "attribute": [
+            4,
+            5,
+            6,
+            8
+          ],
+          "counting": [
+            22,
+            10,
+            24,
+            3
+          ],
+          "object": [
+            24,
+            15,
+            14,
+            23
+          ],
+          "ocr": [
+            7,
+            23,
+            25,
+            5
+          ],
+          "spatial": [
+            7,
+            11,
+            25,
+            1
+          ]
+        }
+      }
+    }
+  },
+  "data_root": "data/processed-v2",
+  "k_values": [
+    4
+  ],
+  "model_config": "configs/baseline_smolvlm2_2b.json",
+  "output_dir": "results/robust-route-search-smolvlm2-2b-k4/controls",
+  "schema_version": 1,
+  "seed_policy": "deterministic independent ranking, contiguous, and three random controls at each K",
+  "selection_manifest": "data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/selection.jsonl",
+  "selection_manifest_sha256": "343d7e7e85baf2cc1ed6f6d5b973f8a1d1b1edb1f243e594ffd410b27dba0f82",
+  "selection_role": "comparison only; controls cannot change evolved route selection",
+  "source_sensitivity_sha256": "c4281784ffad5637593b835e776a8f6cefcac1b0fd683560b6af8634cad4f055",
+  "status": "frozen before matched-control inference"
+}

@@ -1,0 +1,161 @@
+{
+  "attempts": {
+    "analysis": 2,
+    "controls": 1,
+    "cross-model-report": 1,
+    "family:attribute": 1,
+    "family:counting": 1,
+    "family:generic": 1,
+    "family:object": 1,
+    "family:ocr": 1,
+    "family:spatial": 1,
+    "finalize": 1,
+    "fixed-clock-latency": 2,
+    "freeze-controls": 1,
+    "fresh-ocr-transfer": 1
+  },
+  "events": [
+    {
+      "at": 1784192115.6258194,
+      "message": "launched family:generic attempt 1"
+    },
+    {
+      "at": 1784192115.627425,
+      "message": "launched family:attribute attempt 1"
+    },
+    {
+      "at": 1784196168.088276,
+      "message": "launched family:counting attempt 1"
+    },
+    {
+      "at": 1784198960.1646698,
+      "message": "launched family:object attempt 1"
+    },
+    {
+      "at": 1784199951.4238608,
+      "message": "launched family:ocr attempt 1"
+    },
+    {
+      "at": 1784202924.6441894,
+      "message": "launched family:spatial attempt 1"
+    },
+    {
+      "at": 1784205987.5962074,
+      "message": "launched finalize attempt 1"
+    },
+    {
+      "at": 1784206077.650912,
+      "message": "launched freeze-controls attempt 1"
+    },
+    {
+      "at": 1784206167.706259,
+      "message": "launched controls attempt 1"
+    },
+    {
+      "at": 1784208510.536366,
+      "message": "launched analysis attempt 1"
+    },
+    {
+      "at": 1784208600.5908587,
+      "message": "launched analysis attempt 2"
+    },
+    {
+      "at": 1784208690.6412804,
+      "message": "analysis stopped after two attempts"
+    },
+    {
+      "at": 1784208780.6935227,
+      "message": "analysis stopped after two attempts"
+    },
+    {
+      "at": 1784208870.7513802,
+      "message": "analysis stopped after two attempts"
+    },
+    {
+      "at": 1784208960.7820535,
+      "message": "analysis stopped after two attempts"
+    },
+    {
+      "at": 1784209050.8315423,
+      "message": "analysis stopped after two attempts"
+    },
+    {
+      "at": 1784209140.8834002,
+      "message": "analysis stopped after two attempts"
+    },
+    {
+      "at": 1784209230.933275,
+      "message": "analysis stopped after two attempts"
+    },
+    {
+      "at": 1784209320.980607,
+      "message": "analysis stopped after two attempts"
+    },
+    {
+      "at": 1784209411.0331604,
+      "message": "analysis stopped after two attempts"
+    },
+    {
+      "at": 1784209501.0653553,
+      "message": "analysis stopped after two attempts"
+    },
+    {
+      "at": 1784209591.0999641,
+      "message": "launched fresh-ocr-transfer attempt 1"
+    },
+    {
+      "at": 1784209951.6219485,
+      "message": "launched fixed-clock-latency attempt 1"
+    },
+    {
+      "at": 1784210041.6741612,
+      "message": "launched fixed-clock-latency attempt 2"
+    },
+    {
+      "at": 1784210131.705542,
+      "message": "fixed-clock-latency stopped after two attempts"
+    },
+    {
+      "at": 1784210221.7541919,
+      "message": "fixed-clock-latency stopped after two attempts"
+    },
+    {
+      "at": 1784210311.8022556,
+      "message": "fixed-clock-latency stopped after two attempts"
+    },
+    {
+      "at": 1784210401.8517716,
+      "message": "fixed-clock-latency stopped after two attempts"
+    },
+    {
+      "at": 1784210491.9014287,
+      "message": "fixed-clock-latency stopped after two attempts"
+    },
+    {
+      "at": 1784210581.9542365,
+      "message": "fixed-clock-latency stopped after two attempts"
+    },
+    {
+      "at": 1784210672.0064101,
+      "message": "fixed-clock-latency stopped after two attempts"
+    },
+    {
+      "at": 1784210762.056292,
+      "message": "fixed-clock-latency stopped after two attempts"
+    },
+    {
+      "at": 1784210852.1074264,
+      "message": "fixed-clock-latency stopped after two attempts"
+    },
+    {
+      "at": 1784210942.1596456,
+      "message": "fixed-clock-latency stopped after two attempts"
+    },
+    {
+      "at": 1784211573.4832304,
+      "message": "launched cross-model-report attempt 1"
+    }
+  ],
+  "schema_version": 1,
+  "updated_at": 1784211573.48324
+}

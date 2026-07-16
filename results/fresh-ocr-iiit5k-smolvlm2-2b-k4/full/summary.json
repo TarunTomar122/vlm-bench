@@ -1,0 +1,253 @@
+{
+  "counts": {
+    "ocr": 250
+  },
+  "groups": {
+    "capability:ocr": {
+      "accuracy": 0.948,
+      "all_questions_per_image_accuracy": 0.948,
+      "examples": 250,
+      "latency_ms": {
+        "generation": {
+          "mean": 248.0058973133564,
+          "median": 248.0978376697749,
+          "p95": 322.96211877837777
+        },
+        "total": {
+          "mean": 377.99989739246666,
+          "median": 365.5682171229273,
+          "p95": 515.1185803115368
+        },
+        "vision_encoder": {
+          "mean": 157.36808515930176,
+          "median": 153.91232299804688,
+          "p95": 221.34466552734375
+        }
+      },
+      "peak_allocated_mib": 4707.0263671875,
+      "peak_reserved_mib": 5438.0,
+      "tokens": {
+        "input": {
+          "mean": 875.58,
+          "median": 785.0,
+          "p95": 1451
+        },
+        "output": {
+          "mean": 3.42,
+          "median": 3.0,
+          "p95": 6
+        },
+        "visual": {
+          "mean": 817.128,
+          "median": 729.0,
+          "p95": 1377
+        }
+      }
+    },
+    "source:iiit5k": {
+      "accuracy": 0.948,
+      "all_questions_per_image_accuracy": 0.948,
+      "examples": 250,
+      "latency_ms": {
+        "generation": {
+          "mean": 248.0058973133564,
+          "median": 248.0978376697749,
+          "p95": 322.96211877837777
+        },
+        "total": {
+          "mean": 377.99989739246666,
+          "median": 365.5682171229273,
+          "p95": 515.1185803115368
+        },
+        "vision_encoder": {
+          "mean": 157.36808515930176,
+          "median": 153.91232299804688,
+          "p95": 221.34466552734375
+        }
+      },
+      "peak_allocated_mib": 4707.0263671875,
+      "peak_reserved_mib": 5438.0,
+      "tokens": {
+        "input": {
+          "mean": 875.58,
+          "median": 785.0,
+          "p95": 1451
+        },
+        "output": {
+          "mean": 3.42,
+          "median": 3.0,
+          "p95": 6
+        },
+        "visual": {
+          "mean": 817.128,
+          "median": 729.0,
+          "p95": 1377
+        }
+      }
+    },
+    "split:heldout": {
+      "accuracy": 0.948,
+      "all_questions_per_image_accuracy": 0.948,
+      "examples": 250,
+      "latency_ms": {
+        "generation": {
+          "mean": 248.0058973133564,
+          "median": 248.0978376697749,
+          "p95": 322.96211877837777
+        },
+        "total": {
+          "mean": 377.99989739246666,
+          "median": 365.5682171229273,
+          "p95": 515.1185803115368
+        },
+        "vision_encoder": {
+          "mean": 157.36808515930176,
+          "median": 153.91232299804688,
+          "p95": 221.34466552734375
+        }
+      },
+      "peak_allocated_mib": 4707.0263671875,
+      "peak_reserved_mib": 5438.0,
+      "tokens": {
+        "input": {
+          "mean": 875.58,
+          "median": 785.0,
+          "p95": 1451
+        },
+        "output": {
+          "mean": 3.42,
+          "median": 3.0,
+          "p95": 6
+        },
+        "visual": {
+          "mean": 817.128,
+          "median": 729.0,
+          "p95": 1377
+        }
+      }
+    },
+    "subtype:iiit5k:cropped_word_recognition": {
+      "accuracy": 0.948,
+      "all_questions_per_image_accuracy": 0.948,
+      "examples": 250,
+      "latency_ms": {
+        "generation": {
+          "mean": 248.0058973133564,
+          "median": 248.0978376697749,
+          "p95": 322.96211877837777
+        },
+        "total": {
+          "mean": 377.99989739246666,
+          "median": 365.5682171229273,
+          "p95": 515.1185803115368
+        },
+        "vision_encoder": {
+          "mean": 157.36808515930176,
+          "median": 153.91232299804688,
+          "p95": 221.34466552734375
+        }
+      },
+      "peak_allocated_mib": 4707.0263671875,
+      "peak_reserved_mib": 5438.0,
+      "tokens": {
+        "input": {
+          "mean": 875.58,
+          "median": 785.0,
+          "p95": 1451
+        },
+        "output": {
+          "mean": 3.42,
+          "median": 3.0,
+          "p95": 6
+        },
+        "visual": {
+          "mean": 817.128,
+          "median": 729.0,
+          "p95": 1377
+        }
+      }
+    },
+    "suite:fresh_external_heldout": {
+      "accuracy": 0.948,
+      "all_questions_per_image_accuracy": 0.948,
+      "examples": 250,
+      "latency_ms": {
+        "generation": {
+          "mean": 248.0058973133564,
+          "median": 248.0978376697749,
+          "p95": 322.96211877837777
+        },
+        "total": {
+          "mean": 377.99989739246666,
+          "median": 365.5682171229273,
+          "p95": 515.1185803115368
+        },
+        "vision_encoder": {
+          "mean": 157.36808515930176,
+          "median": 153.91232299804688,
+          "p95": 221.34466552734375
+        }
+      },
+      "peak_allocated_mib": 4707.0263671875,
+      "peak_reserved_mib": 5438.0,
+      "tokens": {
+        "input": {
+          "mean": 875.58,
+          "median": 785.0,
+          "p95": 1451
+        },
+        "output": {
+          "mean": 3.42,
+          "median": 3.0,
+          "p95": 6
+        },
+        "visual": {
+          "mean": 817.128,
+          "median": 729.0,
+          "p95": 1377
+        }
+      }
+    }
+  },
+  "overall": {
+    "accuracy": 0.948,
+    "all_questions_per_image_accuracy": 0.948,
+    "examples": 250,
+    "latency_ms": {
+      "generation": {
+        "mean": 248.0058973133564,
+        "median": 248.0978376697749,
+        "p95": 322.96211877837777
+      },
+      "total": {
+        "mean": 377.99989739246666,
+        "median": 365.5682171229273,
+        "p95": 515.1185803115368
+      },
+      "vision_encoder": {
+        "mean": 157.36808515930176,
+        "median": 153.91232299804688,
+        "p95": 221.34466552734375
+      }
+    },
+    "peak_allocated_mib": 4707.0263671875,
+    "peak_reserved_mib": 5438.0,
+    "tokens": {
+      "input": {
+        "mean": 875.58,
+        "median": 785.0,
+        "p95": 1451
+      },
+      "output": {
+        "mean": 3.42,
+        "median": 3.0,
+        "p95": 6
+      },
+      "visual": {
+        "mean": 817.128,
+        "median": 729.0,
+        "p95": 1377
+      }
+    }
+  }
+}

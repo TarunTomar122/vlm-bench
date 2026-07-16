@@ -1,0 +1,68 @@
+{
+  "assignments": [],
+  "examples_per_repeat": 50,
+  "kind": "baseline",
+  "name": "baseline-end",
+  "parameters": {
+    "active_model": 2246784880,
+    "active_vision": 412987248,
+    "full_model": 2246784880,
+    "full_vision": 412987248,
+    "per_vision_block": {
+      "0": 15239504,
+      "1": 15239504,
+      "10": 15239504,
+      "11": 15239504,
+      "12": 15239504,
+      "13": 15239504,
+      "14": 15239504,
+      "15": 15239504,
+      "16": 15239504,
+      "17": 15239504,
+      "18": 15239504,
+      "19": 15239504,
+      "2": 15239504,
+      "20": 15239504,
+      "21": 15239504,
+      "22": 15239504,
+      "23": 15239504,
+      "24": 15239504,
+      "25": 15239504,
+      "26": 15239504,
+      "3": 15239504,
+      "4": 15239504,
+      "5": 15239504,
+      "6": 15239504,
+      "7": 15239504,
+      "8": 15239504,
+      "9": 15239504
+    },
+    "removed_model": 0,
+    "removed_vision": 0,
+    "skipped_vision_blocks": []
+  },
+  "per_repeat": [
+    {
+      "total_median_ms": 399.64298461563885,
+      "vision_encoder_median_ms": 162.86052703857422
+    },
+    {
+      "total_median_ms": 400.2351004164666,
+      "vision_encoder_median_ms": 132.9100799560547
+    },
+    {
+      "total_median_ms": 441.3725738413632,
+      "vision_encoder_median_ms": 173.75078582763672
+    },
+    {
+      "total_median_ms": 413.0750976037234,
+      "vision_encoder_median_ms": 173.89311981201172
+    },
+    {
+      "total_median_ms": 397.1700395923108,
+      "vision_encoder_median_ms": 162.95313262939453
+    }
+  ],
+  "repeats": 5,
+  "skip_vision_blocks": []
+}

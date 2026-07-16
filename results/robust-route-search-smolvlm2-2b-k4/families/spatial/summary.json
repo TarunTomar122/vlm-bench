@@ -1,0 +1,303 @@
+{
+  "budgets": {
+    "4": {
+      "development_finalists": [
+        {
+          "blocks": [
+            4,
+            22,
+            24,
+            25
+          ],
+          "objective": {
+            "collateral_drop_pp": 12.045272435897436,
+            "kind": "task",
+            "mean_drop_pp": 0.0,
+            "objective_vector": [
+              0.0,
+              0.0,
+              12.045272435897436,
+              0.0
+            ],
+            "selection_score": 1.8067908653846154,
+            "source_variability_pp": 0.0,
+            "target_capability": "spatial",
+            "worst_source_drop_pp": 0.0
+          }
+        },
+        {
+          "blocks": [
+            18,
+            19,
+            21,
+            23
+          ],
+          "objective": {
+            "collateral_drop_pp": 11.37820512820513,
+            "kind": "task",
+            "mean_drop_pp": 3.7087912087912067,
+            "objective_vector": [
+              3.7087912087912067,
+              3.8461538461538436,
+              11.37820512820513,
+              0.13736263736263687
+            ],
+            "selection_score": 4.543269230769229,
+            "source_variability_pp": 0.13736263736263687,
+            "target_capability": "spatial",
+            "worst_source_drop_pp": 3.8461538461538436
+          }
+        },
+        {
+          "blocks": [
+            4,
+            19,
+            21,
+            24
+          ],
+          "objective": {
+            "collateral_drop_pp": 8.195112179487179,
+            "kind": "task",
+            "mean_drop_pp": 7.280219780219777,
+            "objective_vector": [
+              7.280219780219777,
+              10.71428571428571,
+              8.195112179487179,
+              3.4340659340659334
+            ],
+            "selection_score": 8.063058035714283,
+            "source_variability_pp": 3.4340659340659334,
+            "target_capability": "spatial",
+            "worst_source_drop_pp": 10.71428571428571
+          }
+        },
+        {
+          "blocks": [
+            4,
+            11,
+            16,
+            21
+          ],
+          "objective": {
+            "collateral_drop_pp": 14.909855769230768,
+            "kind": "task",
+            "mean_drop_pp": 5.357142857142855,
+            "objective_vector": [
+              5.357142857142855,
+              10.71428571428571,
+              14.909855769230768,
+              5.357142857142855
+            ],
+            "selection_score": 8.397192651098898,
+            "source_variability_pp": 5.357142857142855,
+            "target_capability": "spatial",
+            "worst_source_drop_pp": 10.71428571428571
+          }
+        },
+        {
+          "blocks": [
+            9,
+            23,
+            24,
+            26
+          ],
+          "objective": {
+            "collateral_drop_pp": 31.77684294871795,
+            "kind": "task",
+            "mean_drop_pp": 7.142857142857145,
+            "objective_vector": [
+              7.142857142857145,
+              14.28571428571429,
+              31.77684294871795,
+              7.142857142857145
+            ],
+            "selection_score": 12.980812156593409,
+            "source_variability_pp": 7.142857142857145,
+            "target_capability": "spatial",
+            "worst_source_drop_pp": 14.28571428571429
+          }
+        },
+        {
+          "blocks": [
+            4,
+            6,
+            11,
+            18
+          ],
+          "objective": {
+            "collateral_drop_pp": 24.01842948717949,
+            "kind": "task",
+            "mean_drop_pp": 10.851648351648352,
+            "objective_vector": [
+              10.851648351648352,
+              17.85714285714286,
+              24.01842948717949,
+              7.005494505494509
+            ],
+            "selection_score": 14.543698489010989,
+            "source_variability_pp": 7.005494505494509,
+            "target_capability": "spatial",
+            "worst_source_drop_pp": 17.85714285714286
+          }
+        }
+      ],
+      "frozen_route": {
+        "blocks": [
+          4,
+          19,
+          21,
+          24
+        ],
+        "objective": {
+          "collateral_drop_pp": 10.55895858001972,
+          "kind": "task",
+          "mean_drop_pp": 1.5625,
+          "objective_vector": [
+            1.5625,
+            3.125,
+            10.55895858001972,
+            1.5625
+          ],
+          "selection_score": 3.380718787002958,
+          "source_variability_pp": 1.5625,
+          "target_capability": "spatial",
+          "worst_source_drop_pp": 3.125
+        }
+      },
+      "seed_development_winners": [
+        [
+          4,
+          22,
+          24,
+          25
+        ],
+        [
+          18,
+          19,
+          21,
+          23
+        ],
+        [
+          4,
+          19,
+          21,
+          24
+        ]
+      ],
+      "seed_route_stability_jaccard": 0.2222222222222222,
+      "selection_candidates": [
+        {
+          "blocks": [
+            4,
+            19,
+            21,
+            24
+          ],
+          "objective": {
+            "collateral_drop_pp": 10.55895858001972,
+            "kind": "task",
+            "mean_drop_pp": 1.5625,
+            "objective_vector": [
+              1.5625,
+              3.125,
+              10.55895858001972,
+              1.5625
+            ],
+            "selection_score": 3.380718787002958,
+            "source_variability_pp": 1.5625,
+            "target_capability": "spatial",
+            "worst_source_drop_pp": 3.125
+          }
+        },
+        {
+          "blocks": [
+            18,
+            19,
+            21,
+            23
+          ],
+          "objective": {
+            "collateral_drop_pp": 11.673983892117999,
+            "kind": "task",
+            "mean_drop_pp": 3.0201342281879207,
+            "objective_vector": [
+              3.0201342281879207,
+              6.040268456375841,
+              11.673983892117999,
+              3.0201342281879207
+            ],
+            "selection_score": 5.224251946233809,
+            "source_variability_pp": 3.0201342281879207,
+            "target_capability": "spatial",
+            "worst_source_drop_pp": 6.040268456375841
+          }
+        },
+        {
+          "blocks": [
+            4,
+            22,
+            24,
+            25
+          ],
+          "objective": {
+            "collateral_drop_pp": 9.941348852362626,
+            "kind": "task",
+            "mean_drop_pp": 7.267197986577184,
+            "objective_vector": [
+              7.267197986577184,
+              11.409395973154368,
+              9.941348852362626,
+              4.142197986577184
+            ],
+            "selection_score": 8.598480012418156,
+            "source_variability_pp": 4.142197986577184,
+            "target_capability": "spatial",
+            "worst_source_drop_pp": 11.409395973154368
+          }
+        }
+      ]
+    }
+  },
+  "evidence_status": "processed-v2 method-selection evidence; not sealed external-heldout evidence",
+  "family": "spatial",
+  "input_hashes": {
+    "all_manifest": "ec3712d74a43caf8dd3d1818788ee0a92bc82e7aa597d640b00f089c6ed357c8",
+    "baseline_predictions": "311e8cd4ca9340d9f674da880e70479812af82b0aac8ebfd20bb6f385a053ca1",
+    "model_config": "7dcadbceb366f47810a30c57005366ceea99daeef48ec3e1c813638c6c7f42e2",
+    "phase3_summaries": {},
+    "prepared_manifests": {
+      "development": {
+        "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/development-evaluation.jsonl",
+        "sha256": "21d99d04e6b4d869bf5ef8ac0118084421bb9b177a2c3aa5a845e4b601ff757b"
+      },
+      "scout": {
+        "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/scout-task-spatial.jsonl",
+        "sha256": "7444ece2217ef860a72c773da9f30b93452a3a523549594aadc2cf9811c6d598"
+      },
+      "selection": {
+        "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/selection.jsonl",
+        "sha256": "343d7e7e85baf2cc1ed6f6d5b973f8a1d1b1edb1f243e594ffd410b27dba0f82"
+      }
+    },
+    "routes": "78dccefccc6bf8174d07539830f2014823266d042af9940ac6b9d047a3ef13f4",
+    "search_config": "ab27d6e3d8df1bf7407f380e8c4fbe29c5b79ced0a2af6fa00970524fa05f424",
+    "sensitivity": "c4281784ffad5637593b835e776a8f6cefcac1b0fd683560b6af8634cad4f055"
+  },
+  "protocol": {
+    "budgets": [
+      4
+    ],
+    "development_finalists_per_seed": 2,
+    "generations": 2,
+    "population_size": 12,
+    "seeds": [
+      20260715,
+      20260716,
+      20260717
+    ],
+    "selection_finalists": 3
+  },
+  "schema_version": 1,
+  "status": "complete",
+  "updated_at": "2026-07-16T12:45:10.708467+00:00"
+}

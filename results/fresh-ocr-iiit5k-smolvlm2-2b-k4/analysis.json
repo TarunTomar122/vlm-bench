@@ -1,0 +1,51 @@
+{
+  "conditions": {
+    "full": {
+      "accuracy_drop_pp": 0.0,
+      "baseline_accuracy": 0.948,
+      "candidate_accuracy": 0.948,
+      "examples": 250,
+      "lost_correct": 0,
+      "recovered_correct": 0
+    },
+    "generic-k4": {
+      "accuracy_drop_pp": 8.399999999999997,
+      "baseline_accuracy": 0.948,
+      "candidate_accuracy": 0.864,
+      "examples": 250,
+      "lost_correct": 24,
+      "recovered_correct": 3
+    },
+    "ocr-k4": {
+      "accuracy_drop_pp": 21.999999999999996,
+      "baseline_accuracy": 0.948,
+      "candidate_accuracy": 0.728,
+      "examples": 250,
+      "lost_correct": 56,
+      "recovered_correct": 1
+    }
+  },
+  "frozen_routes_sha256": "be3743fadbf3a9ab62309a7f9d86fd335d65f92e82799aa3dd1aab1ad88e01d5",
+  "manifest_sha256": "981347198b2397ad92d0130245898db5d307d2c5d3318a22b7c28e18d596c875",
+  "ocr_minus_generic_k4": {
+    "ci95_high_pp": -8.4,
+    "ci95_low_pp": -19.2,
+    "examples": 250,
+    "mean_pp": -13.600000000000001
+  },
+  "routes": {
+    "generic-k4": [
+      4,
+      22,
+      24,
+      25
+    ],
+    "ocr-k4": [
+      5,
+      11,
+      19,
+      25
+    ]
+  },
+  "status": "sealed fresh OCR transfer; frozen routes only"
+}

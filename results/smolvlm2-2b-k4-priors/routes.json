@@ -1,0 +1,163 @@
+[
+  {
+    "assignments": [
+      {
+        "budget": 4,
+        "route_type": "generic_macro"
+      }
+    ],
+    "name": "route-000-k04",
+    "skip_vision_blocks": [
+      4,
+      5,
+      7,
+      24
+    ]
+  },
+  {
+    "assignments": [
+      {
+        "budget": 4,
+        "route_type": "contiguous_macro"
+      }
+    ],
+    "name": "route-001-k04",
+    "skip_vision_blocks": [
+      22,
+      23,
+      24,
+      25
+    ]
+  },
+  {
+    "assignments": [
+      {
+        "budget": 4,
+        "capability": "attribute",
+        "route_type": "task_specific"
+      }
+    ],
+    "name": "route-002-k04",
+    "skip_vision_blocks": [
+      4,
+      5,
+      6,
+      8
+    ]
+  },
+  {
+    "assignments": [
+      {
+        "budget": 4,
+        "capability": "counting",
+        "route_type": "task_specific"
+      }
+    ],
+    "name": "route-003-k04",
+    "skip_vision_blocks": [
+      3,
+      10,
+      22,
+      24
+    ]
+  },
+  {
+    "assignments": [
+      {
+        "budget": 4,
+        "capability": "object",
+        "route_type": "task_specific"
+      }
+    ],
+    "name": "route-004-k04",
+    "skip_vision_blocks": [
+      14,
+      15,
+      23,
+      24
+    ]
+  },
+  {
+    "assignments": [
+      {
+        "budget": 4,
+        "capability": "ocr",
+        "route_type": "task_specific"
+      }
+    ],
+    "name": "route-005-k04",
+    "skip_vision_blocks": [
+      5,
+      7,
+      23,
+      25
+    ]
+  },
+  {
+    "assignments": [
+      {
+        "budget": 4,
+        "capability": "spatial",
+        "route_type": "task_specific"
+      }
+    ],
+    "name": "route-006-k04",
+    "skip_vision_blocks": [
+      1,
+      7,
+      11,
+      25
+    ]
+  },
+  {
+    "assignments": [
+      {
+        "budget": 4,
+        "repeat": 0,
+        "route_type": "random",
+        "seed": 20261116
+      }
+    ],
+    "name": "route-007-k04",
+    "skip_vision_blocks": [
+      6,
+      10,
+      12,
+      20
+    ]
+  },
+  {
+    "assignments": [
+      {
+        "budget": 4,
+        "repeat": 1,
+        "route_type": "random",
+        "seed": 20261117
+      }
+    ],
+    "name": "route-008-k04",
+    "skip_vision_blocks": [
+      0,
+      4,
+      6,
+      7
+    ]
+  },
+  {
+    "assignments": [
+      {
+        "budget": 4,
+        "repeat": 2,
+        "route_type": "random",
+        "seed": 20261118
+      }
+    ],
+    "name": "route-009-k04",
+    "skip_vision_blocks": [
+      6,
+      10,
+      20,
+      26
+    ]
+  }
+]

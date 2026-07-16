@@ -1,0 +1,17 @@
+[
+  {
+    "assignments": [
+      {
+        "budget": 4,
+        "route_type": "frozen_generic"
+      }
+    ],
+    "name": "frozen-generic-k4",
+    "skip_vision_blocks": [
+      4,
+      22,
+      24,
+      25
+    ]
+  }
+]

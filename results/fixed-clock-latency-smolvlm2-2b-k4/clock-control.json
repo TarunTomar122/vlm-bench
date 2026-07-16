@@ -1,0 +1,31 @@
+{
+  "clock_lock_error": {
+    "command": [
+      "sudo",
+      "-n",
+      "nvidia-smi",
+      "-lgc",
+      "2700,2700"
+    ],
+    "returncode": 4,
+    "stderr": "sudo: unable to send audit message: Operation not permitted\n",
+    "stdout": "The current user does not have permission to change clocks for GPU 00000000:41:00.0.\nTerminating early due to previous errors.\n"
+  },
+  "measurement_mode": "unlocked_same_vm_fallback",
+  "requested_graphics_mhz": 2700,
+  "requested_memory_mhz": 10501,
+  "restore": [],
+  "set": [
+    {
+      "command": [
+        "sudo",
+        "-n",
+        "nvidia-smi",
+        "-pm",
+        "1"
+      ],
+      "stderr": "sudo: unable to send audit message: Operation not permitted\n",
+      "stdout": "Persistence mode is already Enabled for GPU 00000000:41:00.0.\nAll done.\n"
+    }
+  ]
+}

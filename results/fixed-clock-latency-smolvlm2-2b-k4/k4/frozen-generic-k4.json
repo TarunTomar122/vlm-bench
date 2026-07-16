@@ -1,0 +1,83 @@
+{
+  "assignments": [
+    {
+      "budget": 4,
+      "route_type": "frozen_generic"
+    }
+  ],
+  "examples_per_repeat": 50,
+  "kind": "route",
+  "name": "frozen-generic-k4",
+  "parameters": {
+    "active_model": 2185826864,
+    "active_vision": 352029232,
+    "full_model": 2246784880,
+    "full_vision": 412987248,
+    "per_vision_block": {
+      "0": 15239504,
+      "1": 15239504,
+      "10": 15239504,
+      "11": 15239504,
+      "12": 15239504,
+      "13": 15239504,
+      "14": 15239504,
+      "15": 15239504,
+      "16": 15239504,
+      "17": 15239504,
+      "18": 15239504,
+      "19": 15239504,
+      "2": 15239504,
+      "20": 15239504,
+      "21": 15239504,
+      "22": 15239504,
+      "23": 15239504,
+      "24": 15239504,
+      "25": 15239504,
+      "26": 15239504,
+      "3": 15239504,
+      "4": 15239504,
+      "5": 15239504,
+      "6": 15239504,
+      "7": 15239504,
+      "8": 15239504,
+      "9": 15239504
+    },
+    "removed_model": 60958016,
+    "removed_vision": 60958016,
+    "skipped_vision_blocks": [
+      4,
+      22,
+      24,
+      25
+    ]
+  },
+  "per_repeat": [
+    {
+      "total_median_ms": 385.19747159443796,
+      "vision_encoder_median_ms": 147.32083129882812
+    },
+    {
+      "total_median_ms": 391.0111067816615,
+      "vision_encoder_median_ms": 152.09779357910156
+    },
+    {
+      "total_median_ms": 401.00820851512253,
+      "vision_encoder_median_ms": 160.85759735107422
+    },
+    {
+      "total_median_ms": 381.57860352657735,
+      "vision_encoder_median_ms": 156.55465698242188
+    },
+    {
+      "total_median_ms": 393.1195845361799,
+      "vision_encoder_median_ms": 156.9836654663086
+    }
+  ],
+  "repeats": 5,
+  "skip_vision_blocks": [
+    4,
+    22,
+    24,
+    25
+  ]
+}

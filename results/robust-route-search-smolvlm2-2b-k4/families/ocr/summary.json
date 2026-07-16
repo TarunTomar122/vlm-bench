@@ -1,0 +1,303 @@
+{
+  "budgets": {
+    "4": {
+      "development_finalists": [
+        {
+          "blocks": [
+            5,
+            9,
+            21,
+            25
+          ],
+          "objective": {
+            "collateral_drop_pp": 5.6029647435897445,
+            "kind": "task",
+            "mean_drop_pp": 16.666666666666664,
+            "objective_vector": [
+              16.666666666666664,
+              16.666666666666664,
+              5.6029647435897445,
+              0.0
+            ],
+            "selection_score": 13.34044471153846,
+            "source_variability_pp": 0.0,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 16.666666666666664
+          }
+        },
+        {
+          "blocks": [
+            5,
+            11,
+            19,
+            25
+          ],
+          "objective": {
+            "collateral_drop_pp": 7.420157967032967,
+            "kind": "task",
+            "mean_drop_pp": 16.666666666666664,
+            "objective_vector": [
+              16.666666666666664,
+              29.166666666666664,
+              7.420157967032967,
+              12.5
+            ],
+            "selection_score": 18.61302369505494,
+            "source_variability_pp": 12.5,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 29.166666666666664
+          }
+        },
+        {
+          "blocks": [
+            8,
+            15,
+            19,
+            23
+          ],
+          "objective": {
+            "collateral_drop_pp": 8.725389194139195,
+            "kind": "task",
+            "mean_drop_pp": 22.916666666666668,
+            "objective_vector": [
+              22.916666666666668,
+              41.66666666666667,
+              8.725389194139195,
+              18.750000000000004
+            ],
+            "selection_score": 25.996308379120883,
+            "source_variability_pp": 18.750000000000004,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 41.66666666666667
+          }
+        },
+        {
+          "blocks": [
+            5,
+            7,
+            18,
+            19
+          ],
+          "objective": {
+            "collateral_drop_pp": 9.761046245421245,
+            "kind": "task",
+            "mean_drop_pp": 22.916666666666668,
+            "objective_vector": [
+              22.916666666666668,
+              41.66666666666667,
+              9.761046245421245,
+              18.750000000000004
+            ],
+            "selection_score": 26.151656936813186,
+            "source_variability_pp": 18.750000000000004,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 41.66666666666667
+          }
+        },
+        {
+          "blocks": [
+            2,
+            5,
+            19,
+            24
+          ],
+          "objective": {
+            "collateral_drop_pp": 13.34592490842491,
+            "kind": "task",
+            "mean_drop_pp": 31.249999999999996,
+            "objective_vector": [
+              31.249999999999996,
+              58.33333333333333,
+              13.34592490842491,
+              27.083333333333332
+            ],
+            "selection_score": 36.272722069597066,
+            "source_variability_pp": 27.083333333333332,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 58.33333333333333
+          }
+        },
+        {
+          "blocks": [
+            11,
+            16,
+            20,
+            24
+          ],
+          "objective": {
+            "collateral_drop_pp": 5.435554029304031,
+            "kind": "task",
+            "mean_drop_pp": 43.75,
+            "objective_vector": [
+              43.75,
+              66.66666666666666,
+              5.435554029304031,
+              22.91666666666666
+            ],
+            "selection_score": 42.79449977106226,
+            "source_variability_pp": 22.91666666666666,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 66.66666666666666
+          }
+        }
+      ],
+      "frozen_route": {
+        "blocks": [
+          5,
+          11,
+          19,
+          25
+        ],
+        "objective": {
+          "collateral_drop_pp": 7.229867938301935,
+          "kind": "task",
+          "mean_drop_pp": 24.34802158273381,
+          "objective_vector": [
+            24.34802158273381,
+            42.44604316546762,
+            7.229867938301935,
+            18.09802158273381
+          ],
+          "selection_score": 26.584705010889174,
+          "source_variability_pp": 18.09802158273381,
+          "target_capability": "ocr",
+          "worst_source_drop_pp": 42.44604316546762
+        }
+      },
+      "seed_development_winners": [
+        [
+          8,
+          15,
+          19,
+          23
+        ],
+        [
+          5,
+          7,
+          18,
+          19
+        ],
+        [
+          5,
+          9,
+          21,
+          25
+        ]
+      ],
+      "seed_route_stability_jaccard": 0.09523809523809523,
+      "selection_candidates": [
+        {
+          "blocks": [
+            5,
+            11,
+            19,
+            25
+          ],
+          "objective": {
+            "collateral_drop_pp": 7.229867938301935,
+            "kind": "task",
+            "mean_drop_pp": 24.34802158273381,
+            "objective_vector": [
+              24.34802158273381,
+              42.44604316546762,
+              7.229867938301935,
+              18.09802158273381
+            ],
+            "selection_score": 26.584705010889174,
+            "source_variability_pp": 18.09802158273381,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 42.44604316546762
+          }
+        },
+        {
+          "blocks": [
+            5,
+            9,
+            21,
+            25
+          ],
+          "objective": {
+            "collateral_drop_pp": 7.492806688920894,
+            "kind": "task",
+            "mean_drop_pp": 26.753597122302157,
+            "objective_vector": [
+              26.753597122302157,
+              41.007194244604314,
+              7.492806688920894,
+              14.253597122302157
+            ],
+            "selection_score": 26.890557693985617,
+            "source_variability_pp": 14.253597122302157,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 41.007194244604314
+          }
+        },
+        {
+          "blocks": [
+            8,
+            15,
+            19,
+            23
+          ],
+          "objective": {
+            "collateral_drop_pp": 6.357439039128665,
+            "kind": "task",
+            "mean_drop_pp": 29.743705035971225,
+            "objective_vector": [
+              29.743705035971225,
+              53.23741007194245,
+              6.357439039128665,
+              23.493705035971225
+            ],
+            "selection_score": 32.658876647236205,
+            "source_variability_pp": 23.493705035971225,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 53.23741007194245
+          }
+        }
+      ]
+    }
+  },
+  "evidence_status": "processed-v2 method-selection evidence; not sealed external-heldout evidence",
+  "family": "ocr",
+  "input_hashes": {
+    "all_manifest": "ec3712d74a43caf8dd3d1818788ee0a92bc82e7aa597d640b00f089c6ed357c8",
+    "baseline_predictions": "311e8cd4ca9340d9f674da880e70479812af82b0aac8ebfd20bb6f385a053ca1",
+    "model_config": "7dcadbceb366f47810a30c57005366ceea99daeef48ec3e1c813638c6c7f42e2",
+    "phase3_summaries": {},
+    "prepared_manifests": {
+      "development": {
+        "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/development-evaluation.jsonl",
+        "sha256": "21d99d04e6b4d869bf5ef8ac0118084421bb9b177a2c3aa5a845e4b601ff757b"
+      },
+      "scout": {
+        "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/scout-task-ocr.jsonl",
+        "sha256": "0781362067fd373dd4bcd1c8bd3e2814e50b93242bc14364b7aad03317025ba8"
+      },
+      "selection": {
+        "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/selection.jsonl",
+        "sha256": "343d7e7e85baf2cc1ed6f6d5b973f8a1d1b1edb1f243e594ffd410b27dba0f82"
+      }
+    },
+    "routes": "78dccefccc6bf8174d07539830f2014823266d042af9940ac6b9d047a3ef13f4",
+    "search_config": "ab27d6e3d8df1bf7407f380e8c4fbe29c5b79ced0a2af6fa00970524fa05f424",
+    "sensitivity": "c4281784ffad5637593b835e776a8f6cefcac1b0fd683560b6af8634cad4f055"
+  },
+  "protocol": {
+    "budgets": [
+      4
+    ],
+    "development_finalists_per_seed": 2,
+    "generations": 2,
+    "population_size": 12,
+    "seeds": [
+      20260715,
+      20260716,
+      20260717
+    ],
+    "selection_finalists": 3
+  },
+  "schema_version": 1,
+  "status": "complete",
+  "updated_at": "2026-07-16T12:13:03.633406+00:00"
+}

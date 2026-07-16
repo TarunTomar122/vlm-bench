@@ -1,0 +1,396 @@
+{
+  "evidence_status": "processed-v2 development and test method-selection evidence; no sealed external-heldout access",
+  "families": {
+    "attribute": {
+      "budgets": {
+        "4": {
+          "blocks": [
+            5,
+            11,
+            22,
+            25
+          ],
+          "seed_development_winners": [
+            [
+              8,
+              15,
+              21,
+              23
+            ],
+            [
+              5,
+              7,
+              18,
+              19
+            ],
+            [
+              5,
+              11,
+              22,
+              25
+            ]
+          ],
+          "seed_route_stability_jaccard": 0.047619047619047616,
+          "selection_objective": {
+            "collateral_drop_pp": 11.021950536955819,
+            "kind": "task",
+            "mean_drop_pp": 7.5310559006211255,
+            "objective_vector": [
+              7.5310559006211255,
+              10.71428571428572,
+              11.021950536955819,
+              3.183229813664595
+            ],
+            "selection_score": 8.574876431475055,
+            "source_variability_pp": 3.183229813664595,
+            "target_capability": "attribute",
+            "worst_source_drop_pp": 10.71428571428572
+          }
+        }
+      },
+      "mean_seed_route_stability_jaccard": 0.047619047619047616
+    },
+    "counting": {
+      "budgets": {
+        "4": {
+          "blocks": [
+            11,
+            16,
+            20,
+            24
+          ],
+          "seed_development_winners": [
+            [
+              11,
+              16,
+              20,
+              24
+            ],
+            [
+              3,
+              10,
+              22,
+              24
+            ],
+            [
+              6,
+              11,
+              22,
+              25
+            ]
+          ],
+          "seed_route_stability_jaccard": 0.14285714285714285,
+          "selection_objective": {
+            "collateral_drop_pp": 13.894826144700453,
+            "kind": "task",
+            "mean_drop_pp": 6.002400960384158,
+            "objective_vector": [
+              6.002400960384158,
+              6.1224489795918435,
+              13.894826144700453,
+              0.12004801920768582
+            ],
+            "selection_score": 6.63404384967626,
+            "source_variability_pp": 0.12004801920768582,
+            "target_capability": "counting",
+            "worst_source_drop_pp": 6.1224489795918435
+          }
+        }
+      },
+      "mean_seed_route_stability_jaccard": 0.14285714285714285
+    },
+    "generic": {
+      "budgets": {
+        "4": {
+          "blocks": [
+            4,
+            22,
+            24,
+            25
+          ],
+          "seed_development_winners": [
+            [
+              4,
+              22,
+              24,
+              25
+            ],
+            [
+              9,
+              16,
+              19,
+              24
+            ],
+            [
+              5,
+              11,
+              22,
+              25
+            ]
+          ],
+          "seed_route_stability_jaccard": 0.15873015873015872,
+          "selection_objective": {
+            "collateral_drop_pp": 0.0,
+            "kind": "generic",
+            "mean_drop_pp": 9.406518679205536,
+            "objective_vector": [
+              9.406518679205536,
+              26.618705035971225,
+              7.368185602069662
+            ],
+            "selection_score": 14.162507970808067,
+            "source_variability_pp": 7.368185602069662,
+            "target_capability": null,
+            "worst_source_drop_pp": 26.618705035971225
+          }
+        }
+      },
+      "mean_seed_route_stability_jaccard": 0.15873015873015872
+    },
+    "object": {
+      "budgets": {
+        "4": {
+          "blocks": [
+            4,
+            16,
+            21,
+            22
+          ],
+          "seed_development_winners": [
+            [
+              4,
+              16,
+              21,
+              22
+            ],
+            [
+              14,
+              15,
+              23,
+              24
+            ],
+            [
+              5,
+              11,
+              22,
+              25
+            ]
+          ],
+          "seed_route_stability_jaccard": 0.047619047619047616,
+          "selection_objective": {
+            "collateral_drop_pp": 11.452724722670325,
+            "kind": "task",
+            "mean_drop_pp": 0.30303030303029943,
+            "objective_vector": [
+              0.30303030303029943,
+              0.6060606060605989,
+              11.452724722670325,
+              0.30303030303029943
+            ],
+            "selection_score": 2.066393556885393,
+            "source_variability_pp": 0.30303030303029943,
+            "target_capability": "object",
+            "worst_source_drop_pp": 0.6060606060605989
+          }
+        }
+      },
+      "mean_seed_route_stability_jaccard": 0.047619047619047616
+    },
+    "ocr": {
+      "budgets": {
+        "4": {
+          "blocks": [
+            5,
+            11,
+            19,
+            25
+          ],
+          "seed_development_winners": [
+            [
+              8,
+              15,
+              19,
+              23
+            ],
+            [
+              5,
+              7,
+              18,
+              19
+            ],
+            [
+              5,
+              9,
+              21,
+              25
+            ]
+          ],
+          "seed_route_stability_jaccard": 0.09523809523809523,
+          "selection_objective": {
+            "collateral_drop_pp": 7.229867938301935,
+            "kind": "task",
+            "mean_drop_pp": 24.34802158273381,
+            "objective_vector": [
+              24.34802158273381,
+              42.44604316546762,
+              7.229867938301935,
+              18.09802158273381
+            ],
+            "selection_score": 26.584705010889174,
+            "source_variability_pp": 18.09802158273381,
+            "target_capability": "ocr",
+            "worst_source_drop_pp": 42.44604316546762
+          }
+        }
+      },
+      "mean_seed_route_stability_jaccard": 0.09523809523809523
+    },
+    "spatial": {
+      "budgets": {
+        "4": {
+          "blocks": [
+            4,
+            19,
+            21,
+            24
+          ],
+          "seed_development_winners": [
+            [
+              4,
+              22,
+              24,
+              25
+            ],
+            [
+              18,
+              19,
+              21,
+              23
+            ],
+            [
+              4,
+              19,
+              21,
+              24
+            ]
+          ],
+          "seed_route_stability_jaccard": 0.2222222222222222,
+          "selection_objective": {
+            "collateral_drop_pp": 10.55895858001972,
+            "kind": "task",
+            "mean_drop_pp": 1.5625,
+            "objective_vector": [
+              1.5625,
+              3.125,
+              10.55895858001972,
+              1.5625
+            ],
+            "selection_score": 3.380718787002958,
+            "source_variability_pp": 1.5625,
+            "target_capability": "spatial",
+            "worst_source_drop_pp": 3.125
+          }
+        }
+      },
+      "mean_seed_route_stability_jaccard": 0.2222222222222222
+    }
+  },
+  "frozen_at": "2026-07-16T12:46:31.955398+00:00",
+  "hashes": {
+    "all_manifest": "ec3712d74a43caf8dd3d1818788ee0a92bc82e7aa597d640b00f089c6ed357c8",
+    "baseline_predictions": "311e8cd4ca9340d9f674da880e70479812af82b0aac8ebfd20bb6f385a053ca1",
+    "model_config": "7dcadbceb366f47810a30c57005366ceea99daeef48ec3e1c813638c6c7f42e2",
+    "phase3_summaries": {},
+    "prepared_manifests_by_family": {
+      "attribute": {
+        "development": {
+          "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/development-evaluation.jsonl",
+          "sha256": "21d99d04e6b4d869bf5ef8ac0118084421bb9b177a2c3aa5a845e4b601ff757b"
+        },
+        "scout": {
+          "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/scout-task-attribute.jsonl",
+          "sha256": "6c98823419f2834d8826263597f9ee5c63121b07850faef996bc9057c084b276"
+        },
+        "selection": {
+          "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/selection.jsonl",
+          "sha256": "343d7e7e85baf2cc1ed6f6d5b973f8a1d1b1edb1f243e594ffd410b27dba0f82"
+        }
+      },
+      "counting": {
+        "development": {
+          "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/development-evaluation.jsonl",
+          "sha256": "21d99d04e6b4d869bf5ef8ac0118084421bb9b177a2c3aa5a845e4b601ff757b"
+        },
+        "scout": {
+          "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/scout-task-counting.jsonl",
+          "sha256": "257b019b493d9c504a46085ce830d2c5fb8489ccfa063148e715e84d1a950840"
+        },
+        "selection": {
+          "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/selection.jsonl",
+          "sha256": "343d7e7e85baf2cc1ed6f6d5b973f8a1d1b1edb1f243e594ffd410b27dba0f82"
+        }
+      },
+      "generic": {
+        "development": {
+          "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/development-evaluation.jsonl",
+          "sha256": "21d99d04e6b4d869bf5ef8ac0118084421bb9b177a2c3aa5a845e4b601ff757b"
+        },
+        "scout": {
+          "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/scout-generic.jsonl",
+          "sha256": "df54efa7cac966ad6a7ee215c1b983986105fdef09ed076b9a3dd880412c3d18"
+        },
+        "selection": {
+          "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/selection.jsonl",
+          "sha256": "343d7e7e85baf2cc1ed6f6d5b973f8a1d1b1edb1f243e594ffd410b27dba0f82"
+        }
+      },
+      "object": {
+        "development": {
+          "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/development-evaluation.jsonl",
+          "sha256": "21d99d04e6b4d869bf5ef8ac0118084421bb9b177a2c3aa5a845e4b601ff757b"
+        },
+        "scout": {
+          "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/scout-task-object.jsonl",
+          "sha256": "b4928ab6bf549eff61719460e55df3443135af1da99e367db496f5ee188b6e3d"
+        },
+        "selection": {
+          "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/selection.jsonl",
+          "sha256": "343d7e7e85baf2cc1ed6f6d5b973f8a1d1b1edb1f243e594ffd410b27dba0f82"
+        }
+      },
+      "ocr": {
+        "development": {
+          "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/development-evaluation.jsonl",
+          "sha256": "21d99d04e6b4d869bf5ef8ac0118084421bb9b177a2c3aa5a845e4b601ff757b"
+        },
+        "scout": {
+          "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/scout-task-ocr.jsonl",
+          "sha256": "0781362067fd373dd4bcd1c8bd3e2814e50b93242bc14364b7aad03317025ba8"
+        },
+        "selection": {
+          "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/selection.jsonl",
+          "sha256": "343d7e7e85baf2cc1ed6f6d5b973f8a1d1b1edb1f243e594ffd410b27dba0f82"
+        }
+      },
+      "spatial": {
+        "development": {
+          "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/development-evaluation.jsonl",
+          "sha256": "21d99d04e6b4d869bf5ef8ac0118084421bb9b177a2c3aa5a845e4b601ff757b"
+        },
+        "scout": {
+          "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/scout-task-spatial.jsonl",
+          "sha256": "7444ece2217ef860a72c773da9f30b93452a3a523549594aadc2cf9811c6d598"
+        },
+        "selection": {
+          "path": "/home/ubuntu/vlm-bench/data/processed-v2/robust-route-search-smolvlm2-2b-k4/prepared/selection.jsonl",
+          "sha256": "343d7e7e85baf2cc1ed6f6d5b973f8a1d1b1edb1f243e594ffd410b27dba0f82"
+        }
+      }
+    },
+    "routes": "78dccefccc6bf8174d07539830f2014823266d042af9940ac6b9d047a3ef13f4",
+    "search_config": "ab27d6e3d8df1bf7407f380e8c4fbe29c5b79ced0a2af6fa00970524fa05f424",
+    "sensitivity": "c4281784ffad5637593b835e776a8f6cefcac1b0fd683560b6af8634cad4f055"
+  },
+  "schema_version": 1,
+  "status": "frozen"
+}

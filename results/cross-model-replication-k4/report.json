@@ -1,0 +1,106 @@
+{
+  "fresh_smol_ocr_transfer": {
+    "conditions": {
+      "full": {
+        "accuracy_drop_pp": 0.0,
+        "baseline_accuracy": 0.948,
+        "candidate_accuracy": 0.948,
+        "examples": 250,
+        "lost_correct": 0,
+        "recovered_correct": 0
+      },
+      "generic-k4": {
+        "accuracy_drop_pp": 8.399999999999997,
+        "baseline_accuracy": 0.948,
+        "candidate_accuracy": 0.864,
+        "examples": 250,
+        "lost_correct": 24,
+        "recovered_correct": 3
+      },
+      "ocr-k4": {
+        "accuracy_drop_pp": 21.999999999999996,
+        "baseline_accuracy": 0.948,
+        "candidate_accuracy": 0.728,
+        "examples": 250,
+        "lost_correct": 56,
+        "recovered_correct": 1
+      }
+    },
+    "frozen_routes_sha256": "be3743fadbf3a9ab62309a7f9d86fd335d65f92e82799aa3dd1aab1ad88e01d5",
+    "manifest_sha256": "981347198b2397ad92d0130245898db5d307d2c5d3318a22b7c28e18d596c875",
+    "ocr_minus_generic_k4": {
+      "ci95_high_pp": -8.4,
+      "ci95_low_pp": -19.2,
+      "examples": 250,
+      "mean_pp": -13.600000000000001
+    },
+    "routes": {
+      "generic-k4": [
+        4,
+        22,
+        24,
+        25
+      ],
+      "ocr-k4": [
+        5,
+        11,
+        19,
+        25
+      ]
+    },
+    "status": "sealed fresh OCR transfer; frozen routes only"
+  },
+  "interpretation_rule": "A positive task-minus-generic value favors the capability-conditional policy at the same K. Intervals crossing zero are not treated as confirmed advantages.",
+  "models": [
+    {
+      "budgets": {
+        "4": {
+          "ci95_high_pp": 2.054794520547945,
+          "ci95_low_pp": -1.82648401826484,
+          "generic_accuracy": 0.8127853881278538,
+          "task_accuracy": 0.8139269406392694,
+          "task_minus_generic_pp": 0.1141552511415525
+        },
+        "6": {
+          "ci95_high_pp": 4.337899543378995,
+          "ci95_low_pp": 0.0,
+          "generic_accuracy": 0.791095890410959,
+          "task_accuracy": 0.8127853881278538,
+          "task_minus_generic_pp": 2.1689497716894977
+        },
+        "8": {
+          "ci95_high_pp": 3.0821917808219177,
+          "ci95_low_pp": -1.7123287671232876,
+          "generic_accuracy": 0.7591324200913242,
+          "task_accuracy": 0.7659817351598174,
+          "task_minus_generic_pp": 0.684931506849315
+        }
+      },
+      "full_accuracy": 0.83675799086758,
+      "model": "Qwen2.5-VL-3B-Instruct"
+    },
+    {
+      "budgets": {
+        "4": {
+          "ci95_high_pp": 3.5388127853881275,
+          "ci95_low_pp": -1.9406392694063925,
+          "generic_accuracy": 0.7248858447488584,
+          "task_accuracy": 0.7328767123287672,
+          "task_minus_generic_pp": 0.7990867579908676
+        }
+      },
+      "full_accuracy": 0.8264840182648402,
+      "model": "SmolVLM2-2.2B-Instruct"
+    }
+  ],
+  "smol_fixed_clock_generic_latency": {
+    "4": {
+      "baseline_total_median_ms": 407.3876296170056,
+      "baseline_vision_encoder_median_ms": 170.01099395751953,
+      "total_speedup_percent": 4.188250039784336,
+      "vision_speedup_percent": 8.595296514627826
+    }
+  },
+  "smol_latency_measurement_mode": "unlocked_same_vm_fallback",
+  "status": "two-model method replication; method-selection and fresh transfer evidence separated"
+}
