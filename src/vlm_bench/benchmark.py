@@ -275,7 +275,12 @@ class BaselineRunner:
         else:
             text = self.processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
             inputs = self.processor(text=[text], images=[image], padding=True, return_tensors="pt")
-        inputs = {key: value.to(self.config["device"]) for key, value in inputs.items()}
+        inputs = {
+            key: value.to(self.config["device"], dtype=self.model.dtype)
+            if torch.is_floating_point(value)
+            else value.to(self.config["device"])
+            for key, value in inputs.items()
+        }
         torch.cuda.synchronize()
         preprocessing_ms = (time.perf_counter() - started) * 1000
         return inputs, width, height, preprocessing_ms
