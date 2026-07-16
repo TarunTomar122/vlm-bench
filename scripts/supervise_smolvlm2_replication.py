@@ -126,11 +126,11 @@ def step(state: dict) -> bool:
         return False
     if not FRESH_OCR_MANIFEST.exists():
         return False
-    if not CROSS_MODEL_REPORT.exists():
-        launch("cross-model-report", command("scripts/analyze_cross_model_replication.py"), state)
-        return False
     if not LATENCY_SUMMARY.exists():
         launch("fixed-clock-latency", command("scripts/run_smolvlm2_fixed_clock_latency.py", "--frozen-routes", str(frozen)), state)
+        return False
+    if not CROSS_MODEL_REPORT.exists():
+        launch("cross-model-report", command("scripts/analyze_cross_model_replication.py"), state)
         return False
     return True
 
