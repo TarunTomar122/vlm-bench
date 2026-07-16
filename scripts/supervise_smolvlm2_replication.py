@@ -23,7 +23,9 @@ FRESH_OCR_MANIFEST = Path("data/fresh-ocr-iiit5k-v1/manifests/heldout.jsonl")
 FRESH_OCR_ROOT = Path("results/fresh-ocr-iiit5k-smolvlm2-2b")
 CROSS_MODEL_REPORT = Path("results/cross-model-replication/report.json")
 LATENCY_SUMMARY = Path("results/fixed-clock-latency-smolvlm2-2b/k8/summary.json")
-LANES = (("generic", "object", "spatial"), ("attribute", "counting", "ocr"))
+# A SmolVLM2 worker consumed about 5.9 GiB during the two-worker ablation
+# preflight, leaving sufficient measured headroom for three concurrent workers.
+LANES = (("generic", "object"), ("attribute", "counting"), ("spatial", "ocr"))
 
 
 def running(*needles: str) -> bool:
