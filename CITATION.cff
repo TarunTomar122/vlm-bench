@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this code or result package, please cite the associated preprint."
+title: "Searching for Task-Specific Vision Paths: Evolutionary Block Pruning Across Vision-Language Models"
+type: software
+authors:
+  - family-names: Tomar
+    given-names: Tarun
+repository-code: "https://github.com/TarunTomar122/vlm-bench"
+date-released: 2026-07-16
+version: 0.1.0

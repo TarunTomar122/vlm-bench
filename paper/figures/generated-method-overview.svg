@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="672.947641pt" height="197.385094pt" viewBox="0 0 672.947641 197.385094" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-07-16T17:12:43.333833</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 197.385094
+L 672.947641 197.385094
+L 672.947641 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 16.362 130.086694
+L 103.968 130.086694
+Q 108.432 130.086694 108.432 125.651494
+L 108.432 66.330694
+Q 108.432 61.895494 103.968 61.895494
+L 16.362 61.895494
+Q 11.898 61.895494 11.898 66.330694
+L 11.898 125.651494
+Q 11.898 130.086694 16.362 130.086694
+z
+" clip-path="url(#p410c4ad378)" style="fill: #ffffff; stroke: #17211b; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 130.752 130.086694
+L 218.358 130.086694
+Q 222.822 130.086694 222.822 125.651494
+L 222.822 66.330694
+Q 222.822 61.895494 218.358 61.895494
+L 130.752 61.895494
+Q 126.288 61.895494 126.288 66.330694
+L 126.288 125.651494
+Q 126.288 130.086694 130.752 130.086694
+z
+" clip-path="url(#p410c4ad378)" style="fill: #ffffff; stroke: #17211b; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 245.142 130.086694
+L 332.748 130.086694
+Q 337.212 130.086694 337.212 125.651494
+L 337.212 66.330694
+Q 337.212 61.895494 332.748 61.895494
+L 245.142 61.895494
+Q 240.678 61.895494 240.678 66.330694
+L 240.678 125.651494
+Q 240.678 130.086694 245.142 130.086694
+z
+" clip-path="url(#p410c4ad378)" style="fill: #ffffff; stroke: #176b55; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 359.532 130.086694
+L 447.138 130.086694
+Q 451.602 130.086694 451.602 125.651494
+L 451.602 66.330694
+Q 451.602 61.895494 447.138 61.895494
+L 359.532 61.895494
+Q 355.068 61.895494 355.068 66.330694
+L 355.068 125.651494
+Q 355.068 130.086694 359.532 130.086694
+z
+" clip-path="url(#p410c4ad378)" style="fill: #ffffff; stroke: #17211b; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 473.922 130.086694
+L 561.528 130.086694
+Q 565.992 130.086694 565.992 125.651494
+L 565.992 66.330694
+Q 565.992 61.895494 561.528 61.895494
+L 473.922 61.895494
+Q 469.458 61.895494 469.458 66.330694
+L 469.458 125.651494
+Q 469.458 130.086694 473.922 130.086694
+z
+" clip-path="url(#p410c4ad378)" style="fill: #ffffff; stroke: #176b55; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17211b" x="60.165" y="90.255745" transform="rotate(-0 60.165 90.255745)">Initialize</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #637168" x="60.165" y="111.782234" transform="rotate(-0 60.165 111.782234)">task/budget routes</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 110.432544 96.268294
+Q 117.639478 96.268294 122.83395 96.268294
+" style="fill: none; stroke: #e36b3d; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 118.83395 94.268294
+L 122.83395 96.268294
+L 118.83395 98.268294
+" style="fill: none; stroke: #e36b3d; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17211b" x="174.555" y="90.255745" transform="rotate(-0 174.555 90.255745)">Evaluate</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #637168" x="174.555" y="111.782234" transform="rotate(-0 174.555 111.782234)">source-aware loss</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 224.822544 96.268294
+Q 232.029478 96.268294 237.22395 96.268294
+" style="fill: none; stroke: #e36b3d; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 233.22395 94.268294
+L 237.22395 96.268294
+L 233.22395 98.268294
+" style="fill: none; stroke: #e36b3d; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17211b" x="288.945" y="90.255745" transform="rotate(-0 288.945 90.255745)">Select</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #637168" x="288.945" y="111.782234" transform="rotate(-0 288.945 111.782234)">Pareto finalists</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 339.212544 96.268294
+Q 346.419478 96.268294 351.61395 96.268294
+" style="fill: none; stroke: #e36b3d; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 347.61395 94.268294
+L 351.61395 96.268294
+L 347.61395 98.268294
+" style="fill: none; stroke: #e36b3d; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17211b" x="403.335" y="90.255745" transform="rotate(-0 403.335 90.255745)">Evolve</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #637168" x="403.335" y="111.781902" transform="rotate(-0 403.335 111.781902)">mutate + crossover</text>
+   </g>
+   <g id="patch_10">
+    <path d="M 453.602544 96.268294
+Q 460.809478 96.268294 466.00395 96.268294
+" style="fill: none; stroke: #e36b3d; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 462.00395 94.268294
+L 466.00395 96.268294
+L 462.00395 98.268294
+" style="fill: none; stroke: #e36b3d; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17211b" x="517.725" y="90.255316" transform="rotate(-0 517.725 90.255316)">Freeze</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #637168" x="517.725" y="111.782234" transform="rotate(-0 517.725 111.782234)">3-seed winner</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 193.740097 156.608211
+Q 266.769969 100.169738 351.693443 140.385276
+" style="fill: none; stroke: #637168; stroke-linecap: round"/>
+    <path d="M 349.210196 137.217709
+L 351.693443 140.385276
+L 347.669441 140.471334
+" style="fill: none; stroke: #637168; stroke-linecap: round"/>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #637168" x="184.32" y="166.677094" transform="rotate(-0 184.32 166.677094)">repeat for fixed generations</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #176b55" x="587.196" y="83.517094" transform="rotate(-0 587.196 83.517094)">Frozen route</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; fill: #637168" transform="translate(587.196 113.556996)">selection split</text>
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; fill: #637168" transform="translate(587.196 123.75932)">then transfer audit</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17211b" x="5.76" y="16.397812" transform="rotate(-0 5.76 16.397812)">Evolutionary search at a matched skip budget</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p410c4ad378">
+   <rect x="5.76" y="19.761094" width="641.7" height="171.864"/>
+  </clipPath>
+ </defs>
+</svg>

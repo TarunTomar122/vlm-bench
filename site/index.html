@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Evolutionary vision-block pruning across Qwen2.5-VL and SmolVLM2.">
+  <title>Searching for Task-Specific Vision Paths</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav><a class="mark" href="#top">VLM / ROUTES</a><div><a href="#results">Results</a><a href="#method">Method</a><a href="#evidence">Evidence</a></div></nav>
+    <div id="top" class="hero-grid">
+      <div>
+        <p class="eyebrow">Empirical study · vision-encoder depth · two architectures</p>
+        <h1>Searching for<br><em>Task-Specific</em><br>Vision Paths</h1>
+        <p class="dek">Evolutionary block pruning across vision-language models finds better routes than naive layer ranking. The harder result: capability-specific routes do not transfer reliably.</p>
+        <div class="actions"><a class="primary" href="https://github.com/TarunTomar122/vlm-bench">Code & data</a><a href="#paper">Paper package</a></div>
+      </div>
+      <aside class="finding-card">
+        <span class="number">-13.6</span><span class="unit">percentage points</span>
+        <p>A SmolVLM2 route selected for OCR performed worse than its generic K4 route on sealed IIIT5K.</p>
+        <small>Paired 95% interval: [-19.2, -8.4]</small>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section class="claim-band">
+      <p>What generalizes</p><h2>Combinatorial route search.</h2>
+      <p>What does not</p><h2>A universal capability-to-layer map.</h2>
+    </section>
+
+    <section id="method" class="section split">
+      <div class="section-copy"><p class="eyebrow">Method</p><h2>Skip the same amount.<br>Search a better combination.</h2><p>Each route replaces K vision-transformer blocks with identity. At a fixed K, evolutionary search balances mean loss, worst-source loss, source variability, and collateral capability damage. No weights are updated.</p></div>
+      <figure><img src="assets/generated-method-overview.png" alt="Evolutionary route search from initialization through frozen route selection"><figcaption>Three-seed source-aware route search; all final comparisons are matched at the same K.</figcaption></figure>
+    </section>
+
+    <section id="results" class="section dark">
+      <div class="section-heading"><p class="eyebrow">Main result</p><h2>Search beats simple construction on both models.</h2><p>Qwen is completed at K4/K6/K8. SmolVLM2 is a separate K4 replication; no missing points are interpolated.</p></div>
+      <figure class="wide"><img src="assets/generated-matched-k4-controls.png" alt="Matched K4 accuracy controls on Qwen and SmolVLM2"><figcaption>Accuracy on the 876-example image-disjoint method-selection split.</figcaption></figure>
+      <div class="metrics"><div><strong>+4.91 pp</strong><span>Smol evolved generic vs independent</span></div><div><strong>+8.90 pp</strong><span>Smol evolved task vs task-independent</span></div><div><strong>+2.17 pp</strong><span>Qwen K6 task vs evolved generic</span></div></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading"><p class="eyebrow">Cross-model analysis</p><h2>The sign changes with architecture and capability.</h2><p>Positive values favor the capability route over the evolved generic route at the same budget. Asterisks mark paired intervals that exclude zero.</p></div>
+      <figure class="wide"><img src="assets/generated-cross-model-capability-heatmap.png" alt="Task-route advantage heatmap across capabilities and models"><figcaption>Qwen K6 and SmolVLM2 K4 are their most informative completed matched-budget settings, not identical model budgets.</figcaption></figure>
+    </section>
+
+    <section id="evidence" class="section transfer split reverse">
+      <figure><img src="assets/generated-fresh-ocr-transfer.png" alt="Full, generic K4, and OCR-specific K4 SmolVLM2 accuracy on IIIT5K"><figcaption>IIIT5K was excluded from route selection and opened only after routes were frozen.</figcaption></figure>
+      <div class="section-copy"><p class="eyebrow">Sealed transfer</p><h2>A useful failure, not a footnote.</h2><p>The internal OCR-specific route did not transfer to a fresh OCR source. That result narrows the claim: route search is reproducible, but capability labels alone do not define stable pathways.</p><blockquote>Task-aware routing is conditional evidence, not a universal compression rule.</blockquote></div>
+    </section>
+
+    <section class="section dark efficiency">
+      <div class="section-heading"><p class="eyebrow">Efficiency</p><h2>Meaningful vision savings.<br>Modest whole-model savings.</h2></div>
+      <figure class="wide"><img src="assets/generated-efficiency-summary.png" alt="K4 parameter reduction and SmolVLM2 latency speedup"><figcaption>Smol latency is an unlocked same-VM RTX 4090 fallback: +8.60% vision, +4.19% end-to-end. It is not an edge-device result.</figcaption></figure>
+    </section>
+
+    <section id="paper" class="section paper-cta">
+      <p class="eyebrow">Reproducible package</p><h2>Every plotted number traces back to committed frozen JSON.</h2><p>Run one CPU-only command to regenerate 21 figure files, manuscript tables, and a machine-checkable paper data manifest.</p><code>make PYTHON=.paper-venv/bin/python submission</code><div class="actions"><a class="primary" href="https://github.com/TarunTomar122/vlm-bench/tree/main/paper">Open paper kit</a><a href="https://github.com/TarunTomar122/vlm-bench/tree/main/results/cross-model-replication-k4">Final evidence</a></div>
+    </section>
+  </main>
+
+  <footer><span>Searching for Task-Specific Vision Paths</span><span>Qwen2.5-VL · SmolVLM2 · July 2026</span></footer>
+</body>
+</html>

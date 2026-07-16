@@ -1,0 +1,11 @@
+model,budget,capability,task_minus_generic_pp,ci95_low_pp,ci95_high_pp,confirmed
+Qwen2.5-VL-3B-Instruct,K6,attribute,+1.205,-3.012,5.422,false
+Qwen2.5-VL-3B-Instruct,K6,counting,+1.105,-3.867,6.630,false
+Qwen2.5-VL-3B-Instruct,K6,object,+0.000,-3.109,3.109,false
+Qwen2.5-VL-3B-Instruct,K6,ocr,+7.097,0.645,14.194,true
+Qwen2.5-VL-3B-Instruct,K6,spatial,+2.210,-2.210,6.630,false
+SmolVLM2-2.2B-Instruct,K4,attribute,-0.602,-4.819,3.614,false
+SmolVLM2-2.2B-Instruct,K4,counting,+7.182,1.105,13.260,true
+SmolVLM2-2.2B-Instruct,K4,object,-0.518,-5.181,4.145,false
+SmolVLM2-2.2B-Instruct,K4,ocr,-13.548,-21.935,-5.161,true
+SmolVLM2-2.2B-Instruct,K4,spatial,+9.392,2.762,16.022,true

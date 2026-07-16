@@ -2,6 +2,7 @@
 
 # Local and remote experiment artifacts
 .venv/
+.paper-venv/
 __pycache__/
 *.py[cod]
 .cache/

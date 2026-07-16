@@ -1,246 +1,98 @@
-# Current Research Status
+# Final Research Status
 
-Status date: 2026-07-15
+Status date: 2026-07-16
 
-## Short Answer
+## Decision
 
-The project now has a frozen 1,250-example external evaluation. At the matched eight-block budget,
-capability-conditional routing did not beat generic pruning overall: it scored 64.72% versus
-66.00%, a -1.28 percentage-point advantage with a paired 95% interval of [-3.60, 0.96]. Spatial
-routing did transfer, beating generic K8 by 6.40 points with an interval of [1.60, 11.20]. The
-other K8 capability routes did not establish a positive external advantage.
+The experiment is complete for the first arXiv preprint. No additional GPU run is required for the
+current claim. The repository now treats inference as frozen evidence and provides a CPU-only path
+to regenerate the paper figures, tables, and website assets.
 
-Four removed vision blocks are the only useful untrained operating point found so far. They remove
-11.79% of the vision encoder but only 2.10% of the complete Qwen2.5-VL-3B model. Depending on the
-route, this yields 6.47-7.28% vision-encoder speedup and 1.39-4.41% end-to-end speedup. Removing
-8, 12, or 16 blocks using independent one-block rankings causes large accuracy losses, so simply
-pruning more blocks is not a viable continuation.
+## Final Claim
 
-The conservative four-block conditional model scored 68.08%, compared with 74.96% for the full
-model. It preserved OCR and spatial substantially better than generic K8, but this is not a
-matched-compute comparison. Counting remained the central failure: task K4 and K8 lost 18.40 and
-19.20 points from the full model on CountBenchQA.
+Evolutionary search finds better vision-block combinations than independent, contiguous, or random
+pruning across Qwen2.5-VL-3B and SmolVLM2-2.2B. Capability-specific routing is not universally
+superior: gains depend on model, capability, pruning budget, and source.
 
-The first low-rank feature-repair experiment also did not solve the problem. It made final vision
-features numerically closer to the full model, but generally did not recover correct answers. This
-is useful negative evidence: final-boundary feature similarity is not an adequate proxy for
-behavioral recovery.
+## Completed Evidence
 
-The completed source-aware route search adds a more controlled method-selection result. At matched
-K6, the evolved capability-conditional policy scored 81.28% versus 79.11% for the evolved generic
-route: a +2.17 point paired advantage with a 95% interval of [0.00, 4.34]. OCR accounts for the
-only capability-level interval excluding zero at this budget: +7.10 points [0.65, 14.19]. K4
-(+0.11 [-1.83, 2.05]) and K8 (+0.68 [-1.71, 3.08]) have no clear overall task-policy advantage.
-This is image-disjoint method-selection evidence only, since both partitions informed prior
-single-block discovery; it is not a replacement for a fresh sealed source-transfer evaluation.
+### Qwen2.5-VL-3B
 
-## What Has Been Completed
+The primary model has 32 vision blocks. Source-aware route search and matched controls were completed
+at K4, K6, and K8 on 876 image-disjoint method-selection examples.
 
-1. Built a five-capability benchmark for attribute/color, counting, object existence, OCR, and
-   spatial relations.
-2. Established a deterministic Qwen2.5-VL-3B-Instruct baseline and measured latency and memory.
-3. Evaluated all 32 single vision-block identity interventions.
-4. Evaluated capability-specific, generic, contiguous, and random routes at 4, 8, 12, and 16
-   removed blocks.
-5. Repeated the four-block latency comparison under locked GPU graphics and memory clocks.
-6. Ran activation-rescue traces to separate cumulative representation damage from a
-   one-block/one-capability interpretation.
-7. Fitted and evaluated SCP-inspired rank-8, rank-32, and rank-128 final-boundary residual bridges.
-8. Built a sealed 1,250-example external benchmark from source families not used for route
-   discovery and verified zero decoded-pixel overlap with V2.
-9. Completed interaction-aware K8 beam search and pairwise interaction mapping on development data.
-10. Froze, committed, and ran four external conditions: full, generic K8, conditional K8, and
-    conditional K4. All 5,000 predictions are retained off-instance.
-11. Reviewed 18 closely related pruning papers, including ten full additional papers on dynamic
-    visual computation, token pruning, transition metrics, and evolutionary VLM pruning. Generic
-    evolutionary pruning and task/sample routing already exist, so neither is sufficient novelty.
-12. Frozen a source-balanced, no-fine-tuning route-search protocol for K4, K6, and K8 before
-    candidate inference. The 904-row development split is search-only; the image-disjoint 876-row
-    test split is method-selection-only. The consumed external set is excluded from the pipeline.
-13. Completed all six route families, froze their selected routes, evaluated 18 matched-K controls,
-    and generated a compact analysis plus a static day-0-to-current research report. Raw prediction
-    caches are backed up off-instance and remain excluded from Git.
+| Budget | Full | Evolved generic | Evolved task | Task - generic | Paired 95% CI |
+|---:|---:|---:|---:|---:|---:|
+| K4 | 83.68% | 81.28% | 81.39% | +0.11 pp | [-1.83, 2.05] |
+| K6 | 83.68% | 79.11% | 81.28% | +2.17 pp | [0.00, 4.34] |
+| K8 | 83.68% | 75.91% | 76.60% | +0.68 pp | [-1.71, 3.08] |
 
-## Main Experimental Results
+The clearest capability result is Qwen K6 OCR at +7.10 points `[0.65, 14.19]`. K6 attribute,
+counting, object, and spatial intervals cross zero. The earlier 1,250-example external Qwen set has
+been consumed and remains historical transfer evidence; it must not be used for route selection.
 
-### Baseline And Architecture
+### SmolVLM2-2.2B
 
-- Model: `Qwen/Qwen2.5-VL-3B-Instruct`.
-- Vision blocks: 32.
-- Vision parameters: 668.7 million.
-- Total parameters: 3.755 billion.
-- Original 1,480-example benchmark accuracy: 81.62% overall.
-- Median baseline vision latency: 69.48 ms.
-- Median baseline end-to-end latency: 197.80 ms.
+The second model has 27 vision blocks. The completed replication budget is K4 only.
 
-### Four-Block Capability Routes
+- Full: 82.65%; evolved generic: 72.49%; evolved task policy: 73.29%.
+- Task minus generic: +0.80 points `[-1.94, 3.54]`.
+- Evolved generic minus generic independent: +4.91 points `[1.83, 7.99]`.
+- Evolved task minus task-independent: +8.90 points `[5.82, 11.99]`.
+- Task versus generic by capability: attribute -0.60, counting +7.18, object -0.52, OCR -13.55,
+  and spatial +9.39 points. Counting, OCR, and spatial intervals exclude zero.
 
-Accuracy changes below are percentage points relative to the full model on the 904-row development
-set. A negative drop is an improvement.
+Smol K6 was stopped after a diagnostic generic route lost 21.80 points. It has no completed matched
+controls or transfer results and is excluded from final figures.
 
-| Capability | Task-route drop | Generic drop | Task-route advantage over generic | 95% paired interval | End-to-end speedup |
-|---|---:|---:|---:|---:|---:|
-| Attribute | 2.06 pp | 1.03 pp | -1.03 pp | [-4.12, 1.55] | 2.87% |
-| Counting | 0.00 pp | -0.56 pp | -0.56 pp | [-5.59, 4.47] | 1.39% |
-| Object | -1.80 pp | 2.99 pp | +4.79 pp | [1.20, 8.38] | 2.15% |
-| OCR | 5.95 pp | 11.89 pp | +5.95 pp | [0.54, 11.89] | 4.41% |
-| Spatial | 2.79 pp | 5.59 pp | +2.79 pp | [-1.12, 7.26] | 1.77% |
+### Fresh OCR Transfer
 
-Only object and OCR have paired intervals clearly above zero against generic pruning. Attribute,
-counting, and spatial do not establish a task-specific advantage.
+The Smol full, generic K4, and OCR-specific K4 routes were evaluated on 250 IIIT5K examples that
+were excluded from every selection step. Accuracies were 94.8%, 86.4%, and 72.8%, respectively.
+The OCR route was -13.6 points below generic K4 `[-19.2, -8.4]`. This negative result rejects a
+stable cross-source OCR-path interpretation.
 
-### Larger Pruning Budgets
+### Efficiency
 
-The target-capability drops for independently ranked task routes were:
+- Qwen K4 skips 78,808,800 parameters: 11.79% of the vision tower and 2.10% of the full model.
+- Smol K4 skips 60,958,016 parameters: 14.76% of the vision tower and 2.71% of the full model.
+- Smol generic K4 measured +8.60% vision-encoder and +4.19% end-to-end speedup at batch size one.
 
-| Capability | 4 blocks | 8 blocks | 12 blocks | 16 blocks |
-|---|---:|---:|---:|---:|
-| Attribute | 2.06 pp | 11.86 pp | 17.53 pp | 67.53 pp |
-| Counting | 0.00 pp | 12.29 pp | 25.14 pp | 31.28 pp |
-| Object | -1.80 pp | 10.18 pp | 27.54 pp | 39.52 pp |
-| OCR | 5.95 pp | 37.30 pp | 71.35 pp | 72.97 pp |
-| Spatial | 2.79 pp | 12.85 pp | 22.35 pp | 25.70 pp |
+The cloud provider denied clock locking, so the Smol latency evidence is an unlocked same-VM RTX
+4090 comparison. The Qwen latency audit predates the final evolved K4/K6/K8 routes; it supports
+parameter accounting and historical K4 timing, not a final evolved-route latency curve.
 
-This experiment has already been run. It should not be repeated. The result shows that blocks that
-appear independently safe are not jointly safe; interactions dominate beyond four removals.
+## Earlier Diagnostics Retained
 
-### Phase 3 Interaction-Aware Search
+The repository retains the complete one-block screen, progressive independent routes, activation
+rescue, low-rank feature-gap repair, interaction-aware beam search, locked-clock Qwen K4 audit, and
+external Qwen evaluation. These explain why the final method uses source-balanced combinatorial
+search. They are supporting/appendix material, not separate main claims.
 
-Phase 3 started from the five existing K4 task routes, searched within task-specific 16-block
-candidate pools, retained a beam of three routes, and expanded to K8 using 100 search examples per
-capability. On the image-disjoint development validation remainder, target-capability drops were
-3.19 points for attribute, 5.06 for counting, 14.93 for object, 23.53 for OCR, and 15.19 for
-spatial. Only attribute met the intended 3-5 point preservation range. Pair effects were strongly
-non-additive, including +9 points of excess harm for object blocks 21 and 23.
+## Submission Package
 
-This rejected target-only beam search as a generally reliable K8 route constructor. The routes
-were nevertheless frozen for the external test so the transfer claim could be evaluated without
-post-hoc selection.
+- `paper/`: claim boundaries, detailed outline, writing prompts, references, generated figures,
+  generated tables, and arXiv checklist.
+- `site/`: static research website and regenerated publication assets.
+- `paper/data/paper-data.json`: compact machine-readable source for every final plot/table.
+- `scripts/generate_paper_assets.py`: authoritative JSON-to-paper generator.
+- `scripts/verify_submission.py`: checks budgets, key values, caveats, assets, and website copy.
 
-### Frozen External Evaluation
+Run:
 
-The full model and three pruned conditions were evaluated on 250 examples per capability from
-TextVQA, CountBenchQA, CV-Bench/ADE20K, and AMBER. Routes and the manifest hash were committed in
-`8ed9dc7` before inference.
-
-| Condition | Overall accuracy | Drop from full | Attribute drop | Counting drop | Object drop | OCR drop | Spatial drop |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| Full | 74.96% | 0.00 pp | 0.00 pp | 0.00 pp | 0.00 pp | 0.00 pp | 0.00 pp |
-| Generic K8 | 66.00% | 8.96 pp | -0.80 pp | 8.00 pp | 5.20 pp | 25.60 pp | 6.80 pp |
-| Task K8 | 64.72% | 10.24 pp | 0.80 pp | 19.20 pp | 8.40 pp | 22.40 pp | 0.40 pp |
-| Task K4 | 68.08% | 6.88 pp | 0.40 pp | 18.40 pp | 3.20 pp | 10.80 pp | 1.60 pp |
-
-At matched K8 compute, task routing versus generic was -1.28 points overall, with a 95% interval
-of [-3.60, 0.96]. Spatial was the only clear task-K8 win: +6.40 points [1.60, 11.20]. OCR was
-+3.20 points [-2.40, 8.80], while counting was -11.20 points [-18.40, -4.00]. The external set
-therefore supports capability-dependent differences but rejects a universal claim that the current
-task-route selection method beats generic pruning.
-
-### Completed Source-Aware Matched-K Search
-
-This final no-fine-tuning experiment fixed search budgets, source-balanced objectives, seeds,
-selection rules, and K values before route inference. It searched one generic and five
-capability-specific route families at each K on 904 search rows, then selected among frozen
-finalists on 876 image-disjoint method-selection rows. Every row was paired with the same full
-model prediction. Eighteen same-K controls were also evaluated: generic independent ranking,
-task independent ranking, contiguous deletion, and three deterministic random routes at each K.
-
-| K | Full | Evolved generic | Evolved task policy | Task minus generic | Paired 95% interval | Best confirmed capability effect |
-|---:|---:|---:|---:|---:|---:|---|
-| 4 | 83.68% | 81.28% | 81.39% | +0.11 pp | [-1.83, 2.05] | None |
-| 6 | 83.68% | 79.11% | 81.28% | +2.17 pp | [0.00, 4.34] | OCR +7.10 pp [0.65, 14.19] |
-| 8 | 83.68% | 75.91% | 76.60% | +0.68 pp | [-1.71, 3.08] | None |
-
-The evolved routes beat their independent and contiguous controls at every tested K, confirming
-that route interactions matter. This does **not** establish that a capability router generalizes:
-the selection split was image-disjoint but was exposed during earlier single-block discovery. The
-already-consumed 1,250-row external benchmark was never accessed by this search, control, or
-analysis pipeline.
-
-### Phase 2 Feature Repair
-
-Phase 2 used 200 image-disjoint calibration examples and 704 development evaluation examples. It
-replaced the final pruned vision state `X` with `X + XAB + b`, where `AB` is a fitted low-rank
-residual map. This was an SCP-inspired diagnostic, not Short-LVLM SCP and not an SVD replacement
-for each removed block.
-
-The bridge reduced mean relative L2 error for every route. For example, OCR decreased from 0.8096
-to 0.6599, an 18.49% reduction, and the generic route decreased from 0.7283 to 0.5995, a 17.68%
-reduction. Ranks 8, 32, and 128 produced almost identical feature errors, so rank above 8 added
-negligible reconstruction value.
-
-Behavior did not follow feature reconstruction:
-
-| Capability | Identity drop | Best repaired drop | Best repair gain |
-|---|---:|---:|---:|
-| Attribute | 0.65 pp | 0.65 pp | 0.00 pp |
-| Counting | 0.00 pp | 1.44 pp | -1.44 pp |
-| Object | 0.00 pp | -0.79 pp | +0.79 pp |
-| OCR | 4.83 pp | 4.14 pp | +0.69 pp |
-| Spatial | 4.32 pp | 6.47 pp | -2.16 pp |
-
-The strongest rank-32 task-versus-repaired-generic advantages were +6.30 points for object, with a
-95% interval of [2.36, 11.02], and +7.59 points for OCR, with an interval of [1.38, 13.79]. These
-remain development-set results and are partly caused by the generic repaired route performing
-poorly; they do not show that the bridge itself is effective.
-
-## What We Have Learned
-
-1. Vision-block importance is not fully global. Development evidence favored object and OCR at K4,
-   while external matched-K8 evidence clearly favored the spatial route. The best capability is
-   therefore not stable across source family and pruning budget.
-2. A one-block sensitivity heatmap is useful for screening but insufficient for route construction.
-   Independent effects do not compose at eight or more removals.
-3. Four-block pruning is scientifically informative but practically small. The vision tower gets
-   roughly 6-7% faster, while the full VLM gets only 1-4% faster and loses only 2.10% of its total
-   parameters.
-4. Making the final hidden state closer in relative L2 distance does not guarantee the same answer.
-   The removed blocks likely contribute nonlinear computation, or repair must occur at each removed
-   boundary rather than only after block 31.
-5. Target-only route optimization overfits. It can preserve the target search bucket while causing
-   large source-transfer losses, especially for counting and object recognition.
-6. The current evidence is a credible negative/diagnostic result, not yet a complete paper. It
-   comes from one model, one GPU, identity removal only, and no physical compact checkpoint or
-   edge-device test.
-7. The best new signal is narrow: source-balanced K6 task routing improves the method-selection
-   split primarily through OCR, while K4 and K8 do not show a clear overall conditional advantage.
-   This needs replication on a fresh source family and a second model before it becomes a paper
-   claim.
-
-## Current Research Decision
-
-Do not tune any route against the consumed external outcomes or the completed 876-row
-method-selection outcomes. Do not rerun the already completed independent K8/K12/K16 or Phase 3
-searches as if they were new evidence.
-
-The robust source-aware experiment is complete. Its strongest result is a K6 OCR-sensitive signal,
-not proof of a generally useful task router. The next experiment must freeze the route-selection
-rule and test it on a genuinely new source family, then repeat the same protocol on a second VLM.
-Only after that replication should we consider a lightweight task router or combine block routing
-with token pruning/decoder compression.
-
-The next research stage should test whether the observed heterogeneity is reproducible rather than
-searching harder on this test set:
-
-1. Replicate the frozen intervention and evaluation protocol on SmolVLM2 to test architecture
-   dependence.
-2. Replace single target-only route selection with multi-fold, multi-source selection that
-   penalizes worst-capability damage and unstable pair interactions; use development data only.
-3. Evaluate any new method on a newly sealed set or through nested cross-validation, never on the
-   external outcomes reported here.
-4. If stable capability differences replicate, train a lightweight task router and compare it
-   with generic pruning at matched block budget and fixed-clock latency.
-5. Combine validated block routing with visual-token pruning or decoder compression only after the
-   routing contribution is isolated.
+```bash
+python3 -m venv .paper-venv
+.paper-venv/bin/pip install -r requirements-paper.txt
+make PYTHON=.paper-venv/bin/python submission
+```
 
 ## Evidence Boundaries
 
-- The external set contains 250 examples per capability and has zero image overlap with V2 under
-  decoded-pixel hashing. It has now been consumed and cannot be reused for method selection.
-- The matched-K8 result establishes source-transfer behavior for these frozen Qwen routes only. It
-  does not establish superiority across VLM architectures.
-- Task K4 versus generic K8 is not a matched-compute comparison. No generic-K4 external condition
-  was frozen, so the external data cannot support that missing comparison post hoc.
-- No result establishes edge-device acceleration or causal localization of a capability to one
-  block.
-- Public benchmark contamination remains possible even after image-level deduplication.
+- The 876-example split is image-disjoint method-selection evidence, not a sealed public test.
+- IIIT5K is sealed source-transfer evidence for Smol OCR only.
+- No result localizes a named capability inside one block; identity skipping measures intervention
+  sensitivity and block interactions.
+- No result establishes mobile/edge latency, energy use, a physically compact checkpoint, or a
+  learned dynamic router.
+- Exact model revisions, routes, seeds, manifests, and hashes are committed. Raw images, weights,
+  and prediction caches remain intentionally outside Git.

@@ -1,0 +1,1215 @@
+{
+  "schema_version": 1,
+  "claim": "Evolutionary search finds better vision-block combinations than independent, contiguous, or random pruning across two VLMs; task-specific routing gains depend on model, capability, and pruning budget.",
+  "evidence_boundary": "two-model method replication; method-selection and fresh transfer evidence separated",
+  "model_revisions": {
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "HuggingFaceTB/SmolVLM2-2.2B-Instruct": "482adb537c021c86670beed01cd58990d01e72e4"
+  },
+  "selection_examples": 876,
+  "models": {
+    "qwen": {
+      "name": "Qwen2.5-VL-3B-Instruct",
+      "vision_blocks": 32,
+      "full_accuracy": 83.67579908675799,
+      "budgets": {
+        "4": {
+          "accuracy": {
+            "contiguous": 79.90867579908677,
+            "evolved-generic": 81.27853881278538,
+            "evolved-task": 81.39269406392694,
+            "generic-independent": 80.25114155251141,
+            "task-independent": 81.27853881278538,
+            "random-mean": 72.3744292237443
+          },
+          "task_advantage": {
+            "capabilities": {
+              "attribute": {
+                "ci95_high_pp": 3.0120481927710845,
+                "ci95_low_pp": -3.0120481927710845,
+                "examples": 166,
+                "mean_pp": 0.0
+              },
+              "counting": {
+                "ci95_high_pp": 4.972375690607735,
+                "ci95_low_pp": -4.972375690607735,
+                "examples": 181,
+                "mean_pp": 0.0
+              },
+              "object": {
+                "ci95_high_pp": 5.181347150259067,
+                "ci95_low_pp": -1.5544041450777202,
+                "examples": 193,
+                "mean_pp": 1.5544041450777202
+              },
+              "ocr": {
+                "ci95_high_pp": 4.516129032258064,
+                "ci95_low_pp": -7.096774193548387,
+                "examples": 155,
+                "mean_pp": -1.2903225806451613
+              },
+              "spatial": {
+                "ci95_high_pp": 4.41988950276243,
+                "ci95_low_pp": -4.41988950276243,
+                "examples": 181,
+                "mean_pp": 0.0
+              }
+            },
+            "overall": {
+              "ci95_high_pp": 2.054794520547945,
+              "ci95_low_pp": -1.82648401826484,
+              "examples": 876,
+              "mean_pp": 0.1141552511415525
+            }
+          }
+        },
+        "6": {
+          "accuracy": {
+            "contiguous": 68.2648401826484,
+            "evolved-generic": 79.1095890410959,
+            "evolved-task": 81.27853881278538,
+            "generic-independent": 78.08219178082192,
+            "task-independent": 77.51141552511416,
+            "random-mean": 64.8021308980213
+          },
+          "task_advantage": {
+            "capabilities": {
+              "attribute": {
+                "ci95_high_pp": 5.421686746987952,
+                "ci95_low_pp": -3.0120481927710845,
+                "examples": 166,
+                "mean_pp": 1.2048192771084338
+              },
+              "counting": {
+                "ci95_high_pp": 6.629834254143646,
+                "ci95_low_pp": -3.867403314917127,
+                "examples": 181,
+                "mean_pp": 1.1049723756906076
+              },
+              "object": {
+                "ci95_high_pp": 3.1088082901554404,
+                "ci95_low_pp": -3.1088082901554404,
+                "examples": 193,
+                "mean_pp": 0.0
+              },
+              "ocr": {
+                "ci95_high_pp": 14.193548387096774,
+                "ci95_low_pp": 0.6451612903225806,
+                "examples": 155,
+                "mean_pp": 7.096774193548387
+              },
+              "spatial": {
+                "ci95_high_pp": 6.629834254143646,
+                "ci95_low_pp": -2.209944751381215,
+                "examples": 181,
+                "mean_pp": 2.209944751381215
+              }
+            },
+            "overall": {
+              "ci95_high_pp": 4.337899543378995,
+              "ci95_low_pp": 0.0,
+              "examples": 876,
+              "mean_pp": 2.1689497716894977
+            }
+          }
+        },
+        "8": {
+          "accuracy": {
+            "contiguous": 40.98173515981735,
+            "evolved-generic": 75.91324200913242,
+            "evolved-task": 76.59817351598174,
+            "generic-independent": 72.3744292237443,
+            "task-independent": 68.15068493150685,
+            "random-mean": 46.9558599695586
+          },
+          "task_advantage": {
+            "capabilities": {
+              "attribute": {
+                "ci95_high_pp": 2.4096385542168677,
+                "ci95_low_pp": -5.421686746987952,
+                "examples": 166,
+                "mean_pp": -1.8072289156626504
+              },
+              "counting": {
+                "ci95_high_pp": 5.524861878453039,
+                "ci95_low_pp": -5.524861878453039,
+                "examples": 181,
+                "mean_pp": 0.0
+              },
+              "object": {
+                "ci95_high_pp": 5.699481865284974,
+                "ci95_low_pp": -3.6269430051813467,
+                "examples": 193,
+                "mean_pp": 1.0362694300518136
+              },
+              "ocr": {
+                "ci95_high_pp": 9.67741935483871,
+                "ci95_low_pp": -4.516129032258064,
+                "examples": 155,
+                "mean_pp": 2.5806451612903225
+              },
+              "spatial": {
+                "ci95_high_pp": 7.18232044198895,
+                "ci95_low_pp": -3.314917127071823,
+                "examples": 181,
+                "mean_pp": 1.6574585635359116
+              }
+            },
+            "overall": {
+              "ci95_high_pp": 3.0821917808219177,
+              "ci95_low_pp": -1.7123287671232876,
+              "examples": 876,
+              "mean_pp": 0.684931506849315
+            }
+          }
+        }
+      },
+      "routes": {
+        "attribute": {
+          "4": {
+            "blocks": [
+              4,
+              8,
+              9,
+              22
+            ],
+            "seed_development_winners": [
+              [
+                5,
+                8,
+                9,
+                22
+              ],
+              [
+                4,
+                8,
+                9,
+                22
+              ],
+              [
+                5,
+                8,
+                9,
+                22
+              ]
+            ],
+            "seed_route_stability_jaccard": 0.7333333333333334
+          },
+          "6": {
+            "blocks": [
+              3,
+              8,
+              9,
+              18,
+              20,
+              25
+            ],
+            "seed_development_winners": [
+              [
+                3,
+                9,
+                13,
+                20,
+                22,
+                25
+              ],
+              [
+                6,
+                8,
+                9,
+                16,
+                20,
+                25
+              ],
+              [
+                3,
+                8,
+                9,
+                18,
+                20,
+                25
+              ]
+            ],
+            "seed_route_stability_jaccard": 0.4444444444444444
+          },
+          "8": {
+            "blocks": [
+              3,
+              6,
+              8,
+              13,
+              20,
+              25,
+              26,
+              28
+            ],
+            "seed_development_winners": [
+              [
+                3,
+                6,
+                8,
+                13,
+                20,
+                25,
+                26,
+                28
+              ],
+              [
+                3,
+                5,
+                8,
+                9,
+                16,
+                20,
+                25,
+                27
+              ],
+              [
+                3,
+                5,
+                8,
+                9,
+                13,
+                20,
+                24,
+                25
+              ]
+            ],
+            "seed_route_stability_jaccard": 0.46262626262626255
+          }
+        },
+        "counting": {
+          "4": {
+            "blocks": [
+              3,
+              19,
+              24,
+              25
+            ],
+            "seed_development_winners": [
+              [
+                4,
+                19,
+                24,
+                28
+              ],
+              [
+                2,
+                5,
+                19,
+                29
+              ],
+              [
+                3,
+                8,
+                9,
+                24
+              ]
+            ],
+            "seed_route_stability_jaccard": 0.09523809523809523
+          },
+          "6": {
+            "blocks": [
+              4,
+              5,
+              10,
+              20,
+              21,
+              29
+            ],
+            "seed_development_winners": [
+              [
+                6,
+                13,
+                24,
+                27,
+                28,
+                30
+              ],
+              [
+                4,
+                5,
+                10,
+                20,
+                21,
+                29
+              ],
+              [
+                3,
+                9,
+                11,
+                24,
+                27,
+                28
+              ]
+            ],
+            "seed_route_stability_jaccard": 0.1111111111111111
+          },
+          "8": {
+            "blocks": [
+              3,
+              6,
+              11,
+              12,
+              17,
+              24,
+              27,
+              28
+            ],
+            "seed_development_winners": [
+              [
+                6,
+                9,
+                11,
+                12,
+                19,
+                24,
+                27,
+                30
+              ],
+              [
+                6,
+                11,
+                12,
+                20,
+                24,
+                27,
+                28,
+                30
+              ],
+              [
+                3,
+                6,
+                11,
+                12,
+                17,
+                24,
+                27,
+                28
+              ]
+            ],
+            "seed_route_stability_jaccard": 0.5515151515151515
+          }
+        },
+        "generic": {
+          "4": {
+            "blocks": [
+              3,
+              9,
+              20,
+              28
+            ],
+            "seed_development_winners": [
+              [
+                6,
+                13,
+                24,
+                28
+              ],
+              [
+                6,
+                8,
+                19,
+                25
+              ],
+              [
+                3,
+                9,
+                20,
+                28
+              ]
+            ],
+            "seed_route_stability_jaccard": 0.09523809523809523
+          },
+          "6": {
+            "blocks": [
+              5,
+              9,
+              11,
+              25,
+              28,
+              29
+            ],
+            "seed_development_winners": [
+              [
+                6,
+                9,
+                13,
+                20,
+                24,
+                28
+              ],
+              [
+                3,
+                5,
+                8,
+                16,
+                20,
+                25
+              ],
+              [
+                5,
+                9,
+                11,
+                25,
+                28,
+                29
+              ]
+            ],
+            "seed_route_stability_jaccard": 0.16363636363636366
+          },
+          "8": {
+            "blocks": [
+              4,
+              6,
+              8,
+              9,
+              20,
+              24,
+              25,
+              28
+            ],
+            "seed_development_winners": [
+              [
+                6,
+                8,
+                9,
+                13,
+                20,
+                24,
+                25,
+                28
+              ],
+              [
+                4,
+                6,
+                8,
+                9,
+                20,
+                24,
+                25,
+                28
+              ],
+              [
+                6,
+                8,
+                9,
+                13,
+                20,
+                24,
+                25,
+                28
+              ]
+            ],
+            "seed_route_stability_jaccard": 0.8518518518518517
+          }
+        },
+        "object": {
+          "4": {
+            "blocks": [
+              3,
+              5,
+              10,
+              19
+            ],
+            "seed_development_winners": [
+              [
+                5,
+                9,
+                24,
+                25
+              ],
+              [
+                2,
+                10,
+                17,
+                30
+              ],
+              [
+                3,
+                5,
+                17,
+                30
+              ]
+            ],
+            "seed_route_stability_jaccard": 0.15873015873015872
+          },
+          "6": {
+            "blocks": [
+              2,
+              5,
+              9,
+              10,
+              23,
+              30
+            ],
+            "seed_development_winners": [
+              [
+                2,
+                9,
+                10,
+                17,
+                23,
+                30
+              ],
+              [
+                2,
+                9,
+                10,
+                17,
+                23,
+                30
+              ],
+              [
+                2,
+                9,
+                10,
+                17,
+                23,
+                30
+              ]
+            ],
+            "seed_route_stability_jaccard": 1.0
+          },
+          "8": {
+            "blocks": [
+              2,
+              3,
+              9,
+              10,
+              20,
+              21,
+              23,
+              30
+            ],
+            "seed_development_winners": [
+              [
+                2,
+                5,
+                9,
+                10,
+                17,
+                21,
+                23,
+                30
+              ],
+              [
+                2,
+                5,
+                9,
+                10,
+                17,
+                21,
+                23,
+                30
+              ],
+              [
+                3,
+                9,
+                11,
+                12,
+                23,
+                25,
+                29,
+                30
+              ]
+            ],
+            "seed_route_stability_jaccard": 0.4871794871794872
+          }
+        },
+        "ocr": {
+          "4": {
+            "blocks": [
+              5,
+              9,
+              25,
+              28
+            ],
+            "seed_development_winners": [
+              [
+                5,
+                6,
+                24,
+                28
+              ],
+              [
+                5,
+                9,
+                25,
+                28
+              ],
+              [
+                5,
+                9,
+                25,
+                28
+              ]
+            ],
+            "seed_route_stability_jaccard": 0.5555555555555555
+          },
+          "6": {
+            "blocks": [
+              4,
+              5,
+              9,
+              26,
+              27,
+              28
+            ],
+            "seed_development_winners": [
+              [
+                4,
+                5,
+                9,
+                26,
+                27,
+                28
+              ],
+              [
+                4,
+                5,
+                9,
+                26,
+                27,
+                28
+              ],
+              [
+                4,
+                5,
+                9,
+                26,
+                27,
+                28
+              ]
+            ],
+            "seed_route_stability_jaccard": 1.0
+          },
+          "8": {
+            "blocks": [
+              4,
+              5,
+              9,
+              11,
+              25,
+              26,
+              27,
+              28
+            ],
+            "seed_development_winners": [
+              [
+                4,
+                5,
+                6,
+                9,
+                25,
+                26,
+                27,
+                28
+              ],
+              [
+                4,
+                5,
+                9,
+                11,
+                20,
+                26,
+                27,
+                28
+              ],
+              [
+                4,
+                5,
+                6,
+                9,
+                25,
+                26,
+                27,
+                28
+              ]
+            ],
+            "seed_route_stability_jaccard": 0.7333333333333334
+          }
+        },
+        "spatial": {
+          "4": {
+            "blocks": [
+              3,
+              19,
+              24,
+              25
+            ],
+            "seed_development_winners": [
+              [
+                3,
+                19,
+                24,
+                25
+              ],
+              [
+                6,
+                9,
+                10,
+                29
+              ],
+              [
+                4,
+                16,
+                22,
+                23
+              ]
+            ],
+            "seed_route_stability_jaccard": 0.0
+          },
+          "6": {
+            "blocks": [
+              3,
+              5,
+              12,
+              20,
+              22,
+              26
+            ],
+            "seed_development_winners": [
+              [
+                3,
+                8,
+                16,
+                22,
+                28,
+                29
+              ],
+              [
+                3,
+                4,
+                8,
+                16,
+                22,
+                29
+              ],
+              [
+                3,
+                5,
+                12,
+                20,
+                22,
+                26
+              ]
+            ],
+            "seed_route_stability_jaccard": 0.37142857142857144
+          },
+          "8": {
+            "blocks": [
+              4,
+              6,
+              16,
+              19,
+              22,
+              26,
+              28,
+              29
+            ],
+            "seed_development_winners": [
+              [
+                3,
+                4,
+                16,
+                19,
+                22,
+                26,
+                28,
+                29
+              ],
+              [
+                2,
+                4,
+                10,
+                18,
+                21,
+                22,
+                27,
+                29
+              ],
+              [
+                4,
+                6,
+                16,
+                19,
+                22,
+                26,
+                28,
+                29
+              ]
+            ],
+            "seed_route_stability_jaccard": 0.4131054131054131
+          }
+        }
+      }
+    },
+    "smol": {
+      "name": "SmolVLM2-2.2B-Instruct",
+      "vision_blocks": 27,
+      "full_accuracy": 82.64840182648402,
+      "budgets": {
+        "4": {
+          "accuracy": {
+            "contiguous": 71.57534246575342,
+            "evolved-generic": 72.48858447488584,
+            "evolved-task": 73.28767123287672,
+            "generic-independent": 67.57990867579909,
+            "task-independent": 64.38356164383562,
+            "random-mean": 54.52815829528158
+          },
+          "task_advantage": {
+            "capabilities": {
+              "attribute": {
+                "ci95_high_pp": 3.614457831325301,
+                "ci95_low_pp": -4.819277108433735,
+                "examples": 166,
+                "mean_pp": -0.6024096385542169
+              },
+              "counting": {
+                "ci95_high_pp": 13.259668508287293,
+                "ci95_low_pp": 1.1049723756906076,
+                "examples": 181,
+                "mean_pp": 7.18232044198895
+              },
+              "object": {
+                "ci95_high_pp": 4.145077720207254,
+                "ci95_low_pp": -5.181347150259067,
+                "examples": 193,
+                "mean_pp": -0.5181347150259068
+              },
+              "ocr": {
+                "ci95_high_pp": -5.161290322580645,
+                "ci95_low_pp": -21.935483870967744,
+                "examples": 155,
+                "mean_pp": -13.548387096774196
+              },
+              "spatial": {
+                "ci95_high_pp": 16.022099447513813,
+                "ci95_low_pp": 2.7624309392265194,
+                "examples": 181,
+                "mean_pp": 9.392265193370166
+              }
+            },
+            "overall": {
+              "ci95_high_pp": 3.5388127853881275,
+              "ci95_low_pp": -1.9406392694063925,
+              "examples": 876,
+              "mean_pp": 0.7990867579908676
+            }
+          },
+          "evolution_vs_independent": {
+            "generic": {
+              "ci95_high_pp": 7.9908675799086755,
+              "ci95_low_pp": 1.82648401826484,
+              "examples": 876,
+              "mean_pp": 4.908675799086757
+            },
+            "task": {
+              "ci95_high_pp": 11.986301369863012,
+              "ci95_low_pp": 5.821917808219178,
+              "examples": 876,
+              "mean_pp": 8.904109589041095
+            }
+          }
+        }
+      },
+      "routes": {
+        "attribute": {
+          "4": {
+            "blocks": [
+              5,
+              11,
+              22,
+              25
+            ],
+            "seed_development_winners": [
+              [
+                8,
+                15,
+                21,
+                23
+              ],
+              [
+                5,
+                7,
+                18,
+                19
+              ],
+              [
+                5,
+                11,
+                22,
+                25
+              ]
+            ],
+            "seed_route_stability_jaccard": 0.047619047619047616
+          }
+        },
+        "counting": {
+          "4": {
+            "blocks": [
+              11,
+              16,
+              20,
+              24
+            ],
+            "seed_development_winners": [
+              [
+                11,
+                16,
+                20,
+                24
+              ],
+              [
+                3,
+                10,
+                22,
+                24
+              ],
+              [
+                6,
+                11,
+                22,
+                25
+              ]
+            ],
+            "seed_route_stability_jaccard": 0.14285714285714285
+          }
+        },
+        "generic": {
+          "4": {
+            "blocks": [
+              4,
+              22,
+              24,
+              25
+            ],
+            "seed_development_winners": [
+              [
+                4,
+                22,
+                24,
+                25
+              ],
+              [
+                9,
+                16,
+                19,
+                24
+              ],
+              [
+                5,
+                11,
+                22,
+                25
+              ]
+            ],
+            "seed_route_stability_jaccard": 0.15873015873015872
+          }
+        },
+        "object": {
+          "4": {
+            "blocks": [
+              4,
+              16,
+              21,
+              22
+            ],
+            "seed_development_winners": [
+              [
+                4,
+                16,
+                21,
+                22
+              ],
+              [
+                14,
+                15,
+                23,
+                24
+              ],
+              [
+                5,
+                11,
+                22,
+                25
+              ]
+            ],
+            "seed_route_stability_jaccard": 0.047619047619047616
+          }
+        },
+        "ocr": {
+          "4": {
+            "blocks": [
+              5,
+              11,
+              19,
+              25
+            ],
+            "seed_development_winners": [
+              [
+                8,
+                15,
+                19,
+                23
+              ],
+              [
+                5,
+                7,
+                18,
+                19
+              ],
+              [
+                5,
+                9,
+                21,
+                25
+              ]
+            ],
+            "seed_route_stability_jaccard": 0.09523809523809523
+          }
+        },
+        "spatial": {
+          "4": {
+            "blocks": [
+              4,
+              19,
+              21,
+              24
+            ],
+            "seed_development_winners": [
+              [
+                4,
+                22,
+                24,
+                25
+              ],
+              [
+                18,
+                19,
+                21,
+                23
+              ],
+              [
+                4,
+                19,
+                21,
+                24
+              ]
+            ],
+            "seed_route_stability_jaccard": 0.2222222222222222
+          }
+        }
+      }
+    }
+  },
+  "fresh_ocr_transfer": {
+    "conditions": {
+      "full": {
+        "accuracy_drop_pp": 0.0,
+        "baseline_accuracy": 0.948,
+        "candidate_accuracy": 0.948,
+        "examples": 250,
+        "lost_correct": 0,
+        "recovered_correct": 0
+      },
+      "generic-k4": {
+        "accuracy_drop_pp": 8.399999999999997,
+        "baseline_accuracy": 0.948,
+        "candidate_accuracy": 0.864,
+        "examples": 250,
+        "lost_correct": 24,
+        "recovered_correct": 3
+      },
+      "ocr-k4": {
+        "accuracy_drop_pp": 21.999999999999996,
+        "baseline_accuracy": 0.948,
+        "candidate_accuracy": 0.728,
+        "examples": 250,
+        "lost_correct": 56,
+        "recovered_correct": 1
+      }
+    },
+    "frozen_routes_sha256": "be3743fadbf3a9ab62309a7f9d86fd335d65f92e82799aa3dd1aab1ad88e01d5",
+    "manifest_sha256": "981347198b2397ad92d0130245898db5d307d2c5d3318a22b7c28e18d596c875",
+    "ocr_minus_generic_k4": {
+      "ci95_high_pp": -8.4,
+      "ci95_low_pp": -19.2,
+      "examples": 250,
+      "mean_pp": -13.600000000000001
+    },
+    "routes": {
+      "generic-k4": [
+        4,
+        22,
+        24,
+        25
+      ],
+      "ocr-k4": [
+        5,
+        11,
+        19,
+        25
+      ]
+    },
+    "status": "sealed fresh OCR transfer; frozen routes only"
+  },
+  "latency": {
+    "smol_k4": {
+      "measurement_mode": "unlocked_same_vm_fallback",
+      "baseline_total_median_ms": 407.3876296170056,
+      "baseline_vision_encoder_median_ms": 170.01099395751953,
+      "total_speedup_percent": 4.188250039784336,
+      "vision_speedup_percent": 8.595296514627826
+    },
+    "qwen_note": "The committed Qwen K4 latency audit predates the final evolved K4/K6/K8 routes, so it is not used as a final-route latency curve."
+  },
+  "parameters": {
+    "Qwen2.5-VL-3B": {
+      "full_model": 3754622976,
+      "full_vision": 668684288,
+      "removed_k4": 78808800,
+      "vision_removed_percent": 11.785651527077604,
+      "total_removed_percent": 2.098980390408179
+    },
+    "SmolVLM2-2.2B": {
+      "full_model": 2246784880,
+      "full_vision": 412987248,
+      "removed_k4": 60958016,
+      "vision_removed_percent": 14.760265915038616,
+      "total_removed_percent": 2.7131220502071387
+    }
+  },
+  "source_artifacts": [
+    {
+      "path": "results/robust-route-search-qwen25-vl-3b/analysis/analysis.json",
+      "sha256": "7e11ff81d69d31fe1750904643362153040ec4eed5763f96f6db3b3b8fcc8a76"
+    },
+    {
+      "path": "results/robust-route-search-qwen25-vl-3b/frozen_routes.json",
+      "sha256": "3bb64914f76d2835132a23b77c1944ac3d8f2bef3d41822fd8ac27d4515bf42f"
+    },
+    {
+      "path": "results/robust-route-search-smolvlm2-2b-k4/analysis/analysis.json",
+      "sha256": "55439c8f3caf01761dd39b17ea1bddbe824dff896dbc877d0f37d802efac9abe"
+    },
+    {
+      "path": "results/robust-route-search-smolvlm2-2b-k4/frozen_routes.json",
+      "sha256": "be3743fadbf3a9ab62309a7f9d86fd335d65f92e82799aa3dd1aab1ad88e01d5"
+    },
+    {
+      "path": "results/cross-model-replication-k4/report.json",
+      "sha256": "ad6bc84dcf8f75aab30ebf7c21c58cd2432eb6f36749f0d228ff2f46caf4ac3e"
+    },
+    {
+      "path": "results/task-route-latency-locked-qwen25-vl-3b/summary.json",
+      "sha256": "e618fe762700614eeb45693f3247f915ed46a058e3469d18219f4c84344db288"
+    },
+    {
+      "path": "results/fixed-clock-latency-smolvlm2-2b-k4/k4/summary.json",
+      "sha256": "0e8113d1c3b59e210698f836143c6d7402538b6ed0f63ba4ecea6c88cd1b5fba"
+    }
+  ]
+}
