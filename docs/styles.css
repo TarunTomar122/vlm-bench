@@ -422,7 +422,6 @@ figure img {
   width: 100%;
   height: auto;
   border: 1px solid var(--soft-line);
-  filter: grayscale(1);
 }
 
 figcaption {
