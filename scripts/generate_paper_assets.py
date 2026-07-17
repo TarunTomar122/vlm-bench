@@ -287,34 +287,50 @@ def build_data() -> dict[str, Any]:
 
 
 def plot_method(out_dir: Path) -> None:
-    fig, ax = plt.subplots(figsize=(11.5, 3.1))
-    ax.set_xlim(0, 11.5)
-    ax.set_ylim(0, 3.1)
+    fig, ax = plt.subplots(figsize=(8.4, 5.2))
+    ax.set_xlim(0, 9)
+    ax.set_ylim(0, 5.2)
     ax.axis("off")
     steps = [
-        (0.15, "Initialize", "task/budget routes"),
-        (2.2, "Evaluate", "source-aware loss"),
-        (4.25, "Select", "Pareto finalists"),
-        (6.3, "Evolve", "mutate + crossover"),
-        (8.35, "Freeze", "3-seed winner"),
+        (0.25, 3.15, "Initialize", "task-budget routes"),
+        (3.5, 3.15, "Evaluate", "source-aware loss"),
+        (6.75, 3.15, "Select", "Pareto finalists"),
+        (6.75, 0.85, "Evolve", "mutate and crossover"),
+        (3.5, 0.85, "Freeze", "three-seed winner"),
+        (0.25, 0.85, "Audit", "held-out transfer"),
     ]
-    for index, (x, title, subtitle) in enumerate(steps):
-        color = COLORS["green"] if index in (2, 4) else COLORS["ink"]
+    for index, (x, y, title, subtitle) in enumerate(steps):
+        color = COLORS["green"] if index in (2, 4, 5) else COLORS["ink"]
         box = patches.FancyBboxPatch(
-            (x, 1.15), 1.65, 1.15, boxstyle="round,pad=0.04,rounding_size=0.08",
+            (x, y), 2.0, 1.05, boxstyle="round,pad=0.04,rounding_size=0.08",
             facecolor="white", edgecolor=color, linewidth=1.8
         )
         ax.add_patch(box)
-        ax.text(x + 0.825, 1.88, title, ha="center", va="center", weight="bold", fontsize=11)
-        ax.text(x + 0.825, 1.48, subtitle, ha="center", va="center", color=COLORS["muted"], fontsize=8.5)
-        if index < len(steps) - 1:
-            ax.annotate("", xy=(x + 2.02, 1.72), xytext=(x + 1.69, 1.72),
-                        arrowprops={"arrowstyle": "->", "color": COLORS["orange"], "lw": 1.8})
-    ax.annotate("repeat for fixed generations", xy=(6.25, 0.9), xytext=(3.2, 0.45),
-                ha="center", color=COLORS["muted"], fontsize=9,
-                arrowprops={"arrowstyle": "->", "connectionstyle": "arc3,rad=-0.33", "color": COLORS["muted"]})
-    ax.text(10.42, 1.95, "Frozen route", weight="bold", fontsize=10, color=COLORS["green"])
-    ax.text(10.42, 1.54, "selection split\nthen transfer audit", fontsize=8.5, color=COLORS["muted"], va="top")
+        ax.text(x + 1.0, y + 0.69, title, ha="center", va="center", weight="bold", fontsize=11)
+        ax.text(x + 1.0, y + 0.31, subtitle, ha="center", va="center", color=COLORS["muted"], fontsize=8.5)
+
+    arrow = {"arrowstyle": "->", "color": COLORS["orange"], "lw": 1.8}
+    ax.annotate("", xy=(3.42, 3.68), xytext=(2.3, 3.68), arrowprops=arrow)
+    ax.annotate("", xy=(6.67, 3.68), xytext=(5.55, 3.68), arrowprops=arrow)
+    ax.annotate("", xy=(7.75, 1.98), xytext=(7.75, 3.1), arrowprops=arrow)
+    ax.annotate("", xy=(5.55, 1.38), xytext=(6.67, 1.38), arrowprops=arrow)
+    ax.annotate("", xy=(2.3, 1.38), xytext=(3.42, 1.38), arrowprops=arrow)
+
+    ax.annotate(
+        "repeat",
+        xy=(4.5, 3.1),
+        xytext=(7.45, 2.3),
+        ha="center",
+        color=COLORS["muted"],
+        fontsize=8.5,
+        arrowprops={
+            "arrowstyle": "->",
+            "connectionstyle": "arc3,rad=0.28",
+            "color": COLORS["muted"],
+            "lw": 1.2,
+        },
+    )
+    ax.text(6.1, 1.63, "finish", ha="center", color=COLORS["muted"], fontsize=8.5)
     ax.set_title("Evolutionary search at a matched skip budget", loc="left", pad=3)
     save_figure(fig, out_dir, "method-overview")
 
