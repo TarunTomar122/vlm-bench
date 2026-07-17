@@ -33,6 +33,11 @@ as the exact number skipped. Do not use generic K4 or task K6 before these defin
 > freezing. Define all matched-K controls and paired bootstrap confidence intervals. Use the method
 > diagram and avoid implying that skipped blocks are physically deleted from the checkpoint.
 
+Use the exact notation and pseudocode in `method.md`. Include both scalar losses and Pareto vectors.
+State that crossover preserves parent intersections, mutation swaps one included block for one
+excluded block, and only offspring mutate. Report Qwen's 16 routes by 3 evaluated generations and
+SmolVLM2's lean 12 routes by 2 evaluated generations separately.
+
 ## Results Prompt
 
 > Write results in claim-evidence-caveat order. First compare evolutionary search with independent,

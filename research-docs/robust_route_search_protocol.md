@@ -61,6 +61,53 @@ block indices. Each seed contributes at most two development finalists. Those ca
 deduplicated and ranked before at most three finalists per objective and K advance to full
 selection.
 
+### Formal objective definition
+
+For route `S`, capability `c`, and source `d`, define the paired cell drop in percentage points as
+
+```text
+Delta[c,d](S) = 100 * (full_accuracy[c,d] - route_accuracy[c,d]).
+```
+
+Lower is better and a negative value means the route outperformed the full model in that cell. For
+the shared route, `mu`, `w`, and `sigma` are the equal-cell mean, maximum, and population standard
+deviation over all capability-source cells. Evolution minimizes the vector `(mu, w, sigma)` and
+finalist ranking minimizes
+
+```text
+L_shared(S) = 0.50 * mu + 0.30 * w + 0.20 * sigma.
+```
+
+For target capability `t`, `mu_t`, `w_t`, and `sigma_t` use only target-source cells, while
+`kappa_t` is the equal-cell mean over every non-target capability-source cell. Evolution minimizes
+`(mu_t, w_t, kappa_t, sigma_t)` and finalist ranking minimizes
+
+```text
+L_t(S) = 0.45 * mu_t + 0.30 * w_t + 0.15 * kappa_t + 0.10 * sigma_t.
+```
+
+### Exact evolutionary operators
+
+A chromosome is a sorted set of exactly K unique block indices. Initialization fills at most half
+the population with sensitivity and prior-route candidates, then fills the remainder with seeded
+random K-subsets. Survivor selection accepts nondominated Pareto fronts in order. When a front only
+partly fits, ordering is descending NSGA-II crowding distance, ascending scalar loss, then
+lexicographic route order.
+
+Survivors are copied unchanged. For every offspring, fixed-K crossover retains the intersection of
+two parents and takes a seeded subset from their remaining union until K blocks are present. A
+mandatory one-swap mutation then removes one included block and adds one excluded allowed block.
+Duplicate children are rejected; after repeated collisions, a seeded random K-subset fills the
+vacancy. Parent choice and every stochastic-looking operation are deterministic from the frozen
+seed. There is no mutation probability, crossover probability, learned router, or gradient update.
+After survivors are ordered by scalar loss and route order, offspring attempt `i` pairs survivor
+`i mod m` with survivor `(5i + 1) mod m`, where `m` is the survivor count.
+
+The main Qwen run uses population 16 and three evaluated generations. The lean completed SmolVLM2
+K4 replication uses population 12 and two evaluated generations; it retains the same objective
+definitions, three seeds, and finalist pipeline. Full derivations and pseudocode are in
+`paper/method.md`.
+
 ## Fair comparisons and selection
 
 Every robust route must be compared on identical examples against controls with exactly the same

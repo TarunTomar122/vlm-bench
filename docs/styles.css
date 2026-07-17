@@ -345,6 +345,10 @@ tfoot th {
   max-width: 520px;
 }
 
+.equation-wide {
+  max-width: none;
+}
+
 .process-list,
 .takeaways {
   margin: 2rem 0 0;

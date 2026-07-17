@@ -47,13 +47,16 @@ optimal.
 ### 3.2 Generic and capability objectives
 
 Describe source-balanced mean drop, worst-source drop, variability, and collateral loss. Explain
-why source balancing prevents a large source from dominating route selection.
+why source balancing prevents a large source from dominating route selection. Include the exact
+cell-drop definition, Pareto vectors, and frozen scalar losses from `method.md`.
 
 ### 3.3 Evolutionary search
 
 Insert `generated-method-overview.pdf`. Describe initialization, evaluation, Pareto selection,
 mutation/crossover, three seeds, finalist selection, and route freezing. Refer exact optimizer values
-to the frozen protocol/config rather than crowding the main text.
+to `method.md` and the frozen protocol/config. State that each child receives fixed-K crossover and
+one swap mutation, while survivors pass through unchanged. Distinguish Qwen's 16 by 3 search from
+the lean SmolVLM2 12 by 2 search.
 
 ### 3.4 Baselines and uncertainty
 

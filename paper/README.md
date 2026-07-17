@@ -8,10 +8,11 @@ files are derived from committed aggregate evidence; no model weights, images, o
 ## Start Here
 
 1. Read [`claims-and-limitations.md`](claims-and-limitations.md) before drafting claims.
-2. Follow [`outline.md`](outline.md) section by section.
-3. Use [`writing-guide.md`](writing-guide.md) as paragraph prompts.
-4. Insert figures from [`figures/`](figures/) and tables from [`tables/`](tables/).
-5. Complete [`submission-checklist.md`](submission-checklist.md) before arXiv upload.
+2. Use [`method.md`](method.md) for the implemented equations, operators, and pseudocode.
+3. Follow [`outline.md`](outline.md) section by section.
+4. Use [`writing-guide.md`](writing-guide.md) as paragraph prompts.
+5. Insert figures from [`figures/`](figures/) and tables from [`tables/`](tables/).
+6. Complete [`submission-checklist.md`](submission-checklist.md) before arXiv upload.
 
 ## Regenerate Everything
 

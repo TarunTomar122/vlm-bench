@@ -150,7 +150,36 @@
       </div>
 
       <h3>Evolutionary search</h3>
-      <p>The optimizer uses a population of 16 routes, three evaluated generations, and three independent seeds. The shared-route loss combines source-balanced mean drop, worst-source drop, and source variability. The capability-route loss adds target-capability damage and collateral damage to other capabilities. Pareto selection, mutation, and crossover produce new routes.</p>
+      <p>This is a fixed-cardinality, multi-objective genetic search. A chromosome is not a neural network weight vector. It is simply a set <code>S</code> containing exactly K block indices to skip. Equivalently, it is an L-bit mask with exactly K active skip decisions. Search never changes K within a run.</p>
+
+      <h4>What the loss measures</h4>
+      <p>Every route is paired with the full model on identical examples. For capability <code>c</code> and dataset source <code>d</code>, the cell drop is:</p>
+      <pre class="equation equation-wide"><code>Delta[c,d](S) = 100 * (full accuracy[c,d] - route accuracy[c,d])</code></pre>
+      <p>Lower is better. Negative values mean the skipped route improved accuracy in that cell. Cells are averaged equally, so a large dataset source cannot dominate a small one merely by containing more rows.</p>
+
+      <p>For one shared route, let <code>mu</code> be mean drop over all cells, <code>w</code> the worst cell drop, and <code>sigma</code> the population standard deviation across cells:</p>
+      <pre class="equation equation-wide"><code>L_shared(S) = 0.50 * mu + 0.30 * w + 0.20 * sigma
+Pareto vector = (mu, w, sigma)</code></pre>
+
+      <p>For a route targeting capability <code>t</code>, compute <code>mu_t</code>, <code>w_t</code>, and <code>sigma_t</code> only across that capability's sources. <code>kappa_t</code> is mean collateral drop across every non-target capability-source cell:</p>
+      <pre class="equation equation-wide"><code>L_t(S) = 0.45 * mu_t + 0.30 * w_t + 0.15 * kappa_t + 0.10 * sigma_t
+Pareto vector = (mu_t, w_t, kappa_t, sigma_t)</code></pre>
+      <p>The collateral term discourages an OCR route, for example, from preserving OCR by destroying counting, object, attribute, and spatial performance. It is a penalty, not a hard guarantee.</p>
+
+      <h4>How one generation works</h4>
+      <ol class="prose-list">
+        <li><strong>Initialize:</strong> seed up to half the population with routes from single-block sensitivity and earlier searches, then add deterministic random K-block subsets.</li>
+        <li><strong>Evaluate:</strong> run every route on a source-balanced scout and compute its multi-objective vector.</li>
+        <li><strong>Select:</strong> keep half by nondominated Pareto front. If a front only partly fits, prefer NSGA-II crowding distance, then lower scalar loss, then lexicographic block order.</li>
+        <li><strong>Crossover:</strong> retain blocks shared by both parents, then choose from their remaining union until the child again has exactly K blocks.</li>
+        <li><strong>Mutate:</strong> swap exactly one included block for one excluded block. Survivors remain unchanged and duplicate children are rejected.</li>
+        <li><strong>Repeat:</strong> evaluate the new fixed-size population. Every operation is reproducible from the frozen seed.</li>
+      </ol>
+
+      <p><strong>Concrete K4 example:</strong> parents <code>{2, 5, 8, 11}</code> and <code>{2, 6, 8, 14}</code> force the child to keep shared blocks <code>{2, 8}</code>. Crossover chooses two more from <code>{5, 6, 11, 14}</code>. Mutation then removes one child block and inserts one allowed block not already present. The child still skips exactly four blocks. There is no mutation or crossover probability: every offspring receives both operations once, while selected survivors pass through unchanged.</p>
+
+      <p>Qwen used 16 routes, 3 evaluated generations including the initial population, and 3 seeds. The lean SmolVLM2 replication used 12 routes, 2 evaluated generations, and the same 3 seeds. Each seed supplied at most two scout finalists. After deduplication, finalists were reranked on 300 development rows, at most three advanced to all 876 selection rows, and the lowest matching scalar loss was frozen.</p>
+      <p class="note"><strong>What it is not:</strong> this is not a learned per-question router, gradient training, or proof of the globally best subset. The capability policy uses a known capability label to choose among five frozen routes.</p>
 
       <figure>
         <img src="assets/generated-method-overview.png" alt="Compact evolutionary route search workflow with six stages">
