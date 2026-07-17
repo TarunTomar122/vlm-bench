@@ -436,7 +436,7 @@ L 622.656 46.104
      </g>
     </g>
     <g id="text_27">
-     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17211b" x="337.819565" y="148.932" transform="rotate(-90 337.819565 148.932)">SmolVLM2 K4 speedup (%)</text>
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17211b" x="337.819565" y="148.932" transform="rotate(-90 337.819565 148.932)">SmolVLM2 four-block speedup (%)</text>
     </g>
    </g>
    <g id="patch_16">

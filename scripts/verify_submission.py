@@ -70,7 +70,7 @@ def main() -> int:
     html = (ROOT / "docs/index.html").read_text(encoding="utf-8")
     require("-13.6" in html, "Website omits the negative transfer result")
     require("unlocked same-VM" in html, "Website omits latency caveat")
-    require("SmolVLM2 K4" in html, "Website must identify Smol's completed budget")
+    require("4 of 27" in html, "Website must identify Smol's completed four-block setting")
     print("Submission verification passed: frozen results, 21 figure files, tables, research docs, and Pages site.")
     return 0
 

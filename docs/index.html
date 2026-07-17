@@ -33,7 +33,7 @@
 
     <section id="abstract" class="abstract">
       <h2>Abstract</h2>
-      <p>Vision-language models execute the same vision stack for OCR, counting, object recognition, attributes, and spatial questions. We ask whether selected vision-transformer blocks can be replaced with identity operations at inference time, and whether the best skipped blocks depend on the requested capability. We evaluate Qwen2.5-VL-3B and SmolVLM2-2.2B on five capability buckets using matched skip budgets and source-aware evolutionary search. Search consistently finds stronger block combinations than independent layer ranking, contiguous removal, or random routes. The clearest matched-control gains are +4.91 points for SmolVLM2 generic K4 over independent ranking and +8.90 points for its capability policy over task-independent ranking. Capability specialization is less stable. Qwen K6 gains +2.17 points overall from task routes, while SmolVLM2 K4 gains only +0.80 points, and its OCR route loses 13.6 points against generic K4 on sealed IIIT5K. The supported conclusion is narrow: route construction is a combinatorial problem, but capability labels alone do not define universal vision pathways.</p>
+      <p>Vision-language models execute the same vision stack for OCR, counting, object recognition, attributes, and spatial questions. We ask whether selected vision-transformer blocks can be replaced with identity operations at inference time, and whether the best skipped blocks depend on the requested capability. We evaluate Qwen2.5-VL-3B and SmolVLM2-2.2B on five capability buckets using matched skip budgets and source-aware evolutionary search. Search consistently finds stronger block combinations than independent layer ranking, contiguous removal, or random routes. When six Qwen blocks are skipped, choosing a separate route for each capability improves overall accuracy by 2.17 points over one shared six-block route, driven by a 7.10 point OCR gain. When four SmolVLM2 blocks are skipped, the capability policy is only +0.80 points overall because counting and spatial gains are offset by a 13.55 point OCR loss. On sealed IIIT5K, the Smol OCR-specific four-block route loses 13.6 points against its shared four-block route. Route construction is a combinatorial problem, aggregate accuracy can hide large capability changes, and capability labels alone do not define universal vision pathways.</p>
     </section>
 
     <aside class="contents" aria-label="Contents">
@@ -50,28 +50,37 @@
 
     <section id="overview">
       <h2><span>1.</span> Research question</h2>
-      <p class="question">At the same number of skipped vision blocks, can combinatorial search preserve more accuracy than naive pruning, and can capability-specific routes beat one generic route?</p>
+      <p class="question">At the same number of skipped vision blocks, can combinatorial search preserve more accuracy than naive pruning, and can capability-specific routes beat one shared route?</p>
       <p>A VLM first converts an image into visual tokens, transforms those tokens through a stack of vision blocks, projects them into the language model space, and then generates an answer with its decoder. Every query normally executes every vision block, even when the requested visual information differs substantially.</p>
 
       <div class="pipeline" aria-label="Vision-language model processing pipeline">
         <span>Image</span><b>&rarr;</b><span>Patch tokens</span><b>&rarr;</b><span>Vision blocks</span><b>&rarr;</b><span>Projected tokens</span><b>&rarr;</b><span>Language decoder</span><b>&rarr;</b><span>Answer</span>
       </div>
 
-      <p>Our intervention changes only the vision-block stage. A <strong>route</strong> is a set of block indices to skip. If a route has budget K4, exactly four blocks are replaced with identity. The hidden state passes through unchanged at those positions, while every other vision block and the complete language decoder remain intact.</p>
+      <p>Our intervention changes only the vision-block stage. A <strong>route</strong> is a set of block indices to skip. K4, K6, and K8 mean that exactly four, six, or eight blocks are replaced with identity. The hidden state passes through unchanged at those positions, while every other vision block and the complete language decoder remain intact.</p>
 
       <dl class="summary-grid">
         <div><dt>2</dt><dd>model architectures</dd></div>
         <div><dt>5</dt><dd>visual capabilities</dd></div>
         <div><dt>1,780</dt><dd>discovery examples</dd></div>
         <div><dt>876</dt><dd>selection examples</dd></div>
-        <div><dt>K4, K6, K8</dt><dd>completed Qwen budgets</dd></div>
-        <div><dt>K4</dt><dd>completed SmolVLM2 budget</dd></div>
+        <div><dt>4, 6, 8</dt><dd>completed Qwen skip counts</dd></div>
+        <div><dt>4</dt><dd>completed SmolVLM2 skip count</dd></div>
       </dl>
+
+      <h3>How to read the route names</h3>
+      <dl class="definition-list">
+        <div><dt>Full model</dt><dd>Skip zero blocks and execute the complete vision encoder.</dd></div>
+        <div><dt>One shared K-block route</dt><dd>Search selects one set of exactly K blocks. The same set is skipped for every OCR, counting, spatial, object, and attribute question.</dd></div>
+        <div><dt>Capability-specific K-block policy</dt><dd>Search selects five routes, each skipping exactly K blocks. The route matching the known capability label is used for each question.</dd></div>
+        <div><dt>Best found route</dt><dd>The strongest candidate evaluated by the frozen evolutionary procedure, not a proof of the global optimum across every possible combination.</dd></div>
+      </dl>
+      <p class="note"><strong>Interpretation boundary:</strong> these routes show which computations can be bypassed with limited behavioral damage. They do not show that OCR, counting, or another capability is stored inside a named block.</p>
 
       <h3>What we are testing</h3>
       <ol class="prose-list">
         <li><strong>Construction:</strong> does evolutionary search find a better same-K block combination than independent layer scores, contiguous removal, or random routes?</li>
-        <li><strong>Specialization:</strong> does selecting a different route for OCR, counting, spatial, object, or attribute questions outperform one evolved generic route?</li>
+        <li><strong>Specialization:</strong> does selecting a different same-size route for OCR, counting, spatial, object, or attribute questions outperform one shared searched route?</li>
         <li><strong>Transfer:</strong> does a route selected for a capability continue to help on a fresh dataset from that capability?</li>
         <li><strong>Efficiency:</strong> how much vision computation and whole-model latency does block skipping actually save?</li>
       </ol>
@@ -86,13 +95,13 @@
         <table>
           <thead><tr><th>Model</th><th>Vision blocks</th><th>Completed budgets</th><th>Role</th></tr></thead>
           <tbody>
-            <tr><td>Qwen2.5-VL-3B-Instruct</td><td>32</td><td>K4, K6, K8</td><td>Primary budget study</td></tr>
-            <tr><td>SmolVLM2-2.2B-Instruct</td><td>27</td><td>K4</td><td>Cross-model replication</td></tr>
+            <tr><td>Qwen2.5-VL-3B-Instruct</td><td>32</td><td>4, 6, and 8 blocks</td><td>Primary budget study</td></tr>
+            <tr><td>SmolVLM2-2.2B-Instruct</td><td>27</td><td>4 blocks</td><td>Cross-model replication</td></tr>
           </tbody>
         </table>
       </div>
 
-      <p class="note"><strong>Important:</strong> SmolVLM2 K6 was stopped after its diagnostic generic route lost 21.80 points. It has no completed matched controls or transfer result, so it is excluded from the final comparisons.</p>
+      <p class="note"><strong>Important:</strong> the SmolVLM2 diagnostic that skipped six blocks was stopped after its shared route lost 21.80 points. It has no completed matched controls or transfer result, so it is excluded from the final comparisons.</p>
 
       <h3>Capability benchmark</h3>
       <p>The discovery corpus contains 1,780 image-question pairs over 1,431 unique images. It combines controlled MME questions with natural examples from OCRBench, TallyQA, VSR, POPE, and VQAv2 Color. Answers are short and deterministically scorable.</p>
@@ -124,7 +133,7 @@
       <h3>Identity block skipping</h3>
       <p>For a skipped block, its output is replaced by its input. No weights are deleted during evaluation, and no fine-tuning, distillation, prompt tuning, or repair is performed. This isolates the effect of executing fewer dense vision blocks.</p>
       <pre class="equation"><code>For skipped block l: h[l + 1] = h[l]</code></pre>
-      <p>All comparisons within a result row use the same K, so a K6 task route is compared with K6 generic and K6 control routes. The full model is an accuracy reference, not a matched-compute route.</p>
+      <p>All comparisons within a result row skip the same number of blocks. A capability-specific six-block route is compared with a shared six-block route and six-block controls. The full model is an accuracy reference, not a matched-compute route.</p>
 
       <h3>Baselines</h3>
       <div class="table-wrap">
@@ -134,14 +143,14 @@
             <tr><td>Independent ranking</td><td>Combine blocks with the smallest individual accuracy damage</td><td>Tests whether single-block scores compose</td></tr>
             <tr><td>Contiguous</td><td>Remove the least-damaging adjacent run of K blocks</td><td>Simple structured baseline</td></tr>
             <tr><td>Random</td><td>Three deterministic random K-block routes</td><td>Measures uninformed route quality</td></tr>
-            <tr><td>Evolved generic</td><td>Optimize one route across all capabilities and sources</td><td>Best single shared route</td></tr>
-            <tr><td>Evolved task</td><td>Optimize one route per capability with collateral-loss control</td><td>Tests capability specialization</td></tr>
+            <tr><td>Shared searched route</td><td>Optimize one K-block route across all capabilities and sources</td><td>Best found single route</td></tr>
+            <tr><td>Capability-specific policy</td><td>Optimize one K-block route per capability with collateral-loss control</td><td>Tests capability specialization</td></tr>
           </tbody>
         </table>
       </div>
 
       <h3>Evolutionary search</h3>
-      <p>The optimizer uses a population of 16 routes, three evaluated generations, and three independent seeds. Generic loss combines source-balanced mean drop, worst-source drop, and source variability. Capability loss adds target-capability damage and collateral damage to other capabilities. Pareto selection, mutation, and crossover produce new routes.</p>
+      <p>The optimizer uses a population of 16 routes, three evaluated generations, and three independent seeds. The shared-route loss combines source-balanced mean drop, worst-source drop, and source variability. The capability-route loss adds target-capability damage and collateral damage to other capabilities. Pareto selection, mutation, and crossover produce new routes.</p>
 
       <figure>
         <img src="assets/generated-method-overview.png" alt="Compact evolutionary route search workflow with six stages">
@@ -152,8 +161,8 @@
       <ol class="process-list">
         <li><div><strong>Establish the full-model reference.</strong><p>Run every example with all vision blocks active and cache deterministic greedy predictions.</p></div></li>
         <li><div><strong>Measure individual block sensitivity.</strong><p>Skip one block at a time to build the initial task-by-block map. This is diagnostic evidence, not the final route rule.</p></div></li>
-        <li><div><strong>Build matched-K controls.</strong><p>Construct independent, contiguous, and random routes for K4, K6, and K8 where completed.</p></div></li>
-        <li><div><strong>Search combinations.</strong><p>Optimize generic and capability routes with three evolutionary seeds and source-balanced objectives.</p></div></li>
+        <li><div><strong>Build equal-skip controls.</strong><p>Construct independent, contiguous, and random routes that skip the same four, six, or eight blocks as the searched route.</p></div></li>
+        <li><div><strong>Search combinations.</strong><p>Optimize one shared route and five capability-specific routes with three evolutionary seeds and source-balanced objectives.</p></div></li>
         <li><div><strong>Evaluate and freeze finalists.</strong><p>Use a 300-row development evaluation, then the complete 876-row selection partition. Freeze routes before any fresh transfer result is viewed.</p></div></li>
         <li><div><strong>Compare paired predictions.</strong><p>Report exact accuracy differences and paired bootstrap 95% intervals on identical examples.</p></div></li>
         <li><div><strong>Audit transfer and speed.</strong><p>Open sealed IIIT5K for Smol OCR transfer and measure batch-size-one latency on the same RTX 4090 VM.</p></div></li>
@@ -164,46 +173,61 @@
 
     <section id="results">
       <h2><span>4.</span> Results</h2>
-      <p>The strongest general result is about <strong>how routes are constructed</strong>. Evolutionary search beats naive combinations on both architectures. The result for <strong>which task route to use</strong> is mixed and often uncertain.</p>
+      <p>The strongest general result is about <strong>how routes are constructed</strong>. Evolutionary search beats naive combinations on both architectures. The result for <strong>whether a capability should use a different route</strong> is mixed and often uncertain.</p>
 
       <div class="finding-list">
-        <div><strong>+4.91 pp</strong><p>SmolVLM2 evolved generic K4 compared with generic independent ranking, paired 95% interval [1.83, 7.99].</p></div>
-        <div><strong>+8.90 pp</strong><p>SmolVLM2 evolved task K4 compared with task-independent ranking, paired 95% interval [5.82, 11.99].</p></div>
-        <div><strong>+2.17 pp</strong><p>Qwen K6 task policy compared with evolved generic K6, paired 95% interval [0.00, 4.34].</p></div>
-        <div><strong>-13.6 pp</strong><p>SmolVLM2 OCR route compared with generic K4 on sealed IIIT5K, paired 95% interval [-19.2, -8.4].</p></div>
+        <div><strong>+4.91 pp</strong><p>The searched SmolVLM2 shared four-block route compared with selecting four blocks from independent one-block rankings, paired 95% interval [1.83, 7.99].</p></div>
+        <div><strong>+8.90 pp</strong><p>The searched SmolVLM2 capability-specific four-block policy compared with independently constructed task routes, paired 95% interval [5.82, 11.99].</p></div>
+        <div><strong>+2.17 pp</strong><p>The Qwen capability-specific six-block policy compared with one shared six-block route, paired 95% interval [0.00, 4.34].</p></div>
+        <div><strong>-13.6 pp</strong><p>The SmolVLM2 OCR-specific four-block route compared with one shared four-block route on sealed IIIT5K, paired 95% interval [-19.2, -8.4].</p></div>
       </div>
 
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Model</th><th>Budget</th><th>Full</th><th>Evolved generic</th><th>Evolved task</th><th>Task minus generic</th><th>Paired 95% interval</th></tr></thead>
+          <thead><tr><th>Model</th><th>Blocks skipped</th><th>Full model</th><th>One shared route</th><th>Capability-specific policy</th><th>Policy minus shared</th><th>Paired 95% interval</th></tr></thead>
           <tbody>
-            <tr><td>Qwen2.5-VL-3B</td><td>K4</td><td>83.68</td><td>81.28</td><td>81.39</td><td>+0.11</td><td>[-1.83, 2.05]</td></tr>
-            <tr><td>Qwen2.5-VL-3B</td><td>K6</td><td>83.68</td><td>79.11</td><td>81.28</td><td>+2.17</td><td>[0.00, 4.34]</td></tr>
-            <tr><td>Qwen2.5-VL-3B</td><td>K8</td><td>83.68</td><td>75.91</td><td>76.60</td><td>+0.68</td><td>[-1.71, 3.08]</td></tr>
-            <tr><td>SmolVLM2-2.2B</td><td>K4</td><td>82.65</td><td>72.49</td><td>73.29</td><td>+0.80</td><td>[-1.94, 3.54]</td></tr>
+            <tr><td>Qwen2.5-VL-3B</td><td>4 of 32</td><td>83.68</td><td>81.28</td><td>81.39</td><td>+0.11</td><td>[-1.83, 2.05]</td></tr>
+            <tr><td>Qwen2.5-VL-3B</td><td>6 of 32</td><td>83.68</td><td>79.11</td><td>81.28</td><td>+2.17</td><td>[0.00, 4.34]</td></tr>
+            <tr><td>Qwen2.5-VL-3B</td><td>8 of 32</td><td>83.68</td><td>75.91</td><td>76.60</td><td>+0.68</td><td>[-1.71, 3.08]</td></tr>
+            <tr><td>SmolVLM2-2.2B</td><td>4 of 27</td><td>82.65</td><td>72.49</td><td>73.29</td><td>+0.80</td><td>[-1.94, 3.54]</td></tr>
           </tbody>
         </table>
       </div>
 
+      <h3>How to interpret each model</h3>
+      <dl class="definition-list">
+        <div><dt>Qwen, four skipped</dt><dd>The shared route reaches 81.28%, only 2.40 points below the full model. Capability-specific routes add only 0.11 points overall.</dd></div>
+        <div><dt>Qwen, six skipped</dt><dd>The capability policy reaches 81.28%, 2.17 points above the shared six-block route. It matches the shared four-block route while skipping two additional blocks.</dd></div>
+        <div><dt>Qwen, eight skipped</dt><dd>The capability policy adds only 0.68 points and its interval crosses zero. Eight skipped blocks remain substantially below the full model.</dd></div>
+        <div><dt>SmolVLM2, four skipped</dt><dd>The shared route is 10.16 points below the full model, showing greater fragility. Search still beats independent construction by 4.91 points.</dd></div>
+      </dl>
+
+      <h3>Aggregate accuracy hides capability changes</h3>
+      <p>Similar overall accuracy does not mean the shared and capability-specific policies behave similarly. Positive and negative capability effects can cancel when averaged.</p>
+      <dl class="definition-list">
+        <div><dt>Qwen, six skipped</dt><dd>The policy is +2.17 points overall, but OCR alone improves by +7.10 points [0.65, 14.19]. The overall average understates the strongest capability gain.</dd></div>
+        <div><dt>SmolVLM2, four skipped</dt><dd>The policy is only +0.80 points overall, but counting improves by +7.18, spatial by +9.39, and OCR falls by -13.55 points. Large effects cancel in the aggregate.</dd></div>
+      </dl>
+
       <figure>
-        <img src="assets/generated-matched-k4-controls.png" alt="Matched K4 accuracy controls on Qwen and SmolVLM2">
-        <figcaption><span>Figure 2.</span> Matched K4 controls on the 876-example selection partition. The evolved routes are compared with routes that skip exactly the same number of blocks.</figcaption>
+        <img src="assets/generated-matched-k4-controls.png" alt="Matched four-block accuracy controls on Qwen and SmolVLM2">
+        <figcaption><span>Figure 2.</span> Matched four-block controls on the 876-example selection partition. Every route skips exactly four blocks.</figcaption>
       </figure>
 
       <h3>Budget matters</h3>
-      <p>On Qwen, removing more blocks predictably lowers absolute accuracy. Search becomes more useful at aggressive budgets because random and contiguous routes degrade quickly. K6 is the most informative task-routing budget: the task policy recovers 2.17 points over evolved generic, driven most clearly by OCR at +7.10 points [0.65, 14.19].</p>
+      <p>On Qwen, removing more blocks predictably lowers absolute accuracy. Search becomes more useful at aggressive budgets because random and contiguous routes degrade quickly. Six skipped blocks is the most informative capability-routing setting: the capability-specific policy recovers 2.17 points over one shared six-block route, driven most clearly by OCR at +7.10 points [0.65, 14.19].</p>
 
       <figure>
         <img src="assets/generated-qwen-accuracy-by-budget.png" alt="Qwen accuracy by skipped-block budget">
-        <figcaption><span>Figure 3.</span> Qwen accuracy from the full model through K8. SmolVLM2 is omitted because only K4 was completed.</figcaption>
+        <figcaption><span>Figure 3.</span> Qwen accuracy from the full model through eight skipped blocks. SmolVLM2 is omitted because only the four-block study was completed.</figcaption>
       </figure>
 
       <h3>Capability gains do not form one stable map</h3>
-      <p>Qwen K6 OCR improves, but SmolVLM2 K4 OCR deteriorates. SmolVLM2 counting and spatial improve while attribute and object remain uncertain. A block route can therefore be useful for one architecture and harmful for another, even under the same capability name.</p>
+      <p>Qwen OCR improves when six blocks are skipped, but SmolVLM2 OCR deteriorates when four are skipped. SmolVLM2 counting and spatial improve while attribute and object remain uncertain. A block route can therefore be useful for one architecture and harmful for another, even under the same capability name.</p>
 
       <figure>
-        <img src="assets/generated-cross-model-capability-heatmap.png" alt="Task-route advantage across capabilities and models">
-        <figcaption><span>Figure 4.</span> Task-route advantage over the evolved generic route. An asterisk marks a paired interval that excludes zero.</figcaption>
+        <img src="assets/generated-cross-model-capability-heatmap.png" alt="Capability-policy advantage over one shared route across capabilities and models">
+        <figcaption><span>Figure 4.</span> Capability-specific policy advantage over one shared same-budget route. An asterisk marks a paired interval that excludes zero.</figcaption>
       </figure>
 
       <figure>
@@ -215,11 +239,11 @@
     <section id="transfer">
       <h2><span>5.</span> Transfer and efficiency</h2>
       <h3>Fresh OCR transfer</h3>
-      <p>IIIT5K was excluded from all route selection and opened only after the SmolVLM2 routes were frozen. The full model scored 94.8%, generic K4 scored 86.4%, and the OCR-specific K4 route scored 72.8%. The OCR route was 13.6 percentage points worse than generic K4.</p>
+      <p>IIIT5K was excluded from all route selection and opened only after the SmolVLM2 routes were frozen. The full model scored 94.8%, the shared four-block route scored 86.4%, and the OCR-specific four-block route scored 72.8%. The OCR route was 13.6 percentage points worse than the shared route.</p>
       <p>This is the decisive negative result. The route had been optimized for OCR, but it did not preserve OCR skill on a new source. It may have specialized to source mixture, prompt format, image complexity, or architecture-specific shortcuts rather than a stable OCR pathway.</p>
 
       <figure>
-        <img src="assets/generated-fresh-ocr-transfer.png" alt="Full, generic K4, and OCR-specific K4 SmolVLM2 accuracy on IIIT5K">
+        <img src="assets/generated-fresh-ocr-transfer.png" alt="Full model, shared four-block route, and OCR-specific four-block SmolVLM2 accuracy on IIIT5K">
         <figcaption><span>Figure 6.</span> Fresh OCR transfer on 250 sealed IIIT5K examples. The OCR-specific route does not transfer.</figcaption>
       </figure>
 
@@ -228,16 +252,16 @@
         <table>
           <thead><tr><th>Model and route</th><th>Skipped parameters</th><th>Vision tower</th><th>Full model</th><th>Measured speedup</th></tr></thead>
           <tbody>
-            <tr><td>Qwen K4</td><td>78,808,800</td><td>11.79%</td><td>2.10%</td><td>Not measured for final route series</td></tr>
-            <tr><td>SmolVLM2 K4</td><td>60,958,016</td><td>14.76%</td><td>2.71%</td><td>8.60% vision, 4.19% end to end</td></tr>
+            <tr><td>Qwen, four-block route</td><td>78,808,800</td><td>11.79%</td><td>2.10%</td><td>Not measured for final route series</td></tr>
+            <tr><td>SmolVLM2, shared four-block route</td><td>60,958,016</td><td>14.76%</td><td>2.71%</td><td>8.60% vision, 4.19% end to end</td></tr>
           </tbody>
         </table>
       </div>
       <p>The speed benefit is meaningful inside the vision tower but smaller for the complete model because the language decoder still runs unchanged. Smol latency is an unlocked same-VM RTX 4090 comparison at batch size one because the cloud provider denied GPU clock locking. It is not an edge-device result.</p>
 
       <figure>
-        <img src="assets/generated-efficiency-summary.png" alt="K4 parameter reduction and SmolVLM2 latency speedup">
-        <figcaption><span>Figure 7.</span> K4 removes a meaningful fraction of vision depth, but only a small fraction of total model parameters.</figcaption>
+        <img src="assets/generated-efficiency-summary.png" alt="Four-block parameter reduction and SmolVLM2 latency speedup">
+        <figcaption><span>Figure 7.</span> Skipping four blocks removes a meaningful fraction of vision depth, but only a small fraction of total model parameters.</figcaption>
       </figure>
     </section>
 
@@ -246,8 +270,9 @@
       <ol class="takeaways">
         <li><div><strong>Layer importance does not compose independently.</strong><p>Blocks that look safe one at a time can interact badly when removed together. Route selection is a combinatorial problem.</p></div></li>
         <li><div><strong>Search generalizes better than a particular route.</strong><p>Evolutionary construction beats naive controls on both models, but the exact capability routes and gains change with architecture and budget.</p></div></li>
+        <li><div><strong>Aggregate parity can hide large capability effects.</strong><p>A shared route and capability policy can look similar overall while behaving very differently on OCR, counting, or spatial questions.</p></div></li>
         <li><div><strong>Capability labels are not enough.</strong><p>OCR is not one uniform condition. Source, image style, prompt, and difficulty can matter more than the label used to select a route.</p></div></li>
-        <li><div><strong>Safe budgets are architecture-dependent.</strong><p>Qwen remains comparatively robust through K6 and K8, while SmolVLM2 is much more fragile and its K6 diagnostic was stopped.</p></div></li>
+        <li><div><strong>Safe budgets are architecture-dependent.</strong><p>Qwen remains comparatively robust with six and eight skipped blocks, while SmolVLM2 is much more fragile and its six-block diagnostic was stopped.</p></div></li>
         <li><div><strong>Vision savings are not whole-model compression.</strong><p>Skipping blocks reduces executed vision depth. It does not compress the decoder or automatically create a smaller serialized checkpoint.</p></div></li>
       </ol>
 

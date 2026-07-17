@@ -145,7 +145,7 @@ L 0 3.5
       </g>
      </g>
      <g id="text_1">
-      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17211b" x="93.079011" y="269.84425" transform="rotate(-0 93.079011 269.84425)">Generic</text>
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17211b" x="93.079011" y="269.84425" transform="rotate(-0 93.079011 269.84425)">Shared</text>
      </g>
     </g>
     <g id="xtick_2">
@@ -324,26 +324,26 @@ L 533.703906 22.397812
    </g>
    <g id="legend_1">
     <g id="patch_19">
-     <path d="M 428.216406 38.99625
-L 448.216406 38.99625
-L 448.216406 31.99625
-L 428.216406 31.99625
+     <path d="M 408.100781 38.99625
+L 428.100781 38.99625
+L 428.100781 31.99625
+L 408.100781 31.99625
 z
 " style="fill: #176b55"/>
     </g>
     <g id="text_15">
-     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17211b" x="456.216406" y="38.99625" transform="rotate(-0 456.216406 38.99625)">Qwen K4</text>
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17211b" x="436.100781" y="38.99625" transform="rotate(-0 436.100781 38.99625)">Qwen: skip 4</text>
     </g>
     <g id="patch_20">
-     <path d="M 428.216406 53.997031
-L 448.216406 53.997031
-L 448.216406 46.997031
-L 428.216406 46.997031
+     <path d="M 408.100781 53.997031
+L 428.100781 53.997031
+L 428.100781 46.997031
+L 408.100781 46.997031
 z
 " style="fill: #e36b3d"/>
     </g>
     <g id="text_16">
-     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17211b" x="456.216406" y="53.997031" transform="rotate(-0 456.216406 53.997031)">SmolVLM2 K4</text>
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17211b" x="436.100781" y="53.997031" transform="rotate(-0 436.100781 53.997031)">SmolVLM2: skip 4</text>
     </g>
    </g>
   </g>

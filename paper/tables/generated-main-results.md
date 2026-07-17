@@ -1,6 +1,6 @@
-| Model | Budget | Full | Evolved generic | Evolved task | Task - generic (pp) | Paired 95% CI |
+| Model | Blocks skipped | Full model | One shared route | Capability-specific policy | Policy - shared (pp) | Paired 95% CI |
 |---|---:|---:|---:|---:|---:|---:|
-| Qwen2.5-VL-3B | K4 | 83.68 | 81.28 | 81.39 | +0.11 | [-1.83, 2.05] |
-| Qwen2.5-VL-3B | K6 | 83.68 | 79.11 | 81.28 | +2.17 | [0.00, 4.34] |
-| Qwen2.5-VL-3B | K8 | 83.68 | 75.91 | 76.60 | +0.68 | [-1.71, 3.08] |
-| SmolVLM2-2.2B | K4 | 82.65 | 72.49 | 73.29 | +0.80 | [-1.94, 3.54] |
+| Qwen2.5-VL-3B | 4 blocks | 83.68 | 81.28 | 81.39 | +0.11 | [-1.83, 2.05] |
+| Qwen2.5-VL-3B | 6 blocks | 83.68 | 79.11 | 81.28 | +2.17 | [0.00, 4.34] |
+| Qwen2.5-VL-3B | 8 blocks | 83.68 | 75.91 | 76.60 | +0.68 | [-1.71, 3.08] |
+| SmolVLM2-2.2B | 4 blocks | 82.65 | 72.49 | 73.29 | +0.80 | [-1.94, 3.54] |

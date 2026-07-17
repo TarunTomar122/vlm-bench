@@ -73,7 +73,7 @@ L 0 3.5
       </g>
      </g>
      <g id="text_1">
-      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17211b" x="97.547211" y="275.38825" transform="rotate(-0 97.547211 275.38825)">Full</text>
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17211b" x="97.547211" y="275.38825" transform="rotate(-0 97.547211 275.38825)">Full model</text>
      </g>
     </g>
     <g id="xtick_2">
@@ -83,7 +83,7 @@ L 0 3.5
       </g>
      </g>
      <g id="text_2">
-      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17211b" x="229.205781" y="275.38825" transform="rotate(-0 229.205781 275.38825)">Generic K4</text>
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17211b" x="229.205781" y="275.38825" transform="rotate(-0 229.205781 275.38825)">Shared 4-block</text>
      </g>
     </g>
     <g id="xtick_3">
@@ -93,7 +93,7 @@ L 0 3.5
       </g>
      </g>
      <g id="text_3">
-      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17211b" x="360.864352" y="275.38825" transform="rotate(-0 360.864352 275.38825)">OCR-specific K4</text>
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17211b" x="360.864352" y="275.38825" transform="rotate(-0 360.864352 275.38825)">OCR 4-block</text>
      </g>
     </g>
    </g>

@@ -14,6 +14,10 @@ routes are model- and source-dependent rather than a stable map of visual skills
 > OCR task versus generic (-13.6 pp). Conclude that search generalizes but task specialization does
 > not universally transfer. Do not claim edge deployment or capability localization.
 
+Terminology requirement: define a shared K-block route as one searched route used for every
+question and a capability-specific K-block policy as one same-size route per capability. Explain K
+as the exact number skipped. Do not use generic K4 or task K6 before these definitions.
+
 ## Introduction Prompt
 
 > Draft five concise paragraphs following the numbered Introduction outline. Motivate actual dense
@@ -35,6 +39,10 @@ routes are model- and source-dependent rather than a stable map of visual skills
 > contiguous, and random controls. Then compare evolved task and generic routes only at equal K.
 > Report point changes as percentage points, not percentages. Explicitly say when intervals cross
 > or touch zero. Treat Qwen K4/K6/K8 and Smol K4 separately; never interpolate Smol K6/K8.
+
+Add the aggregate-cancellation insight: Qwen with six blocks skipped is +2.17 overall but +7.10 on
+OCR, while Smol with four skipped is only +0.80 overall because +7.18 counting and +9.39 spatial
+are offset by -13.55 OCR. Similar overall accuracy does not imply similar capability behavior.
 
 ## Transfer Prompt
 

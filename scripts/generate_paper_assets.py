@@ -49,8 +49,8 @@ METHOD_LABELS = {
     "generic-independent": "Independent",
     "contiguous": "Contiguous",
     "random-mean": "Random mean",
-    "evolved-generic": "Evolved generic",
-    "evolved-task": "Evolved task",
+    "evolved-generic": "Shared route",
+    "evolved-task": "Capability policy",
 }
 COLORS = {
     "ink": "#17211b",
@@ -345,16 +345,16 @@ def plot_budget_accuracy(data: dict[str, Any], out_dir: Path) -> None:
     random = [qwen["full_accuracy"]] + [qwen["budgets"][str(k)]["accuracy"]["random-mean"] for k in budgets[1:]]
     ax.plot(budgets, independent, "o--", color=COLORS["blue"], label="Independent ranking", lw=1.7)
     ax.plot(budgets, random, "o--", color=COLORS["muted"], label="Random mean", lw=1.7)
-    ax.plot(budgets, generic, "o-", color=COLORS["green"], label="Evolved generic", lw=2.5)
-    ax.plot(budgets, task, "o-", color=COLORS["orange"], label="Evolved task policy", lw=2.5)
+    ax.plot(budgets, generic, "o-", color=COLORS["green"], label="Shared searched route", lw=2.5)
+    ax.plot(budgets, task, "o-", color=COLORS["orange"], label="Capability-specific policy", lw=2.5)
     ax.axhline(qwen["full_accuracy"], color=COLORS["ink"], lw=0.8, alpha=0.4)
-    ax.set_xticks(budgets, ["Full", "K4", "K6", "K8"])
+    ax.set_xticks(budgets, ["Full", "Skip 4", "Skip 6", "Skip 8"])
     ax.set_ylabel("Accuracy (%)")
     ax.set_ylim(35, 86)
     ax.grid(axis="y", color=COLORS["grid"], linewidth=0.7)
     ax.set_title("Qwen: route search preserves accuracy as pruning grows", loc="left")
     ax.legend(ncol=2, loc="lower left", fontsize=8.5)
-    ax.text(0, -0.17, "SmolVLM2 is omitted because only K4 was completed.", transform=ax.transAxes,
+    ax.text(0, -0.17, "SmolVLM2 is omitted because only the four-block study was completed.", transform=ax.transAxes,
             fontsize=8.5, color=COLORS["muted"])
     save_figure(fig, out_dir, "qwen-accuracy-by-budget")
 
@@ -374,7 +374,7 @@ def plot_controls(data: dict[str, Any], out_dir: Path) -> None:
             ax.text(bar.get_x() + bar.get_width() / 2, value + 0.6, f"{value:.1f}", ha="center", fontsize=8)
     axes[0].set_ylabel("Accuracy (%)")
     axes[0].set_ylim(42, 87)
-    fig.suptitle("Matched K4 controls: search beats naive route construction", x=0.06, ha="left", weight="bold", fontsize=14)
+    fig.suptitle("Matched four-block controls: search beats naive route construction", x=0.06, ha="left", weight="bold", fontsize=14)
     save_figure(fig, out_dir, "matched-k4-controls")
 
 
@@ -385,7 +385,7 @@ def plot_heatmap(data: dict[str, Any], out_dir: Path) -> None:
     fig, ax = plt.subplots(figsize=(8.7, 2.8))
     image = ax.imshow(matrix, cmap="RdYlGn", vmin=-14, vmax=14, aspect="auto")
     ax.set_xticks(range(len(CAPABILITIES)), [c.title() if c != "ocr" else "OCR" for c in CAPABILITIES])
-    ax.set_yticks([0, 1], ["Qwen K6", "SmolVLM2 K4"])
+    ax.set_yticks([0, 1], ["Qwen: skip 6", "SmolVLM2: skip 4"])
     for row, source in enumerate((qwen_comp, smol_comp)):
         for col, capability in enumerate(CAPABILITIES):
             point = source[capability]
@@ -394,7 +394,7 @@ def plot_heatmap(data: dict[str, Any], out_dir: Path) -> None:
             color = "white" if abs(point["mean_pp"]) > 7 else COLORS["ink"]
             ax.text(col, row, label, ha="center", va="center", color=color, weight="bold")
     cbar = fig.colorbar(image, ax=ax, fraction=0.035, pad=0.03)
-    cbar.set_label("Task route minus generic route (pp)")
+    cbar.set_label("Policy minus shared route (pp)")
     ax.set_title("Capability-specific gains do not transfer uniformly across models", loc="left")
     ax.text(0, -0.28, "* paired 95% interval excludes zero", transform=ax.transAxes,
             fontsize=8.5, color=COLORS["muted"])
@@ -403,7 +403,7 @@ def plot_heatmap(data: dict[str, Any], out_dir: Path) -> None:
 
 def plot_transfer(data: dict[str, Any], out_dir: Path) -> None:
     conditions = data["fresh_ocr_transfer"]["conditions"]
-    labels = ["Full", "Generic K4", "OCR-specific K4"]
+    labels = ["Full model", "Shared 4-block", "OCR 4-block"]
     values = [conditions[key]["candidate_accuracy"] * 100 for key in ("full", "generic-k4", "ocr-k4")]
     fig, ax = plt.subplots(figsize=(6.8, 4.3))
     bars = ax.bar(labels, values, color=[COLORS["ink"], COLORS["green"], COLORS["red"]], width=0.62)
@@ -427,15 +427,15 @@ def plot_transfer(data: dict[str, Any], out_dir: Path) -> None:
 def plot_stability(data: dict[str, Any], out_dir: Path) -> None:
     qwen_routes = data["models"]["qwen"]["routes"]
     smol_routes = data["models"]["smol"]["routes"]
-    labels = ["Generic", "Attribute", "Counting", "Object", "OCR", "Spatial"]
-    families = [label.lower() for label in labels]
+    labels = ["Shared", "Attribute", "Counting", "Object", "OCR", "Spatial"]
+    families = ["generic", "attribute", "counting", "object", "ocr", "spatial"]
     qwen_k4 = [qwen_routes[f]["4"]["seed_route_stability_jaccard"] for f in families]
     smol_k4 = [smol_routes[f]["4"]["seed_route_stability_jaccard"] for f in families]
     x = np.arange(len(labels))
     fig, ax = plt.subplots(figsize=(8.8, 4.2))
     width = 0.36
-    ax.bar(x - width / 2, qwen_k4, width, color=COLORS["green"], label="Qwen K4")
-    ax.bar(x + width / 2, smol_k4, width, color=COLORS["orange"], label="SmolVLM2 K4")
+    ax.bar(x - width / 2, qwen_k4, width, color=COLORS["green"], label="Qwen: skip 4")
+    ax.bar(x + width / 2, smol_k4, width, color=COLORS["orange"], label="SmolVLM2: skip 4")
     ax.set_xticks(x, labels)
     ax.set_ylim(0, 1.02)
     ax.set_ylabel("Mean pairwise Jaccard across seed winners")
@@ -469,7 +469,7 @@ def plot_efficiency(data: dict[str, Any], out_dir: Path) -> None:
     for bar, value in zip(bars, speedups):
         axes[1].text(bar.get_x() + bar.get_width() / 2, value + 0.3, f"+{value:.1f}%", ha="center", weight="bold")
     axes[1].set_ylim(0, 10.5)
-    axes[1].set_ylabel("SmolVLM2 K4 speedup (%)")
+    axes[1].set_ylabel("SmolVLM2 four-block speedup (%)")
     axes[1].grid(axis="y", color=COLORS["grid"], linewidth=0.7)
     axes[1].text(0.5, -0.18, "Unlocked same-VM fallback; not fixed-clock or edge-device evidence.",
                  transform=axes[1].transAxes, ha="center", fontsize=8, color=COLORS["muted"])
@@ -507,25 +507,26 @@ def write_tables(data: dict[str, Any], out_dir: Path) -> None:
     write_csv(out_dir / "generated-main-results.csv", rows)
 
     markdown = [
-        "| Model | Budget | Full | Evolved generic | Evolved task | Task - generic (pp) | Paired 95% CI |",
+        "| Model | Blocks skipped | Full model | One shared route | Capability-specific policy | Policy - shared (pp) | Paired 95% CI |",
         "|---|---:|---:|---:|---:|---:|---:|",
     ]
     latex = [
         "\\begin{tabular}{llrrrrl}",
         "\\toprule",
-        "Model & Budget & Full & Generic & Task & $\\Delta$ (pp) & 95\\% CI \\\\",
+        "Model & Skipped & Full & Shared & Capability & $\\Delta$ (pp) & 95\\% CI \\\\",
         "\\midrule",
     ]
     for row in rows:
         short_model = "Qwen2.5-VL-3B" if row["model"].startswith("Qwen") else "SmolVLM2-2.2B"
+        display_budget = f"{row['budget'][1:]} blocks"
         interval = f"[{row['ci95_low_pp']}, {row['ci95_high_pp']}]"
         markdown.append(
-            f"| {short_model} | {row['budget']} | {row['full_accuracy_pct']} | "
+            f"| {short_model} | {display_budget} | {row['full_accuracy_pct']} | "
             f"{row['evolved_generic_pct']} | {row['evolved_task_pct']} | "
             f"{row['task_minus_generic_pp']} | {interval} |"
         )
         latex.append(
-            f"{short_model} & {row['budget']} & {row['full_accuracy_pct']} & "
+            f"{short_model} & {display_budget} & {row['full_accuracy_pct']} & "
             f"{row['evolved_generic_pct']} & {row['evolved_task_pct']} & "
             f"{row['task_minus_generic_pp']} & {interval} \\\\"
         )

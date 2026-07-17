@@ -39,7 +39,10 @@ and the empirical question, not ownership of the broad idea.
 ### 3.1 Identity block skipping
 
 Define a route as a set of vision-transformer block indices replaced by identity. Explain that K is
-the number skipped and all comparisons within a row use identical K. State no weights are updated.
+the number skipped and all comparisons within a row use identical K. On first use, write one shared
+K-block route for one route used by every question, and capability-specific K-block policy for one
+same-size route per capability. State no weights are updated and best found does not mean globally
+optimal.
 
 ### 3.2 Generic and capability objectives
 
@@ -89,7 +92,8 @@ correct hierarchy is:
 2. Qwen K6 has the largest overall task-policy advantage (+2.17 points), but its interval touches
    zero and most capability intervals remain uncertain.
 3. SmolVLM K4 replicates the search benefit but not a universal task-policy benefit (+0.80 points,
-   interval crossing zero).
+   interval crossing zero). Explain that this small aggregate masks +7.18 counting, +9.39 spatial,
+   and -13.55 OCR effects.
 
 ## 6. Capability and Transfer Analysis (0.9-1.1 pages)
 
@@ -97,9 +101,10 @@ Insert `generated-cross-model-capability-heatmap.pdf`, `generated-fresh-ocr-tran
 optionally `generated-route-stability.pdf`.
 
 Explain the sign reversals: Qwen K6 OCR improves, SmolVLM K4 OCR deteriorates, while Smol counting
-and spatial improve. Use this to reject a universal capability-to-depth map. Then present IIIT5K as
-the decisive source-transfer test: a route optimized as OCR-specific can overfit source mixture or
-architecture-specific shortcuts.
+and spatial improve. State explicitly that similar overall policy accuracy can hide large positive
+and negative capability changes that cancel in the aggregate. Use this to reject a universal
+capability-to-depth map. Then present IIIT5K as the decisive source-transfer test: a route optimized
+as OCR-specific can overfit source mixture or architecture-specific shortcuts.
 
 ## 7. Efficiency (0.55-0.7 page)
 
@@ -109,11 +114,12 @@ is known, while a consistent final evolved K4/K6/K8 latency series was not measu
 
 ## 8. Discussion (0.55-0.75 page)
 
-Three takeaways:
+Four takeaways:
 
 1. Block interactions make route construction a combinatorial problem.
 2. Safe pruning budgets are architecture-dependent; the smaller model is more fragile at K4.
-3. Capability labels alone may be insufficient routing variables; source, image complexity, and
+3. Aggregate parity does not imply capability-level parity; report both overall and bucket metrics.
+4. Capability labels alone may be insufficient routing variables; source, image complexity, and
    prompt format may matter more.
 
 Propose follow-up work: learned per-input router, multi-source route objectives, post-pruning
