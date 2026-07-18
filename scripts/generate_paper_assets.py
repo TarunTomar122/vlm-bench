@@ -289,51 +289,75 @@ def build_data() -> dict[str, Any]:
 
 
 def plot_method(out_dir: Path) -> None:
-    fig, ax = plt.subplots(figsize=(8.4, 5.2))
-    ax.set_xlim(0, 9)
-    ax.set_ylim(0, 5.2)
+    fig, ax = plt.subplots(figsize=(8.4, 3.6))
+    ax.set_xlim(0, 12)
+    ax.set_ylim(0, 4.6)
     ax.axis("off")
-    steps = [
-        (0.25, 3.15, "Initialize", "task-budget routes"),
-        (3.5, 3.15, "Evaluate", "source-aware loss"),
-        (6.75, 3.15, "Select", "Pareto finalists"),
-        (6.75, 0.85, "Evolve", "mutate and crossover"),
-        (3.5, 0.85, "Freeze", "three-seed winner"),
-        (0.25, 0.85, "Audit", "held-out transfer"),
+
+    def node(
+        x: float,
+        y: float,
+        number: int,
+        title: str,
+        subtitle: str,
+        color: str = COLORS["ink"],
+    ) -> None:
+        circle = patches.Circle((x, y), 0.23, facecolor="white", edgecolor=color, linewidth=1.5)
+        ax.add_patch(circle)
+        ax.text(x, y, str(number), ha="center", va="center", color=color, weight="bold", fontsize=9)
+        ax.text(x, y + 0.48, title, ha="center", va="bottom", weight="bold", fontsize=9.5)
+        ax.text(x, y - 0.48, subtitle, ha="center", va="top", color=COLORS["muted"], fontsize=8)
+
+    ax.text(0.2, 4.28, "SEARCH", color=COLORS["muted"], fontsize=8, weight="bold")
+    ax.text(11.8, 4.28, "three generations", ha="right", color=COLORS["muted"], fontsize=8)
+    ax.plot([0.2, 11.8], [4.1, 4.1], color=COLORS["grid"], lw=0.9)
+
+    search_y = 3.15
+    search_steps = [
+        (1.25, "Initialize", "fixed-budget routes"),
+        (4.15, "Evaluate", "source-balanced loss"),
+        (7.05, "Select", "Pareto survivors"),
+        (9.95, "Evolve", "crossover + mutation"),
     ]
-    for index, (x, y, title, subtitle) in enumerate(steps):
-        color = COLORS["green"] if index in (2, 4, 5) else COLORS["ink"]
-        box = patches.FancyBboxPatch(
-            (x, y), 2.0, 1.05, boxstyle="round,pad=0.04,rounding_size=0.08",
-            facecolor="white", edgecolor=color, linewidth=1.8
+    for number, (x, title, subtitle) in enumerate(search_steps, start=1):
+        node(x, search_y, number, title, subtitle, COLORS["green"] if number == 3 else COLORS["ink"])
+    for (left, *_), (right, *__) in zip(search_steps, search_steps[1:]):
+        ax.annotate(
+            "",
+            xy=(right - 0.32, search_y),
+            xytext=(left + 0.32, search_y),
+            arrowprops={"arrowstyle": "->", "color": COLORS["ink"], "lw": 1.1},
         )
-        ax.add_patch(box)
-        ax.text(x + 1.0, y + 0.69, title, ha="center", va="center", weight="bold", fontsize=11)
-        ax.text(x + 1.0, y + 0.31, subtitle, ha="center", va="center", color=COLORS["muted"], fontsize=8.5)
 
-    arrow = {"arrowstyle": "->", "color": COLORS["orange"], "lw": 1.8}
-    ax.annotate("", xy=(3.42, 3.68), xytext=(2.3, 3.68), arrowprops=arrow)
-    ax.annotate("", xy=(6.67, 3.68), xytext=(5.55, 3.68), arrowprops=arrow)
-    ax.annotate("", xy=(7.75, 1.98), xytext=(7.75, 3.1), arrowprops=arrow)
-    ax.annotate("", xy=(5.55, 1.38), xytext=(6.67, 1.38), arrowprops=arrow)
-    ax.annotate("", xy=(2.3, 1.38), xytext=(3.42, 1.38), arrowprops=arrow)
-
+    # Route the generation loop below the labels so it never crosses a node or caption.
+    loop_y = 2.12
+    ax.plot([9.95, 9.95], [2.9, loop_y], color=COLORS["muted"], lw=1.0)
+    ax.plot([9.95, 4.15], [loop_y, loop_y], color=COLORS["muted"], lw=1.0)
     ax.annotate(
-        "repeat",
-        xy=(4.5, 3.1),
-        xytext=(7.45, 2.3),
-        ha="center",
-        color=COLORS["muted"],
-        fontsize=8.5,
-        arrowprops={
-            "arrowstyle": "->",
-            "connectionstyle": "arc3,rad=0.28",
-            "color": COLORS["muted"],
-            "lw": 1.2,
-        },
+        "",
+        xy=(4.15, 2.9),
+        xytext=(4.15, loop_y),
+        arrowprops={"arrowstyle": "->", "color": COLORS["muted"], "lw": 1.0},
     )
-    ax.text(6.1, 1.63, "finish", ha="center", color=COLORS["muted"], fontsize=8.5)
-    ax.set_title("Evolutionary search at a matched skip budget", loc="left", pad=3)
+    ax.text(7.05, loop_y - 0.08, "next generation", ha="center", va="top", color=COLORS["muted"], fontsize=8)
+
+    ax.text(0.2, 1.72, "FREEZE AND TEST", color=COLORS["muted"], fontsize=8, weight="bold")
+    ax.plot([0.2, 11.8], [1.55, 1.55], color=COLORS["grid"], lw=0.9)
+    final_y = 0.62
+    final_steps = [
+        (2.2, "Compare seeds", "selection loss"),
+        (6.0, "Freeze route", "lowest-loss finalist"),
+        (9.8, "Audit transfer", "untouched source"),
+    ]
+    for number, (x, title, subtitle) in enumerate(final_steps, start=5):
+        node(x, final_y, number, title, subtitle, COLORS["green"] if number > 5 else COLORS["ink"])
+    for (left, *_), (right, *__) in zip(final_steps, final_steps[1:]):
+        ax.annotate(
+            "",
+            xy=(right - 0.32, final_y),
+            xytext=(left + 0.32, final_y),
+            arrowprops={"arrowstyle": "->", "color": COLORS["ink"], "lw": 1.1},
+        )
     save_figure(fig, out_dir, "method-overview")
 
 
@@ -432,22 +456,36 @@ def plot_transfer(data: dict[str, Any], out_dir: Path) -> None:
     conditions = data["fresh_ocr_transfer"]["conditions"]
     labels = ["Full model", "Shared 4-block", "OCR 4-block"]
     values = [conditions[key]["candidate_accuracy"] * 100 for key in ("full", "generic-k4", "ocr-k4")]
-    fig, ax = plt.subplots(figsize=(6.8, 4.3))
-    bars = ax.bar(labels, values, color=[COLORS["ink"], COLORS["green"], COLORS["red"]], width=0.62)
-    for bar, value in zip(bars, values):
-        ax.text(bar.get_x() + bar.get_width() / 2, value + 0.7, f"{value:.1f}%", ha="center", weight="bold")
+    colors = [COLORS["ink"], COLORS["green"], COLORS["red"]]
+    y = np.array([2, 1, 0])
+    fig, ax = plt.subplots(figsize=(6.8, 3.25))
+    ax.scatter(values, y, s=72, color=colors, zorder=3)
+    for y_pos, value, color in zip(y, values, colors):
+        ax.text(value + 0.65, y_pos, f"{value:.1f}%", ha="left", va="center", color=color, weight="bold")
+
     delta = data["fresh_ocr_transfer"]["ocr_minus_generic_k4"]
-    ax.annotate(
-        f"{delta['mean_pp']:.1f} pp\n95% CI [{delta['ci95_low_pp']:.1f}, {delta['ci95_high_pp']:.1f}]",
-        xy=(2, values[2]), xytext=(1.42, 80.3), ha="center", color=COLORS["red"], weight="bold",
-        arrowprops={"arrowstyle": "->", "color": COLORS["red"]},
+    comparison_y = -0.72
+    ax.hlines(comparison_y, values[2], values[1], color=COLORS["red"], lw=1.2)
+    ax.vlines([values[2], values[1]], comparison_y - 0.08, comparison_y + 0.08, color=COLORS["red"], lw=1.2)
+    ax.text(
+        np.mean([values[2], values[1]]),
+        comparison_y - 0.17,
+        f"OCR route vs shared: {delta['mean_pp']:.1f} pp   "
+        f"95% CI [{delta['ci95_low_pp']:.1f}, {delta['ci95_high_pp']:.1f}]",
+        ha="center",
+        va="top",
+        color=COLORS["red"],
+        fontsize=8.5,
     )
-    ax.set_ylim(65, 99)
-    ax.set_ylabel("Exact-match accuracy (%)")
-    ax.grid(axis="y", color=COLORS["grid"], linewidth=0.7)
-    ax.set_title("Sealed IIIT5K transfer: the SmolVLM OCR route fails", loc="left")
-    ax.text(0, -0.17, "250 examples; routes frozen before any IIIT5K evaluation.",
-            transform=ax.transAxes, fontsize=8.5, color=COLORS["muted"])
+    ax.set_xlim(68, 98)
+    ax.set_ylim(-1.25, 2.45)
+    ax.set_yticks(y, labels)
+    ax.set_xlabel("Exact-match accuracy (%)")
+    ax.grid(axis="x", color=COLORS["grid"], linewidth=0.7)
+    ax.tick_params(axis="y", length=0, pad=8)
+    ax.spines[["top", "right", "left"]].set_visible(False)
+    ax.text(0.99, 1.02, "n = 250; routes frozen before evaluation", transform=ax.transAxes,
+            ha="right", va="bottom", fontsize=8, color=COLORS["muted"])
     save_figure(fig, out_dir, "fresh-ocr-transfer")
 
 
