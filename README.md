@@ -42,9 +42,9 @@ show that a named capability is stored inside the skipped or retained blocks.
 This is a **fixed-cardinality, multi-objective genetic search** over block subsets. For a model with
 `L` vision blocks, a candidate route is a set
 
-\[
+$$
 S \subseteq \{0, \ldots, L-1\}, \qquad |S|=K,
-\]
+$$
 
 where every block in `S` is replaced by identity. The chromosome can therefore be viewed as an
 `L`-bit vector with exactly `K` ones. Search never changes `K`, model weights, prompts, or decoding.
@@ -52,9 +52,9 @@ where every block in `S` is replaced by identity. The chromosome can therefore b
 For capability `c` and dataset source `d`, let `A^0_{c,d}` be full-model accuracy and
 `A^S_{c,d}` be accuracy after skipping route `S`. The paired accuracy drop in percentage points is
 
-\[
+$$
 \Delta_{c,d}(S)=100\left(A^0_{c,d}-A^S_{c,d}\right).
-\]
+$$
 
 Lower is better. A negative drop means the skipped route actually answered more examples correctly
 than the full model in that cell. Every capability-source cell receives equal weight, regardless of
@@ -63,17 +63,17 @@ its number of examples.
 For one shared route, define `mu` as the mean of all cell drops, `w` as the largest cell drop, and
 `sigma` as their population standard deviation. The scalar finalist loss is
 
-\[
+$$
 L_{shared}(S)=0.50\mu+0.30w+0.20\sigma.
-\]
+$$
 
 For a route targeting capability `t`, compute `mu_t`, `w_t`, and `sigma_t` using only sources for
 that capability. Let `kappa_t` be the mean drop across every non-target capability-source cell. Its
 loss is
 
-\[
+$$
 L_t(S)=0.45\mu_t+0.30w_t+0.15\kappa_t+0.10\sigma_t.
-\]
+$$
 
 The algorithm then proceeds as follows:
 
