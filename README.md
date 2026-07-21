@@ -2,7 +2,7 @@
 
 **Evolutionary block pruning across Qwen2.5-VL and SmolVLM2**
 
-[Paper PDF](https://raw.githubusercontent.com/TarunTomar122/vision-pathways/main/paper/main.pdf) | [Research website](https://taruntomar122.github.io/vision-pathways/) | [LaTeX source](paper/main.tex)
+[arXiv:2607.17052](https://arxiv.org/abs/2607.17052) | [Paper PDF](https://arxiv.org/pdf/2607.17052) | [Research website](https://taruntomar122.github.io/vision-pathways/) | [LaTeX source](paper/main.tex)
 
 This repository studies a narrow question: when a VLM vision encoder must skip the same number of
 transformer blocks, can combinatorial search find better routes than independent, contiguous, or

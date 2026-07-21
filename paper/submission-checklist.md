@@ -48,33 +48,24 @@
 
 ## arXiv
 
-- [ ] Sign in to a registered arXiv author account. Start a draft submission early to discover whether
-  first-time or `cs.CV` endorsement is required.
-- [ ] If endorsement is required, use the code from arXiv to contact one appropriate researcher who
-  knows the author or the work. Do not mass-email endorsers.
-- [ ] Freeze author names, affiliations, email, ORCID, title, abstract, comments, and categories.
-- [ ] Use `cs.CV` as the intended primary category. Add `cs.LG` or `cs.CL` only when the paper's
-  content genuinely supports the cross-list.
-- [ ] Choose the distribution license deliberately. The choice is irrevocable; check future venue and
-  funder rules before selecting CC BY or another option.
+- [x] Sign in to a registered arXiv author account and resolve the required `cs.CV` endorsement for v1.
+- [x] Freeze author metadata, title, abstract, comments, and categories for announced v1.
+- [x] Use `cs.CV` as the v1 primary category. No cross-list was added.
+- [x] Choose the v1 distribution license deliberately. The choice is irrevocable.
 - [x] Prepare a source ZIP containing `main.tex`, `references.bib` or matching `main.bbl`, all eight
   PDF figures, and `tables/generated-main-results.tex` with their relative directories intact.
 - [x] Run `make arxiv-package` if the repository version is final, or use Overleaf's arXiv source
   export if Overleaf contains newer edits. Do not upload an archive without knowing which version won.
 - [x] Remove compiled PDFs, auxiliary files, caches, model weights, raw restricted images,
   credentials, and unrelated repository files from the upload ZIP.
-- [ ] On arXiv, choose **Start New Submission**, upload the ZIP, click **Check Files**, select
-  **pdfLaTeX** if it is not detected, and confirm `main.tex` as the top-level file.
-- [ ] Review arXiv's suggested file deletions before accepting them. Do not let it remove a referenced
-  figure, table, bibliography, or required source file.
-- [ ] Open the arXiv-generated PDF and inspect every page, figure, table, reference, hyperlink,
-  author field, and page count. A local or Overleaf compile is not sufficient.
-- [ ] Enter metadata manually and confirm that the title and abstract exactly match the PDF. Complete
-  the license and submission agreement screens, then submit.
+- [x] Upload the v1 ZIP, select **pdfLaTeX**, and confirm `main.tex` as the top-level file.
+- [x] Retain every referenced figure, table, and bibliography file during the arXiv file review.
+- [x] Complete arXiv's generated-PDF preview, metadata, license, agreement, and submission flow for v1.
 - [ ] If an error is found before announcement, use **Unsubmit**, correct the existing submission, and
   resubmit. Do not create a second paper entry.
-- [ ] After announcement, add the arXiv URL and identifier to the website, README, `CITATION.cff`, and
-  paper references; create a release tag for the submitted commit.
+- [x] After announcement, add [arXiv:2607.17052](https://arxiv.org/abs/2607.17052) to the website,
+  README, `CITATION.cff`, and submission record. The `arxiv-v1-candidate` release tag preserves the
+  submitted source candidate.
 
 Official references:
 
@@ -89,8 +80,8 @@ conference, journal, employer, or funder.
 
 ## Website/Wix
 
-- [ ] Run `make submission` and inspect `docs/index.html` locally.
-- [ ] Replace the paper placeholder with the final arXiv URL.
+- [x] Run `make submission` and inspect `docs/index.html` locally.
+- [x] Replace the paper placeholder with [arXiv:2607.17052](https://arxiv.org/abs/2607.17052).
 - [ ] Add author/affiliation information after approval.
 - [ ] Publish `docs/` with GitHub Pages, or recreate its sections in Wix using the supplied copy.
 - [ ] Verify mobile layout, figure alt text, repository link, and caveat text.

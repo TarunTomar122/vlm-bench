@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this code or result package, please cite the associated preprint."
+message: "If you use this code or result package, please cite the associated arXiv paper."
 title: "Searching for Task-Specific Vision Paths: Evolutionary Block Pruning Across Vision-Language Models"
 type: software
 authors:
@@ -8,3 +8,16 @@ authors:
 repository-code: "https://github.com/TarunTomar122/vision-pathways"
 date-released: 2026-07-18
 version: 0.2.0
+identifiers:
+  - type: doi
+    value: "10.48550/arXiv.2607.17052"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Tomar
+      given-names: Tarun
+  title: "Searching for Task-Specific Vision Paths: Evolutionary Block Pruning Across Vision-Language Models"
+  journal: "arXiv preprint arXiv:2607.17052"
+  year: 2026
+  doi: "10.48550/arXiv.2607.17052"
+  url: "https://arxiv.org/abs/2607.17052"

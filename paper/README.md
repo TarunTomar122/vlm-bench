@@ -7,13 +7,13 @@ evidence to the manuscript. No model weights, dataset images, or GPU are require
 
 ## Start Here
 
-1. Read the current [`main.pdf`](main.pdf).
-2. Edit the canonical [`main.tex`](main.tex) and [`references.bib`](references.bib).
+1. Read the published [arXiv record](https://arxiv.org/abs/2607.17052) and the archived [`main.pdf`](main.pdf).
+2. Edit the canonical [`main.tex`](main.tex) and [`references.bib`](references.bib) only for a later version.
 3. Check every claim against [`claims-and-limitations.md`](claims-and-limitations.md).
 4. Use [`method.md`](method.md) to audit equations, operators, and pseudocode.
-5. Copy the form fields from [`arxiv-metadata.md`](arxiv-metadata.md).
+5. Read [`arxiv-metadata.md`](arxiv-metadata.md) for the announced-v1 record.
 6. Review the primary-source record in [`citation-audit.md`](citation-audit.md).
-7. Complete [`submission-checklist.md`](submission-checklist.md) before arXiv upload.
+7. Use [`submission-checklist.md`](submission-checklist.md) when preparing a future arXiv version or venue submission.
 
 ## Regenerate Everything
 
@@ -50,15 +50,17 @@ project when needed. It contains `main.tex`, `references.bib`, all eight vector 
 generated LaTeX results table with the same relative paths used by the manuscript. Overleaf should
 detect `main.tex` as the root file and compile it with pdfLaTeX.
 
-The same source layout is suitable for arXiv. Follow [`submission-checklist.md`](submission-checklist.md)
-for the upload, metadata, license, human review, and AI-assistance checks.
+The same source layout produced the published [arXiv v1](https://arxiv.org/abs/2607.17052). Follow
+[`submission-checklist.md`](submission-checklist.md) when preparing a future version or venue submission.
 
 ```bash
 make arxiv-package
 ```
 
-This creates the ignored local file `arxiv-source.zip`. Upload that archive only after completing the
-submission checklist and checking that it matches the final Overleaf manuscript.
+This creates the ignored local file `arxiv-source.zip`. The v1 archive is available from the
+[GitHub release](https://github.com/TarunTomar122/vision-pathways/releases/tag/arxiv-v1-candidate).
+Use a newly built archive only when preparing a later arXiv version, after confirming it matches the
+intended manuscript.
 
 Run the complete clean-room package audit before uploading:
 

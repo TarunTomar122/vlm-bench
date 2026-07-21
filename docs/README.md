@@ -9,5 +9,5 @@ or is renamed later.
 
 For Wix, use this folder as the visual/content source: recreate the sections with Wix components,
 upload the generated PNG assets, and preserve the evidence caveats verbatim. If the Wix plan allows
-custom embeds, the GitHub Pages site can be embedded or linked. Replace the placeholder
-repository-only action with the final arXiv URL after submission.
+custom embeds, the GitHub Pages site can be embedded or linked. The published paper is
+[arXiv:2607.17052](https://arxiv.org/abs/2607.17052).

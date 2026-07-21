@@ -1,7 +1,7 @@
-# arXiv Submission Metadata
+# arXiv v1 Record
 
-This sheet is the canonical copy for the arXiv form. It matches the frozen manuscript source. Review every
-field in the arXiv preview before submitting.
+This sheet records the announced arXiv v1 metadata. The frozen source is the submission archived by arXiv;
+future manuscript changes require a new arXiv version.
 
 ## Paper
 
@@ -9,6 +9,9 @@ field in the arXiv preview before submitting.
 - **Authors:** Tarun Tomar
 - **Primary category:** `cs.CV`
 - **Cross-list:** None proposed
+- **arXiv identifier:** [arXiv:2607.17052](https://arxiv.org/abs/2607.17052)
+- **Version:** v1, announced 19 July 2026
+- **DOI:** [10.48550/arXiv.2607.17052](https://doi.org/10.48550/arXiv.2607.17052)
 - **Submission processor:** pdfLaTeX
 - **Top-level file:** `main.tex`
 - **Source candidate tag:** `arxiv-v1-candidate`
@@ -29,19 +32,11 @@ beats the shared route by 2.17 points, driven by a 7.10-point OCR gain. On seale
 OCR-specific route trails its shared route by 13.6 points. Combinatorial search reliably improves route
 construction, but capability labels do not define universally transferable vision pathways.
 
-## Author Decisions Still Required
+## Archived Source
 
-- **Affiliation:** Supply only a current, accurate affiliation. Leave blank if there is none.
-- **Email and ORCID:** Confirm these in the arXiv account and author fields. They are not embedded in the paper.
-- **Funding disclosure:** Confirm whether there is funding to disclose. None is asserted by this repository.
-- **License:** Choose in arXiv after checking future venue and funder requirements. The choice is irrevocable.
-- **Endorsement:** Confirm whether the arXiv account is already endorsed for `cs.CV`.
-- **Submission agreement:** The human author must read and accept it.
+The announced source archive contains `main.tex`, `references.bib`, the generated result table, and eight PDF
+figures. It is available from the [arXiv record](https://arxiv.org/abs/2607.17052) and the
+[GitHub release](https://github.com/TarunTomar122/vision-pathways/releases/tag/arxiv-v1-candidate).
 
-## Upload
-
-Upload `paper/arxiv-source.zip`. The archive contains only the TeX source, bibliography, generated table, and
-eight PDF figures. Do not upload the repository or `paper/main.pdf` as the source package.
-
-The acknowledgement discloses AI assistance for code, orchestration, figures, manuscript organization, and
-language editing. The human author must review the complete PDF and accept responsibility before submission.
+The acknowledgement in v1 discloses AI assistance for code, orchestration, figures, manuscript organization,
+and language editing. Any future venue or arXiv version should receive a fresh human review before submission.
